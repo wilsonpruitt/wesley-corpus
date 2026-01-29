@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}{{ passage.source_title }} — Wesley Corpus{% endblock %}
+{% block content %}
+<div class="passage-full">
+  <h2>{{ passage.source_title }}</h2>
+
+  <table class="meta-table">
+    <tr><th>Author</th><td>{{ passage.author | replace("-", " ") | title }}</td></tr>
+    <tr><th>Type</th><td>{{ passage.source_type }}</td></tr>
+    <tr><th>Year</th><td>{{ passage.year }}</td></tr>
+    <tr><th>Passage ID</th><td>{{ passage.id }}</td></tr>
+    <tr><th>Words</th><td>{{ passage.word_count }}</td></tr>
+    {% if passage.source_url %}
+    <tr><th>Source</th><td><a href="{{ passage.source_url }}" target="_blank">{{ passage.source_url | truncate(60) }}</a></td></tr>
+    {% endif %}
+  </table>
+
+  {% if theme_details %}
+  <div style="margin:1rem 0;">
+    {% for t in theme_details %}
+    <a class="theme-tag" href="/theme/{{ t.theme_id }}">{{ t.theme_name }}</a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="text">{{ passage.text }}</div>
+</div>
+{% endblock %}

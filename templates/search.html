@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}{% if semantic %}Semantic Search{% else %}Search{% endif %} — Wesley Corpus{% endblock %}
+{% block content %}
+<h2>{% if semantic %}Semantic Search{% else %}Keyword Search{% endif %}</h2>
+
+<form class="search-form" action="{% if semantic %}/semantic{% else %}/search{% endif %}" method="get">
+  <input type="text" name="q" value="{{ q }}" placeholder="{% if semantic %}Describe a concept&hellip;{% else %}Search keywords&hellip;{% endif %}">
+  <button type="submit">Search</button>
+</form>
+
+{% if not semantic %}
+<div class="filters">
+  <form action="/search" method="get" style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+    <input type="hidden" name="q" value="{{ q }}">
+    <select name="author" onchange="this.form.submit()">
+      <option value="">All authors</option>
+      <option value="john-wesley" {% if author == 'john-wesley' %}selected{% endif %}>John Wesley</option>
+      <option value="charles-wesley" {% if author == 'charles-wesley' %}selected{% endif %}>Charles Wesley</option>
+    </select>
+    <select name="type" onchange="this.form.submit()">
+      <option value="">All types</option>
+      <option value="sermon" {% if type == 'sermon' %}selected{% endif %}>Sermon</option>
+      <option value="treatise" {% if type == 'treatise' %}selected{% endif %}>Treatise</option>
+      <option value="hymn" {% if type == 'hymn' %}selected{% endif %}>Hymn</option>
+      <option value="hymn-stanza" {% if type == 'hymn-stanza' %}selected{% endif %}>Hymn Stanza</option>
+      <option value="journal" {% if type == 'journal' %}selected{% endif %}>Journal</option>
+      <option value="letter" {% if type == 'letter' %}selected{% endif %}>Letter</option>
+      <option value="commentary" {% if type == 'commentary' %}selected{% endif %}>Commentary</option>
+    </select>
+  </form>
+</div>
+{% endif %}
+
+{% if q %}
+<p>{{ results | length }} result{{ 's' if results | length != 1 }} for <strong>{{ q }}</strong></p>
+{% endif %}
+
+{% for p in results %}
+<div class="card">
+  <h3><a href="/passage/{{ p.id }}">{{ p.source_title }}</a></h3>
+  <div class="meta">
+    {{ p.author | replace("-", " ") | title }} &middot; {{ p.year }} &middot; {{ p.source_type }}
+    {% if p.score is defined %} &middot; score {{ "%.2f" | format(p.score) }}{% endif %}
+  </div>
+  <div class="text">{{ p.text }}</div>
+</div>
+{% endfor %}
+{% endblock %}

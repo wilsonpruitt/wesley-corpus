@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}Themes — Wesley Corpus{% endblock %}
+{% block content %}
+<h2>Theological Themes</h2>
+<p>Browse passages by Wesleyan theological theme.</p>
+
+{% for t in themes %}
+<div class="card">
+  <h3><a href="/theme/{{ t.theme_id }}">{{ t.theme_name }}</a> <span style="color:var(--muted);font-weight:normal;font-size:0.9rem;">({{ t.count }})</span></h3>
+  <div class="meta">{{ t.description }}</div>
+</div>
+{% endfor %}
+{% endblock %}

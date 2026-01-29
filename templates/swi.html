@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block title %}StrangelyWarmIndex{% endblock %}
+{% block content %}
+<link rel="stylesheet" href="/static/swi.css">
+
+<div class="swi-hero">
+  <h2>StrangelyWarmIndex</h2>
+  <p class="swi-subtitle">How Wesleyan is your text?</p>
+</div>
+
+<!-- Input -->
+<div class="swi-input-section">
+  <textarea id="swi-text" placeholder="Paste a sermon, essay, hymn, or any text here..." rows="8"></textarea>
+  <div class="swi-actions">
+    <button id="swi-score-btn" class="btn" onclick="scoreText()">Score This Text</button>
+    <button id="swi-compare-btn" class="btn btn-secondary" onclick="toggleCompare()">Compare Two Texts</button>
+  </div>
+</div>
+
+<!-- Compare mode (hidden by default) -->
+<div id="swi-compare-section" class="swi-compare-section" style="display:none;">
+  <div class="swi-compare-inputs">
+    <div>
+      <label>Text A</label>
+      <textarea id="swi-text-a" placeholder="First text..." rows="6"></textarea>
+    </div>
+    <div>
+      <label>Text B</label>
+      <textarea id="swi-text-b" placeholder="Second text..." rows="6"></textarea>
+    </div>
+  </div>
+  <button class="btn" onclick="compareTexts()">Compare</button>
+</div>
+
+<!-- Results -->
+<div id="swi-results" style="display:none;">
+
+  <!-- Overall Score Gauge -->
+  <div class="swi-gauge-section">
+    <div class="swi-gauge">
+      <div class="swi-gauge-fill" id="swi-gauge-fill"></div>
+      <div class="swi-gauge-score" id="swi-gauge-score">0</div>
+    </div>
+    <div class="swi-gauge-label" id="swi-gauge-label">Scoring...</div>
+  </div>
+
+  <!-- Summary -->
+  <div class="card" id="swi-summary-card">
+    <h3>By The Numbers</h3>
+    <p id="swi-summary"></p>
+  </div>
+
+  <!-- Radar Chart -->
+  <div class="card">
+    <h3>Dimension Radar</h3>
+    <canvas id="swi-radar" width="400" height="400"></canvas>
+  </div>
+
+  <!-- Dimension Breakdown -->
+  <div class="card">
+    <h3>Dimension Scores</h3>
+    <div id="swi-dimensions"></div>
+  </div>
+
+  <!-- Top Markers -->
+  <div class="card">
+    <h3>What Makes It Wesleyan</h3>
+    <div id="swi-markers" class="swi-markers"></div>
+  </div>
+
+  <!-- Theme Proximity -->
+  <div class="card" id="swi-themes-card" style="display:none;">
+    <h3>Theme Proximity</h3>
+    <div id="swi-themes"></div>
+  </div>
+
+</div>
+
+<!-- Compare Results -->
+<div id="swi-compare-results" style="display:none;">
+  <div class="swi-compare-grid" id="swi-compare-grid"></div>
+</div>
+
+<!-- Loading -->
+<div id="swi-loading" style="display:none;">
+  <div class="swi-spinner"></div>
+  <p>Scoring your text...</p>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<script src="/static/swi.js"></script>
+{% endblock %}

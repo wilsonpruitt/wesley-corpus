@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}{{ theme.theme_name }} — Wesley Corpus{% endblock %}
+{% block content %}
+<h2>{{ theme.theme_name }}</h2>
+{% if theme.description %}<p>{{ theme.description }}</p>{% endif %}
+<p style="color:var(--muted);margin-top:0.5rem;">{{ passages | length }} passage{{ 's' if passages | length != 1 }}</p>
+
+{% for p in passages %}
+<div class="card">
+  <h3><a href="/passage/{{ p.id }}">{{ p.source_title }}</a></h3>
+  <div class="meta">{{ p.author | replace("-", " ") | title }} &middot; {{ p.year }} &middot; {{ p.source_type }}</div>
+  <div class="text">{{ p.text }}</div>
+</div>
+{% endfor %}
+{% endblock %}

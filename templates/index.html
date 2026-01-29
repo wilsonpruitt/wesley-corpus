@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Wesley Corpus — Home{% endblock %}
+{% block content %}
+<h2>The Wesley Corpus</h2>
+<p>A searchable collection of John and Charles Wesley's sermons, treatises, hymns, and other writings.</p>
+
+<div class="stats">
+  <div class="stat"><span class="num">{{ stats.passage_count }}</span><span class="label">Passages</span></div>
+  <div class="stat"><span class="num">{{ stats.total_words | default(0) }}</span><span class="label">Words</span></div>
+  <div class="stat"><span class="num">{{ stats.theme_count }}</span><span class="label">Themes</span></div>
+</div>
+
+<div class="section">
+  <form class="search-form" action="/search" method="get">
+    <input type="text" name="q" placeholder="Search the corpus&hellip;">
+    <button type="submit">Search</button>
+  </form>
+</div>
+
+<div class="section">
+  <h2>Themes</h2>
+  <div class="theme-cloud">
+    {% for t in themes %}
+    <a class="theme-tag" href="/theme/{{ t.theme_id }}">{{ t.theme_name }}{% if t.count %} ({{ t.count }}){% endif %}</a>
+    {% endfor %}
+  </div>
+</div>
+
+{% if random_passage %}
+<div class="section">
+  <h2>Random Passage</h2>
+  <div class="card">
+    <h3><a href="/passage/{{ random_passage.id }}">{{ random_passage.source_title }}</a></h3>
+    <div class="meta">{{ random_passage.author | replace("-", " ") | title }} &middot; {{ random_passage.year }} &middot; {{ random_passage.source_type }}</div>
+    <div class="text">{{ random_passage.text }}</div>
+  </div>
+</div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Wesley Corpus{% endblock %}</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><a href="/">Wesley Corpus</a></h1>
+      <nav>
+        <a href="/search">Search</a>
+        <a href="/semantic">Semantic</a>
+        <a href="/themes">Themes</a>
+        <a href="/scripture">Scripture</a>
+        <a href="/sources">Sources</a>
+        <a href="/random">Random</a>
+        <a href="/strangely-warmed">SWI</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    {% block content %}{% endblock %}
+  </main>
+  <footer>
+    <div class="container">Wesley Corpus &mdash; The writings of John &amp; Charles Wesley</div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,13 @@
+source_id,author,title,source_type,year,source_url,download_date,status,notes
+jw-sermon-001,john-wesley,Salvation by Faith,sermon,1738,https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-1-salvation-by-faith/,2025-01-28,downloaded,Standard Sermon #1
+jw-sermon-002,john-wesley,The Almost Christian,sermon,1741,https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-2-the-almost-christian/,2025-01-28,downloaded,Standard Sermon #2 - partial text obtained
+jw-sermon-003,john-wesley,Awake Thou That Sleepest,sermon,1742,https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-3-awake-thou-that-sleepest/,2025-01-28,downloaded,Standard Sermon #3 (Charles Wesley preached)
+jw-sermon-004,john-wesley,Scriptural Christianity,sermon,1744,https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-4-scriptural-christianity/,2025-01-28,downloaded,Standard Sermon #4
+jw-sermon-005,john-wesley,Justification by Faith,sermon,1746,https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-5-justification-by-faith/,2025-01-28,downloaded,Standard Sermon #5
+jw-plain-account,john-wesley,A Plain Account of Christian Perfection,treatise,1766,https://wesley.nnu.edu/john-wesley/a-plain-account-of-christian-perfection/,2025-01-28,placeholder,Book-length - needs manual download from Wesley Center Online
+jw-character,john-wesley,The Character of a Methodist,treatise,1742,https://www.fumcfairfield.org/wp-content/uploads/2018/06/Character-of-a-Methodist.pdf,2025-01-28,placeholder,Needs manual download from PDF source
+jw-catholic-spirit,john-wesley,Catholic Spirit,sermon,1750,https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-39-catholic-spirit/,2025-01-28,downloaded,Standard Sermon #39
+jw-means-of-grace,john-wesley,The Means of Grace,sermon,1746,https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-16-the-means-of-grace/,2025-01-28,downloaded,Standard Sermon #16
+jw-free-grace,john-wesley,Free Grace,sermon,1739,https://wesley.nnu.edu/john-wesley/the-sermons-of-john-wesley-1872-edition/sermon-128-free-grace/,2025-01-28,downloaded,Sermon #128 - Against unconditional predestination
+cw-hymns-1780,charles-wesley,A Collection of Hymns (1780),hymn-collection,1780,https://www.ccel.org/ccel/wesley/hymn.html,,pending,Primary Methodist hymnal - large collection needs separate strategy
+cw-wrestling-jacob,charles-wesley,Wrestling Jacob,hymn,1742,https://en.wikisource.org/wiki/Come%2C_O_Thou_Traveler_Unknown,2025-01-28,placeholder,Needs manual copy from Wikisource (14 stanzas)

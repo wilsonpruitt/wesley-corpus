@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+*.egg-info/
+dist/
+build/
+
+# Large binary files (regenerable)
+chunked/embeddings.npz
+chunked/embeddings_metadata.json
+chunked/centroids.npz
+
+# Backup files
+*.bak

@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Scripture Lookup — Wesley Corpus{% endblock %}
+{% block content %}
+<h2>Scripture Reference Lookup</h2>
+<p>Find Wesley passages that reference a Bible verse or chapter.</p>
+
+<form class="search-form" action="/scripture" method="get">
+  <input type="text" name="q" value="{{ q }}" placeholder="e.g. Romans 8, John 3:16, Genesis">
+  <button type="submit">Lookup</button>
+</form>
+
+{% if q %}
+<p>{{ entries | length }} reference{{ 's' if entries | length != 1 }} for <strong>{{ label }}</strong></p>
+
+{% for e in entries %}
+<div class="card">
+  <h3><a href="/passage/{{ e.passage_id }}">{{ e.source_title }}</a></h3>
+  <div class="meta">{{ e.author | replace("-", " ") | title }} &middot; {{ e.book }} {{ e.chapter }}{% if e.verses %}:{{ e.verses }}{% endif %}</div>
+</div>
+{% endfor %}
+{% endif %}
+{% endblock %}
