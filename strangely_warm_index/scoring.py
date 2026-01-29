@@ -9,7 +9,7 @@ with narrative summary and collected markers.
 import csv
 from pathlib import Path
 
-from .dimensions import score_all_dimensions
+from .dimensions import score_all_dimensions, detect_calvinist_markers
 from .classifier import score_semantic
 
 CORPUS_ROOT = Path(__file__).resolve().parent.parent
@@ -30,7 +30,6 @@ DEFAULT_WEIGHTS = {
     "scriptural_density": 1.5,
     # Tier 3 — Language
     "wesleyan_vocabulary": 0.8,
-    "rhetorical_style": 0.5,
     "semantic": 0.8,
 }
 
@@ -54,7 +53,8 @@ def _get_label(score: int) -> str:
     return label
 
 
-def _generate_summary(overall: int, dimensions: dict, semantic: dict) -> str:
+def _generate_summary(overall: int, dimensions: dict, semantic: dict,
+                      calvinist: dict = None) -> str:
     """Generate a 2-4 sentence narrative summary."""
     label = _get_label(overall)
     parts = [f"This text scores {overall}/100 ({label})."]
@@ -74,10 +74,16 @@ def _generate_summary(overall: int, dimensions: dict, semantic: dict) -> str:
             missing = [n for n, _ in weak[:2]]
             parts.append(f"It lacks emphasis on {', '.join(missing)}.")
 
+    # Calvinist penalty
+    if calvinist and calvinist.get("penalty_applied", calvinist.get("penalty", 0)) > 0:
+        applied = calvinist.get("penalty_applied", calvinist.get("penalty", 0))
+        parts.append("Score reduced by {} points for Calvinist theological markers ({} found).".format(
+            applied, calvinist["count"]))
+
     # Semantic
     if semantic.get("available") and semantic.get("closest_themes"):
         top_theme = semantic["closest_themes"][0]
-        parts.append(f"Semantically closest to the '{top_theme[0]}' theme.")
+        parts.append("Semantically closest to the '{}' theme.".format(top_theme[0]))
 
     return " ".join(parts)
 
@@ -115,7 +121,7 @@ def score_text(text: str, include_semantic: bool = True) -> dict:
     THEOLOGY_DIMS = {"grace_theology", "holiness_emphasis", "experiential_religion",
                      "catholic_spirit", "social_holiness"}
     SCRIPTURE_DIMS = {"scriptural_density"}
-    LANGUAGE_DIMS = {"wesleyan_vocabulary", "rhetorical_style"}
+    LANGUAGE_DIMS = {"wesleyan_vocabulary"}
 
     theology_scores = [dimensions[d]["score"] for d in THEOLOGY_DIMS if d in dimensions]
     scripture_scores = [dimensions[d]["score"] for d in SCRIPTURE_DIMS if d in dimensions]
@@ -150,6 +156,20 @@ def score_text(text: str, include_semantic: bool = True) -> dict:
     # Floor = 40% of semantic score (e.g. sem=76 -> floor=30)
     sem_floor = int(sem_score * 0.40) if sem_score > 0 else 0
     overall = max(blended, sem_floor)
+
+    # Calvinist penalty: distinctly Reformed/Calvinist theology is anti-Wesleyan.
+    # Wesley explicitly argued against predestination, limited atonement, etc.
+    # However, Wesley himself discusses these terms when refuting them —
+    # if the text also scores highly on Wesleyan theology, cap the penalty.
+    calvinist = detect_calvinist_markers(text)
+    cal_penalty = calvinist["penalty"]
+    if theology_score >= 60:
+        # Strong Wesleyan theology present — likely a refutation, not advocacy
+        cal_penalty = min(cal_penalty, 5)
+    elif theology_score >= 40:
+        cal_penalty = min(cal_penalty, 10)
+    overall = overall - cal_penalty
+    calvinist["penalty_applied"] = cal_penalty
     overall = max(0, min(100, overall))
 
     # Collect top markers across all dimensions
@@ -168,13 +188,14 @@ def score_text(text: str, include_semantic: bool = True) -> dict:
             top_markers.append(m)
     top_markers = top_markers[:20]
 
-    summary = _generate_summary(overall, dimensions, semantic)
+    summary = _generate_summary(overall, dimensions, semantic, calvinist)
 
     return {
         "overall_score": overall,
         "label": _get_label(overall),
         "dimensions": dimensions,
         "semantic": semantic,
+        "calvinist_penalty": calvinist,
         "top_markers": top_markers,
         "summary": summary,
         "word_count": word_count,

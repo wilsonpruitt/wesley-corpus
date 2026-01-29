@@ -1,32 +1,37 @@
 {
   "corpus": {
-    "sermons": { "have": 97, "target": 141 },
-    "journal_volumes": { "have": 0.25, "target": 4 },
-    "ot_notes": { "have": 0, "target": 1 },
-    "letters": { "have": 1, "target": 2000 },
-    "hymns": { "have": 25, "target": 5500 },
-    "treatises": { "have": 15, "target": 80 }
+    "sermons": {
+      "have": 140,
+      "target": 141
+    },
+    "journal_volumes": {
+      "have": 1.7142857142857142,
+      "target": 4
+    },
+    "ot_notes": {
+      "have": 0,
+      "target": 1
+    },
+    "letters": {
+      "have": 1,
+      "target": 2000
+    },
+    "hymns": {
+      "have": 31,
+      "target": 5500
+    },
+    "treatises": {
+      "have": 15,
+      "target": 80
+    }
   },
   "swi": {
     "lexicon_built": true,
-    "dimensions_implemented": 8,
-    "semantic_centroids_built": true,
-    "api_live": true,
-    "ui_live": true,
-    "calibrated": true,
-    "full_text_scoring": true,
-    "calibration_notes": {
-      "full_sermon_avg": 73,
-      "full_sermon_range": "60-83",
-      "full_treatise_avg": 69,
-      "full_journal_avg": 64,
-      "hymn_avg": 31,
-      "secular_control": 0,
-      "generic_christian_control": 18,
-      "calvinist_control": 28
-    }
+    "dimensions_implemented": 0,
+    "api_live": false,
+    "ui_live": false,
+    "calibrated": false
   },
-  "total_passages": 4871,
-  "full_texts_scored": 134,
+  "total_passages": 6822,
   "last_updated": "2026-01-29"
 }

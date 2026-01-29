@@ -175,7 +175,7 @@ SCRIPTURE_PATTERN = re.compile(
 
 ALLUSION_PATTERNS = [
     r"\b(it is written|the scripture saith|saith the Lord|thus saith|word of God)\b",
-    r"\b(as the apostle|as St\. Paul|as our Lord|as Christ)\b",
+    r"\b(as St\. Paul|as our Lord)\b",
 ]
 
 
@@ -222,9 +222,9 @@ HOLINESS_PHRASES = [
 ]
 
 HOLINESS_PATTERNS = [
-    r"\b(sanctif|holiness|holy|purity|pure|perfection|perfected)\w*\b",
+    r"\b(sanctif|holiness|perfection|perfected)\w*\b",
     r"\b(means\s+of\s+grace|holy\s+living|growth\s+in\s+grace)\b",
-    r"\b(prayer|fasting|communion|sacrament|ordinance)\b",
+    r"\b(fasting|communion|sacrament|ordinance)\b",
     # repentance
     r"\b(repent|repentance|contrition|penitent|convict)\w*\b",
     r"\b(turn|turning)\s+(from|to)\s+(sin|god|christ)\b",
@@ -272,8 +272,8 @@ EXPERIENTIAL_PHRASES = [
 ]
 
 EXPERIENTIAL_PATTERNS = [
-    r"\b(experience|experiential|felt|feeling|inward|heart)\w*\b",
-    r"\b(assurance|witness|testimony|know|certain|perceive)\w*\b",
+    r"\b(experiential|experimental\s+religion|inward\s+religion)\b",
+    r"\b(assurance\s+of\s+faith|witness\s+of\s+the\s+spirit|testimony\s+of\s+the\s+spirit)\b",
     r"\b(I\s+felt|my\s+heart|my\s+soul)\b",
     # pneumatology
     r"\b(holy\s+ghost|holy\s+spirit|spirit\s+of\s+god)\b",
@@ -494,6 +494,100 @@ def score_rhetorical_style(text: str) -> DimensionResult:
     return DimensionResult(score, markers, explanation)
 
 
+# ── Calvinist Penalty Detection ──────────────────────────────────────────
+# Wesley explicitly opposed these doctrines. Their presence indicates
+# a non-Wesleyan (typically Reformed/Calvinist) theological framework.
+
+CALVINIST_PHRASES = [
+    "unconditional election", "limited atonement", "irresistible grace",
+    "total depravity", "perseverance of the saints", "tulip",
+    "God's eternal decree", "God's decrees", "divine decree",
+    "double predestination", "decree of reprobation",
+    "effectual calling", "particular redemption",
+    "sovereign grace", "sovereign election",
+    "predestinated",
+    "chosen before the foundation", "elected before",
+    "unconditional covenant", "limited redemption",
+    "cannot fall from grace", "once saved always saved",
+    "eternal security", "monergism",
+    "Westminster Confession", "Canons of Dort", "five points",
+    "God's sovereign will", "God's sovereign purpose",
+    "decreed before", "ordained before",
+]
+
+CALVINIST_PATTERNS = [
+    r"\b(predestina)\w*\b",
+    r"\b(calvinis|reformed\s+theolog)\w*\b",
+    r"\bgod'?s?\s+(eternal\s+)?decree\w*\b",
+    r"\b(unconditional\s+election|limited\s+atonement|irresistible\s+grace)\b",
+    r"\b(total\s+depravity|perseverance\s+of\s+the\s+saints)\b",
+    r"\bthe\s+elect\b",
+    r"\b(effectual\s+call|particular\s+redemption)\b",
+    r"\b(reprobation\s+of\s+the|decree\s+of\s+reprobation)\b",  # only Calvinist-specific reprobation
+    r"\b(monergis)\w*\b",
+]
+
+
+def detect_calvinist_markers(text: str) -> dict:
+    """Detect Calvinist theological markers that are anti-Wesleyan.
+
+    Returns:
+        {"count": int, "density": float, "markers": list, "penalty": int}
+    """
+    phrase_markers = _find_phrases(text, CALVINIST_PHRASES)
+    pattern_count, pattern_markers = _count_pattern_matches(text, CALVINIST_PATTERNS)
+
+    # Detect refutation context: Wesley often mentions Calvinist terms
+    # extensively when arguing AGAINST them. If the text also contains
+    # strong Wesleyan/Arminian counter-markers, reduce or cancel the penalty.
+    # Refutation markers: distinctly Wesleyan/Arminian soteriological phrases
+    # that indicate the author is ARGUING AGAINST Calvinism, not just
+    # discussing philosophical free will (which Calvinists also affirm).
+    REFUTATION_PHRASES = re.compile(
+        r"(horrible\s+decree|"
+        r"died\s+for\s+all|for\s+all\s+mankind|tasted\s+death\s+for\s+every|"
+        r"whosoever\s+will|whosoever\s+believeth|"
+        r"universal\s+redemption|unlimited\s+atonement|"
+        r"free\s+grace|prevenient\s+grace|preventing\s+grace|"
+        r"all\s+men\s+may\s+be\s+saved|salvation\s+for\s+all|"
+        r"not\s+irresistible|resistible\s+grace|"
+        r"entire\s+sanctification|christian\s+perfection|perfect\s+love)",
+        re.IGNORECASE
+    )
+    refutation_count = len(REFUTATION_PHRASES.findall(text))
+    # Each refutation marker cancels ~3 raw Calvinist hits
+    refutation_offset = refutation_count * 3
+
+    word_count = max(len(text.split()), 1)
+    raw = max(0, len(phrase_markers) * 3 + pattern_count - refutation_offset)
+    density = raw / max(word_count / 100, 1)
+
+    # Penalty scales: a few mentions = small penalty, pervasive = large
+    # 1-2 raw hits: -5, 3-5: -10, 6-10: -15, 11-20: -20, 20+: -25
+    if raw == 0:
+        penalty = 0
+    elif raw <= 2:
+        penalty = 5
+    elif raw <= 5:
+        penalty = 10
+    elif raw <= 10:
+        penalty = 15
+    elif raw <= 20:
+        penalty = 20
+    else:
+        penalty = 25
+
+    markers = [{"text": m["text"], "type": "calvinist-phrase"} for m in phrase_markers]
+    markers += [{"text": m["text"], "type": "calvinist-pattern"} for m in pattern_markers[:10]]
+
+    return {
+        "count": raw,
+        "density": round(density, 2),
+        "markers": markers,
+        "penalty": penalty,
+    }
+
+
 # ── Public API ───────────────────────────────────────────────────────────
 
 ALL_DIMENSIONS = [
@@ -504,7 +598,6 @@ ALL_DIMENSIONS = [
     ("catholic_spirit", "Catholic Spirit", score_catholic_spirit),
     ("social_holiness", "Social Holiness", score_social_holiness),
     ("wesleyan_vocabulary", "Wesleyan Vocabulary", score_wesleyan_vocabulary),
-    ("rhetorical_style", "Rhetorical Style", score_rhetorical_style),
 ]
 
 
