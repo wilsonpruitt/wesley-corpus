@@ -74,6 +74,36 @@
     <div id="swi-themes"></div>
   </div>
 
+  <!-- Feedback Form -->
+  <div class="card" id="swi-feedback-card">
+    <h3>Score Surprising?</h3>
+    <p class="swi-feedback-prompt">Help us calibrate — let us know if this score seems off.</p>
+    <div class="swi-feedback-form">
+      <div class="swi-feedback-row">
+        <label>This score seems:</label>
+        <div class="swi-feedback-options">
+          <button class="btn btn-sm" data-expected="too-high" onclick="selectExpected(this)">Too High</button>
+          <button class="btn btn-sm" data-expected="about-right" onclick="selectExpected(this)">About Right</button>
+          <button class="btn btn-sm" data-expected="too-low" onclick="selectExpected(this)">Too Low</button>
+        </div>
+      </div>
+      <div class="swi-feedback-row">
+        <label for="fb-expected-score">What score would you expect? (0-100, optional)</label>
+        <input type="number" id="fb-expected-score" min="0" max="100" placeholder="e.g. 30">
+      </div>
+      <div class="swi-feedback-row">
+        <label for="fb-author">Text tradition/author (optional)</label>
+        <input type="text" id="fb-author" placeholder="e.g. Calvinist sermon, Methodist hymn, secular essay">
+      </div>
+      <div class="swi-feedback-row">
+        <label for="fb-comment">Comment (optional)</label>
+        <textarea id="fb-comment" rows="2" placeholder="Any details about why the score seems off..."></textarea>
+      </div>
+      <button class="btn" id="fb-submit" onclick="submitFeedback()">Send Feedback</button>
+      <span id="fb-status" class="swi-feedback-status"></span>
+    </div>
+  </div>
+
 </div>
 
 <!-- Compare Results -->

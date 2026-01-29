@@ -407,10 +407,10 @@ def main():
         args.command = "generate"
 
     if args.command == "generate":
-        backend = args.backend
-        passages_file = args.passages
-        output_file = args.output
-        dry_run = args.dry_run
+        backend = getattr(args, "backend", "local")
+        passages_file = getattr(args, "passages", "chunked/passages.jsonl")
+        output_file = getattr(args, "output", "embeddings/passage_embeddings.npz")
+        dry_run = getattr(args, "dry_run", False)
 
         # Check dependencies
         if not check_dependencies(backend):

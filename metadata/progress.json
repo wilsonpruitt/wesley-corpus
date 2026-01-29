@@ -13,7 +13,7 @@
       "target": 1
     },
     "letters": {
-      "have": 1,
+      "have": 2,
       "target": 2000
     },
     "hymns": {
@@ -32,6 +32,6 @@
     "ui_live": false,
     "calibrated": false
   },
-  "total_passages": 6822,
+  "total_passages": 6823,
   "last_updated": "2026-01-29"
 }

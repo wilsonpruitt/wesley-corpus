@@ -1,6 +1,8 @@
 /* StrangelyWarmIndex — Frontend */
 
 let radarChart = null;
+let lastScoreResult = null;
+let selectedExpected = null;
 
 async function scoreText() {
   const text = document.getElementById('swi-text').value.trim();
@@ -17,6 +19,8 @@ async function scoreText() {
     });
     if (!resp.ok) throw new Error(await resp.text());
     const data = await resp.json();
+    lastScoreResult = data;
+    lastScoreResult._inputText = text;
     renderResults(data);
   } catch (e) {
     alert('Error scoring text: ' + e.message);
@@ -64,6 +68,13 @@ function showLoading(show) {
 function hideResults() {
   document.getElementById('swi-results').style.display = 'none';
   document.getElementById('swi-compare-results').style.display = 'none';
+  // Reset feedback form
+  selectedExpected = null;
+  const fbSubmit = document.getElementById('fb-submit');
+  if (fbSubmit) fbSubmit.disabled = false;
+  const fbStatus = document.getElementById('fb-status');
+  if (fbStatus) fbStatus.textContent = '';
+  document.querySelectorAll('.swi-feedback-options button').forEach(b => b.classList.remove('btn-active'));
 }
 
 function renderResults(data) {
@@ -198,6 +209,42 @@ function renderThemes(themes) {
       <div class="swi-dim-score">${score}</div>
     `;
     container.appendChild(row);
+  }
+}
+
+function selectExpected(btn) {
+  selectedExpected = btn.dataset.expected;
+  btn.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('btn-active'));
+  btn.classList.add('btn-active');
+}
+
+async function submitFeedback() {
+  if (!selectedExpected) return alert('Please select whether the score seems too high, about right, or too low.');
+  if (!lastScoreResult) return;
+
+  const body = {
+    text_snippet: (lastScoreResult._inputText || '').slice(0, 500),
+    overall_score: lastScoreResult.overall_score,
+    expected: selectedExpected,
+    expected_score: parseInt(document.getElementById('fb-expected-score').value) || null,
+    comment: document.getElementById('fb-comment').value.trim(),
+    author: document.getElementById('fb-author').value.trim(),
+  };
+
+  const status = document.getElementById('fb-status');
+  try {
+    const resp = await fetch('/api/swi/feedback', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(body),
+    });
+    if (!resp.ok) throw new Error(await resp.text());
+    status.textContent = 'Thanks! Feedback submitted.';
+    status.className = 'swi-feedback-status status-ok';
+    document.getElementById('fb-submit').disabled = true;
+  } catch (e) {
+    status.textContent = 'Error: ' + e.message;
+    status.className = 'swi-feedback-status status-err';
   }
 }
 

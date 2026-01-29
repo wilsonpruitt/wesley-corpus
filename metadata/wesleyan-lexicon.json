@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "passage_count": 4871,
-    "built_at": "2026-01-29T10:30:13.236717",
+    "passage_count": 6823,
+    "built_at": "2026-01-29T14:26:59.248017",
     "min_df": 3,
     "top_n": 300
   },
@@ -102,1158 +102,1166 @@
   "distinctive_terms": {
     "grace-theology": [
       {
-        "term": "holiness",
-        "count": 512,
-        "wesley_freq": 0.00010988,
-        "ref_freq": 7.2e-07,
-        "distinctiveness": 7.2585
+        "term": "sanctification",
+        "count": 154,
+        "wesley_freq": 2.35e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.3554
       },
       {
-        "term": "sanctification",
-        "count": 98,
-        "wesley_freq": 2.103e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 7.1951
+        "term": "holiness",
+        "count": 658,
+        "wesley_freq": 0.00010043,
+        "ref_freq": 7.2e-07,
+        "distinctiveness": 7.1287
       },
       {
         "term": "holiness and",
-        "count": 81,
-        "wesley_freq": 1.738e-05,
+        "count": 104,
+        "wesley_freq": 1.587e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 6.9202
-      },
-      {
-        "term": "of holiness",
-        "count": 81,
-        "wesley_freq": 1.738e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 6.9202
+        "distinctiveness": 6.7891
       },
       {
         "term": "pardoning",
-        "count": 76,
-        "wesley_freq": 1.631e-05,
+        "count": 100,
+        "wesley_freq": 1.526e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 6.8283
+        "distinctiveness": 6.7325
       },
       {
-        "term": "perfect love",
-        "count": 72,
-        "wesley_freq": 1.545e-05,
+        "term": "of holiness",
+        "count": 96,
+        "wesley_freq": 1.465e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 6.7503
+        "distinctiveness": 6.6736
+      },
+      {
+        "term": "ing",
+        "count": 91,
+        "wesley_freq": 1.389e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 6.5964
       }
     ],
-    "scriptural-density": [],
+    "scriptural-density": [
+      {
+        "term": "of scripture",
+        "count": 91,
+        "wesley_freq": 1.389e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 6.5964
+      }
+    ],
     "holiness-emphasis": [
       {
         "term": "hath",
-        "count": 1337,
-        "wesley_freq": 0.00028694,
+        "count": 1721,
+        "wesley_freq": 0.00026267,
         "ref_freq": 1e-06,
-        "distinctiveness": 8.1578
-      },
-      {
-        "term": "he hath",
-        "count": 348,
-        "wesley_freq": 7.469e-05,
-        "ref_freq": 4.3e-07,
-        "distinctiveness": 7.4384
+        "distinctiveness": 8.0303
       },
       {
         "term": "in prayer",
-        "count": 75,
-        "wesley_freq": 1.61e-05,
+        "count": 171,
+        "wesley_freq": 2.61e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 6.8092
+        "distinctiveness": 7.5065
+      },
+      {
+        "term": "he hath",
+        "count": 442,
+        "wesley_freq": 6.746e-05,
+        "ref_freq": 4.3e-07,
+        "distinctiveness": 7.2916
+      },
+      {
+        "term": "the ordinances",
+        "count": 102,
+        "wesley_freq": 1.557e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 6.7611
       },
       {
         "term": "fasting",
-        "count": 75,
-        "wesley_freq": 1.61e-05,
+        "count": 100,
+        "wesley_freq": 1.526e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 6.8092
+        "distinctiveness": 6.7325
       }
     ],
     "experiential-religion": [
       {
         "term": "holy ghost",
-        "count": 383,
-        "wesley_freq": 8.22e-05,
+        "count": 489,
+        "wesley_freq": 7.463e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 9.1616
+        "distinctiveness": 9.0223
       },
       {
         "term": "the holy ghost",
-        "count": 314,
-        "wesley_freq": 6.739e-05,
+        "count": 417,
+        "wesley_freq": 6.365e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 8.875
-      },
-      {
-        "term": "mon",
-        "count": 294,
-        "wesley_freq": 6.31e-05,
-        "ref_freq": 4.3e-07,
-        "distinctiveness": 7.1951
+        "distinctiveness": 8.7925
       }
     ],
     "catholic-spirit": [],
     "social-holiness": [],
     "wesleyan-vocabulary": [
       {
-        "term": "i preached",
-        "count": 638,
-        "wesley_freq": 0.00013692,
+        "term": "the grace",
+        "count": 430,
+        "wesley_freq": 6.563e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 9.8978
-      },
-      {
-        "term": "epistle",
-        "count": 536,
-        "wesley_freq": 0.00011503,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 9.6465
-      },
-      {
-        "term": "preached at",
-        "count": 488,
-        "wesley_freq": 0.00010473,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 9.5111
+        "distinctiveness": 8.8368
       },
       {
         "term": "all thy",
-        "count": 373,
-        "wesley_freq": 8.005e-05,
+        "count": 389,
+        "wesley_freq": 5.937e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 9.1234
+        "distinctiveness": 8.6923
       },
       {
         "term": "in thy",
-        "count": 353,
-        "wesley_freq": 7.576e-05,
+        "count": 368,
+        "wesley_freq": 5.617e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 9.0439
-      },
-      {
-        "term": "the apostle",
-        "count": 960,
-        "wesley_freq": 0.00020603,
-        "ref_freq": 4.3e-07,
-        "distinctiveness": 8.9023
-      },
-      {
-        "term": "the grace",
-        "count": 315,
-        "wesley_freq": 6.76e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 8.8796
-      },
-      {
-        "term": "i preached at",
-        "count": 290,
-        "wesley_freq": 6.224e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 8.7603
-      },
-      {
-        "term": "doth",
-        "count": 286,
-        "wesley_freq": 6.138e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 8.7403
+        "distinctiveness": 8.6122
       },
       {
         "term": "shalt",
-        "count": 281,
-        "wesley_freq": 6.031e-05,
+        "count": 330,
+        "wesley_freq": 5.037e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 8.7148
+        "distinctiveness": 8.455
       },
       {
-        "term": "thyself",
-        "count": 279,
-        "wesley_freq": 5.988e-05,
+        "term": "doth",
+        "count": 323,
+        "wesley_freq": 4.93e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 8.7045
-      },
-      {
-        "term": "the epistle",
-        "count": 239,
-        "wesley_freq": 5.129e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 8.4813
-      },
-      {
-        "term": "redeemer",
-        "count": 234,
-        "wesley_freq": 5.022e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 8.4507
-      },
-      {
-        "term": "thou shalt",
-        "count": 229,
-        "wesley_freq": 4.915e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 8.4196
-      },
-      {
-        "term": "god but",
-        "count": 212,
-        "wesley_freq": 4.55e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 8.3083
-      },
-      {
-        "term": "thy",
-        "count": 5225,
-        "wesley_freq": 0.00112136,
-        "ref_freq": 3.59e-06,
-        "distinctiveness": 8.2877
-      },
-      {
-        "term": "apostle",
-        "count": 1044,
-        "wesley_freq": 0.00022406,
-        "ref_freq": 7.2e-07,
-        "distinctiveness": 8.2864
-      },
-      {
-        "term": "neighbour",
-        "count": 203,
-        "wesley_freq": 4.357e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 8.2457
-      },
-      {
-        "term": "that ye",
-        "count": 201,
-        "wesley_freq": 4.314e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 8.2314
+        "distinctiveness": 8.424
       },
       {
         "term": "the grace of",
-        "count": 197,
-        "wesley_freq": 4.228e-05,
+        "count": 305,
+        "wesley_freq": 4.655e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 8.2024
+        "distinctiveness": 8.3413
       },
       {
-        "term": "thine",
-        "count": 570,
-        "wesley_freq": 0.00012233,
-        "ref_freq": 4.3e-07,
-        "distinctiveness": 8.1502
-      },
-      {
-        "term": "to thy",
-        "count": 189,
-        "wesley_freq": 4.056e-05,
+        "term": "thyself",
+        "count": 299,
+        "wesley_freq": 4.564e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 8.1426
-      },
-      {
-        "term": "tues",
-        "count": 185,
-        "wesley_freq": 3.97e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 8.1118
+        "distinctiveness": 8.3126
       },
       {
         "term": "grace of god",
-        "count": 183,
-        "wesley_freq": 3.927e-05,
+        "count": 286,
+        "wesley_freq": 4.365e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 8.0961
+        "distinctiveness": 8.2485
       },
       {
-        "term": "thy name",
-        "count": 181,
-        "wesley_freq": 3.885e-05,
+        "term": "neighbour",
+        "count": 274,
+        "wesley_freq": 4.182e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 8.0802
+        "distinctiveness": 8.1867
       },
       {
-        "term": "fri",
-        "count": 181,
-        "wesley_freq": 3.885e-05,
+        "term": "redeemer",
+        "count": 273,
+        "wesley_freq": 4.167e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 8.0802
+        "distinctiveness": 8.1814
       },
       {
-        "term": "thy love",
-        "count": 179,
-        "wesley_freq": 3.842e-05,
+        "term": "thou shalt",
+        "count": 265,
+        "wesley_freq": 4.045e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 8.0642
+        "distinctiveness": 8.1385
       },
       {
-        "term": "st paul",
-        "count": 178,
-        "wesley_freq": 3.82e-05,
+        "term": "that ye",
+        "count": 227,
+        "wesley_freq": 3.465e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 8.0561
+        "distinctiveness": 7.9152
       },
       {
-        "term": "thur",
-        "count": 175,
-        "wesley_freq": 3.756e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 8.0316
-      },
-      {
-        "term": "mon i",
-        "count": 174,
-        "wesley_freq": 3.734e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 8.0233
+        "term": "thy",
+        "count": 5575,
+        "wesley_freq": 0.00085089,
+        "ref_freq": 3.59e-06,
+        "distinctiveness": 7.8895
       },
       {
         "term": "heathens",
-        "count": 171,
-        "wesley_freq": 3.67e-05,
+        "count": 212,
+        "wesley_freq": 3.236e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 7.9982
+        "distinctiveness": 7.8166
       },
       {
-        "term": "of the apostle",
-        "count": 168,
-        "wesley_freq": 3.606e-05,
+        "term": "thine",
+        "count": 613,
+        "wesley_freq": 9.356e-05,
+        "ref_freq": 4.3e-07,
+        "distinctiveness": 7.7634
+      },
+      {
+        "term": "to thy",
+        "count": 199,
+        "wesley_freq": 3.037e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 7.9727
+        "distinctiveness": 7.7253
+      },
+      {
+        "term": "kingswood",
+        "count": 197,
+        "wesley_freq": 3.007e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.7107
       },
       {
         "term": "ye are",
-        "count": 161,
-        "wesley_freq": 3.455e-05,
+        "count": 194,
+        "wesley_freq": 2.961e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 7.9113
+        "distinctiveness": 7.6886
       },
       {
-        "term": "yea and",
-        "count": 160,
-        "wesley_freq": 3.434e-05,
+        "term": "needful",
+        "count": 193,
+        "wesley_freq": 2.946e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 7.9023
+        "distinctiveness": 7.6811
+      },
+      {
+        "term": "thy name",
+        "count": 191,
+        "wesley_freq": 2.915e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.6661
+      },
+      {
+        "term": "thy love",
+        "count": 182,
+        "wesley_freq": 2.778e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.5964
+      },
+      {
+        "term": "of god that",
+        "count": 181,
+        "wesley_freq": 2.763e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.5885
+      },
+      {
+        "term": "ye have",
+        "count": 180,
+        "wesley_freq": 2.747e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.5805
+      },
+      {
+        "term": "meekness",
+        "count": 179,
+        "wesley_freq": 2.732e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.5725
+      },
+      {
+        "term": "offence",
+        "count": 175,
+        "wesley_freq": 2.671e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.5399
+      },
+      {
+        "term": "the righteousness",
+        "count": 174,
+        "wesley_freq": 2.656e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.5316
+      },
+      {
+        "term": "that thou",
+        "count": 168,
+        "wesley_freq": 2.564e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.481
+      },
+      {
+        "term": "desired to",
+        "count": 168,
+        "wesley_freq": 2.564e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.481
+      },
+      {
+        "term": "hast",
+        "count": 503,
+        "wesley_freq": 7.677e-05,
+        "ref_freq": 4.3e-07,
+        "distinctiveness": 7.4781
+      },
+      {
+        "term": "of thy",
+        "count": 499,
+        "wesley_freq": 7.616e-05,
+        "ref_freq": 4.3e-07,
+        "distinctiveness": 7.4666
+      },
+      {
+        "term": "of god but",
+        "count": 164,
+        "wesley_freq": 2.503e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.4462
+      },
+      {
+        "term": "upon earth",
+        "count": 164,
+        "wesley_freq": 2.503e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.4462
+      },
+      {
+        "term": "it it",
+        "count": 162,
+        "wesley_freq": 2.473e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.4285
       },
       {
         "term": "the'",
-        "count": 158,
-        "wesley_freq": 3.391e-05,
+        "count": 162,
+        "wesley_freq": 2.473e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 7.8842
+        "distinctiveness": 7.4285
       },
       {
-        "term": "i preached in",
-        "count": 158,
-        "wesley_freq": 3.391e-05,
+        "term": "the afternoon i",
+        "count": 160,
+        "wesley_freq": 2.442e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 7.8842
+        "distinctiveness": 7.4106
+      },
+      {
+        "term": "thy heart",
+        "count": 158,
+        "wesley_freq": 2.411e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.3924
+      },
+      {
+        "term": "preached",
+        "count": 2655,
+        "wesley_freq": 0.00040522,
+        "ref_freq": 2.44e-06,
+        "distinctiveness": 7.3757
+      },
+      {
+        "term": "god by",
+        "count": 156,
+        "wesley_freq": 2.381e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.374
+      },
+      {
+        "term": "iniquity",
+        "count": 156,
+        "wesley_freq": 2.381e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.374
+      },
+      {
+        "term": "preached on",
+        "count": 156,
+        "wesley_freq": 2.381e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.374
+      },
+      {
+        "term": "fulness",
+        "count": 155,
+        "wesley_freq": 2.366e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.3648
+      },
+      {
+        "term": "commandments",
+        "count": 155,
+        "wesley_freq": 2.366e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.3648
+      },
+      {
+        "term": "our sins",
+        "count": 155,
+        "wesley_freq": 2.366e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.3648
+      },
+      {
+        "term": "righteousness of",
+        "count": 155,
+        "wesley_freq": 2.366e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.3648
       },
       {
         "term": "this epistle",
         "count": 155,
-        "wesley_freq": 3.327e-05,
+        "wesley_freq": 2.366e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 7.8565
+        "distinctiveness": 7.3648
       },
       {
-        "term": "i rode to",
-        "count": 153,
-        "wesley_freq": 3.284e-05,
+        "term": "if thou",
+        "count": 154,
+        "wesley_freq": 2.35e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 7.8378
+        "distinctiveness": 7.3554
       },
       {
-        "term": "of thy",
-        "count": 457,
-        "wesley_freq": 9.808e-05,
+        "term": "rejoice",
+        "count": 456,
+        "wesley_freq": 6.96e-05,
         "ref_freq": 4.3e-07,
-        "distinctiveness": 7.8315
+        "distinctiveness": 7.3366
+      },
+      {
+        "term": "and earth",
+        "count": 152,
+        "wesley_freq": 2.32e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.3366
+      },
+      {
+        "term": "after preaching",
+        "count": 152,
+        "wesley_freq": 2.32e-05,
+        "ref_freq": 1.4e-07,
+        "distinctiveness": 7.3366
       },
       {
         "term": "word here",
         "count": 150,
-        "wesley_freq": 3.219e-05,
+        "wesley_freq": 2.289e-05,
         "ref_freq": 1.4e-07,
-        "distinctiveness": 7.8092
-      },
-      {
-        "term": "the righteousness",
-        "count": 150,
-        "wesley_freq": 3.219e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 7.8092
-      },
-      {
-        "term": "works vol",
-        "count": 148,
-        "wesley_freq": 3.176e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 7.7898
-      },
-      {
-        "term": "needful",
-        "count": 147,
-        "wesley_freq": 3.155e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 7.7801
-      },
-      {
-        "term": "the redeemer",
-        "count": 147,
-        "wesley_freq": 3.155e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 7.7801
-      },
-      {
-        "term": "journal i",
-        "count": 144,
-        "wesley_freq": 3.09e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 7.7503
-      },
-      {
-        "term": "hast",
-        "count": 429,
-        "wesley_freq": 9.207e-05,
-        "ref_freq": 4.3e-07,
-        "distinctiveness": 7.7403
-      },
-      {
-        "term": "thy heart",
-        "count": 143,
-        "wesley_freq": 3.069e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 7.7403
-      },
-      {
-        "term": "that thou",
-        "count": 143,
-        "wesley_freq": 3.069e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 7.7403
-      },
-      {
-        "term": "of god that",
-        "count": 142,
-        "wesley_freq": 3.048e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 7.7301
-      },
-      {
-        "term": "fome",
-        "count": 142,
-        "wesley_freq": 3.048e-05,
-        "ref_freq": 1.4e-07,
-        "distinctiveness": 7.7301
+        "distinctiveness": 7.3175
       }
     ],
     "rhetorical-style": []
   },
   "top_distinctive": [
     {
-      "term": "i preached",
-      "count": 638,
-      "wesley_freq": 0.00013692,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 9.8978
-    },
-    {
-      "term": "epistle",
-      "count": 536,
-      "wesley_freq": 0.00011503,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 9.6465
-    },
-    {
-      "term": "preached at",
-      "count": 488,
-      "wesley_freq": 0.00010473,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 9.5111
-    },
-    {
       "term": "holy ghost",
-      "count": 383,
-      "wesley_freq": 8.22e-05,
+      "count": 489,
+      "wesley_freq": 7.463e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 9.1616
-    },
-    {
-      "term": "all thy",
-      "count": 373,
-      "wesley_freq": 8.005e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 9.1234
-    },
-    {
-      "term": "in thy",
-      "count": 353,
-      "wesley_freq": 7.576e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 9.0439
-    },
-    {
-      "term": "the apostle",
-      "count": 960,
-      "wesley_freq": 0.00020603,
-      "ref_freq": 4.3e-07,
-      "distinctiveness": 8.9023
+      "distinctiveness": 9.0223
     },
     {
       "term": "the grace",
-      "count": 315,
-      "wesley_freq": 6.76e-05,
+      "count": 430,
+      "wesley_freq": 6.563e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 8.8796
+      "distinctiveness": 8.8368
     },
     {
       "term": "the holy ghost",
-      "count": 314,
-      "wesley_freq": 6.739e-05,
+      "count": 417,
+      "wesley_freq": 6.365e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 8.875
+      "distinctiveness": 8.7925
     },
     {
-      "term": "i preached at",
-      "count": 290,
-      "wesley_freq": 6.224e-05,
+      "term": "all thy",
+      "count": 389,
+      "wesley_freq": 5.937e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 8.7603
+      "distinctiveness": 8.6923
     },
     {
-      "term": "doth",
-      "count": 286,
-      "wesley_freq": 6.138e-05,
+      "term": "in thy",
+      "count": 368,
+      "wesley_freq": 5.617e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 8.7403
+      "distinctiveness": 8.6122
     },
     {
       "term": "shalt",
-      "count": 281,
-      "wesley_freq": 6.031e-05,
+      "count": 330,
+      "wesley_freq": 5.037e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 8.7148
+      "distinctiveness": 8.455
     },
     {
-      "term": "thyself",
-      "count": 279,
-      "wesley_freq": 5.988e-05,
+      "term": "doth",
+      "count": 323,
+      "wesley_freq": 4.93e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 8.7045
-    },
-    {
-      "term": "the epistle",
-      "count": 239,
-      "wesley_freq": 5.129e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 8.4813
-    },
-    {
-      "term": "redeemer",
-      "count": 234,
-      "wesley_freq": 5.022e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 8.4507
-    },
-    {
-      "term": "thou shalt",
-      "count": 229,
-      "wesley_freq": 4.915e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 8.4196
-    },
-    {
-      "term": "god but",
-      "count": 212,
-      "wesley_freq": 4.55e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 8.3083
-    },
-    {
-      "term": "thy",
-      "count": 5225,
-      "wesley_freq": 0.00112136,
-      "ref_freq": 3.59e-06,
-      "distinctiveness": 8.2877
-    },
-    {
-      "term": "apostle",
-      "count": 1044,
-      "wesley_freq": 0.00022406,
-      "ref_freq": 7.2e-07,
-      "distinctiveness": 8.2864
-    },
-    {
-      "term": "neighbour",
-      "count": 203,
-      "wesley_freq": 4.357e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 8.2457
-    },
-    {
-      "term": "that ye",
-      "count": 201,
-      "wesley_freq": 4.314e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 8.2314
+      "distinctiveness": 8.424
     },
     {
       "term": "the grace of",
-      "count": 197,
-      "wesley_freq": 4.228e-05,
+      "count": 305,
+      "wesley_freq": 4.655e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 8.2024
+      "distinctiveness": 8.3413
     },
     {
-      "term": "hath",
-      "count": 1337,
-      "wesley_freq": 0.00028694,
-      "ref_freq": 1e-06,
-      "distinctiveness": 8.1578
-    },
-    {
-      "term": "thine",
-      "count": 570,
-      "wesley_freq": 0.00012233,
-      "ref_freq": 4.3e-07,
-      "distinctiveness": 8.1502
-    },
-    {
-      "term": "to thy",
-      "count": 189,
-      "wesley_freq": 4.056e-05,
+      "term": "thyself",
+      "count": 299,
+      "wesley_freq": 4.564e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 8.1426
-    },
-    {
-      "term": "tues",
-      "count": 185,
-      "wesley_freq": 3.97e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 8.1118
+      "distinctiveness": 8.3126
     },
     {
       "term": "grace of god",
-      "count": 183,
-      "wesley_freq": 3.927e-05,
+      "count": 286,
+      "wesley_freq": 4.365e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 8.0961
+      "distinctiveness": 8.2485
     },
     {
-      "term": "thy name",
-      "count": 181,
-      "wesley_freq": 3.885e-05,
+      "term": "neighbour",
+      "count": 274,
+      "wesley_freq": 4.182e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 8.0802
+      "distinctiveness": 8.1867
     },
     {
-      "term": "fri",
-      "count": 181,
-      "wesley_freq": 3.885e-05,
+      "term": "redeemer",
+      "count": 273,
+      "wesley_freq": 4.167e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 8.0802
+      "distinctiveness": 8.1814
     },
     {
-      "term": "thy love",
-      "count": 179,
-      "wesley_freq": 3.842e-05,
+      "term": "thou shalt",
+      "count": 265,
+      "wesley_freq": 4.045e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 8.0642
+      "distinctiveness": 8.1385
     },
     {
-      "term": "st paul",
-      "count": 178,
-      "wesley_freq": 3.82e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 8.0561
+      "term": "hath",
+      "count": 1721,
+      "wesley_freq": 0.00026267,
+      "ref_freq": 1e-06,
+      "distinctiveness": 8.0303
     },
     {
-      "term": "thur",
-      "count": 175,
-      "wesley_freq": 3.756e-05,
+      "term": "that ye",
+      "count": 227,
+      "wesley_freq": 3.465e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 8.0316
+      "distinctiveness": 7.9152
     },
     {
-      "term": "mon i",
-      "count": 174,
-      "wesley_freq": 3.734e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 8.0233
+      "term": "thy",
+      "count": 5575,
+      "wesley_freq": 0.00085089,
+      "ref_freq": 3.59e-06,
+      "distinctiveness": 7.8895
     },
     {
       "term": "heathens",
-      "count": 171,
-      "wesley_freq": 3.67e-05,
+      "count": 212,
+      "wesley_freq": 3.236e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.9982
+      "distinctiveness": 7.8166
     },
     {
-      "term": "of the apostle",
-      "count": 168,
-      "wesley_freq": 3.606e-05,
+      "term": "thine",
+      "count": 613,
+      "wesley_freq": 9.356e-05,
+      "ref_freq": 4.3e-07,
+      "distinctiveness": 7.7634
+    },
+    {
+      "term": "to thy",
+      "count": 199,
+      "wesley_freq": 3.037e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.9727
+      "distinctiveness": 7.7253
+    },
+    {
+      "term": "kingswood",
+      "count": 197,
+      "wesley_freq": 3.007e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.7107
     },
     {
       "term": "ye are",
-      "count": 161,
-      "wesley_freq": 3.455e-05,
+      "count": 194,
+      "wesley_freq": 2.961e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.9113
+      "distinctiveness": 7.6886
     },
     {
-      "term": "yea and",
-      "count": 160,
-      "wesley_freq": 3.434e-05,
+      "term": "needful",
+      "count": 193,
+      "wesley_freq": 2.946e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.9023
+      "distinctiveness": 7.6811
+    },
+    {
+      "term": "thy name",
+      "count": 191,
+      "wesley_freq": 2.915e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.6661
+    },
+    {
+      "term": "thy love",
+      "count": 182,
+      "wesley_freq": 2.778e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.5964
+    },
+    {
+      "term": "of god that",
+      "count": 181,
+      "wesley_freq": 2.763e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.5885
+    },
+    {
+      "term": "ye have",
+      "count": 180,
+      "wesley_freq": 2.747e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.5805
+    },
+    {
+      "term": "meekness",
+      "count": 179,
+      "wesley_freq": 2.732e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.5725
+    },
+    {
+      "term": "offence",
+      "count": 175,
+      "wesley_freq": 2.671e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.5399
+    },
+    {
+      "term": "the righteousness",
+      "count": 174,
+      "wesley_freq": 2.656e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.5316
+    },
+    {
+      "term": "in prayer",
+      "count": 171,
+      "wesley_freq": 2.61e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.5065
+    },
+    {
+      "term": "that thou",
+      "count": 168,
+      "wesley_freq": 2.564e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.481
+    },
+    {
+      "term": "desired to",
+      "count": 168,
+      "wesley_freq": 2.564e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.481
+    },
+    {
+      "term": "hast",
+      "count": 503,
+      "wesley_freq": 7.677e-05,
+      "ref_freq": 4.3e-07,
+      "distinctiveness": 7.4781
+    },
+    {
+      "term": "of thy",
+      "count": 499,
+      "wesley_freq": 7.616e-05,
+      "ref_freq": 4.3e-07,
+      "distinctiveness": 7.4666
+    },
+    {
+      "term": "of god but",
+      "count": 164,
+      "wesley_freq": 2.503e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.4462
+    },
+    {
+      "term": "upon earth",
+      "count": 164,
+      "wesley_freq": 2.503e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.4462
+    },
+    {
+      "term": "it it",
+      "count": 162,
+      "wesley_freq": 2.473e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.4285
     },
     {
       "term": "the'",
-      "count": 158,
-      "wesley_freq": 3.391e-05,
+      "count": 162,
+      "wesley_freq": 2.473e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.8842
+      "distinctiveness": 7.4285
     },
     {
-      "term": "i preached in",
-      "count": 158,
-      "wesley_freq": 3.391e-05,
+      "term": "the afternoon i",
+      "count": 160,
+      "wesley_freq": 2.442e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.8842
+      "distinctiveness": 7.4106
+    },
+    {
+      "term": "thy heart",
+      "count": 158,
+      "wesley_freq": 2.411e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.3924
+    },
+    {
+      "term": "preached",
+      "count": 2655,
+      "wesley_freq": 0.00040522,
+      "ref_freq": 2.44e-06,
+      "distinctiveness": 7.3757
+    },
+    {
+      "term": "god by",
+      "count": 156,
+      "wesley_freq": 2.381e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.374
+    },
+    {
+      "term": "iniquity",
+      "count": 156,
+      "wesley_freq": 2.381e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.374
+    },
+    {
+      "term": "preached on",
+      "count": 156,
+      "wesley_freq": 2.381e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.374
+    },
+    {
+      "term": "fulness",
+      "count": 155,
+      "wesley_freq": 2.366e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.3648
+    },
+    {
+      "term": "commandments",
+      "count": 155,
+      "wesley_freq": 2.366e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.3648
+    },
+    {
+      "term": "our sins",
+      "count": 155,
+      "wesley_freq": 2.366e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.3648
+    },
+    {
+      "term": "righteousness of",
+      "count": 155,
+      "wesley_freq": 2.366e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.3648
     },
     {
       "term": "this epistle",
       "count": 155,
-      "wesley_freq": 3.327e-05,
+      "wesley_freq": 2.366e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.8565
+      "distinctiveness": 7.3648
     },
     {
-      "term": "i rode to",
-      "count": 153,
-      "wesley_freq": 3.284e-05,
+      "term": "if thou",
+      "count": 154,
+      "wesley_freq": 2.35e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.8378
+      "distinctiveness": 7.3554
     },
     {
-      "term": "of thy",
-      "count": 457,
-      "wesley_freq": 9.808e-05,
+      "term": "sanctification",
+      "count": 154,
+      "wesley_freq": 2.35e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.3554
+    },
+    {
+      "term": "rejoice",
+      "count": 456,
+      "wesley_freq": 6.96e-05,
       "ref_freq": 4.3e-07,
-      "distinctiveness": 7.8315
+      "distinctiveness": 7.3366
+    },
+    {
+      "term": "and earth",
+      "count": 152,
+      "wesley_freq": 2.32e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.3366
+    },
+    {
+      "term": "after preaching",
+      "count": 152,
+      "wesley_freq": 2.32e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.3366
     },
     {
       "term": "word here",
       "count": 150,
-      "wesley_freq": 3.219e-05,
+      "wesley_freq": 2.289e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.8092
+      "distinctiveness": 7.3175
     },
     {
-      "term": "the righteousness",
+      "term": "supposition",
       "count": 150,
-      "wesley_freq": 3.219e-05,
+      "wesley_freq": 2.289e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.8092
+      "distinctiveness": 7.3175
+    },
+    {
+      "term": "the redeemer",
+      "count": 149,
+      "wesley_freq": 2.274e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.3078
+    },
+    {
+      "term": "worketh",
+      "count": 149,
+      "wesley_freq": 2.274e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.3078
+    },
+    {
+      "term": "with joy",
+      "count": 149,
+      "wesley_freq": 2.274e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.3078
     },
     {
       "term": "works vol",
       "count": 148,
-      "wesley_freq": 3.176e-05,
+      "wesley_freq": 2.259e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.7898
+      "distinctiveness": 7.2981
     },
     {
-      "term": "needful",
-      "count": 147,
-      "wesley_freq": 3.155e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.7801
-    },
-    {
-      "term": "the redeemer",
-      "count": 147,
-      "wesley_freq": 3.155e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.7801
-    },
-    {
-      "term": "journal i",
-      "count": 144,
-      "wesley_freq": 3.09e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.7503
-    },
-    {
-      "term": "hast",
-      "count": 429,
-      "wesley_freq": 9.207e-05,
+      "term": "he hath",
+      "count": 442,
+      "wesley_freq": 6.746e-05,
       "ref_freq": 4.3e-07,
-      "distinctiveness": 7.7403
+      "distinctiveness": 7.2916
     },
     {
-      "term": "thy heart",
-      "count": 143,
-      "wesley_freq": 3.069e-05,
+      "term": "i the",
+      "count": 147,
+      "wesley_freq": 2.244e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.7403
+      "distinctiveness": 7.2883
     },
     {
-      "term": "that thou",
-      "count": 143,
-      "wesley_freq": 3.069e-05,
+      "term": "o lord",
+      "count": 146,
+      "wesley_freq": 2.228e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.7403
+      "distinctiveness": 7.2785
     },
     {
-      "term": "of god that",
+      "term": "unholy",
+      "count": 146,
+      "wesley_freq": 2.228e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.2785
+    },
+    {
+      "term": "righteousness and",
       "count": 142,
-      "wesley_freq": 3.048e-05,
+      "wesley_freq": 2.167e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.7301
+      "distinctiveness": 7.2384
     },
     {
       "term": "fome",
       "count": 142,
-      "wesley_freq": 3.048e-05,
+      "wesley_freq": 2.167e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.7301
+      "distinctiveness": 7.2384
     },
     {
-      "term": "o that",
-      "count": 141,
-      "wesley_freq": 3.026e-05,
+      "term": "the gentiles",
+      "count": 142,
+      "wesley_freq": 2.167e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.7199
+      "distinctiveness": 7.2384
     },
     {
-      "term": "preached in the",
+      "term": "the things of",
       "count": 141,
-      "wesley_freq": 3.026e-05,
+      "wesley_freq": 2.152e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.7199
+      "distinctiveness": 7.2282
+    },
+    {
+      "term": "aug",
+      "count": 141,
+      "wesley_freq": 2.152e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.2282
     },
     {
       "term": "jesu's",
-      "count": 140,
-      "wesley_freq": 3.005e-05,
+      "count": 141,
+      "wesley_freq": 2.152e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.7097
+      "distinctiveness": 7.2282
     },
     {
-      "term": "ye have",
-      "count": 139,
-      "wesley_freq": 2.983e-05,
+      "term": "endeavour to",
+      "count": 140,
+      "wesley_freq": 2.137e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6993
+      "distinctiveness": 7.2179
+    },
+    {
+      "term": "exhortation",
+      "count": 140,
+      "wesley_freq": 2.137e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.2179
+    },
+    {
+      "term": "at st",
+      "count": 140,
+      "wesley_freq": 2.137e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.2179
+    },
+    {
+      "term": "thee and",
+      "count": 139,
+      "wesley_freq": 2.122e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.2076
+    },
+    {
+      "term": "the methodists",
+      "count": 139,
+      "wesley_freq": 2.122e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.2076
+    },
+    {
+      "term": "power of god",
+      "count": 139,
+      "wesley_freq": 2.122e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.2076
+    },
+    {
+      "term": "hinder",
+      "count": 138,
+      "wesley_freq": 2.106e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.1972
+    },
+    {
+      "term": "holy and",
+      "count": 138,
+      "wesley_freq": 2.106e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.1972
     },
     {
       "term": "firft",
       "count": 137,
-      "wesley_freq": 2.94e-05,
+      "wesley_freq": 2.091e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6784
-    },
-    {
-      "term": "iniquity",
-      "count": 137,
-      "wesley_freq": 2.94e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6784
-    },
-    {
-      "term": "the gentiles",
-      "count": 137,
-      "wesley_freq": 2.94e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6784
+      "distinctiveness": 7.1867
     },
     {
       "term": "hymn l",
       "count": 137,
-      "wesley_freq": 2.94e-05,
+      "wesley_freq": 2.091e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6784
+      "distinctiveness": 7.1867
     },
     {
-      "term": "meekness",
-      "count": 135,
-      "wesley_freq": 2.897e-05,
+      "term": "epistle to",
+      "count": 136,
+      "wesley_freq": 2.076e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6572
+      "distinctiveness": 7.1761
+    },
+    {
+      "term": "mercies",
+      "count": 136,
+      "wesley_freq": 2.076e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.1761
+    },
+    {
+      "term": "thy grace",
+      "count": 136,
+      "wesley_freq": 2.076e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.1761
+    },
+    {
+      "term": "on cor",
+      "count": 136,
+      "wesley_freq": 2.076e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.1761
+    },
+    {
+      "term": "men of reason",
+      "count": 135,
+      "wesley_freq": 2.06e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.1655
     },
     {
       "term": "s vol",
       "count": 135,
-      "wesley_freq": 2.897e-05,
+      "wesley_freq": 2.06e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6572
-    },
-    {
-      "term": "on cor",
-      "count": 135,
-      "wesley_freq": 2.897e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6572
+      "distinctiveness": 7.1655
     },
     {
       "term": "hymn 's",
       "count": 135,
-      "wesley_freq": 2.897e-05,
+      "wesley_freq": 2.06e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6572
+      "distinctiveness": 7.1655
     },
     {
       "term": "hymn l m",
       "count": 135,
-      "wesley_freq": 2.897e-05,
+      "wesley_freq": 2.06e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6572
+      "distinctiveness": 7.1655
     },
     {
-      "term": "fulness",
-      "count": 134,
-      "wesley_freq": 2.876e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6465
-    },
-    {
-      "term": "it it",
+      "term": "of mr",
       "count": 133,
-      "wesley_freq": 2.854e-05,
+      "wesley_freq": 2.03e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6357
-    },
-    {
-      "term": "thy grace",
-      "count": 133,
-      "wesley_freq": 2.854e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6357
-    },
-    {
-      "term": "righteousness of",
-      "count": 133,
-      "wesley_freq": 2.854e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6357
+      "distinctiveness": 7.1439
     },
     {
       "term": "' journal",
       "count": 133,
-      "wesley_freq": 2.854e-05,
+      "wesley_freq": 2.03e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6357
+      "distinctiveness": 7.1439
+    },
+    {
+      "term": "on rom",
+      "count": 133,
+      "wesley_freq": 2.03e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.1439
     },
     {
       "term": "h s vol",
       "count": 132,
-      "wesley_freq": 2.833e-05,
+      "wesley_freq": 2.015e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6248
+      "distinctiveness": 7.133
     },
     {
       "term": "marg",
       "count": 132,
-      "wesley_freq": 2.833e-05,
+      "wesley_freq": 2.015e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6248
+      "distinctiveness": 7.133
     },
     {
-      "term": "if thou",
+      "term": "holiness",
+      "count": 658,
+      "wesley_freq": 0.00010043,
+      "ref_freq": 7.2e-07,
+      "distinctiveness": 7.1287
+    },
+    {
+      "term": "do good",
       "count": 131,
-      "wesley_freq": 2.811e-05,
+      "wesley_freq": 1.999e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6138
+      "distinctiveness": 7.1221
+    },
+    {
+      "term": "the wrath",
+      "count": 131,
+      "wesley_freq": 1.999e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.1221
+    },
+    {
+      "term": "col",
+      "count": 131,
+      "wesley_freq": 1.999e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.1221
+    },
+    {
+      "term": "reason and religion",
+      "count": 131,
+      "wesley_freq": 1.999e-05,
+      "ref_freq": 1.4e-07,
+      "distinctiveness": 7.1221
     },
     {
       "term": "w h s",
       "count": 131,
-      "wesley_freq": 2.811e-05,
+      "wesley_freq": 1.999e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6138
-    },
-    {
-      "term": "offence",
-      "count": 130,
-      "wesley_freq": 2.79e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6028
-    },
-    {
-      "term": "i the",
-      "count": 130,
-      "wesley_freq": 2.79e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6028
-    },
-    {
-      "term": "men of reason",
-      "count": 130,
-      "wesley_freq": 2.79e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6028
-    },
-    {
-      "term": "notes on cor",
-      "count": 130,
-      "wesley_freq": 2.79e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.6028
-    },
-    {
-      "term": "worketh",
-      "count": 129,
-      "wesley_freq": 2.769e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.5916
-    },
-    {
-      "term": "our sins",
-      "count": 129,
-      "wesley_freq": 2.769e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.5916
-    },
-    {
-      "term": "reason and religion",
-      "count": 128,
-      "wesley_freq": 2.747e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.5804
+      "distinctiveness": 7.1221
     },
     {
       "term": "with thy",
-      "count": 127,
-      "wesley_freq": 2.726e-05,
+      "count": 130,
+      "wesley_freq": 1.984e-05,
       "ref_freq": 1.4e-07,
-      "distinctiveness": 7.5691
-    },
-    {
-      "term": "on rom",
-      "count": 127,
-      "wesley_freq": 2.726e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.5691
-    },
-    {
-      "term": "muft",
-      "count": 126,
-      "wesley_freq": 2.704e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.5577
-    },
-    {
-      "term": "col",
-      "count": 126,
-      "wesley_freq": 2.704e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.5577
-    },
-    {
-      "term": "holy and",
-      "count": 125,
-      "wesley_freq": 2.683e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.5462
-    },
-    {
-      "term": "of god but",
-      "count": 124,
-      "wesley_freq": 2.661e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.5346
-    },
-    {
-      "term": "thess",
-      "count": 124,
-      "wesley_freq": 2.661e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.5346
-    },
-    {
-      "term": "journal in",
-      "count": 123,
-      "wesley_freq": 2.64e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.5229
-    },
-    {
-      "term": "rejoice",
-      "count": 368,
-      "wesley_freq": 7.898e-05,
-      "ref_freq": 4.3e-07,
-      "distinctiveness": 7.519
-    },
-    {
-      "term": "the word here",
-      "count": 122,
-      "wesley_freq": 2.618e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.5111
-    },
-    {
-      "term": "notes on rom",
-      "count": 122,
-      "wesley_freq": 2.618e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.5111
-    },
-    {
-      "term": "unholy",
-      "count": 121,
-      "wesley_freq": 2.597e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.4992
-    },
-    {
-      "term": "sun i",
-      "count": 121,
-      "wesley_freq": 2.597e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.4992
-    },
-    {
-      "term": "supposition",
-      "count": 120,
-      "wesley_freq": 2.575e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.4873
-    },
-    {
-      "term": "and earth",
-      "count": 119,
-      "wesley_freq": 2.554e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.4752
-    },
-    {
-      "term": "thee and",
-      "count": 119,
-      "wesley_freq": 2.554e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.4752
-    },
-    {
-      "term": "philemon",
-      "count": 119,
-      "wesley_freq": 2.554e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.4752
-    },
-    {
-      "term": "that the apostle",
-      "count": 118,
-      "wesley_freq": 2.532e-05,
-      "ref_freq": 1.4e-07,
-      "distinctiveness": 7.463
+      "distinctiveness": 7.111
     }
   ]
 }

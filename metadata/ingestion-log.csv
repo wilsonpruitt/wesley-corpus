@@ -50,3 +50,4 @@ timestamp,raw_file,source_id,author,source_type,title,year,passages_added,status
 2026-01-29T12:36:13.368397,/Users/wilsonpruitt/Documents/Personal/wesley-corpus/raw/john-wesley/principles-of-a-methodist.txt,jw-principles-of-a-methodist,john-wesley,treatise,Principles Of A Methodist,,19,ingested,
 2026-01-29T12:36:16.155684,/Users/wilsonpruitt/Documents/Personal/wesley-corpus/raw/john-wesley/principles-of-a-methodist-farther-explained.txt,jw-principles-of-a-methodist-farther-explained,john-wesley,treatise,Principles Of A Methodist Farther Explained,,92,ingested,
 2026-01-29T12:36:40.812000,/Users/wilsonpruitt/Documents/Personal/wesley-corpus/raw/john-wesley/journal-vol1-3.txt,jw-journal-vol1-3,john-wesley,journal,Journal Vol1 3,,1253,ingested,
+2026-01-29T14:22:29.955717,/Users/wilsonpruitt/Documents/Personal/wesley-corpus/raw/john-wesley/letter-to-william-wilberforce.txt,jw-letter-to-william-wilberforce,john-wesley,letter,Letter To William Wilberforce,,1,ingested,

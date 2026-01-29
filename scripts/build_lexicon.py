@@ -165,14 +165,29 @@ def compute_tfidf_distinctive(
         "cor", "rom", "vi", "vii", "viii", "ix", "xi", "xii", "xiii", "xiv",
         "xv", "xvi", "chap", "sect", "ibid", "cf", "ed", "p", "pp", "no",
         "viz", "etc", "vs", "obs", "heb", "gal", "eph",
+        # Day abbreviations from journal entries
+        "mon", "tues", "wed", "thur", "fri", "sat", "sun",
+        # Journal metadata fragments
+        "rev", "wesley", "epistle",
     }
     noise_patterns = re.compile(
-        r"^(see notes|see note|comp |vol |chap |sect |part |journal mon|journal sun|journal tue|journal wed|journal thu|journal fri|journal sat|the th )|"
-        r"^[ivxlcdm]+$|"       # pure Roman numerals
-        r"^\d|"                 # starts with digit
-        r"^[a-z]{1,2}$|"       # 1-2 letter words
-        r"thefe|fuch|hght|ght$|thofe|"  # OCR long-s artifacts
-        r"^'s$|^the th$"               # possessive fragment, truncated dates
+        r"^(see notes|see note|comp |vol |chap |sect |part |"
+        r"journal mon|journal sun|journal tue|journal wed|journal thu|journal fri|journal sat|"
+        r"the th |rev j|j wesley|wesley s|"
+        r"mon i|tues i|wed i|thur i|fri i|sat i|sun i|"
+        r"i preached|preached at|preached in|i rode|i rode to|"
+        r"the evening i|in the evening|in the morning|"
+        r"i went to|i came to|i left|i set out|"
+        r"we came to|at eight|at five|at four|at six|at seven|"
+        r"s journal|journal i|and preached|the epistle|of the epistle|"
+        r"st paul|god but|yea and|o that|"
+        r"evening i preached|afternoon i|to mr|of st|"
+        r"the apostle|of the apostle|apostle)"
+        r"|^[ivxlcdm]+$"       # pure Roman numerals
+        r"|^\d"                 # starts with digit
+        r"|^[a-z]{1,2}$"       # 1-2 letter words
+        r"|thefe|fuch|hght|ght$|thofe"  # OCR long-s artifacts
+        r"|^'s$|^the th$"              # possessive fragment, truncated dates
     )
 
     scored = []
