@@ -1,16 +1,17 @@
-/* StrangelyWarmIndex Styles */
+/* StrangelyWarmIndex Styles - Matching History of Methodism */
 
 .swi-hero {
   text-align: center;
   margin: 2rem 0 1.5rem;
 }
 .swi-hero h2 {
-  font-size: 2rem;
-  color: var(--accent);
-  margin-bottom: 0.25rem;
+  font-family: var(--font-display);
+  font-size: 2.25rem;
+  color: var(--color-ink);
+  margin-bottom: 0.5rem;
 }
 .swi-subtitle {
-  color: var(--muted);
+  color: var(--color-slate);
   font-style: italic;
   font-size: 1.1rem;
 }
@@ -22,24 +23,24 @@
 .swi-input-section textarea {
   width: 100%;
   padding: 1rem;
-  font-family: Georgia, serif;
+  font-family: var(--font-display);
   font-size: 1rem;
-  line-height: 1.6;
-  border: 1px solid var(--border);
-  border-radius: 6px;
+  line-height: 1.7;
+  border: 1px solid var(--color-light-gray);
+  border-radius: 8px;
   resize: vertical;
-  background: var(--card-bg);
+  background: var(--color-white);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.swi-input-section textarea:focus {
+  outline: none;
+  border-color: var(--color-forest);
+  box-shadow: 0 0 0 3px var(--color-forest-pale);
 }
 .swi-actions {
   display: flex;
   gap: 0.75rem;
   margin-top: 0.75rem;
-}
-.btn-secondary {
-  background: var(--muted) !important;
-}
-.btn-secondary:hover {
-  background: var(--fg) !important;
 }
 
 /* Compare */
@@ -55,17 +56,22 @@
 .swi-compare-inputs textarea {
   width: 100%;
   padding: 0.75rem;
-  font-family: Georgia, serif;
+  font-family: var(--font-display);
   font-size: 0.95rem;
-  border: 1px solid var(--border);
-  border-radius: 6px;
+  border: 1px solid var(--color-light-gray);
+  border-radius: 8px;
   resize: vertical;
+}
+.swi-compare-inputs textarea:focus {
+  outline: none;
+  border-color: var(--color-forest);
+  box-shadow: 0 0 0 3px var(--color-forest-pale);
 }
 .swi-compare-inputs label {
   display: block;
-  font-weight: bold;
+  font-weight: 600;
   margin-bottom: 0.25rem;
-  color: var(--muted);
+  color: var(--color-slate);
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -78,74 +84,75 @@
 }
 .swi-gauge {
   position: relative;
-  height: 2.5rem;
-  background: #eee;
-  border-radius: 1.25rem;
+  height: 3rem;
+  background: var(--color-light-gray);
+  border-radius: 1.5rem;
   overflow: hidden;
   max-width: 400px;
   margin: 0 auto;
 }
 .swi-gauge-fill {
   height: 100%;
-  border-radius: 1.25rem;
+  border-radius: 1.5rem;
   transition: width 0.8s ease-out;
 }
-.gauge-cool { background: #b0bec5; }
-.gauge-mild { background: #ffcc80; }
-.gauge-warm { background: #ff8a65; }
-.gauge-hot { background: #d84315; }
+.gauge-cool { background: var(--color-mid-gray); }
+.gauge-mild { background: #fbbf24; }
+.gauge-warm { background: #f97316; }
+.gauge-hot { background: var(--color-forest); }
 
 .swi-gauge-score {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: var(--fg);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-ink);
 }
 .swi-gauge-label {
-  margin-top: 0.5rem;
-  font-size: 1.1rem;
+  margin-top: 0.75rem;
+  font-size: 1.15rem;
+  font-family: var(--font-display);
   font-style: italic;
-  color: var(--muted);
+  color: var(--color-forest);
 }
 
 /* Dimension rows */
 .swi-dim-row {
   display: grid;
-  grid-template-columns: 160px 1fr 40px;
-  gap: 0.5rem;
+  grid-template-columns: 160px 1fr 45px;
+  gap: 0.75rem;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem;
 }
 .swi-dim-name {
   font-size: 0.85rem;
-  font-weight: bold;
-  color: var(--fg);
+  font-weight: 600;
+  color: var(--color-ink);
 }
 .swi-dim-bar-bg {
   height: 12px;
-  background: #eee;
+  background: var(--color-light-gray);
   border-radius: 6px;
   overflow: hidden;
 }
 .swi-dim-bar {
   height: 100%;
-  background: var(--accent);
+  background: linear-gradient(90deg, var(--color-forest), var(--color-forest-light));
   border-radius: 6px;
   transition: width 0.6s ease-out;
 }
 .swi-dim-score {
   font-size: 0.85rem;
-  font-weight: bold;
-  color: var(--accent);
+  font-weight: 700;
+  color: var(--color-forest);
   text-align: right;
 }
 .swi-dim-explain {
   grid-column: 1 / -1;
   font-size: 0.8rem;
-  color: var(--muted);
+  color: var(--color-slate);
   margin-bottom: 0.5rem;
 }
 
@@ -153,22 +160,25 @@
 .swi-markers {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.4rem;
+  gap: 0.5rem;
 }
 .swi-marker-tag {
-  padding: 0.25rem 0.6rem;
-  border-radius: 3px;
-  background: var(--bg);
-  border: 1px solid var(--border);
+  padding: 0.35rem 0.75rem;
+  border-radius: 2rem;
+  background: var(--color-forest-pale);
+  border: 1px solid transparent;
   font-size: 0.82rem;
-  color: var(--accent);
+  font-weight: 500;
+  color: var(--color-forest);
   cursor: default;
+  transition: all 0.3s ease;
 }
 .swi-marker-tag:hover {
-  border-color: var(--accent);
+  background: var(--color-forest);
+  color: var(--color-white);
 }
 .swi-no-data {
-  color: var(--muted);
+  color: var(--color-slate);
   font-style: italic;
 }
 
@@ -180,17 +190,21 @@
   margin: 1.5rem 0;
 }
 .swi-compare-col {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  padding: 1.25rem;
+  background: var(--color-white);
+  border: 1px solid var(--color-light-gray);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+.swi-compare-col:hover {
+  box-shadow: 0 8px 25px rgba(30, 41, 59, 0.1);
 }
 .swi-compare-col h3 {
   margin-bottom: 0.75rem;
 }
 .swi-compare-summary {
   font-size: 0.9rem;
-  color: var(--muted);
+  color: var(--color-slate);
   margin-top: 0.75rem;
 }
 
@@ -201,13 +215,13 @@
   align-items: center;
   gap: 1rem;
   margin: 2rem 0;
-  color: var(--muted);
+  color: var(--color-slate);
 }
 .swi-spinner {
-  width: 32px;
-  height: 32px;
-  border: 3px solid var(--border);
-  border-top: 3px solid var(--accent);
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--color-light-gray);
+  border-top: 3px solid var(--color-forest);
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
@@ -227,22 +241,56 @@
     grid-template-columns: 1fr;
   }
   .swi-dim-row {
-    grid-template-columns: 120px 1fr 35px;
+    grid-template-columns: 120px 1fr 40px;
   }
 }
 
 /* Feedback form */
-.swi-feedback-prompt { color: #888; font-size: 0.9rem; margin-bottom: 0.75rem; }
-.swi-feedback-form { display: flex; flex-direction: column; gap: 0.75rem; }
-.swi-feedback-row { display: flex; flex-direction: column; gap: 0.3rem; }
-.swi-feedback-row label { font-size: 0.85rem; font-weight: 600; }
-.swi-feedback-options { display: flex; gap: 0.5rem; }
-.btn-sm { padding: 0.3rem 0.75rem; font-size: 0.85rem; }
-.btn-active { background: var(--accent, #6b3a2a); color: #fff; }
-.swi-feedback-row input, .swi-feedback-row textarea {
-  padding: 0.4rem 0.6rem; border: 1px solid #ccc; border-radius: 4px;
-  font-family: inherit; font-size: 0.9rem;
+.swi-feedback-prompt {
+  color: var(--color-slate);
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
 }
-.swi-feedback-status { font-size: 0.85rem; margin-left: 0.5rem; }
-.status-ok { color: #2a7d2a; }
-.status-err { color: #c44; }
+.swi-feedback-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.swi-feedback-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.swi-feedback-row label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+.swi-feedback-options {
+  display: flex;
+  gap: 0.5rem;
+}
+.btn-active {
+  background: var(--color-forest) !important;
+  color: var(--color-white) !important;
+}
+.swi-feedback-row input,
+.swi-feedback-row textarea {
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--color-light-gray);
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.9rem;
+  transition: border-color 0.3s ease;
+}
+.swi-feedback-row input:focus,
+.swi-feedback-row textarea:focus {
+  outline: none;
+  border-color: var(--color-forest);
+}
+.swi-feedback-status {
+  font-size: 0.85rem;
+  margin-left: 0.5rem;
+}
+.status-ok { color: var(--color-forest); }
+.status-err { color: #dc2626; }
