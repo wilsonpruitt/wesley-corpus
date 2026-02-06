@@ -13,7 +13,10 @@
   <header>
     <div class="container">
       <h1><a href="/">Wesley Corpus</a></h1>
-      <nav>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+      <nav id="nav-menu">
         <a href="https://historyofmethodism.com" class="back-link">&larr; Podcast</a>
         <a href="/search">Search</a>
         <a href="/themes">Themes</a>
@@ -23,6 +26,14 @@
       </nav>
     </div>
   </header>
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      const nav = document.getElementById('nav-menu');
+      const expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !expanded);
+      nav.classList.toggle('nav-open');
+    });
+  </script>
   <main class="container">
     {% block content %}{% endblock %}
   </main>

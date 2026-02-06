@@ -140,6 +140,57 @@ nav a.back-link::after {
     display: none;
 }
 
+/* Hamburger Menu Toggle */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 101;
+}
+
+.hamburger {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--color-ink);
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: var(--color-ink);
+    transition: transform 0.3s ease;
+}
+
+.hamburger::before {
+    top: -7px;
+}
+
+.hamburger::after {
+    top: 7px;
+}
+
+/* Animate to X when open */
+.nav-toggle[aria-expanded="true"] .hamburger {
+    background: transparent;
+}
+
+.nav-toggle[aria-expanded="true"] .hamburger::before {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav-toggle[aria-expanded="true"] .hamburger::after {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
 /* ===================================
    Main Content
    =================================== */
@@ -572,14 +623,36 @@ footer .container {
 
 @media (max-width: 768px) {
     header .container {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.75rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-toggle {
+        display: block;
     }
 
     nav {
-        gap: 1.25rem;
-        flex-wrap: wrap;
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem 0;
+        order: 3;
+    }
+
+    nav.nav-open {
+        display: flex;
+    }
+
+    nav a {
+        padding: 0.75rem 0;
+        border-bottom: 1px solid var(--color-light-gray);
+    }
+
+    nav a:last-child {
+        border-bottom: none;
     }
 
     .stats {
@@ -593,6 +666,6 @@ footer .container {
     }
 
     main.container {
-        padding-top: 7rem;
+        padding-top: 5rem;
     }
 }
