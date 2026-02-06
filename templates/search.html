@@ -37,7 +37,7 @@
 
 {% for p in results %}
 <div class="card">
-  <h3><a href="/passage/{{ p.id }}">{{ p.source_title }}</a></h3>
+  <h3><a href="/passage/{{ p.id }}?q={{ q | urlencode }}">{{ p.source_title }}</a></h3>
   <div class="meta">
     {{ p.author | replace("-", " ") | title }} &middot; {{ p.year }} &middot; {{ p.source_type }}
     {% if p.score is defined %} &middot; score {{ "%.2f" | format(p.score) }}{% endif %}

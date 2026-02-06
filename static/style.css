@@ -460,6 +460,14 @@ p {
     border-left: 4px solid var(--color-forest);
 }
 
+.passage-full .text mark {
+    background: var(--color-forest-pale);
+    color: var(--color-ink);
+    padding: 0.1em 0.2em;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
 .passage-full .meta-table {
     width: 100%;
     border-collapse: collapse;

@@ -35,6 +35,22 @@ app.add_middleware(
 app.mount("/static", StaticFiles(directory=str(BASE / "static")), name="static")
 templates = Jinja2Templates(directory=str(BASE / "templates"))
 
+
+def highlight_terms(text: str, query: str) -> str:
+    """Highlight search terms in text by wrapping them in <mark> tags."""
+    if not query:
+        return text
+    import html
+    text = html.escape(text)
+    for term in query.split():
+        if len(term) >= 2:  # Only highlight terms with 2+ chars
+            pattern = re.compile(re.escape(term), re.IGNORECASE)
+            text = pattern.sub(lambda m: f"<mark>{m.group()}</mark>", text)
+    return text
+
+
+templates.env.filters["highlight"] = highlight_terms
+
 # Mount SWI API router
 from strangely_warm_index.api import router as swi_router
 app.include_router(swi_router)
@@ -323,13 +339,13 @@ def theme_page(request: Request, theme_id: str):
 
 
 @app.get("/passage/{passage_id}", response_class=HTMLResponse)
-def passage_page(request: Request, passage_id: str):
+def passage_page(request: Request, passage_id: str, q: str = ""):
     p = PASSAGES_BY_ID.get(passage_id)
     if not p:
         return HTMLResponse("Passage not found", status_code=404)
     theme_details = [THEMES_BY_ID[t] for t in p.get("themes", []) if t in THEMES_BY_ID]
     return templates.TemplateResponse("passage.html", {
-        "request": request, "passage": p, "theme_details": theme_details,
+        "request": request, "passage": p, "theme_details": theme_details, "q": q,
     })
 
 

@@ -23,6 +23,6 @@
   </div>
   {% endif %}
 
-  <div class="text">{{ passage.text }}</div>
+  <div class="text">{{ passage.text | highlight(q) | safe }}</div>
 </div>
 {% endblock %}
