@@ -2,52 +2,36 @@
   "corpus": {
     "sermons": {
       "have": 141,
-      "target": 141,
-      "notes": "All 141 standard sermons ingested"
+      "target": 141
     },
     "journal_volumes": {
-      "have": 2.5,
-      "target": 4,
-      "notes": "Vols 1-3 combined file + 11 vol 4 sections (parts 9-13)"
+      "have": 2.142857142857143,
+      "target": 4
     },
     "ot_notes": {
       "have": 0,
       "target": 1
     },
     "letters": {
-      "have": 2,
-      "target": 2000,
-      "notes": "letter-to-a-roman-catholic, letter-to-william-wilberforce"
+      "have": 2717,
+      "target": 2000
     },
     "hymns": {
-      "have": 16,
-      "target": 5500,
-      "notes": "15 individual Charles Wesley hymns + 1780 Collection"
+      "have": 292,
+      "target": 5500
     },
     "treatises": {
-      "have": 14,
-      "target": 80,
-      "notes": "Includes Plain Account, Character of a Methodist, Earnest Appeal, Thoughts Upon Slavery, Doctrine of Original Sin, etc."
+      "have": 138,
+      "target": 80
     }
   },
   "swi": {
     "lexicon_built": true,
-    "dimensions_implemented": 7,
-    "api_live": true,
-    "ui_live": true,
-    "calibrated": true,
-    "feedback_form": true
+    "dimensions_implemented": 0,
+    "api_live": false,
+    "ui_live": false,
+    "calibrated": false
   },
-  "total_passages": 6823,
-  "total_sources": 186,
-  "cleaned_files": {
-    "john_wesley": 170,
-    "charles_wesley": 16
-  },
-  "deployment": {
-    "url": "https://wesley-corpus.fly.dev",
-    "dockerfile": "Dockerfile.lite",
-    "region": "iad"
-  },
-  "last_updated": "2026-01-29"
+  "total_passages": 21557,
+  "last_updated": "2026-01-30"
 }
