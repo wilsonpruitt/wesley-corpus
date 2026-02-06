@@ -504,6 +504,69 @@ footer .container {
 }
 
 /* ===================================
+   Scripture Books
+   =================================== */
+
+.scripture-books {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.scripture-section h4 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-slate);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.book-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 2rem;
+    background: var(--color-off-white);
+    border: 1px solid var(--color-light-gray);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--color-ink);
+    transition: all 0.3s ease;
+}
+
+.book-tag:hover {
+    background: var(--color-forest);
+    border-color: var(--color-forest);
+    color: var(--color-white);
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.book-tag .count {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--color-forest);
+    background: var(--color-forest-pale);
+    padding: 0.15rem 0.5rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+}
+
+.book-tag:hover .count {
+    background: rgba(255,255,255,0.25);
+    color: var(--color-white);
+}
+
+/* ===================================
    Responsive
    =================================== */
 

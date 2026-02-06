@@ -158,6 +158,49 @@ def _get_st_model():
     return _st_model
 
 
+# Canonical Bible book order
+BOOK_ORDER = [
+    "Genesis", "Exodus", "Leviticus", "Numbers", "Deuteronomy",
+    "Joshua", "Judges", "Ruth", "1 Samuel", "2 Samuel",
+    "1 Kings", "2 Kings", "1 Chronicles", "2 Chronicles",
+    "Ezra", "Nehemiah", "Esther", "Job", "Psalms", "Proverbs",
+    "Ecclesiastes", "Song of Solomon", "Isaiah", "Jeremiah", "Lamentations",
+    "Ezekiel", "Daniel", "Hosea", "Joel", "Amos",
+    "Obadiah", "Jonah", "Micah", "Nahum", "Habakkuk",
+    "Zephaniah", "Haggai", "Zechariah", "Malachi",
+    "Matthew", "Mark", "Luke", "John", "Acts",
+    "Romans", "1 Corinthians", "2 Corinthians", "Galatians", "Ephesians",
+    "Philippians", "Colossians", "1 Thessalonians", "2 Thessalonians",
+    "1 Timothy", "2 Timothy", "Titus", "Philemon", "Hebrews",
+    "James", "1 Peter", "2 Peter", "1 John", "2 John", "3 John",
+    "Jude", "Revelation"
+]
+
+
+def _get_book_order(book: str) -> int:
+    """Get canonical order for a book, with unknown books at end."""
+    try:
+        return BOOK_ORDER.index(book)
+    except ValueError:
+        return 999
+
+
+def _scripture_browse():
+    """Get browseable list of all books with reference counts."""
+    books = []
+    total_refs = 0
+    for book, chapters in SCRIPTURE_INDEX.items():
+        ref_count = sum(len(refs) for refs in chapters.values())
+        total_refs += ref_count
+        books.append({
+            "name": book,
+            "chapters": len(chapters),
+            "references": ref_count,
+        })
+    books.sort(key=lambda b: _get_book_order(b["name"]))
+    return books, total_refs
+
+
 def _scripture_lookup(q: str):
     """Parse a scripture query like 'Romans 8' or 'John 3:16' and return matching entries."""
     q = q.strip()
@@ -182,17 +225,21 @@ def _scripture_lookup(q: str):
     book_data = SCRIPTURE_INDEX[matched_book]
     if chapter and chapter in book_data:
         for entry in book_data[chapter]:
+            passage = PASSAGES_BY_ID.get(entry["passage_id"], {})
+            text_snippet = passage.get("text", "")[:200] + "..." if passage.get("text") else ""
             if verse:
                 if entry.get("verses") and verse in entry["verses"].split("-"):
-                    entries.append({**entry, "book": matched_book, "chapter": chapter})
+                    entries.append({**entry, "book": matched_book, "chapter": chapter, "snippet": text_snippet})
                 elif entry.get("verses") == verse:
-                    entries.append({**entry, "book": matched_book, "chapter": chapter})
+                    entries.append({**entry, "book": matched_book, "chapter": chapter, "snippet": text_snippet})
             else:
-                entries.append({**entry, "book": matched_book, "chapter": chapter})
+                entries.append({**entry, "book": matched_book, "chapter": chapter, "snippet": text_snippet})
     elif not chapter:
-        for ch, refs in book_data.items():
+        for ch, refs in sorted(book_data.items(), key=lambda x: int(x[0])):
             for entry in refs:
-                entries.append({**entry, "book": matched_book, "chapter": ch})
+                passage = PASSAGES_BY_ID.get(entry["passage_id"], {})
+                text_snippet = passage.get("text", "")[:200] + "..." if passage.get("text") else ""
+                entries.append({**entry, "book": matched_book, "chapter": ch, "snippet": text_snippet})
     return entries, f"{matched_book}{' ' + chapter if chapter else ''}{':' + verse if verse else ''}"
 
 
@@ -278,8 +325,10 @@ def passage_page(request: Request, passage_id: str):
 @app.get("/scripture", response_class=HTMLResponse)
 def scripture_page(request: Request, q: str = ""):
     entries, label = _scripture_lookup(q) if q else ([], "")
+    books, total_refs = _scripture_browse()
     return templates.TemplateResponse("scripture.html", {
         "request": request, "q": q, "label": label, "entries": entries,
+        "books": books, "total_refs": total_refs,
     })
 
 

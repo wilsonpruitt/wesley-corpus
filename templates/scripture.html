@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Scripture Lookup — Wesley Corpus{% endblock %}
+{% block title %}Scripture Reference Lookup — Wesley Corpus{% endblock %}
 {% block content %}
 <h2>Scripture Reference Lookup</h2>
 <p>Find Wesley passages that reference a Bible verse or chapter.</p>
@@ -16,7 +16,45 @@
 <div class="card">
   <h3><a href="/passage/{{ e.passage_id }}">{{ e.source_title }}</a></h3>
   <div class="meta">{{ e.author | replace("-", " ") | title }} &middot; {{ e.book }} {{ e.chapter }}{% if e.verses %}:{{ e.verses }}{% endif %}</div>
+  {% if e.snippet %}
+  <div class="text">{{ e.snippet }}</div>
+  {% endif %}
 </div>
 {% endfor %}
+
+{% else %}
+<!-- Browse by book when no search -->
+<div class="section">
+  <h3>Browse by Book</h3>
+  <p class="meta">{{ total_refs }} total scripture references indexed across {{ books | length }} books</p>
+
+  <div class="scripture-books">
+    <div class="scripture-section">
+      <h4>Old Testament</h4>
+      <div class="book-grid">
+        {% for book in books %}
+          {% if loop.index0 < 39 %}
+          <a href="/scripture?q={{ book.name | urlencode }}" class="book-tag">
+            {{ book.name }} <span class="count">{{ book.references }}</span>
+          </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="scripture-section">
+      <h4>New Testament</h4>
+      <div class="book-grid">
+        {% for book in books %}
+          {% if loop.index0 >= 39 %}
+          <a href="/scripture?q={{ book.name | urlencode }}" class="book-tag">
+            {{ book.name }} <span class="count">{{ book.references }}</span>
+          </a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
 {% endif %}
 {% endblock %}
