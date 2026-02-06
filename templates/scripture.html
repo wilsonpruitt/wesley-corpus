@@ -33,7 +33,7 @@
       <h4>Old Testament</h4>
       <div class="book-grid">
         {% for book in books %}
-          {% if loop.index0 < 39 %}
+          {% if not book.is_nt %}
           <a href="/scripture?q={{ book.name | urlencode }}" class="book-tag">
             {{ book.name }} <span class="count">{{ book.references }}</span>
           </a>
@@ -46,7 +46,7 @@
       <h4>New Testament</h4>
       <div class="book-grid">
         {% for book in books %}
-          {% if loop.index0 >= 39 %}
+          {% if book.is_nt %}
           <a href="/scripture?q={{ book.name | urlencode }}" class="book-tag">
             {{ book.name }} <span class="count">{{ book.references }}</span>
           </a>
