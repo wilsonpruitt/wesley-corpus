@@ -354,8 +354,8 @@ def main():
     )
     generate_parser.add_argument(
         "--passages",
-        default="chunked/passages.jsonl",
-        help="Path to passages JSONL file (default: chunked/passages.jsonl)",
+        default="chunked/cleaned_passages.jsonl",
+        help="Path to passages JSONL file (default: chunked/cleaned_passages.jsonl)",
     )
     generate_parser.add_argument(
         "--output",
@@ -390,8 +390,8 @@ def main():
     )
     search_parser.add_argument(
         "--passages",
-        default="chunked/passages.jsonl",
-        help="Path to passages JSONL file (default: chunked/passages.jsonl)",
+        default="chunked/cleaned_passages.jsonl",
+        help="Path to passages JSONL file (default: chunked/cleaned_passages.jsonl)",
     )
     search_parser.add_argument(
         "--top-k",
@@ -408,7 +408,7 @@ def main():
 
     if args.command == "generate":
         backend = getattr(args, "backend", "local")
-        passages_file = getattr(args, "passages", "chunked/passages.jsonl")
+        passages_file = getattr(args, "passages", "chunked/cleaned_passages.jsonl")
         output_file = getattr(args, "output", "embeddings/passage_embeddings.npz")
         dry_run = getattr(args, "dry_run", False)
 

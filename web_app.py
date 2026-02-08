@@ -69,7 +69,7 @@ EMBED_IDS: list[str] = []
 
 
 def _load_passages():
-    with open(CHUNKED / "passages.jsonl") as f:
+    with open(CHUNKED / "cleaned_passages.jsonl") as f:
         for line in f:
             p = json.loads(line)
             PASSAGES.append(p)

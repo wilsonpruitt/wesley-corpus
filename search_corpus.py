@@ -401,7 +401,7 @@ Examples:
     args = parser.parse_args()
 
     # Load corpus
-    corpus_path = Path(__file__).parent / 'chunked' / 'passages.jsonl'
+    corpus_path = Path(__file__).parent / 'chunked' / 'cleaned_passages.jsonl'
     passages = load_corpus(str(corpus_path))
 
     # Handle commands
