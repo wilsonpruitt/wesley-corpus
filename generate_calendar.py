@@ -400,7 +400,7 @@ def process_passages(passages):
 
 def select_posts(candidates, n=NUM_POSTS):
     """Select n posts ensuring no two from the same source document, with author mix."""
-    random.seed(42)  # reproducible; change seed for different months
+    random.seed(99)  # reproducible; change seed for different months
 
     # Separate by author to ensure mix
     by_author = {}
