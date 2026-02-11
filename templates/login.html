@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Log in — Wesley Corpus{% endblock %}
+{% block content %}
+<div class="auth-page">
+  <h2>Log in to Wesley Corpus</h2>
+  <p>The Wesley Corpus is a searchable collection of John and Charles Wesley's writings. Full access is available to Patreon supporters.</p>
+
+  {% if error %}
+  <div class="auth-error">{{ error }}</div>
+  {% endif %}
+
+  <a href="{{ oauth_url }}" class="btn patreon-btn">Log in with Patreon</a>
+
+  <p class="auth-note">
+    Not a patron yet?
+    <a href="https://www.patreon.com" target="_blank" rel="noopener">Become a patron</a>
+    to get access.
+  </p>
+</div>
+{% endblock %}

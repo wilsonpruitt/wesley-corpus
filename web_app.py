@@ -3,17 +3,25 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 import random
 import re
+import time
+from datetime import date
 from pathlib import Path
 from typing import Optional
+from urllib.parse import urlencode, quote
 
+import httpx
 import numpy as np
 from fastapi import FastAPI, Query, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+from starlette.middleware.sessions import SessionMiddleware
+from starlette.middleware.base import BaseHTTPMiddleware
+from starlette.responses import Response
 
 # ---------------------------------------------------------------------------
 # Paths
@@ -23,14 +31,110 @@ CHUNKED = BASE / "chunked"
 META = BASE / "metadata"
 
 # ---------------------------------------------------------------------------
+# Patreon OAuth config
+# ---------------------------------------------------------------------------
+PATREON_CLIENT_ID = os.environ.get("PATREON_CLIENT_ID", "")
+PATREON_CLIENT_SECRET = os.environ.get("PATREON_CLIENT_SECRET", "")
+SESSION_SECRET = os.environ.get("SESSION_SECRET", "dev-secret-change-me")
+MIN_PLEDGE_CENTS = int(os.environ.get("MIN_PLEDGE_CENTS", "500"))
+DEV_BYPASS_AUTH = os.environ.get("DEV_BYPASS_AUTH", "").lower() == "true"
+
+PATREON_AUTH_URL = "https://www.patreon.com/oauth2/authorize"
+PATREON_TOKEN_URL = "https://www.patreon.com/api/oauth2/token"
+PATREON_IDENTITY_URL = "https://www.patreon.com/api/oauth2/v2/identity"
+
+SESSION_MAX_AGE = 7 * 24 * 60 * 60  # 7 days in seconds
+
+# Paywall activation date — free access before this date
+PAYWALL_DATE = date(2026, 3, 1)
+
+# Public paths that skip auth
+PUBLIC_PATHS = frozenset({"/", "/auth/login", "/auth/callback", "/auth/logout"})
+PUBLIC_PREFIXES = ("/static/",)
+
+# ---------------------------------------------------------------------------
 # App
 # ---------------------------------------------------------------------------
 app = FastAPI(title="Wesley Corpus")
+
+# ---------------------------------------------------------------------------
+# Auth middleware
+# ---------------------------------------------------------------------------
+class PatreonAuthMiddleware(BaseHTTPMiddleware):
+    async def dispatch(self, request: Request, call_next):
+        # Free access before paywall date
+        if date.today() < PAYWALL_DATE:
+            return await call_next(request)
+
+        path = request.url.path
+
+        # Skip auth for public paths
+        if path in PUBLIC_PATHS or any(path.startswith(p) for p in PUBLIC_PREFIXES):
+            return await call_next(request)
+
+        # Dev bypass — act as if logged in with a qualifying pledge
+        if DEV_BYPASS_AUTH:
+            request.state.user = {
+                "name": "Dev User",
+                "pledge_cents": MIN_PLEDGE_CENTS,
+            }
+            return await call_next(request)
+
+        user = _get_session_user(request)
+
+        if user is None:
+            # Not logged in
+            is_api = path.startswith("/api/")
+            if is_api:
+                return JSONResponse(
+                    {"error": "Authentication required"},
+                    status_code=401,
+                )
+            # Stash intended destination and redirect to login
+            next_url = str(request.url.path)
+            if request.url.query:
+                next_url += "?" + str(request.url.query)
+            request.session["next_url"] = next_url
+            return RedirectResponse(url="/auth/login", status_code=302)
+
+        if user.get("pledge_cents", 0) < MIN_PLEDGE_CENTS:
+            # Logged in but insufficient pledge
+            is_api = path.startswith("/api/")
+            if is_api:
+                return JSONResponse(
+                    {"error": "Patron pledge of $%.2f/month required" % (MIN_PLEDGE_CENTS / 100)},
+                    status_code=403,
+                )
+            return templates.TemplateResponse("upgrade.html", {
+                "request": request,
+                "user": user,
+                "min_pledge_dollars": MIN_PLEDGE_CENTS / 100,
+                "current_pledge_dollars": user.get("pledge_cents", 0) / 100,
+            })
+
+        # Qualified patron — attach user and proceed
+        request.state.user = user
+        return await call_next(request)
+
+
+# Middleware ordering: last added = outermost in the stack.
+# SessionMiddleware must be outermost so request.session is available
+# to PatreonAuthMiddleware.
+app.add_middleware(PatreonAuthMiddleware)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
+)
+_on_fly = bool(os.environ.get("FLY_APP_NAME"))
+app.add_middleware(
+    SessionMiddleware,
+    secret_key=SESSION_SECRET,
+    session_cookie="wc_session",
+    max_age=SESSION_MAX_AGE,
+    https_only=_on_fly,
+    same_site="lax",
 )
 app.mount("/static", StaticFiles(directory=str(BASE / "static")), name="static")
 templates = Jinja2Templates(directory=str(BASE / "templates"))
@@ -291,6 +395,135 @@ def _corpus_stats():
 
 
 # ---------------------------------------------------------------------------
+# Auth helpers
+# ---------------------------------------------------------------------------
+
+def _get_session_user(request: Request) -> dict | None:
+    """Read user from session cookie. Returns None if not logged in or expired."""
+    session = request.session
+    if "user_name" not in session:
+        return None
+    expires_at = session.get("expires_at", 0)
+    if time.time() > expires_at:
+        request.session.clear()
+        return None
+    return {
+        "name": session["user_name"],
+        "pledge_cents": session.get("pledge_cents", 0),
+    }
+
+
+def _ctx(request: Request, **kwargs) -> dict:
+    """Build template context with user info for nav display."""
+    user = getattr(request.state, "user", None) or _get_session_user(request)
+    return {"request": request, "user": user, **kwargs}
+
+
+def _patreon_oauth_url(request: Request) -> str:
+    """Build the Patreon OAuth authorization URL."""
+    redirect_uri = str(request.base_url) + "auth/callback"
+    params = {
+        "response_type": "code",
+        "client_id": PATREON_CLIENT_ID,
+        "redirect_uri": redirect_uri,
+        "scope": "identity identity.memberships",
+    }
+    return PATREON_AUTH_URL + "?" + urlencode(params)
+
+
+# ---------------------------------------------------------------------------
+# Auth routes
+# ---------------------------------------------------------------------------
+
+@app.get("/auth/login", response_class=HTMLResponse)
+def auth_login(request: Request, error: str = ""):
+    oauth_url = _patreon_oauth_url(request)
+    return templates.TemplateResponse("login.html", {
+        "request": request,
+        "user": None,
+        "oauth_url": oauth_url,
+        "error": error,
+    })
+
+
+@app.get("/auth/callback")
+async def auth_callback(request: Request, code: str = "", error: str = ""):
+    if error or not code:
+        return RedirectResponse(
+            url="/auth/login?error=" + quote(error or "Authorization was denied"),
+            status_code=302,
+        )
+
+    redirect_uri = str(request.base_url) + "auth/callback"
+
+    # Exchange code for access token
+    async with httpx.AsyncClient() as client:
+        token_resp = await client.post(PATREON_TOKEN_URL, data={
+            "code": code,
+            "grant_type": "authorization_code",
+            "client_id": PATREON_CLIENT_ID,
+            "client_secret": PATREON_CLIENT_SECRET,
+            "redirect_uri": redirect_uri,
+        })
+        if token_resp.status_code != 200:
+            return RedirectResponse(
+                url="/auth/login?error=" + quote("Failed to authenticate with Patreon"),
+                status_code=302,
+            )
+        token_data = token_resp.json()
+        access_token = token_data.get("access_token")
+        if not access_token:
+            return RedirectResponse(
+                url="/auth/login?error=" + quote("No access token received"),
+                status_code=302,
+            )
+
+        # Fetch identity + memberships
+        identity_resp = await client.get(
+            PATREON_IDENTITY_URL,
+            params={
+                "include": "memberships",
+                "fields[user]": "full_name",
+                "fields[member]": "currently_entitled_amount_cents,patron_status",
+            },
+            headers={"Authorization": f"Bearer {access_token}"},
+        )
+        if identity_resp.status_code != 200:
+            return RedirectResponse(
+                url="/auth/login?error=" + quote("Failed to fetch Patreon identity"),
+                status_code=302,
+            )
+        identity_data = identity_resp.json()
+
+    # Extract user name
+    user_name = identity_data.get("data", {}).get("attributes", {}).get("full_name", "Patron")
+
+    # Find highest pledge amount across memberships
+    pledge_cents = 0
+    for item in identity_data.get("included", []):
+        if item.get("type") == "member":
+            attrs = item.get("attributes", {})
+            if attrs.get("patron_status") == "active_patron":
+                amount = attrs.get("currently_entitled_amount_cents", 0)
+                pledge_cents = max(pledge_cents, amount)
+
+    # Store in session
+    request.session["user_name"] = user_name
+    request.session["pledge_cents"] = pledge_cents
+    request.session["expires_at"] = time.time() + SESSION_MAX_AGE
+
+    # Redirect to originally requested page or home
+    next_url = request.session.pop("next_url", "/")
+    return RedirectResponse(url=next_url, status_code=302)
+
+
+@app.get("/auth/logout")
+def auth_logout(request: Request):
+    request.session.clear()
+    return RedirectResponse(url="/", status_code=302)
+
+
+# ---------------------------------------------------------------------------
 # HTML Pages
 # ---------------------------------------------------------------------------
 
@@ -298,44 +531,41 @@ def _corpus_stats():
 def home(request: Request):
     stats = _corpus_stats()
     rp = random.choice(PASSAGES) if PASSAGES else None
-    return templates.TemplateResponse("index.html", {
-        "request": request, "stats": stats, "themes": THEMES,
-        "random_passage": rp,
-    })
+    return templates.TemplateResponse("index.html", _ctx(
+        request, stats=stats, themes=THEMES, random_passage=rp,
+    ))
 
 
 @app.get("/search", response_class=HTMLResponse)
 def search_page(request: Request, q: str = "", author: str = "", type: str = ""):
     results = _keyword_search(q, author=author or None, source_type=type or None) if q else []
-    return templates.TemplateResponse("search.html", {
-        "request": request, "q": q, "author": author, "type": type,
-        "results": results,
-    })
+    return templates.TemplateResponse("search.html", _ctx(
+        request, q=q, author=author, type=type, results=results,
+    ))
 
 
 @app.get("/semantic", response_class=HTMLResponse)
 def semantic_page(request: Request, q: str = ""):
     results = _semantic_search(q) if q else []
-    return templates.TemplateResponse("search.html", {
-        "request": request, "q": q, "author": "", "type": "",
-        "results": results, "semantic": True,
-    })
+    return templates.TemplateResponse("search.html", _ctx(
+        request, q=q, author="", type="", results=results, semantic=True,
+    ))
 
 
 @app.get("/themes", response_class=HTMLResponse)
 def themes_page(request: Request):
-    return templates.TemplateResponse("themes.html", {
-        "request": request, "themes": sorted(THEMES, key=lambda t: -t["count"]),
-    })
+    return templates.TemplateResponse("themes.html", _ctx(
+        request, themes=sorted(THEMES, key=lambda t: -t["count"]),
+    ))
 
 
 @app.get("/theme/{theme_id}", response_class=HTMLResponse)
 def theme_page(request: Request, theme_id: str):
     theme = THEMES_BY_ID.get(theme_id, {"theme_id": theme_id, "theme_name": theme_id})
     passages = [p for p in PASSAGES if theme_id in p.get("themes", [])]
-    return templates.TemplateResponse("theme.html", {
-        "request": request, "theme": theme, "passages": passages,
-    })
+    return templates.TemplateResponse("theme.html", _ctx(
+        request, theme=theme, passages=passages,
+    ))
 
 
 @app.get("/passage/{passage_id}", response_class=HTMLResponse)
@@ -344,19 +574,19 @@ def passage_page(request: Request, passage_id: str, q: str = ""):
     if not p:
         return HTMLResponse("Passage not found", status_code=404)
     theme_details = [THEMES_BY_ID[t] for t in p.get("themes", []) if t in THEMES_BY_ID]
-    return templates.TemplateResponse("passage.html", {
-        "request": request, "passage": p, "theme_details": theme_details, "q": q,
-    })
+    return templates.TemplateResponse("passage.html", _ctx(
+        request, passage=p, theme_details=theme_details, q=q,
+    ))
 
 
 @app.get("/scripture", response_class=HTMLResponse)
 def scripture_page(request: Request, q: str = ""):
     entries, label = _scripture_lookup(q) if q else ([], "")
     books, total_refs = _scripture_browse()
-    return templates.TemplateResponse("scripture.html", {
-        "request": request, "q": q, "label": label, "entries": entries,
-        "books": books, "total_refs": total_refs,
-    })
+    return templates.TemplateResponse("scripture.html", _ctx(
+        request, q=q, label=label, entries=entries,
+        books=books, total_refs=total_refs,
+    ))
 
 
 @app.get("/random")
@@ -369,19 +599,19 @@ def random_page():
 
 @app.get("/sources", response_class=HTMLResponse)
 def sources_page(request: Request):
-    return templates.TemplateResponse("sources.html", {
-        "request": request, "sources": SOURCES,
-    })
+    return templates.TemplateResponse("sources.html", _ctx(
+        request, sources=SOURCES,
+    ))
 
 
 @app.get("/strangely-warmed", response_class=HTMLResponse)
 def swi_page(request: Request):
-    return templates.TemplateResponse("swi.html", {"request": request})
+    return templates.TemplateResponse("swi.html", _ctx(request))
 
 
 @app.get("/swi", response_class=HTMLResponse)
 def swi_page_alt(request: Request):
-    return templates.TemplateResponse("swi.html", {"request": request})
+    return templates.TemplateResponse("swi.html", _ctx(request))
 
 
 # ---------------------------------------------------------------------------

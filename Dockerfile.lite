@@ -9,7 +9,9 @@ RUN pip install --no-cache-dir \
     jinja2>=3.1.0 \
     pydantic>=2.0.0 \
     numpy>=1.24.0 \
-    scipy>=1.10.0
+    scipy>=1.10.0 \
+    httpx>=0.27.0 \
+    itsdangerous>=2.1.0
 
 # Copy application code
 COPY web_app.py .
@@ -25,7 +27,7 @@ COPY static/ static/
 COPY metadata/ metadata/
 
 # Copy corpus data (no embeddings — semantic search/scoring disabled)
-COPY chunked/passages.jsonl chunked/passages.jsonl
+COPY chunked/cleaned_passages.jsonl chunked/cleaned_passages.jsonl
 COPY cleaned/ cleaned/
 
 EXPOSE 8000

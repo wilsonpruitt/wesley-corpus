@@ -23,6 +23,12 @@
         <a href="/scripture">Scripture</a>
         <a href="/random">Random</a>
         <a href="/strangely-warmed">SWI</a>
+        {% if user %}
+          <span class="nav-user">{{ user.name }}</span>
+          <a href="/auth/logout">Log out</a>
+        {% else %}
+          <a href="/auth/login">Log in</a>
+        {% endif %}
       </nav>
     </div>
   </header>

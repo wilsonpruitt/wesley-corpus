@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block title %}Upgrade Your Pledge — Wesley Corpus{% endblock %}
+{% block content %}
+<div class="auth-page">
+  <h2>Upgrade Your Pledge</h2>
+  <p>Hi {{ user.name }}! Thanks for being a patron.</p>
+  <p>
+    Full access to the Wesley Corpus requires a pledge of
+    <strong>${{ "%.2f"|format(min_pledge_dollars) }}/month</strong>.
+    Your current pledge is
+    <strong>${{ "%.2f"|format(current_pledge_dollars) }}/month</strong>.
+  </p>
+
+  <a href="https://www.patreon.com" class="btn patreon-btn" target="_blank" rel="noopener">Upgrade on Patreon</a>
+
+  <p class="auth-note">
+    After upgrading, <a href="/auth/logout">log out and back in</a> to refresh your access level.
+  </p>
+</div>
+{% endblock %}

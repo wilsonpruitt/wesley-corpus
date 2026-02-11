@@ -10,3 +10,8 @@ build/
 raw/
 *.bak
 .claude/
+chunked/embeddings.npz
+chunked/passages.jsonl
+chunked/centroids.npz
+chunked/embeddings_metadata.json
+social-calendar/

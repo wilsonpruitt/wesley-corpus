@@ -626,6 +626,78 @@ footer .container {
 }
 
 /* ===================================
+   Auth Pages
+   =================================== */
+
+.auth-page {
+    max-width: 480px;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.auth-page h2 {
+    margin-bottom: 1rem;
+}
+
+.auth-page p {
+    margin-bottom: 1.5rem;
+}
+
+.auth-error {
+    background: #fef2f2;
+    color: #991b1b;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.patreon-btn {
+    background: #FF424D !important;
+    color: var(--color-white) !important;
+}
+
+.patreon-btn:hover {
+    background: #e6393f !important;
+    box-shadow: 0 8px 25px rgba(255, 66, 77, 0.25) !important;
+}
+
+.auth-note {
+    font-size: 0.85rem;
+    color: var(--color-slate);
+    margin-top: 1.5rem;
+}
+
+.nav-user {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-ink);
+    padding: 0.25rem 0;
+}
+
+/* Patron CTA */
+.patron-cta {
+    background: var(--color-off-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.patron-cta h2 {
+    margin-bottom: 0.75rem;
+}
+
+.patron-cta-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+/* ===================================
    Responsive
    =================================== */
 

@@ -26,6 +26,17 @@
   </div>
 </div>
 
+{% if not user %}
+<div class="section patron-cta">
+  <h2>Become a Patron</h2>
+  <p>Full access to the Wesley Corpus — including search, themes, scripture index, and the Strangely Warmed Index — is available to Patreon supporters at $5/month.</p>
+  <div class="patron-cta-actions">
+    <a href="/auth/login" class="btn patreon-btn">Log in with Patreon</a>
+    <a href="https://www.patreon.com" class="btn btn-secondary" target="_blank" rel="noopener">Become a Patron</a>
+  </div>
+</div>
+{% endif %}
+
 {% if random_passage %}
 <div class="section">
   <h2>Random Passage</h2>
