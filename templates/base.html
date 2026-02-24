@@ -26,7 +26,7 @@
         {% if user %}
           <span class="nav-user">{{ user.name }}</span>
           <a href="/auth/logout">Log out</a>
-        {% else %}
+        {% elif paywall_active %}
           <a href="/auth/login">Log in</a>
         {% endif %}
       </nav>

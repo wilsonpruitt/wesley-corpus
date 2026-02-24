@@ -46,7 +46,7 @@ PATREON_IDENTITY_URL = "https://www.patreon.com/api/oauth2/v2/identity"
 SESSION_MAX_AGE = 7 * 24 * 60 * 60  # 7 days in seconds
 
 # Paywall activation date — free access before this date
-PAYWALL_DATE = date(2026, 3, 1)
+PAYWALL_DATE = date(2026, 3, 15)
 
 # Public paths that skip auth
 PUBLIC_PATHS = frozenset({"/", "/auth/login", "/auth/callback", "/auth/logout"})
@@ -416,7 +416,8 @@ def _get_session_user(request: Request) -> dict | None:
 def _ctx(request: Request, **kwargs) -> dict:
     """Build template context with user info for nav display."""
     user = getattr(request.state, "user", None) or _get_session_user(request)
-    return {"request": request, "user": user, **kwargs}
+    paywall_active = date.today() >= PAYWALL_DATE
+    return {"request": request, "user": user, "paywall_active": paywall_active, **kwargs}
 
 
 def _patreon_oauth_url(request: Request) -> str:
