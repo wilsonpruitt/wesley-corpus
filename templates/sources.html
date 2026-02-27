@@ -2,21 +2,60 @@
 {% block title %}Sources — Wesley Corpus{% endblock %}
 {% block content %}
 <h2>Corpus Sources</h2>
+<p class="meta">{{ "{:,}".format(total_passages) }} passages from {{ "{:,}".format(total_sources) }} sources</p>
 
-<table class="sources">
-  <thead>
-    <tr><th>Title</th><th>Author</th><th>Type</th><th>Year</th><th>Status</th></tr>
-  </thead>
-  <tbody>
-    {% for s in sources %}
-    <tr>
-      <td>{% if s.source_url %}<a href="{{ s.source_url }}" target="_blank">{{ s.title }}</a>{% else %}{{ s.title }}{% endif %}</td>
-      <td>{{ s.author | replace("-", " ") | title }}</td>
-      <td>{{ s.source_type }}</td>
-      <td>{{ s.year }}</td>
-      <td>{{ s.status }}</td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+{% set author_display = {"john-wesley": "John Wesley", "charles-wesley": "Charles Wesley"} %}
+{% set type_display = {
+  "sermon": "Sermons",
+  "treatise": "Treatises &amp; Prose Works",
+  "journal": "Journal",
+  "letter": "Letters",
+  "notes": "Explanatory Notes",
+  "hymn": "Hymns (Individual)",
+  "hymn-collection": "Hymn Collections",
+  "hymn-stanza": "Hymn Stanzas"
+} %}
+
+{% for author in ["john-wesley", "charles-wesley"] %}
+{% if author in grouped %}
+<div class="sources-author">
+  <h3>{{ author_display.get(author, author) }}</h3>
+
+  {% for stype in type_order %}
+  {% if stype in grouped[author] %}
+  {% set items = grouped[author][stype] %}
+  <div class="sources-section">
+    <h4>{{ type_display.get(stype, stype | title) }} <span class="count">({{ items | length }})</span></h4>
+
+    {% if stype == "letter" %}
+    {% set letter_years = items | map(attribute='year') | select('integer') | list %}
+    <p class="meta">{{ items | length }} letters{% if letter_years %} spanning {{ letter_years | min }} &ndash; {{ letter_years | max }}{% endif %}</p>
+    {% elif stype == "hymn-stanza" %}
+    <p class="meta">{{ items | length }} individual stanzas extracted from hymns above</p>
+    {% else %}
+    <table class="sources">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Year</th>
+          <th>Passages</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for s in items %}
+        <tr>
+          <td>{{ s.title }}</td>
+          <td>{{ s.year if s.year else "" }}</td>
+          <td>{{ s.passages }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+{% endif %}
+{% endfor %}
 {% endblock %}

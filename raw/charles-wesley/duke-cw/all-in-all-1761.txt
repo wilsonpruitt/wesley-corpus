@@ -1,0 +1,6118 @@
+All in All (1761)1
+[Baker List, #243]
+Editorial Introduction:
+The relationship between John and Charles Wesley was strained through the 1750s, due in part to
+Charles’s intervention in John’s courtship of Grace Murray. Disagreement over use of the lay preachers
+added to the tension. Then, at the turn of the decade, a number of Methodist followers in London began
+claiming that they had received the blessing of instantaneous Christian perfection. While John encouraged
+these testimonies at first, Charles was suspicious from the beginning. He considered verbal claims to
+perfection to be vain boasting, maintaining that the truly perfect would testify only of their dependence
+upon Christ. As he put it in the closing stanza of his hymn “The Promise of Sanctification” (1741), they
+would “Be less than nothing in [God’s] sight, And feel that Christ is all in all.”
+Charles’s concern about the perfectionist controversy is likely what led him to publish
+(anonymously) in 1761 a volume of hymns selected from earlier publications: Hymns for Those to Whom
+Christ is All in All (note the echo of his 1741 hymn in the title). This publication is unusual. Charles
+typically left it to John to publish selected hymn collections. It is even more striking because John issued
+a collection himself the same year: Select Hymns (1761). A perusal of the preface and the hymns in All in
+All make clear an underlying concern about the perfectionist controversy. This undertone helps explain
+why John Wesley tended to ignore All in All, though he did include in Hymns (1780) a few hymns that
+Charles had crafted by excerpting larger pieces.
+Textual comparison makes clear that Charles drew from the 1756 editions of HSP (1739), HSP
+(1740), and HSP (1742). He was likely drawing from similar recent printings of HLS (1745), HSP (1749),
+and Redemption Hymns (1747), but there are no relevant textual variants to confirm a specific edition. 
+In general, Charles made minimal editorial changes when incorporating text from these sources. His
+most common change was to substitute “thine” for “thy” in occurrences before words with an initial
+vowel or “h.” He adopted this grammatical practice about 1745 and edited earlier works accordingly.
+There are similar instances of substituting “mine” for “my.” Such stylistic changes are incorporated in the
+text below without annotation. The text also incorporates all cases where Charles has corrected metre or
+opted for alternative words. In these cases the textual variant has typically been added to the annotations
+of the hymn in its setting of first occurrence, and can be consulted there. These variants are annotated
+below only when they might reflect the dynamics of the perfectionist controversy.
+One special situation deserves comment. The hymns in All in All to which Charles made the most
+correction are the translations of German hymns included in HSP (1739) and HSP (1740). The extra care
+which Charles took in correcting these hymns adds warrant to the assumption that John Wesley did the
+original translations. Charles’s substantial changes have been annotated below to illustrate this dynamic.
+John ignored most of Charles’s changes to these hymns in the instances he included in Hymns (1780).
+Editions:
+[Charles Wesley.] Hymns for Those to Whom Christ is All in All. London: n.p., 1761.
+[2nd]
+Bristol: Pine, 1765. [The only changes are corrections of errors in the 1761 edn.]
+
+Table of Contents
+Hymn I. [George Herbert] HSP (1739), 10–11
+1–2
+Hymn II. [Antoinette Bourignon] HSP (1739), 17–19
+2–3
+Hymn III. HSP (1739), 36–37
+3–4
+Hymn IV. HSP (1739), 86
+
+Hymn V. [Wolfgang Christoph Dessler] HSP (1739), 100
+4–5
+Hymn VI. HSP (1739), 101–3
+
+Hymn VII. HSP (1739), 107–8
+
+Hymn VIII. HSP (1739), 108–10
+7–8
+Hymn IX. HSP (1739), 111–13
+8–10
+Hymn X. HSP (1739), 117–19
+10–11
+Hymn XI. [Nikolaus Ludwig von Zinzendorf] CPH (1737), 26; HSP (1739), 122–23
+11–12
+Hymn XII. [Antoinette Bourignon] HSP (1739), 123–24
+12–13
+Hymn XIII. [Paul Gerhardt] HSP (1739), 142–44
+13–14
+Hymn XIV. [Christian Friedrich Richter] CPH (1737), 51; HSP (1739), 145–46
+14–15
+Hymn XV. [Nikolaus Ludwig von Zinzendorf] CPH (1738), 62; HSP (1739), 146–47
+15–16
+Hymn XVI. [Johann Scheffler] HSP (1739), 159–61
+16–17
+Hymn XVII. [Joachim Lange] HSP (1739), 179–81
+17–18
+Hymn XVIII. HSP (1739), 184–85
+19–20
+Hymn XIX. [Henry More] HSP (1739), 186–88
+20–21
+Hymn XX. [Gerhard Tersteegen] HSP (1739), 188–89
+21–22
+Hymn XXI. HSP (1739), 193–94
+22–23
+Hymn XXII. HSP (1739), 194–95
+
+Hymn XXIII. [Nikolaus Ludwig von Zinzendorf] HSP (1739), 195–96
+23–24
+Hymn XXIV. [Daniel Israel Lopez Laguna] CPH (1738), 6–7; HSP (1739), 196–98
+24–25
+Hymn XXV. [Johann Scheffler] HSP (1739), 198–200
+26–27
+Hymn XXVI. [Johann Joseph Winckler] CPH (1738), 65–66; HSP (1739), 200–201
+27–28
+Hymn XXVII. HSP (1739), 215–16
+28–29
+Hymn XXVIII. HSP (1739), 217
+
+Hymn XXIX. HSP (1739), 220–21
+
+Hymn XXX. HSP (1740), 12–14, 32 
+31–32
+Hymn XXXI. HSP (1740), 78–79
+32–33
+Hymn XXXII. HSP (1740), 102–3
+33–34
+Hymn XXXIII. HSP (1740), 103–4
+
+Hymn XXXIV. HSP (1740), 127–28
+34–35
+Hymn XXXV. HSP (1740), 166–67
+35–36
+Hymn XXXVI. HSP (1740), 168–69
+36–37
+Hymn XXXVII. HSP (1740), 170–71
+37–38
+Hymn XXXVIII. HSP (1740), 175–76
+38–39
+Hymn XXXIX. HSP (1740), 190–91
+39–40
+Hymn XL. HSP (1740), 192–94
+40–42
+Hymn XLI. HSP (1740), 206–7
+42–43
+Hymn XLII. HSP (1742), 16–17
+43–44
+Hymn XLIII. HSP (1742), 89–91
+44–45
+Hymn XLIV. HSP (1742), 95–96
+
+Hymn XLV. HSP (1742), 127–28
+46–47
+
+Hymn XLVI. HSP (1742), 142
+
+Hymn XLVII. HSP (1742), 153
+
+Hymn XLVIII. HSP (1742), 157
+48–49
+Hymn XLIX. HSP (1742), 162–63
+49–50
+Hymn L. HSP (1742), 171
+
+Hymn LI. HSP (1742), 212, 241
+50–52
+Hymn LII. HSP (1742), 230–32
+
+Hymn LIII. HSP (1742), 249–50
+
+Hymn LIV. HSP (1742), 263–64
+
+Hymn LV. HSP (1742), 264–65
+
+Hymn LVI. HSP (1742), 268–71
+56–57
+Hymn LVII. HSP (1742), 275–76
+
+Hymn LVIII. HSP (1742), 276–77
+58–59
+Hymn LIX. HSP (1742), 277
+59–60
+Hymn LX. HSP (1742), 278–79
+60–61
+Hymn LXI. HSP (1742), 280–81
+61–62
+Hymn LXII. HSP (1742), 282–83
+62–63
+Hymn LXIII. HSP (1742), 283–84
+63–64
+Hymn LXIV. HSP (1742), 289
+
+Hymn LXV. Redemption Hymns (1747), 3–5
+65–66
+Hymn LXVI. Redemption Hymns (1747), 7–8
+66–68
+Hymn LXVII. Redemption Hymns (1747), 11–12
+
+Hymn LXVIII. Redemption Hymns (1747), 19–21
+69–70
+Hymn LXIX. Redemption Hymns (1747), 29–30
+
+Hymn LXX. Redemption Hymns (1747), 31–32
+
+Hymn LXXI. Redemption Hymns (1747), 34–36
+71–73
+Hymn LXXII. Redemption Hymns (1747), 43
+73–74
+Hymn LXXIII. Redemption Hymns (1747), 43–44
+
+Hymn LXXIV. Redemption Hymns (1747), 44–45
+
+Hymn LXXV. Redemption Hymns (1747), 49–51
+
+Hymn LXXVI. Redemption Hymns (1747), 51–52
+77–78
+Hymn LXXVII. Redemption Hymns (1747), 60–61
+78–79
+Hymn LXXVIII. Redemption Hymns (1747), 66–68
+80–81
+Hymn LXXIX. Redemption Hymns (1747), 68–70
+81–83
+Hymn LXXX. HSP (1739), 222–23; HSP (1749), 1:20–21
+84–85
+Hymn LXXXI. HSP (1749), 1:186–87
+85–86
+Hymn LXXXII. HSP (1749), 1:197–98
+
+Hymn LXXXIII. Act of Devotion (1745), 105; HSP (1749), 1:206–7
+
+Hymn LXXXIV. HSP (1749), 1:212–13
+87–88
+Hymn LXXXV. HSP (1749), 1:216–17
+88–89
+Hymn LXXXVI. HSP (1749), 1:217–18
+89–90
+Hymn LXXXVII. HSP (1749), 1:219–20
+90–91
+Hymn LXXXVIII. HSP (1749), 1:220
+
+Hymn LXXXIX. HSP (1749), 1:232–33
+91–93
+Hymn XC. HSP (1749), 1:244–45
+93–94
+Hymn XCI. HSP (1749), 1:245–46
+
+Hymn XCII. HSP (1749), 1:248
+
+Hymn XCIII. HSP (1749), 1:163–64
+95–96
+Hymn XCIV. HSP (1749), 1:246–47
+
+Hymn XCV. HSP (1749), 1:251–52
+97–98
+
+Hymn XCVI. HSP (1749), 1:289–90
+98–99
+Hymn XCVII. HSP (1749), 1:300–301
+99–100
+Hymn XCVIII. HSP (1749), 1:315–16
+100–101
+Hymn XCIX. HSP (1749), 1:329
+101–2
+Hymn C. HSP (1749), 1:331–32
+102–4
+Hymn CI. HSP (1749), 2:10–11
+104–5
+Hymn CII. HSP (1749), 2:19–21
+105–6
+Hymn CIII. HSP (1749), 2:26
+106–7
+Hymn CIV. HSP (1749), 2:29–31
+107–8
+Hymn CV. HSP (1749), 2:87–88
+108–9
+Hymn CVI. HSP (1749), 2:88–89
+109–10
+Hymn CVII. HSP (1749), 2:92
+
+Hymn CVIII. HSP (1749), 2:93–94
+112–13
+Hymn CIX. HSP (1749), 2:128–30
+113–14
+Hymn CX. HSP (1749), 2:136
+
+Hymn CXI. HSP (1749), 2:136–37
+115–16
+Hymn CXII. HSP (1749), 2:160–61
+116–17
+Hymn CXIII. HSP (1749), 2:168
+117–18
+Hymn CXIV. HSP (1749), 2:172–73
+118–19
+Hymn CXV. HSP (1749), 2:173–74
+119–20
+Hymn CXVI. HSP (1749), 2:220–22
+120–22
+Hymn CXVII. HSP (1749), 2:242–43
+122–23
+Hymn CXVIII. HSP (1749), 2:243–44
+123–24
+Hymn CXIX. HSP (1749), 2:247–48
+124–26
+Hymn CXX. HSP (1749), 2:257–59
+126–27
+Hymn CXXI. HSP (1749), 2:263–64
+
+Hymn CXXII. HSP (1749), 2:264–66
+128–29
+Hymn CXXIII. HSP (1749), 2:283
+
+Hymn CXXIV. HSP (1749), 2:313–14
+129–31
+Hymn CXXV. HSP (1749), 2:320
+131–32
+Hymn CXXVI. HSP (1749), 2:329–30
+132–33
+Hymn CXXVII. HSP (1749), 2:334–36
+133–34
+Hymn CXXVIII. HLS (1745), 88
+
+Hymn CXXIX. HLS (1745), 89–90
+
+Hymn CXXX. HLS (1745), 90–91
+
+Hymn CXXXI. MSP (1744), 3:270–71
+138–39
+Hymn CXXXII. MSP (1744), 3:271–73
+139–40
+Hymn CXXXIII. [Wolfgang Christoph Dessler] MSP (1744), 3:273–75
+140–42
+Hymn CXXXIV. [Christian Friedrich Richter] MSP (1744), 3:275–78
+142–44
+
+[Page] v
+Advertisement.
+The following hymns, it will be easily discerned, are
+peculiarly designed for the use of those, to whom Jesus Christ “is
+made of God, wisdom and righteousness and sanctification,” and
+who enjoy in their hearts, the earnest of their compleat and
+eternal “redemption.” In these is “the mind which was in Christ
+Jesus,” enabling them to “walk as he also walked.” These do
+experience not only the witness, but the fruit of his Spirit, even
+“love, joy, peace, longsuffering, gentleness, goodness, fidelity,
+meekness, temperance.” They “love the Lord their God with all
+their heart, and their neighbour as themselves.” They labour to
+“abstain from all appearance of evil,” and are “zealous of good
+works.” And they daily “grow in grace and in the knowledge of
+our Lord Jesus Christ.”
+
+[Page] 1
+    SELECT HYMNS.
+     *Hymn I.2
+
+“Come to judgment, come away!”
+(Hark, I hear the angel say,
+Summoning the dust to rise)
+“Haste, resume, and lift your eyes;
+Hear, ye sons of Adam, hear,
+Man, before thy God appear!”
+
+Come to judgment, come away!
+This the last, the dreadful day!
+Sovereign author, judge of all,
+Dust obeys thy quick’ning call,
+Dust no other voice will heed:
+Thine the trump that wakes the dead.
+
+Come to judgment, come away!
+Ling’ring man no longer stay;
+Thee let earth at length restore,
+Pris’ner in her womb no more;
+Burst the barriers of the tomb,
+Rise to meet thy instant doom!
+* J. & C. W. Vol. 1.3
+2Source: George Herbert. First appeared in HSP (1739), 10–11.
+3I.e., John and Charles Wesley, Hymns and Sacred Poems, 5th edn. (London, 1756) [combines
+consecutively HSP (1739) and HSP (1740)].
+
+[Page] 2
+
+Come to judgment, come away!
+Wide dispers’d howe’er ye stray,
+Lost in fire, or air, or main,
+Kindred atoms meet again;
+Sepulchred where’er ye rest,
+Mix’d with fish, or bird, or beast.
+
+Come to judgment, come away!
+Help, O Christ, thy work’s decay:
+Man is out of order hurl’d,
+Parcel’d out to all the world;
+Lord, thy broken concert raise,
+And the music shall be praise.
+      Hymn II.4
+
+World adieu, thou real cheat,
+Oft have thy deceitful charms
+Fill’d my heart with fond conceit,
+Foolish hopes and false alarms;
+Now I see as clear as day,
+How thy follies pass away.
+
+Vain thy entertaining sights,
+False thy promises renew’d,
+All the pomp of thy delights
+Does but flatter and delude:
+Thee I quit for heaven above,
+Object of the noblest love.
+
+Farewel honour’s empty pride!
+Thy own nice, uncertain gust,
+If the least mischance betide,
+Lays thee lower than the dust:
+Worldly honours end in gall,
+Rise to-day, to-morrow fall.
+
+Foolish vanity, farewel,
+More inconstant than the wave!
+4Source: Antoinette Bourignon. First appeared in HSP (1739), 17–19.
+
+[Page] 3
+Where thy soothing fancies dwell,
+Purest tempers they deprave:
+He, to whom I fly, from thee,
+Jesus Christ shall set me free.
+
+Never shall my wand’ring mind,
+Follow after fleeting toys,
+Since in God alone I find
+Solid and substantial joys:
+Joys that never over-past,
+Thro’ eternity shall last.
+
+Lord, how happy is a heart
+After thee while it aspires!
+True and faithful as thou art,
+Thou shalt answer its desires:
+It shall see the glorious scene
+Of thine everlasting reign.
+     Hymn III.5
+
+Being of beings, God of love,
+To thee our hearts we raise;
+Thy all-sustaining pow’r we prove,
+And gladly sing thy praise.
+
+Thine, wholly thine we pant to be,
+Our sacrifice receive;
+Made and preserv’d, and sav’d by thee,
+To thee ourselves we give.
+
+Heav’nward our ev’ry wish aspires
+For all thy mercy’s store:
+The sole return thy love requires,
+Is that we ask for more.
+
+For more we ask, we open then
+Our hearts t’ embrace thy will:
+Turn and beget us, Lord, again,
+With all thy fulness fill!
+5First appeared in HSP (1739), 36–37.
+
+[Page] 4
+
+Come, Holy Ghost, the Saviour’s love
+Shed in our hearts abroad;
+So shall we ever live and move,
+And be, with Christ, in God.
+      Hymn IV.6
+
+Father, I want a thankful heart;
+I want to taste how good thou art,
+To plunge me in thy mercy’s sea,
+And comprehend thy love to me;
+The breadth, and length, and depth, and height
+Of love divinely infinite.
+
+Father, I long my soul to raise,
+And dwell for ever on thy praise,
+Thy praise with glorious joy to tell,
+In extasy unspeakable;
+While the full power of faith I know,
+And reign triumphant here below.
+      Hymn V.7
+
+Still let thy wisdom be my guide,
+Nor take thy light from me away;
+Still with me let thy grace abide,
+That I from thee may never stray:
+Let thy word richly in me dwell;
+Thy peace and love my portion be,
+My joy t’ endure and do thy will
+’Till perfect I am found in thee.
+
+Arm me with thy whole armour, Lord,
+Support my weakness with thy might:
+Gird on my thigh thy conqu’ring sword,
+And shield me in the threat’ning fight:
+6This is an extract from HSP (1739), 86; stanzas 7–8.
+7Source: Wolfgang Dessler. This is an extract from HSP (1739), 100; stanzas 5–6.
+
+[Page] 5
+From faith to faith from grace to grace,
+So in thy strength shall I go on,
+’Till heaven and earth flee from thy face,
+And glory end what grace begun.
+      Hymn VI.8
+
+Where shall my wondring soul begin?
+How shall I all to heaven aspire?
+A slave redeem’d from death and sin,
+A brand pluck’d from eternal fire;
+How shall I equal triumphs raise,
+And sing my great Deliverer’s praise:
+
+O how shall I the goodness tell,
+Father, which thou to me hast shew’d,
+That I, a child of wrath, and hell,
+Should now be called a child of God!
+Should know, should feel my sins forgiven,
+Blest with this antepast of heaven!
+
+And shall I slight my Father’s love,
+Or basely fear his gifts to own?
+Unmindful of his favours prove,
+Shall I, the hallow’d cross to shun,
+Refuse his righteousness t’ impart,
+By hiding it within my heart?
+
+No; tho’ the ancient dragon rage,
+And call forth all his host to war,
+Tho’ earth’s self-righteous sons engage;
+Them, and their god alike I dare:
+Jesus, the sinner’s friend, proclaim,
+Jesus, to sinners still the same.
+8First appeared in HSP (1739), 101–3; stanzas 1–4.
+
+[Page] 6
+    Hymn VII.9
+
+Thee, O my God and King,
+My Father, thee I sing!
+Hear well-pleas’d the joyous sound,
+Praise from earth and heav’n receive:
+Lost, I now in Christ am found,
+Dead, by faith in Christ I live.
+
+Father, behold thy son,
+In Christ I am thy own,
+Stranger long to thee and rest,
+See the prodigal is come:
+Open wide thine arms and breast,
+Take the weary wand’rer home.
+
+Thine eye observ’d from far,
+Thy pity look’d me near:
+Me thy bowels yearn’d to see,
+Me thy mercy ran to find,
+Empty, poor, and void of thee,
+Hungry, sick, and faint, and blind.
+
+Thou on my neck didst fall,
+Thy kiss forgave me all:
+Still the gracious words I hear,
+Words that made the Saviour mine,
+Haste, for him the robe prepare,
+His be righteousness divine!
+
+Thee then, my God and King,
+My Father, thee I sing!
+Hear well-pleas’d the joyous sound,
+Praise from earth and heaven receive,
+Lost, I now in Christ am found,
+Dead, by faith in Christ I live.
+9First appeared in HSP (1739), 107–8.
+
+[Page] 7
+   Hymn VIII.10
+
+O filial deity,
+Accept my new-born cry;
+See the travail of thy soul;
+Saviour, and be satisfied;
+Take me now, possess me whole,
+Who for me, for me hast died!
+
+Of life thou art the tree,
+My immortality!
+Feed this tender branch of thine,
+Ceaseless influence derive;
+Thou the true, the heavenly vine,
+Grafted into thee I live.
+
+Of life the fountain thou,
+I know—I feel it now!
+Faint and dead no more I droop:
+Thou art in me: thy supplies
+Every moment springing up
+Into life eternal rise.
+
+Thou the good shepherd art,
+From thee I ne’er shall part:
+Thou my keeper and my guide,
+Make me still thy tender care,
+Gently lead me by thy side,
+Sweetly in thy bosom bear.
+
+Thou art my daily bread;
+O Christ, thou art my head:
+Motion, virtue, strength to me,
+Me thy living member, flow,
+Nourish’d I, and fed by thee,
+Up to thee in all things grow.
+10First appeared in HSP (1739), 108–10.
+
+[Page] 8
+
+Prophet, to me reveal
+Thy Father’s perfect will.
+Never mortal spake like thee,
+Human prophet like divine:
+Loud and strong their voices be,
+Small, and still, and inward thine!
+
+On thee, my priest, I call,
+Thy blood aton’d for all.
+Still the Lamb as slain appears,
+Still thou stand’st before the throne,
+Ever off’ring up thy prayers,
+These presenting with thy own.
+
+Jesus, thou art my King,
+From thee my strength I bring!
+Shadow’d by thy mighty hand,
+Saviour, who shall pluck me thence!
+Faith supports, by faith I stand
+Strong as thy omnipotence.
+
+O filial deity,
+Accept my new-born cry!
+See the travail of thy soul,
+Saviour, and be satisfied;
+Take me now, possess me whole,
+Who for me, for me hast died.
+      Hymn IX.11
+
+Hear, Holy Spirit, hear,
+My inward Comforter!
+Loos’d by thee my stamm’ring tongue
+First assays to praise thee now,
+This the new, the joyful song,
+Hear it in thy temple thou.
+
+Long o’er my formless soul,
+The dreary waves did roll;
+11First appeared in HSP (1739), 111–13.
+
+[Page] 9
+Void I lay, and sunk in night:
+Thou, the over-shadowing Dove,
+Call’d the chaos into light,
+Bad’st me be, and live, and love,
+
+Thee I exult to feel,
+Thou in my heart dost dwell:
+There thou bear’st thy witness true,
+Shed’st the love of God abroad;
+I in Christ a creature new,
+I, ev’n I am born of God.
+
+Ere yet the time was come
+To fix in me thy home,
+With me oft thou didst reside:
+Now, my God, in me thou art;
+Here thou ever shall abide;
+One we are, no more to part.
+
+Fruit of the Saviour’s prayer,
+My promis’d Comforter!
+Thee the world cannot receive,
+Thee they neither know nor see,
+Dead is all the life they live,
+Dark their light, while void of thee.
+
+Yet I partake thy grace
+Thro’ Christ my righteousness:
+Mine the gifts thou dost impart,
+Mine the unction from above,
+Pardon written on my heart,
+Light, and life, and joy, and love.
+
+Thy gifts blest Paraclete,
+I glory to repeat:
+Sweetly sure of grace I am,
+Pardon to my soul applied,
+Int’rest in the spotless Lamb!
+Dead for all, for me he died.
+
+[Page] 10
+
+Thou art thyself the seal;
+I more than pardon feel:
+Peace, unutterable peace,
+Joy that ages ne’er can move,
+Faith’s assurance, hope’s increase,
+All the confidence of love.
+
+Pledge of the promise given,
+My antepast of heaven:
+Earnest thou of joys divine,
+Joys divine on me bestow’d,
+Heaven, and Christ, and all is mine,
+All the plenitude of God.
+
+Thou art my inward guide,
+I ask no help beside:
+Arm of God, on thee I call,
+Weak as helpless infancy;
+Weak I am—yet cannot fall,
+Stay’d by faith, and led by thee!
+
+Hear, Holy Spirit, hear,
+My inward Comforter!
+Loos’d by thee my stamm’ring tongue
+First assays to praise thee now;
+This the new, the joyful song,
+Hear it in thy temple thou!
+      Hymn X.12
+
+And can it be that I should gain
+An int’rest in the Saviour’s blood?
+Died he for me?—Who caus’d his pain!
+For me?—Who him to death pursu’d!
+Amazing love! How can it be
+That thou, my God, shouldst die for me?
+
+’Tis myst’ry all: th’ immortal dies!
+Who can explore his strange design?
+12First appeared in HSP (1739), 117–19.
+
+[Page] 11
+In vain the first-born seraph tries
+To sound the depths of love divine.
+’Tis mercy all! Let earth adore;
+Let angel-minds enquire no more.
+
+He left his Father’s throne above,
+(So free, so infinite his grace)
+Emptied himself of all but love,
+And bled for Adam’s helpless race:
+’Tis mercy all, immense and free,
+For, O my God, it found out me!
+
+Long my imprison’d spirit lay,
+Fast bound in sin and nature’s night:
+Thine eye diffus’d a quickning ray;
+I woke; the dungeon flam’d with light,
+My chains fell off, my heart was free,
+I rose, went forth, and follow’d thee.
+
+Still the small inward voice I hear,
+That whispers all my sins forgiven;
+Still the atoning blood is near,
+That quench’d the wrath of hostile heaven;
+I feel the life his wounds impart,
+I feel my Saviour in my heart.
+
+No condemnation now I dread,
+Jesus, and all in him, is mine:
+Alive in him, my living head,
+And cloath’d in righteousness divine,
+Bold I approach th’ eternal throne,
+And claim the crown, thro’ Christ, my own.
+      Hymn XI.13
+
+Jesu, to thee14 my heart I bow,
+Strange flames far from my soul remove;
+Fairest among ten-thousand thou,
+Be thou my Lord, my life my love.
+13Source: Nikolaus Ludwig von Zinzendorf. First appeared in CPH (1737), 26. Appears here via HSP
+(1739), 122–23; stanzas 1–3, 5–6.
+14Ori., “the”; a misprint; restored to reading of HSP (1739) in All in All (1765).
+
+[Page] 12
+
+All heaven thou fill’st with pure desire;
+O shine upon my panting15 breast;
+With sacred warmth my heart inspire,
+And let me thy hid sweetness taste.16
+
+I see thy garments roll’d in blood,
+Thy streaming head, thy hands, thy side;
+All hail, thou suff’ring, conqu’ring God!
+Now man doth17 live; for God hath died.
+
+Ye earthly loves, be far away;
+Saviour, be thou my love alone;
+No more may mine usurp the sway,
+But in me thy great will be done.
+
+Yea, thou true witness, spotless Lamb,
+All things for thee I count but loss;
+My sole desire, my constant aim,
+My only glory is18 thy cross.
+    Hymn XII.19
+
+O let thy sacred presence fill,
+And set my longing spirit free,
+Which pants to have no other will
+But night and day to feast on thee.
+
+While in these regions here below,
+No other good will I pursue;
+I’ll bid this world of noise and show,
+With all its flatt’ring snares, adieu.
+
+That path with humble speed I’ll seek,
+Wherein my Saviour’s footsteps shine,
+Nor will I hear, nor will I speak
+Of any other love than thine.
+
+To thee my earnest soul aspires,
+To thee I offer all my vows,
+15“Panting” is Charles Wesley’s replacement for “frozen” in HSP (1739).
+16Charles Wesley has changed HSP (1739), which began “May I too thy ...”
+17“Doth” is Charles Wesley’s replacement for “shall” in HSP (1739).
+18“Is” is Charles Wesley’s replacement for “be” in HSP (1739).
+19Source: Antoinette Bourignon. This is an extract from HSP (1739), 123–24; stanzas 2–9.
+
+[Page] 13
+Keep me from false and vain desires,
+My God, my Saviour, and my spouse.
+
+Henceforth may no prophane delight
+Divide this consecrated soul;
+Possess it thou, who hast the right,
+As Lord and master of the whole.
+
+Wealth, honour, pleasure, or what else
+This short-enduring world can give,
+Tempt as you will, my heart repels,
+To Christ alone resolv’d to live.
+
+Thee I can love, and thee alone
+With holy peace and inward bliss;
+To find thou tak’st me for thine own,
+O what a happiness is this!
+
+Nothing on earth do I desire,20
+But thy pure love within my breast,
+This, this I always will require,
+And freely give up all the rest.
+   Hymn XIII.21
+
+Thy everlasting truth,
+Father, thy ceaseless love
+Sees all thy children’s wants, and knows,
+What best for each will prove:
+
+And whatsoe’er thou will’st,
+Thou dost, O King of kings;
+What thy unerring wisdom chose,
+Thy power to being brings.
+
+Thou every where hast way,
+And all things serve thy might;
+Thy every act pure blessing is,
+Thy path unsullied light.
+20Charles Wesley has changed HSP (1739), which began “Nor heav’n, nor earth ...”
+21Source: Paul Gerhardt. This is an extract from HSP (1739), 142–44; stanzas 5–8, 13–16.
+
+[Page] 14
+
+When thou arisest, Lord,
+What shall thy work withstand?
+When all thy children want thou giv’st,
+Who, who shall stay thine hand?
+
+Leave to his sovereign sway
+To chuse and to command;
+So shalt thou wond’ring own, his way,
+How wise, how strong his hand.
+
+Far, far above thy thought
+His counsel shall appear,
+When fully he the work hath wrought,
+That caus’d thy needless fear.
+
+Thou seest our weakness, Lord,
+Our hearts are known to thee;
+O lift thou up the sinking hand,
+Confirm the feeble knee!
+
+Let us in life, and death,22
+Thy stedfast truth declare,
+And publish with our latest breath
+Thy love and guardian care.
+   Hymn XIV.23
+
+Thou Lamb of God, thou Prince of Peace,
+For thee my thirsty soul doth pine!
+My longing soul implores thy grace,
+O make me in thy likeness shine!24
+
+With fraudless, even, humble mind,
+Thy will in all things may I see:
+In love be every wish resign’d,
+And hallow’d my whole heart to thee.
+
+When pain o’er my weak flesh prevails,
+With lamb-like patience arm my breast;
+22Charles has changed HSP (1739), which read “in death.”
+23Source: Christian Friedrich Richter. First appeared in CPH (1737), 51. Appears here via HSP (1739),
+145–46.
+24Charles has changed HSP (1739), which began “O make in me ...”
+
+[Page] 15
+When grief my wounded soul assails,
+In lowly meekness may I rest.
+
+Close by thy side still may I keep,
+Howe’er life’s various current flow;
+With stedfast eye mark every step,
+And follow thee, where’er thou go.
+
+Thou, Lord, the dreadful fight hast won,
+Alone thou hast the wine-press trod:
+In me thy strength’ning grace be shewn,
+O may I conquer thro’ thy blood!
+
+So when on Sion thou shalt stand,
+And all heaven’s host adore their King,
+Shall I be found at thy right-hand,
+And free from pain thy glories sing?
+    Hymn XV.25
+
+All glory to th’ Eternal Three,
+Of light and love the unfathom’d sea,
+Whose boundless pow’r, whose saving grace,
+Reliev’d me in my deep distress.
+
+Still, Lord, from thy exhaustless store,
+Pure blessing and salvation shower;
+’Till earth I leave, and soar away
+To regions of unclouded day.
+
+O guide me, lead me in thy ways:
+’Tis thine the sinking hand to raise!
+Oh may I ever lean on thee:
+’Tis thine to prop the feeble knee!
+
+O Father, sanctify this pain,
+Nor let one tear be shed in vain!
+Soften, yet arm my breast: no fear,
+No wrath, but love alone be there.
+25Source: Nikolaus Ludwig von Zinzendorf. First appeared in CPH (1738), 62. Appears here via HSP
+(1739), 146–47; stanzas 1–2, 4–6.
+
+[Page] 16
+
+O leave not, cast me not away
+In fierce temptation’s dreadful day;
+Speak but the word; instant shall cease
+The storm, and all my soul be peace!
+   Hymn XVI.26
+
+O God, of good th’ unfathom’d sea,
+Who would not give his heart to thee?
+Who would not love thee with his might?
+O Jesu, lover of mankind,
+Who would not his whole soul and mind
+With all his strength to thee unite?
+
+Thou shin’st with everlasting rays;
+Before th’ unsufferable blaze
+Angels with both wings veil their eyes:
+Yet free as air thy bounty streams
+On all thy works; thy mercy’s beams
+Diffusive as thy sun’s arise.
+
+Astonish’d at thy frowning brow,
+Earth, hell, and heaven’s strong pillars bow,
+Terrible majesty is thine!
+Who then can that vast love express,
+Which bows thee down to me, who less
+Than nothing am, ’till thou art mine?
+
+High-thron’d on heaven’s eternal hill,
+In number, weight, and measure still.
+Thou sweetly ord’rest all that is:
+And yet thou deign’st to come to me,
+And guide my steps, that I with thee
+Enthron’d may reign in endless bliss.
+
+Fountain of good, all blessing flows
+From thee; no want thy fulness knows:
+What but thyself canst thou desire?
+26Source: Johann Scheffler. First appeared in HSP (1739), 159–61.
+
+[Page] 17
+Yes; self-sufficient as thou art,
+Thou dost desire my worthless heart,
+This, only this thou dost require.
+
+Primeval beauty! In thy sight
+The first-born, fairest sons of light
+See all their brightest glories fade:
+What then to me thine eyes could turn
+In sin conceiv’d, of woman born,
+A worm, a leaf, a blast, a shade?
+
+Hell’s armies tremble at thy nod,
+And trembling own th’ Almighty God,
+Sov’reign of earth, air, hell, and sky.
+But who is this that comes from far,
+Whose garments roll’d in blood appear?
+’Tis God made man for man to die.
+
+O God, of good th’ unfathom’d sea,
+Who would not give his heart to thee?
+Who would not love thee with his might?
+O Jesu, lover of mankind,
+Who would not his whole soul and mind
+With all his strength to thee unite!
+  Hymn XVII.27
+
+Jesu, thy light again I view,
+Again thy mercy’s beams I see,
+And all within me wakes, anew
+To pant for thy immensity:
+Again my thoughts to thee aspire
+In fervent flames of strong desire.
+
+But O! What offering shall I give
+To thee, the Lord of earth and skies?
+My spirit, soul, and flesh receive
+An holy, living sacrifice:
+27Source: Joachim Lange. First appeared in HSP (1739), 179–81.
+
+[Page] 18
+Small as it is, ’tis all my store;
+More shouldst thou have, if I had more.
+
+Now then, my God, thou hast my soul;
+No longer mine, but thine I am:
+Guard thou thine own, possess it whole,
+Chear it by hope, with love inflame.
+Thou hast my spirit; there display
+Thy glory to the perfect day.
+
+Thou hast my flesh, thine hallow’d shrine,
+Devoted solely to thy will:
+Here let thy light for ever shine,
+This house still let thy presence fill:
+O source of life, live, dwell, and move
+In me, ’till all my life be love.
+
+O never in these veils of shame,
+Sad fruits of sin, my glorying be!
+Cloath with salvation thro’ thy name
+My soul, and may I put on thee.
+Be living faith my costly dress,
+And my best robe thy righteousness!
+
+Send down thy likeness from above
+And let this my adorning be:
+Cloath me with wisdom, patience, love,
+With lowliness and purity,
+Than gold and pearls more precious far,
+And brighter than the morning-star.
+
+Lord, arm me with thy Spirit’s might,
+Since I am call’d by thy great name:
+In thee my wand’ring thoughts unite,
+Of all my works be thou the aim.
+Thy love attend me all my days,
+And my sole business be thy praise.
+
+[Page] 19
+ Hymn XVIII.28
+
+Come, Holy Ghost, all-quick’ning fire,
+Come, and in me delight to rest;
+Drawn by the lure of strong desire,
+O come, and consecrate my breast;
+The temple of my soul prepare,
+And fix thy sacred presence there!
+
+If now thine influence I feel,
+If now in thee begin to live;
+Still to my heart thyself reveal,
+Give me thyself, for ever give:
+A point my good, a drop my store;
+Eager I ask, and pant for more.
+
+Eager for thee I ask and pant;
+So strong the principle divine
+Carries me out with sweet constraint,
+’Till all my hallow’d soul be thine:
+Plung’d in the Godhead’s deepest sea,
+And lost in thine immensity.
+
+My peace, my life, my comfort now,
+My treasure and mine all thou art;
+True witness of my sonship thou,
+Engraving pardon on my heart;
+Seal of my sins in Christ forgiven,
+Earnest of love, and pledge of heaven.
+
+Come then, my God, mark out thine heir,
+Of heaven a larger earnest give,
+With clearer light thy witness bear,
+More sensibly within me live;
+Let all my powers thine entrance feel
+And deeper stamp thyself the seal.
+
+Come, Holy Ghost, all-quick’ning fire,
+Come, and in me delight to rest!
+28First appeared in HSP (1739), 184–85.
+
+[Page] 20
+Drawn by the lure of strong desire
+O come and consecrate my breast;
+The temple of my soul prepare,
+And fix thy sacred presence there!
+   Hymn XIX.29
+
+Father, if justly still we claim
+To us and ours the promise made,
+To us be graciously the same,
+And crown with living fire our head.
+
+Our claim admit, and from above
+Of holiness the Spirit shower,
+Of wise discernment, humble love,
+And zeal, and unity, and power.
+
+The Spirit of convincing speech,
+Of power demonstrative impart,
+Such as may every conscience reach,
+And sound the unbelieving heart.
+
+The Spirit of refining fire,
+Searching the inmost of the mind,
+To purge all fierce and foul desire,
+And kindle life more pure and kind.
+
+The Spirit of faith in this thy day
+To break the power of cancell’d sin,
+Tread down its strength, over’turn its sway,
+And still the conquest more than win.
+
+The Spirit breathe30 of inward life,
+Which in our hearts thy laws may write,
+Then grief expires, and pain and strife,
+’Tis nature all, and all delight.
+
+On all the earth thy Spirit shower,
+The earth in righteousness renew;
+Thy kingdom come, and hells o’erpower,
+And to thy scepter all subdue.
+29Source: Henry More. This is an extract from HSP (1739), 186–88; stanzas 6–15.
+30Charles has changed HSP (1739), which read “breath.” John parallels this change in Hymns (1780).
+
+[Page] 21
+
+Like mighty wind, or torrent fierce
+Let it opposers all o’er-run,
+And every law of sin reverse,
+That faith and love may make all one.
+
+Yea, let thy Spirit in every place
+Its richer energy declare,
+While lovely tempers, fruits of grace,
+The kingdom of thy Christ prepare.
+
+Grant this, O holy God, and true,
+The antient seers thou didst inspire:
+To us perform the promise due,
+Descend and crown us now with fire.
+    Hymn XX.31
+
+Lo, God is here, let us adore
+And own how dreadful is this place!
+Let all within us feel his power,
+And silent bow before his face.
+Who know his power, his grace who prove,
+Serve him with awe, with rev’rence love.
+
+Lo, God is here! Him day and night
+Th’ united choirs of angels sing:
+To him, enthron’d above all height,
+Heaven’s host their noblest praises bring:
+Disdain not, Lord, our meaner song,
+Who praise thee with a stamm’ring tongue.
+
+Gladly the toys of earth we leave,
+Wealth, pleasure, fame, for thee alone:
+To thee our will, soul, flesh we give;
+O take, O seal them for thine own.
+Thou art the God; thou art the Lord:
+Be thou by all thy works ador’d!
+
+Being of beings, may our praise
+Thy courts with grateful fragrance fill;
+31Source: Gerhard Tersteegen. First appeared in HSP (1739), 188–89.
+
+[Page] 22
+Still may we stand before thy face,
+Still hear and do thy sovereign will:
+To thee may all our thoughts arise,
+Ceaseless, accepted sacrifice!
+
+In thee we move: all things of thee
+Are full, thou source and life of all!
+Thou vast, unfathomable sea!
+Fall prostrate, lost in wonder, fall,
+Ye sons of men; for God is man!
+All may we lose, so thee we gain!
+
+As flowers their op’ning leaves display,
+And glad drink in the solar fire,
+So may we catch thy every ray,
+So may thy influence us inspire;
+Thou beam of the eternal beam!
+Thou purging fire, thou quick’ning flame!
+   Hymn XXI.32
+
+Son of the carpenter, receive
+This humble work of mine;
+Worth to my meanest labour give
+By joining it to thine.
+
+Servant of all, to toil for man
+Thou wouldst not, Lord, refuse:
+Thy majesty did not disdain
+To be employ’d for us.
+
+Thy bright example I pursue
+To thee in all things rise,
+And all I think, or speak or do,
+Is one great sacrifice.
+
+Careless thro’ outward cares I go,
+From all distraction free:
+My hands are but engag’d below,
+My heart is still with thee.
+32First appeared in HSP (1739), 193–94.
+
+[Page] 23
+
+O when wilt thou, my life, appear!
+How gladly would I cry,
+’Tis done, the work thou gav’st me here,
+’Tis finish’d, Lord—and die!
+  Hymn XXII.33
+
+Summon’d my labour to renew,
+And glad to act my part,
+Lord, in thy name my task I do,
+And with a single heart.
+
+End of my every action thou!
+Thyself in all I see:
+Accept my hallow’d labour now;
+I do it unto thee.
+
+Whate’er the Father views as thine,
+He views with gracious eyes;
+Jesus, this mean oblation join
+To thy great sacrifice.
+
+Stampt with an infinite desert,
+My work he then shall own;
+Well-pleas’d in me, when mine thou art,
+And I his fav’rite son!
+ Hymn XXIII.34
+
+Eternal depth of love divine
+In Jesus, God with us, display’d,
+How bright thy beaming glories shine!
+How wide thy healing streams are spread!
+With whom dost thou delight to dwell?
+Sinners, a vile and thankless race?35
+O God, what tongue aright can tell
+How vast thy love, how great thy grace!
+33First appeared in HSP (1739), 194–95.
+34Source: Nikolaus Ludwig von Zinzendorf. First appeared in HSP (1739), 195–96.
+35Charles has changed HSP (1739), which read “a thankless.”
+
+[Page] 24
+
+The dictates of thy sov’reign will
+With joy our grateful hearts receive:
+All thy delight in us fulfil,
+Lo! All we are to thee we give.
+To thy sure love, thy tender care,
+Our flesh, soul, spirit we resign;
+O fix thy sacred presence there,
+And seal th’ abode for ever thine.
+
+O King of Glory, thy rich grace
+Our short desires surpasses far!
+Yea, even our crimes, tho’ numberless,
+Less num’rous than thy mercies are.
+Still on thee, Father, may we rest!
+Still may we pant thy Son to know!
+Thy Sp’rit still breathe into our breast,
+Fountain of peace and joy below!
+
+Oft have we seen thy mighty power,
+Since from the world thou mad’st us free:
+Still may we praise thee more and more,
+Our hearts more firmly knit to thee:
+Still Lord, thy saving health display,
+And arm our souls with heavenly zeal:
+So, fearless shall we urge our way
+Thro’ all the powers of earth and hell!
+  Hymn XXIV.36
+
+O God, my God, my all thou art:
+Ere shines the dawn of rising day,
+Thy sov’reign light within my heart,
+Thine all-enlivening power display.
+
+For thee my thirsty soul doth pant,
+While in this desert land I live:
+And hungry as I am, and faint,
+Thy love alone can comfort give.
+36Source: Daniel Israel Lopez Laguna. First appeared in CPH (1738), 6–7. Appears here via HSP (1739),
+196–98.
+
+[Page] 25
+
+In a dry land behold I place
+My whole desire on thee, O Lord;
+And more I joy to gain thy grace
+Than all earth’s treasures can afford.
+
+In holiness within thy gates
+Of old oft have I sought for thee:
+Again my longing spirit waits
+That fulness of delight to see.
+
+More dear than life itself thy love
+My heart and tongue shall still employ;
+And to declare thy praise will prove
+My peace, my glory, and my joy.
+
+In blessing thee with grateful songs
+My happy life shall glide away;
+The praise that to thy name belongs,
+Hourly with lifted hands I’ll pay.
+
+Abundant sweetness, while I sing
+Thy love my ravish’d soul o’erflows,
+Secure in thee, my God and King,
+Of glory that no period knows.
+
+Thy name, O Lord, upon my bed
+Dwells on my lips, and fires my thought,
+With trembling awe in midnight shade,
+I muse on all, thine hands have wrought.
+
+In all I do I feel thine aid;
+Therefore thy greatness will I sing,
+O God, who bid’st my heart be glad
+Beneath the shadow of thy wing.
+
+My soul draws nigh, and cleaves to thee;
+Then let or earth, or hell assail,
+Thy mighty hand shall set me free,
+For whom thou sav’st he ne’er shall fail.
+
+[Page] 26
+  Hymn XXV.37
+
+Thee will I love, my strength, my tower,
+Thee will I love, my joy, my crown,
+Thee will I love with all my power,
+In all my works, and thee alone!
+Thee will I love ’till the pure fire
+Fill my whole soul with chaste desire.
+
+Ah! Why did I so late thee know,
+Thee lovelier than the sons of men!
+Ah, why did I no sooner go
+To thee, the only ease in pain!
+Asham’d I sigh and inly mourn
+That I so late to thee did turn.
+
+In darkness willingly I stray’d;
+I sought thee, yet from thee I rov’d:
+For wide my wand’ring thoughts were spread,
+Thy creatures more than thee I lov’d,
+And now, if more at length I see,
+’Tis thro’ thy light, and comes from thee.
+
+I thank thee, uncreated Sun,
+That thy bright beams on me have shin’d:
+I thank thee, who hast overthrown
+My foes, and heal’d my wounded mind:
+I thank thee whose enliv’ning voice
+Bids my freed heart in thee rejoice.
+
+Uphold me in the doubtful race,
+Nor suffer me again to stray:
+Strengthen my feet, with steady pace
+Still to press forward in thy way:
+My soul and flesh, O Lord of might,
+Fill, satiate with thy heav’nly light.
+
+Give to my eyes refreshing tears,
+Give to my heart chaste, hallow’d fires,
+37Source: Johann Scheffler. First appeared in HSP (1739), 198–200.
+
+[Page] 27
+Give to my soul with filial fears,
+The love that all heaven’s host inspires:
+That all my powers with all their might
+In thy sole glory may unite.
+
+Thee will I love, my joy, my crown;
+Thee will I love, my Lord, my God;
+Thee will I love beneath thy frown
+Or smile, thy scepter or thy rod;
+What tho’ my flesh and heart decay?
+Thee shall I love in endless day!
+ Hymn XXVI.38
+
+Shall I, for fear of feeble man,
+Thy Spirit’s course in me restrain?
+Or undismay’d in deed and word
+Be a true witness of39 my Lord?
+
+Aw’d by a mortal’s frown, shall I
+Conceal the word of God most high?
+How then before thee shall I dare
+To stand, or how thine anger bear?
+
+Shall I, to sooth th’ unholy throng,
+Soften thy truths, and smooth my tongue?
+To gain earth’s gilded toys, or flee
+The cross, endur’d, my God, by thee?
+
+What then is he, whose scorn I dread?
+Whose wrath or hate make40 me afraid?
+A man! An heir of death! A slave
+To sin! A bubble on the wave!
+
+Yea, let man rage; since thou wilt spread
+Thy shadowing wings around my head:
+Since in all pain thy tender love
+Will still my sure41 refreshment prove.
+38Source: Johann Joseph Winckler. First appeared in CPH (1738), 65–66. Appears here via HSP (1739),
+200–201.
+39“Of” is Charles Wesley’s replacement for “to” in HSP (1739).
+40“Make” is Charles Wesley’s replacement for “makes” in HSP (1739).
+41“Sure” is Charles Wesley’s replacement for “sweet” in HSP (1739). John Wesley adopts this change in
+Hymns (1780).
+
+[Page] 28
+
+Saviour of men, thy searching eye
+Doth all mine inmost soul descry:
+Doth ought on earth my wishes raise?
+Or the world’s pleasures, or its praise?
+
+The love of Christ doth me constrain
+To seek the wandring souls of men:
+With cries, entreaties, tears, to save,
+To snatch them from the gaping grave.
+
+For this let men revile my name,
+No cross I shun, I fear no shame:
+All hail, reproach, and welcome pain!
+Only thy terrors, Lord, restrain.
+
+My life, my blood, I here present!
+If for thy truth they may be spent,
+Fulfil thy sov’reign counsel Lord:
+Thy will be done, thy name ador’d!
+
+Give me thy strength, O God of power!
+Then let winds blow, or thunders roar.
+Thy faithful witness will I be:
+’Tis fixt: I can do all thro’ thee!
+Hymn XXVII.42
+
+Parent of good, whose plenteous grace
+O’er all thy creatures flows,
+Humbly we ask thy power to bless
+The food thy love bestows.
+
+Thy love provides the sober feast;
+A second gift impart,
+Give us with joy our food to taste,
+And with a single heart.
+
+Let it for thee new life afford,
+For thee our strength repair,
+42First appeared in HSP (1739), 215–16.
+
+[Page] 29
+Blest by thine all-sustaining word,
+And sanctified by prayer.
+
+Thee let us taste: nor toil below
+For perishable meat:
+The manna of thy love bestow,
+Give us thy flesh to eat.
+
+Life of the world, our souls to feed
+Thyself descend from high:
+Grant us of thee, the living bread,
+To eat, and never die.
+     Hymn XXVIII.43
+
+Blest be the God, whose tender care
+Prevents his children’s cry,
+Whose pity providently near
+Doth all our wants supply.
+
+Blest be the God whose bounteous store
+These chearing gifts imparts;
+Who veils in bread the secret power
+That feeds and glads our hearts.
+
+Fountain of blessings, source of good,
+To thee this strength we owe,
+Thou art the virtue of our food,
+Life of our life below.
+
+When shall our souls regain the skies,
+Thy heavenly sweetness prove;
+Where joys in all their fulness rise,
+And all our food is love.
+43First appeared in HSP (1739), 217.
+
+[Page] 30
+      Hymn XXIX.44
+
+Abba, Father! Hear thy child,
+Late in Jesus reconcil’d!
+Hear and all the graces shower
+All the joy, and peace, and power,
+All my Saviour asks above,
+All the life of heaven, of love.
+
+Lord, I will not let thee go,
+’Till THE  BLESSING thou bestow;
+Hear my advocate divine,
+Lo! To his my suit I join:
+Join’d to his it cannot fail—
+Bless me, for I will prevail!
+
+Stoop from thine eternal throne,
+See thy promise calls thee down!
+High and lofty as thou art
+Dwell within my worthless heart!
+My poor fainting soul revive;
+Here for ever walk and live.
+
+Heavenly Adam, life divine,
+Change my nature into thine:
+Move and spread throughout my soul,
+Actuate and fill the whole:
+Be it I no longer now
+Living in the flesh, but thou.
+
+Holy Ghost, no more delay,
+Come, and in thy temple stay;
+Now thine inward witness bear
+Strong, and permanent, and clear;
+Spring of life thyself impart,
+Rise eternal in my heart!
+44This is an extract from HSP (1739), 220–21; stanzas 8–12.
+
+[Page] 31
+       Hymn XXX.45
+
+Abraham, when severely try’d,
+His faith by his obedience shew’d,
+He with the harsh command comply’d,
+And gave his Isaac back to God.
+
+His son the father offer’d up,
+Son of his age, his only son,
+Object of all his joy and hope,
+And less belov’d than God alone.
+
+The father curb’d his swelling grief,
+’Twas God requir’d, it must be done;
+He stagger’d not thro’ unbelief,
+He bar’d his arms to slay his son.
+
+O for a faith like his, that we
+The bright example may pursue,
+May gladly give up all to thee,
+To whom our more than all is due!
+
+Now, Lord, for thee our all we leave,
+Our willing soul thy call obeys,
+Pleasure, and wealth, and fame we give,
+Freedom, and life to win thy grace.
+
+Is there a thing than life more dear,
+A thing from which we cannot part?
+We can, we now rejoice to tear
+The idol from our bleeding heart.
+
+Jesu, accept our sacrifice,
+All things for thee we count but loss:
+Lo! At thy word our Isaac dies,
+Dies on the altar of thy cross.
+
+Now to thyself the victim take,
+Nature’s last agony is o’er,
+45Stanzas 1–9 of this hymn first appeared in HSP (1740), 12–14; stanzas 1–2, 4, 7–12. Stanzas 10–14 of this
+hymn are an extract from HSP (1740), 32; stanzas 6–10.
+
+[Page] 32
+Freely thine own we render back,
+We grieve to part with all no more.
+
+For what to thee, O Lord, we give,
+An46 hundred-fold we here obtain,
+And soon with thee shall all receive,
+And loss shall be eternal gain.
+
+Infinite God thy greatness spann’d
+These heavens, and meted out the skies,
+Lo! In the hollow of thy hand
+The measur’d waters47 sink and rise.
+
+Thee to perfection who can tell?
+Earth, and her sons beneath thee lie,
+Lighter than dust within thy scale,
+—Less than nothing in thine eye.
+
+Yet in thy Son divinely great,
+We claim thy providential care:
+Boldly we stand before thy seat,
+Our Advocate hath placed us there.
+
+With him we are gone up on high,
+Since he is ours, and we are his;
+With him we reign above the sky,
+Yet walk upon our subject seas.
+
+We boast of our recover’d powers,
+Lords are we of the lands and floods,
+And earth, and heaven, and all is ours,
+And we are Christ’s, and Christ is God’s.
+       Hymn XXXI.48
+
+And can I yet delay
+My little all to give,
+To tear my soul from earth away,
+For Jesus to receive?
+46Ori., “And”; a misprint. Corrected to HSP (1740) reading in All in All (1765).
+47Ori., “water”; a misprint. Corrected to HSP (1740) reading in All in All (1765).
+48This is an extract from HSP (1740), 78–79; stanzas 8–10.
+
+[Page] 33
+
+Nay, but I yield, I yield!
+I can hold out no more,
+I sink by dying love compell’d,
+And own thee Conqueror.
+
+Tho’ late I all forsake,
+My friends, my life resign,
+Gracious Redeemer, take, O take,
+And seal me ever thine.
+
+Come, and possess me whole,
+Nor hence again remove,
+Settle, and fix my wav’ring soul
+With all thy weight of love.
+
+My one desire be this,
+Thy only love to know,
+To seek, and taste no other bliss,
+No other good below.
+
+My life, my portion thou,
+Thou all-sufficient art,
+My hope, my heavenly treasure, now
+Enter, and keep my heart.
+       Hymn XXXII.49
+
+Let heaven and earth agree
+The Father’s praise to sing,
+Who draws us to the Son, that he
+May us to glory bring.
+
+Honour and endless love
+Let God the Son receive,
+Who saves us here, and prays above,
+That we with him may live.
+
+Be everlasting praise
+To God the Spirit given,
+49First appeared in HSP (1740), 102–3.
+
+[Page] 34
+Who now attests us sons of grace,
+And seals as heirs of heaven.
+
+Drawn, and redeem’d, and seal’d,
+We’ll sing the One and Three,
+With Father, Son, and Spirit fill’d
+To all eternity.
+     Hymn XXXIII.50
+
+Father of mankind, be ever ador’d:
+Thy mercy we find, in sending our Lord
+To ransom and bless us: thy goodness we praise,
+For sending in Jesus salvation by grace.
+
+O Son of his love, who deignedst51 to die,
+Our curse to remove, our pardon to buy;
+Accept our thanksgiving, Almighty to save,
+Who openest heaven to all that believe.
+
+O Spirit of love, of health, and of power,
+Thy working we prove, thy grace we adore;
+Whose inward revealing applies our Lord’s blood,
+Attesting and sealing us children of God.
+     Hymn XXXIV.52
+
+Saviour, who ready art to hear,
+(Readier than I to pray)
+Answer my scarcely utter’d prayer,
+And meet me on the way.
+
+Talk with me, Lord: thyself reveal
+While here o’er earth I rove;
+Speak to my heart, and let it feel
+The kindling of thy love; 
+50First appeared in HSP (1740), 103–4.
+51Changed to “deignest” in All in All (1765).
+52First appeared in HSP (1740), 127–28.
+
+[Page] 35
+
+With thee conversing, I forget
+All time, and toil, and care:
+Labour is rest, and pain is sweet,
+If thou, my God, art here.
+
+Here then, my God, vouchsafe to stay,
+And make my heart rejoice;
+My bounding heart shall own thy sway,
+And echo to thy voice.
+
+Thou callest me to seek thy face—
+’Tis all I wish to seek,
+T’ attend the whispers of thy grace,
+And hear thee inly speak.
+
+Let this my every hour employ,
+’Till I thy glory see,
+Enter into my Master’s joy,
+And find my heaven in thee.
+      Hymn XXXV.53
+
+Author of faith, appear!
+Be thou its finisher;
+Upward still for this we gaze,
+’Till we feel the stamp divine,
+Thee behold with open face,
+Bright in all thy glory shine.
+
+Leave not thy work undone,
+But ever love thine own,
+Let us all thy goodness prove,
+Let us to the end believe;
+Shew thine everlasting love,
+Save us, to the utmost save.
+
+O that our life might be54
+One looking up to thee!
+53This is an extract from HSP (1740), 166–67; stanzas 6–10.
+54Ori., “he”; a misprint. Restored to HSP (1740) reading in All in All (1765).
+
+[Page] 36
+Ever hast’ning to the day,
+When our eyes shall see thee near!
+Come, Redeemer, come away!
+Glorious in thy saints appear.
+
+Jesu, the heavens bow,
+We long to meet thee now!
+Now in majesty come down
+Pity thine elect and come;
+Hear us in thy Spirit groan,
+Take the weary exiles home.
+
+Now let thy face be seen
+Without a veil between:
+Come and change our faith to sight,
+Swallow up mortality;
+Plunge us in a sea of light,
+Christ be all in all to me.
+     Hymn XXXVI.55
+
+High praise to thee, all-gracious God!
+Unceasing praise to thee we pay:
+Naked and wallowing in our blood,
+Unpitied, loath’d of all we lay.
+Thou saw’st, and from th’ eternal throne
+Gav’st us thy dear, thine only Son.
+
+Thro’ thy rich grace, in Jesu’s blood,
+Blessing, redemption, life we find:
+Our souls wash’d in this cleansing flood,
+No stain of guilt remains behind.
+Who can thy mercy’s stores express?
+Unfathomable, numberless!
+
+Now Christ in us doth live, and we,
+Father, thro’ him with thee are one:
+The banner of his love we see,
+And fearless grasp the starry crown:
+55Source: Ludwig Andreas Gotter. First appeared in HSP (1740), 168–69.
+
+[Page] 37
+Unutterable peace we feel
+In him, and joys unspeakable.
+
+Now hast thou given us, thro’ thy Son,
+The power of living faith to see,
+Unconquerable faith alone,
+That gains o’er all the victory;
+Faith which nor earth nor hell can move,
+Unblameable in perfect love.
+
+Fully the quick’ning Spirit impart,
+Thou who hast all our sins forgiven;
+O form the Saviour in my heart,
+Seal of thy love, and pledge of heaven:
+For ever be his name imprest
+Both on my hand and on my breast.
+
+Thine is whate’er we are: thy grace
+In Christ created us anew,
+To sing thy never-ceasing praise,
+Thine unexhausted love to shew;
+And arm’d with thy great Spirit’s aid,
+Blameless in all thy paths to tread.
+
+Yea, Father, ours thro’ him thou art
+For so is thine eternal will!
+O live, move, reign within my heart,
+My soul with all thy fulness fill:
+My heart, my all I yield to thee:
+Jesus be all in all to me.
+    Hymn XXXVII.56
+
+Jesu, attend; thyself reveal!
+Are we not met in thy great name?
+Thee in the midst we wait to feel,
+We wait to catch the spreading flame.
+56This is an extract from HSP (1740), 170–71; stanzas 5–8.
+
+[Page] 38
+
+Thou, God, that answerest by fire,
+The Spirit of burning now impart,
+And let the flames of pure desire
+Rise from the altar of our heart.
+
+Truly our fellowship below
+With thee and with thy Father is:
+In thee eternal life we know,
+And heaven’s unutterable bliss.
+
+In part we only know thee here,
+But wait thy coming from above,
+And I shall then behold thee near,
+And I shall all be lost in love!
+    Hymn XXXVIII.57
+
+Father, if now thy breath revives
+In us the pure primeval flame,
+Thy power, which animates our lives,
+Can make us in our deaths the same;
+
+Can out of weakness make us strong,
+Arming as in the antient days,
+Loosing the stammering infant’s tongue,
+And perfecting in babes thy praise.
+
+Stedfast we then shall stand, and sure
+Thine everlasting truth to prove,
+In faith’s plerophory* secure,
+In all th’ omnipotence of love.
+
+Come, holy, holy, holy Lord,
+The Father, Son, and Spirit come;
+Be mindful of thy changeless word,
+And make the faithful soul thy home.
+* I.e. full assurance.
+57This is an extract from HSP (1740), 175–76; stanzas 5–12.
+
+[Page] 39
+
+Arm of the Lord, awake, awake:
+In us thy glorious self reveal;
+Let us thy seven-fold gifts partake,
+Let us thy mighty working feel.
+
+Near us, assisting Jesu, stand,
+Give us the opening heaven to see,
+Thee to behold at God’s right hand,
+And yield our parting souls to thee.
+
+My Father, O my Father, hear,
+And send the fiery chariot down,
+Let Israel’s flaming steeds58 appear,
+And whirl us to the starry crown.
+
+We, we would die for Jesus too!
+Thro’ tortures, fires, and seas of blood,
+All, all triumphantly break thro’,
+And plunge into the depths of God!
+     Hymn XXXIX.59
+
+Still may we continue thus,
+We in thee, and thou in us;
+Let us fresh supplies receive
+From thee, in thee ever live.
+Share the fatness of the root,
+Blossom, bud, and bring forth fruit,
+With immortal vigour rise,
+Tow’ring ’till we reach the skies.
+
+Christ to all believers known,
+Living, precious corner-stone,
+Christ by mortals disallow’d,
+Chosen and esteem’d of God;
+Lively stones we come to thee,
+Built together let us be,
+58Ori., “steads”; a misprint. Restored to HSP (1740) reading.
+59This is an extract from HSP (1740), 190–91; Pt. 2, stanzas 2–6.
+
+[Page] 40
+Sav’d by grace thro’ faith alone,
+Faith it is that makes us one.
+
+Other ground can no man lay,
+JESUS  TAKES  OUR  SINS  AWAY!
+Jesus the foundation is:
+This shall stand, and only this.
+Fitly fram’d in him we are,
+All the building rises fair:
+Let it to a temple rise,
+Worthy him who fills the skies.
+
+Husband of thy church below,
+Christ, if thee our Lord we know,
+Unto thee betroth’d in love,
+Always faithful let us prove:
+Never rob thee of our heart,
+Never give the creature part;
+Only thou possess the whole,
+Take my body, spirit, soul.
+
+Stedfast let us cleave to thee,
+Love the mystic union be,
+Union to the world unknown,
+Join’d to God, in spirit one.
+Wait we ’till the Spouse shall come,
+’Till the Lamb shall take us home,
+For his heaven the bride prepare,
+Solemnize our nuptials there.
+   Hymn XL.60
+
+Christ, our head, gone up on high,
+Be thou in thy Spirit nigh,
+Advocate with God, give ear
+To thine own effectual prayer:
+60First appeared in HSP (1740), 192–94.
+
+[Page] 41
+Hear the sounds, thou once didst breathe,
+In thy days of flesh beneath,
+Now, O Jesu, let them be
+Strongly echo’d back to thee.
+
+We, O Christ, have thee receiv’d,
+We the gospel-word believ’d,
+Justly then we claim a share
+In thine everlasting prayer.
+One the Father is with thee;
+Knit us in like unity;
+Make us, O uniting Son,
+One, as thou and he are one.
+
+If thy love to us hath given
+All the glories of his heaven,
+(From eternity thine own,
+Glory here in grace begun.)
+Let us now the gift receive,
+By the vital union live,
+Join’d to God, and perfect be,
+Mystically one in thee.
+
+Let it hence to all be known,
+Thou art with thy Father one,
+One with him in us be shew’d,
+Very God of very God.
+Sent our spirits to unite,
+Sent to make us sons of light,
+Sent that we his grace may prove,
+All the riches of his love.
+
+Thee he lov’d ere time begun,
+Thee the co-eternal Son;
+He hath to thy merit given
+Us, th’ adopted heirs of heaven.
+Thou hast will’d that we should rise,
+See thy glory in the skies,
+
+[Page] 42
+See thee by all heaven ador’d,
+Be for ever with our Lord.
+
+Thou the Father seest alone,
+Thou to us hast made him known;
+Sent from him we know thou art,
+We have found thee in our heart:
+Thou the Father hast declar’d;
+He is here our great reward,
+Ours his nature and his name;
+Thou art ours, with him the same.
+
+Still, O Lord, (for thine we are)
+Still to us his name declare;
+Thy revealing Spirit give,
+Whom the world cannot receive:
+Fill us with the Father’s love,
+Never from our souls remove,
+Dwell, in us, and we shall be
+Thine to all eternity.
+      Hymn XLI.61
+
+I would be thine, thou know’st I would,
+And have thee all mine own:
+Thee, O mine all-sufficient good,
+I want, and thee alone.
+
+Thy name to me, thy nature grant;
+This, only this be given,
+Nothing besides my God I want,
+Nothing in earth or heaven.
+
+Come, O my Saviour, come away,
+Into my soul descend,
+No longer from thy creature stay,
+My author, and my end.
+61This is an extract from HSP (1740), 206–7; stanzas 13–17.
+
+[Page] 43
+
+The bliss thou hast for me prepar’d
+No longer be delay’d;
+Come my exceeding great reward,
+For whom I first was made.
+[5]62 Come, Father, Son, and Holy Ghost,
+And seal me thine abode,
+Let all I am in thee be lost,
+Let all I am be God!
+ *Hymn XLII.63
+
+What can we offer, our good Lord,
+(Poor nothings!) for his boundless grace!
+Fain would we his great name record,
+And worthily set forth his praise.
+Dear object of our growing love,
+To whom our more than all we owe,
+Open the fountain from above,
+And let it our full soul o’erflow.
+
+So shall our lives thy power proclaim,
+Thy grace for every sinner free,
+Till all mankind shall learn thy name,
+Shall all stretch out their hands to thee.
+Open a door which earth and hell
+May strive to shut, but strive in vain:
+Let thy word richly in us dwell,
+And let our gracious fruit remain.
+
+O multiply thy sower’s seed,
+And fruit we every hour shall bear,
+Throughout the world thy gospel spread,
+Thine everlasting truth declare;
+* J. & C. W. Vol. 2.64
+62Ori., “3”; a misprint.
+63Source: August Gottlieb Spangenberg. This is an extract from HSP (1742), 16–17; stanzas 11–13.
+64I.e., John and Charles Wesley, Hymns and Sacred Poems (1742), 3rd edn. (London, 1756).
+
+[Page] 44
+We all in perfect love renew’d
+Shall know the greatness of thy power,
+Stand in the temple of our God,
+As pillars, and go out no more.
+ Hymn XLIII.65
+
+The Lord unto my Lord hath said,
+Sit thou in glory, sit
+’Till I thine enemies have made
+To bow beneath thy feet.
+
+Jesu, my Lord, mighty to save,
+What can my hopes withstand,
+When thee my advocate I have
+Enthron’d at God’s right-hand?
+
+Master, on thee my soul is stay’d,
+Thou wilt not quit thy claim;
+Thou only hast my ransom66 paid,
+And only thine I am.
+
+Come then, and claim me for thine own,
+Saviour, thy right assert,
+Come, gracious Lord, set up thy throne,
+And reign within my heart.
+
+So shall I bless thy pleasing sway,
+And sitting at thy feet
+Thy laws with all my heart obey,
+With all my soul submit.
+
+So shall I do thy will below,
+As angels do above,
+The virtue of thy passion shew,
+The triumphs of thy love.
+
+Thy love the conquest more than gains:
+To all I shall proclaim,
+65First appeared in HSP (1742), 89–91; stanzas 1–2, 6–7, 12–15.
+66Ori., “ransom’d”; a misprint. Correct to HSP (1742) reading in All in All (1765).
+
+[Page] 45
+Jesus the King, the Conqu’ror reigns,
+Bow down to Jesu’s name.
+
+To thee shall earth and hell submit,
+And every foe shall fall,
+’Till death expires beneath thy feet,
+And God is all in all.
+ Hymn XLIV.67
+
+Jesus hath died, that I might live,
+Might live to God alone,
+In him eternal life receive,
+And be in spirit one.
+
+Saviour, I thank thee for the grace,
+The gift unspeakable,
+And wait with arms of faith t’ embrace,
+And all thy love to feel.
+
+My soul breaks out in strong desire
+The perfect bliss to prove,
+My longing soul is all on fire
+To be dissolv’d in love.
+
+Give me thyself, from every boast,
+From every wish set free:
+Let all I am in thee be lost,
+But give thyself to me.
+
+Thy gifts, alas! Cannot suffice,
+Unless thyself be given,
+Thy presence makes my paradise,
+And where thou art is heaven.
+67This is an extract from HSP (1742), 95–96; stanzas 9–13.
+
+[Page] 46
+  Hymn XLV.68
+
+Let the world lament their dead,
+As sorrowing without hope,
+When a friend of ours is freed,
+We chearfully look up,
+Cannot murmur or complain,
+For our dead we cannot grieve,
+Death to them, to us is gain,
+In Jesus we believe.
+
+We believe that Christ our head,
+For us resign’d his breath,
+He was number’d with the dead,
+And dying conquer’d death;
+Burst the barriers of the tomb:
+Death could him no longer keep,
+He is the first-fruits become
+Of those in him that sleep.
+
+God, who him to life restor’d,
+Shall all his members raise.
+Bring them quicken’d with their Lord,
+The children of his grace.
+We who then on earth remain,
+Shall not sooner be brought home,
+All the dead shall rise again,
+To meet their general doom.
+
+Jesus, faithful to his word,
+Shall with a shout descend,
+All heaven’s host their glorious Lord
+Shall pompously attend:
+Christ shall come with dreadful noise,
+Lightnings swift, and thunders loud,
+With the great archangel’s voice,
+And with the trump of God.
+68First appeared in HSP (1742), 127–28.
+
+[Page] 47
+
+First the dead in Christ shall rise,
+Then we who yet remain,
+Shall be caught up to the skies,
+And see our Lord again:
+We shall meet him in the air,
+All wrapt up to heaven shall be,
+See and love, and praise him there,
+To all eternity.
+
+Who can tell the happiness,
+This glorious hope affords?
+Joy unutter’d we possess,
+In these reviving words;
+Happy while on earth we breathe,
+Mightier bliss ordain’d to know,
+Trampling down sin, hell and death,
+To the third heaven we go.
+ Hymn XLVI.69
+
+Believing on my Lord, I find
+A sure and present aid:
+On thee alone my constant mind
+Is every moment stay’d.
+
+Whate’er in me seems wise, or good,
+Or strong I here disclaim:
+I wash my garments in the blood
+Of the atoning Lamb.
+
+Jesus, my strength, my life, my rest,
+On thee will I depend,
+Till summon’d to the marriage-feast,
+Where faith in sight shall end.
+69This is an extract from HSP (1742), 142; stanzas 8–10.
+
+[Page] 48
+Hymn XLVII.70
+
+Is it not enough that I
+Now can Abba Father cry?
+I am now a child of God,
+Bought and sprinkled with thy blood;
+Lord, it doth not yet appear,
+What I surely shall be here,
+When thou shalt unfold the word:
+Only make me as my Lord.
+
+So I may thy Spirit know,
+Let him as he listeth blow:
+Let the manner be unknown,
+So I may with thee be one;
+Fully in my life express
+All the heights of holiness,
+Sweetly in my spirit prove
+All the depths of humble love.
+     Hymn XLVIII.71
+
+Jesus is our common Lord,
+He our loving Saviour is,
+By his death to life restor’d,
+Misery we exchange for bliss:
+
+Bliss to carnal minds unknown;
+O ’tis more than tongues can tell!
+Only to believers known,
+Glorious and unspeakable!
+
+Christ, our brother, and our friend,
+Shews us his eternal love;
+Never let our triumphs end,
+’Till we join the host above.
+70This is an extract from HSP (1742), 153; stanzas 4–5.
+71This is an extract from HSP (1742), 157; stanzas 3–6.
+
+[Page] 49
+
+Let us walk with Christ in white,
+For our bridal-day prepare,
+For our partnership in light,
+For our glorious meeting there!
+ Hymn XLIX.72
+
+Christ, our head and common Lord,
+See the souls that wait on thee,
+Hear us all with one accord
+Sweetly in thy praise agree;
+Parted tho’ in flesh we are,
+Join’d to thee our corner-stone,
+We are intimately near,
+Present, and in spirit one.
+
+Let us now to thee aspire,
+Who thy life begin to know,
+Let the circulating fire
+Now in every bosom glow:
+Let the incense of our vows
+From thy golden censer rise,
+Fragrant thro’ the higher house,
+Well-accepted sacrifice.
+
+Come ye absent souls who love
+Jesus with a simple heart,
+Seek with us the things above,
+Never from the work depart:
+Never let us cease to sing
+The great riches of his grace,
+’Till we all behold our King
+Eye to eye, and face to face.
+
+Quickly, we shall all appear
+At the judgment-seat above,
+We shall see our Jesus near,
+Him whom now unseen we love;
+72First appeared in HSP (1742), 162–63.
+
+[Page] 50
+We his dear, peculiar ones,
+Sharers of our Master’s bliss,
+We shall sit upon our thrones,
+We shall see him as he is.
+
+Partners of this heavenly hope,
+Travel on, and meet us there,
+We shall surely be caught up
+Meet the Saviour in the air:
+Yes; eternity’s at hand,
+We shall soon be taken home
+With the Lamb on Sion stand—
+Come, desire of nations, come!
+     Hymn L.73
+
+Come, then and loose my stamm’ring tongue
+Teach me the new, the joyful song,
+And perfect in a babe thy praise:
+I want a thousand lives t’ employ
+In publishing the sounds of joy;
+The gospel of thy general grace.
+[2]74 Come, Lord, thy Spirit bids thee come,
+Give me thyself, and take me home,
+Be now the glorious earnest given:
+The counsel of thy grace fulfil,
+Thy kingdom come, thy perfect will
+Be done on earth, as ’tis in heaven.
+    Hymn LI.75
+
+Save me for thine own great name,
+That all the world may know
+Daniel’s God is still the same,
+And reigns supreme below:
+73This is an extract from HSP (1742), 171; stanzas 17–18.
+74Ori., “3”; a misprint.
+75Stanzas 1–3 of this hymn are an extract from HSP (1742), 212; stanzas 4–6. Stanzas 4–6 of this hymn are
+an extract from HSP (1742), 241; stanzas 5–7.
+
+[Page] 51
+Him let all mankind adore,
+Spread his glorious name abroad,
+Tremble all, and bow before
+The great, the living God.
+
+Absolute, unchangeable
+O’er all his works he reigns,
+His dominion cannot fail,
+But undisturb’d remains:
+His dominion standeth fast,
+Is, when time no more shall be,
+Still shall his dominion last
+Thro’ all eternity.
+
+He delivers by his love,
+He rescues souls from death,
+Signs he works in heaven above,
+And signs in earth beneath;
+Daniel he doth every hour
+From the lion’s paw retrieve,
+I am sav’d from Satan’s power,
+And lo! By grace I live.
+
+Fain would I the truth proclaim
+That makes me free indeed,
+Glorify my Saviour’s name,
+And all its virtues spread:
+Jesus all our wants relieves,
+Jesus, mighty to redeem,
+Saves, and to the utmost saves
+All those that come to him.
+
+Jesu, lo! I come to thee,
+And wait to be sent forth;
+If thy Spirit send forth me,
+A worm shall shake the earth;
+I shall thy great name declare,
+Spread thy victories abroad,
+Be the weapons of thy war,
+The battle-ax of God.
+
+[Page] 52
+
+Perfect then thy mighty pow’r
+In a weak, sinful worm,
+All my sins destroy, devour,
+And all my soul transform;
+Now apply the Spirit’s seal,
+O come quickly from above,
+Empty me of self, and fill
+With all the life of love.
+   Hymn LII.76
+
+Jesu, the life, the truth, the way,
+In whom I now believe,
+As taught by thee in faith I pray,
+Expecting to receive.
+
+Thy will by me on earth be done,
+As by the choirs above,
+Who always see thee on thy throne,
+And glory in thy love.
+
+I ask in confidence the grace,
+That I may do thy will,
+As angels who behold thy face,
+And all thy words fulfil.
+
+Thee I shall serve without constraint,
+Shall every moment please:
+Those blessed spirits never faint,
+Nor from thy service cease.
+
+From thee no more shall I depart,
+No more unfaithful prove,
+But love thee with a constant heart,
+For angels always love.
+
+The graces of my second birth
+To me shall all be given,
+And I shall do thy will on earth,
+As angels do in heaven.
+76First appeared in HSP (1742), 230–32; stanzas 1–3, 5, 7, 12.
+
+[Page] 53
+  Hymn LIII.77
+
+In a land of corn and wine
+My lot is cast below,
+Comforts here and blessings join,
+And milk and honey flow:
+Jacob’s well is in my soul,
+Gracious dew my heavens distil,
+Fill my spirit already full,
+And shall for ever fill.
+
+Blest, O Israel, art thou,
+What people is like thee?
+Sav’d from sin by Jesus now
+Thou art, and still shall be;
+Jesus is thy seven-fold shield,
+Jesus is thy flaming sword,
+Earth, and hell, and sin shall yield
+To God’s almighty word.
+
+God’s almighty word shall stand,
+Thine enemies shall fall,
+Fade away at his command,
+And sink and perish all:
+Liars shall they all be found
+All who cried “It cannot be,
+Sin should ever quit its ground,
+And have no place in thee.”
+
+God, the gracious God and true,
+Hath spoke the faithful word:
+He the mighty work shall do,
+Our trust is in the Lord:
+He the mountain shall remove,
+He the sinner shall restore.
+He shall perfect me in love,
+And I shall sin no more.
+77This is an extract from HSP (1742), 249–50; stanzas 5–7, 9. Charles makes several small changes in the
+opening stanza to change it from third person to first person in voice.
+
+[Page] 54
+  Hymn LIV.78
+
+Father, supply my every need,
+Sustain the life thyself has given;
+Call for the never-failing bread,
+The manna that comes down from heaven.
+
+The gracious fruit of righteousness,
+Thy blessings unexhausted store
+In me abundantly increase,
+Nor let me ever hunger more.
+
+Holy, and true, and righteous Lord,
+I wait to prove thy perfect will,
+Be mindful of thy gracious word,
+And stamp me with thy Spirit’s seal.
+
+Thy faithful mercies let me find,
+In which thou causest me to trust;
+Give me the meek and lowly mind,
+And lay my spirit in the dust.
+
+Open my faith’s interior eye:
+Display thy glory from above,
+And all I am shall sink, and die,
+Lost in astonishment and love.
+
+Confound, o’erpower me with thy grace,
+I would be by myself abhorr’d,
+(All might, all majesty, all praise,
+All glory be to Christ my Lord!)
+
+Now let me gain perfection’s height!
+Now let me into nothing fall!
+Be less than nothing in thy sight,
+And feel that Christ is all in all.
+78This is an extract from HSP (1742), 263–64; stanzas 19–20, 23–24, 26–28.
+
+[Page] 55
+   Hymn LV.79
+
+Arise, my soul, arise,
+Shake off thy guilty fears,
+The bleeding sacrifice
+In my behalf appears;
+Before the throne my surety stands;
+My name is written on his hands.
+
+He ever lives above
+For me to interceed,
+His all-redeeming love,
+His precious blood to plead;
+His blood aton’d for all our race,
+And sprinkles now the throne of grace.
+
+Five bleeding wounds he bears,
+Receiv’d on Calvary;
+They pour effectual prayers,
+They strongly speak for me;
+Forgive him, O forgive, they cry,
+Nor let that ransom’d sinner die.
+
+The Father hears him pray,
+His dear anointed one,
+He cannot turn away
+The presence of his Son:
+His Spirit answers to the blood,
+And tells me I am born of God.
+
+My God is reconcil’d,
+His pard’ning voice I hear,
+He owns me for his child,
+I can no longer fear,
+With confidence I now draw nigh,
+And Father, Abba Father, cry!
+79First appeared in HSP (1742), 264–65.
+
+[Page] 56
+  Hymn LVI.80
+
+Jesu, the truth, the way,
+The life, in us appear,
+Thy glorious arm display,
+And bring salvation near,
+The great salvation thou hast wrought,
+Above the reach of human thought.
+
+Flesh, earth, and hell deny
+The freedom of thy sons,
+And scornfully they cry
+“Where are the perfect ones?”
+They dare thee all thy power to shew,
+“Thou canst not make us saints below.”
+
+Answer their challenge, Lord,
+Thy witnesses call forth,
+Send out the quick’ning word
+Renew the face of earth:
+Now the new heavens and earth create,
+Restore us to our first estate.
+
+Lay to thy mighty hand,
+The work is worthy thee,
+A world of foes withstand,
+And say, It cannot be!
+We cannot full redemption have,
+Thou canst not to the utmost save.
+
+Arise, O jealous God,
+Come quickly from above,
+Thy law they have destroy’d,
+Thy holy law of love,
+Thy perfect law of liberty,
+The law of life, which is in thee.
+
+Eternal God, come down
+With thy victorious cross,
+80First appeared in HSP (1742), 268–71; stanzas 1–5, 7–8, 12–13, 15–16.
+
+[Page] 57
+Thy genuine gospel own,
+Maintain thy righteous cause,
+No longer let thy foes blaspheme,
+Come, Jesu, mighty to redeem!
+
+Thy controversy, Lord,
+Do thou thyself decide,
+And let thy faithful word
+Be to the utmost try’d;
+To thee we make our bold appeal,
+Declare the counsel of thy will.
+
+The acceptable year
+Of Jesus is at hand:
+Pris’ners of hope appear,
+Go forth at his command,
+And shew yourselves from sin set free,
+The Spirit’s cry is, Liberty!
+
+We surely shall obtain
+(When Jesus enters in)
+A liberty from pain,
+A liberty from sin:
+We then shall more than conqu’rors be,
+The Spirit’s cry is, Liberty!
+
+The sin-atoning blood
+Its full effect shall have,
+Whom it hath brought to God,
+It inwardly shall save,
+From all iniquity release,
+And ’stablish us in perfect peace.
+
+The holy one shall live,
+And in our hearts abide,
+To us a portion give
+Among the sanctified;
+We all shall say the work is done,
+We all are perfected in one.
+
+[Page] 58
+  Hymn LVII.81
+
+Father of all, whose powerful voice
+Call’d forth this universal frame,
+Whose mercies over all rejoice,
+Thro’ endless ages still the same;
+Thou by thy word upholdest all;
+Thy bounteous love to all is shew’d,
+Thou hear’st thy every creature’s call,
+And fillest every mouth with good.
+
+In heaven thou reign’st enthron’d in light,
+Nature’s expanse beneath thee spread,
+Earth, air, and sea before thy sight,
+And hell’s deep gloom are open laid:
+Wisdom, and might, and love are thine,
+Prostrate before thy face we fall,
+Confess thine attributes divine,
+And hail thee Sovereign Lord of all.
+
+Thee, Sovereign Lord, let all confess,
+That moves in earth or air, or sky,
+Revere thy power, thy goodness bless,
+Tremble before thy piercing eye.
+All ye, who owe to him your birth,
+In praise your every hour employ;
+Jehovah reigns! Be glad, O earth,
+And shout, ye morning stars, for joy.
+ Hymn LVIII.82
+
+Son of thy Sire’s eternal love,
+Take to thyself thy mighty power;
+Let all earth’s sons thy mercy prove,
+Let all thy bleeding grace adore.
+81First appeared in HSP (1742), 275–76; stanzas 1–3.
+82This is an extract from HSP (1742), 276–77; stanzas 4–6.
+
+[Page] 59
+The triumphs of thy love display,
+In every heart reign thou alone,
+Till all thy foes confess thy sway,
+And glory ends what grace begun.
+
+Spirit of grace, and health, and power,
+Fountain of light, and love below,
+Abroad thine healing influence shower,
+O’er all the nations let it flow,
+Inflame our hearts with perfect love,
+In us the work of faith fulfil;
+So not heaven’s host shall swifter move
+Than we on earth to do thy will.
+
+Father, ’tis thine each day to yield
+Thy children’s wants, a fresh supply,
+Thou cloath’st the lillies of the field,
+And hearest the young ravens cry:
+On thee we cast our care; we live
+Thro’ thee, who know’st our every need,
+O feed us with thy grace, and give
+Our souls this day the living bread.
+  Hymn LIX.83
+
+Eternal, spotless Lamb of God,
+Before the world’s foundation slain,
+Sprinkle us ever with thy blood,
+O cleanse, and ever keep us clean.
+To every soul (all praise to thee)
+Our bowels of compassion move,
+And all mankind by this may see
+God is in us; for God is love.
+
+Giver, and Lord of life, whose power
+And guardian care for all are free,
+To thee in fierce temptation’s hour
+From sin and Satan let us flee.
+83This is an extract from HSP (1742), 277; stanzas 7–9.
+
+[Page] 60
+Thine, Lord, we are and ours thou art,
+In us be all thy goodness shew’d,
+Renew, enlarge, and fill our heart
+With peace, and joy, and heaven, and God.
+
+Blessing and honour, praise and love,
+Co-equal, co-eternal Three,
+In earth below, in heaven above,
+By all thy works be paid to thee.
+Thrice holy, thine the kingdom is,
+The power omnipotent is thine,
+And when created nature dies,
+Thy never-ceasing glories shine.
+   Hymn LX.84
+
+O that the life-infusing grace,
+The pure and perfect peace of God,
+Might now descend on Israel’s race,
+The church he purchas’d with his blood.
+
+The souls peculiarly his own,
+On them the choicest gifts descend
+From him that sitteth on the throne,
+Antient of days which never end.
+
+He was from all eternity,
+Pure essence, life, and light, and power,
+He is when time no more shall be;
+He is, and shall be evermore.
+
+From God to all his church below,
+From the seven spirits before his throne,
+From Jesus let the blessing flow,
+Jesus is God’s co-equal Son.
+
+The true and faithful witness he,
+The first-begotten of the dead,
+Prince of the kings of earth—to thee
+Be everlasting homage paid.
+84First appeared in HSP (1742), 278–79.
+
+[Page] 61
+
+Amazing height of love divine!
+We praise with all thy hosts above
+Th’ unutterably great design,
+The mystery of redeeming love.
+
+From actual, and from inbred sin
+Us thou hast wash’d in thine own blood,
+Thy blood hath made us more than clean,
+Hath made us kings and priests to God.
+
+Wherefore to thee all honour, praise,
+Dominion, power, and thanks we give,
+While to the glory of thy grace
+Thro’ all eternity we live.
+  Hymn LXI.85
+
+Say, which of you would see the Lord?
+Ye all may now obtain the grace,
+Behold him in the written word
+Where John unveils the Saviour’s face.
+
+Clear as the trumpet’s voice he speaks
+To every soul that turns his ear,
+Amidst the golden candlesticks
+He walks: and lo! He now is here.
+
+Present to all believing souls,
+They see him with an eagle’s eye:
+Down to his feet a garment rolls,
+Stain’d with a glorious crimson dye.
+
+His form is as the Son of man,
+His eyes are as a flame of fire;
+They dart a sin-consuming pain,
+And life, and joy divine inspire.
+
+As many waters, sounds his word,
+Seven stars he holds in his right-hand,
+85First appeared in HSP (1742), 280–81; stanzas 1–3, 5, 8–11.
+
+[Page] 62
+Out of his mouth a two-edg’d sword
+Goes forth: before it who can stand?
+
+Lord, at thy feet we fall as dead,
+Lay thy right-hand upon our soul,
+Scatter our fears, thy Spirit shed,
+And all our unbelief controul.
+
+Tell us, “I am the first and last,
+Who liv’d and died for all am I!
+And lo! My bitter death is past,
+And lo! I live no more to die.
+
+“I have the keys of death and hell.”
+Amen! Thy record we receive,
+And wait, ’till thou our spirits seal,
+And all in all for ever live.
+ Hymn LXII.86
+
+Lord of the harvest hear
+Thy needy servants cry;
+Answer our faith’s effectual prayer,
+And all our wants supply.
+
+On thee we humbly wait,
+Our wants are in thy view,
+The harvest, truly, Lord, is great,
+The labourers are few.
+
+Convert, and send87 forth more
+Into thy church abroad,
+And let them speak thy word of power,
+As workers with their God.
+
+Give the pure gospel-word,
+The word of general grace,
+Thee let them preach, the common Lord,
+Saviour of human race.
+86First appeared in HSP (1742), 282–83.
+87Ori., “sent”; a misprint. Corrected to the HSP (1742) reading in All in All (1765).
+
+[Page] 63
+
+O let them spread thy name,
+Their mission fully prove,
+Thine universal grace proclaim
+Thine all-redeeming love.
+
+On all mankind, forgiven,
+Empower them still to call,
+And tell each creature under heaven,
+That thou hast died for all.
+Hymn LXIII.88
+
+Jesu, thy wand’ring sheep behold!
+See, Lord, with yearning bowels see
+Poor souls, that cannot find the fold,
+’Till sought, and gather’d in by thee.
+
+Lost are they now, and scatter’d wide,
+In pain, and weariness, and want,
+With no kind shepherd near to guide
+The sick, and spiritless, and faint.
+
+Thou, only thou, the kind and good,
+And sheep-redeeming shepherd art,
+Collect thy flock, and give them food,
+And pastors after thine own heart.
+
+Give the pure word of general grace,
+And great shall be the preachers’ crowd,
+Preachers, who all the sinful race
+Point to the all-atoning blood.
+
+Open their mouth, and utterance give,
+Give them a trumpet-voice to call
+A world, who all may turn and live
+Thro’ faith in him, that died for all.
+[6]
+In every messenger reveal
+The grace they preach divinely free,
+88First appeared in HSP (1742), 283–84; stanzas 1–8.
+
+[Page] 64
+That each may by thy Spirit tell
+“He died for all, who died for me.”
+
+A double portion from above
+Of that all-quick’ning Spirit impart,
+Shed forth thine universal love
+In every faithful pastor’s heart.
+
+Thy only glory let them seek,
+O let their hearts with love o’erflow,
+Let them believe, and therefore speak,
+And spread thy mercy’s praise below.
+ Hymn LXIV.89
+
+Lord, we renounce whoe’er oppose,
+And fight against thy saving power:
+Consume not us among thy foes,
+Nor let thy two-edg’d sword devour.
+
+O let us of thy strength take hold,
+Thine utmost promises embrace,
+The finisher of faith behold,
+The God of all-victorious grace.
+
+To him that conquers in thy might,
+Thou wilt the hidden manna give,
+Thou hast obtain’d it as thy right,
+And he shall thy deserts receive.
+
+Thou, Lord, will give him a white stone,
+A new mysterious name impart,
+To none but the receiver known,
+CHRIST  IN  A  PURE  AND  SINLESS  HEART.
+89This is an extract from HSP (1742), 289; stanzas 10–13.
+
+[Page] 65
+ *Hymn LXV.90
+
+All thanks be to God,
+Who scatters abroad
+Throughout every place,
+By the least of his servants his Sav’our of grace!
+Who the victory gave,
+The praise let him have,
+For the work he hath done,
+All honour and glory to Jesus alone.
+
+Our conquering Lord
+Hath prosper’d his word,
+Hath made it prevail,
+And mightily shaken the kingdom of hell.
+His arm he hath bar’d
+And a people prepar’d
+His glory to shew,
+And witness the power of his Passion below.
+
+He hath open’d a door
+To the penitent poor,
+And rescu’d from sin,
+And admitted the harlots and publicans in:
+They have heard the glad sound,
+They have liberty found
+Thro’ the blood of the Lamb,
+And plentiful pardon in Jesus’s name.
+
+And shall we not sing,
+Our Saviour and King?
+Thy witnesses, we
+With rapture ascribe our salvation to thee.
+* Redemption Hymns.91
+90First appeared in Redemption Hymns (1747), 3–5; stanzas 1–3, 5–8.
+91I.e., [Charles Wesley,] Hymns for Those that Seek and Those that have Redemption in the Blood of Jesus
+Christ (1747), 5th edn. (London: [Cock], 1756).
+
+[Page] 66
+Thou Jesus, hast bless’d,
+And believers increas’d,
+Who thankfully own,
+We are freely forgiven thro’ mercy alone.
+
+Thy Spirit revives       
+His work in our lives,
+His wonders of grace,
+So mightily wrought in the primitive days.
+O that all men might know
+Thy tokens below,
+Our Saviour confess,
+And embrace the glad tidings of pardon and peace!
+
+Thou, Saviour of all,
+Effectually call
+The sinners that stray;
+And O let a nation be born in a day!
+Thy sign let them see,
+And flow unto thee
+For the oil and the wine,
+For the blissful assurance of favour divine.
+
+Our heathenish land
+Beneath thy command
+In mercy receive,
+And make us a pattern to all that believe:
+Then, then let it spread
+Thy knowledge and dread,
+’Till the earth is o’erflow’d,
+And the universe fill’d with the glory of God.
+ Hymn LXVI.92
+
+Lo! I come with joy to do
+The Master’s blessed will,
+Him in outward works pursue,
+And serve his pleasure still,
+92First appeared in Redemption Hymns (1747), 7–8.
+
+[Page] 67
+Faithful to my Lord’s commands,
+I still would chuse the better part,
+Serve with careful Martha’s hands,
+And humble Mary’s heart.
+
+Careful, without care, I am,
+Nor feel my happy toil,
+Kept in peace by Jesu’s name,
+Supported by his smile:
+Joyful thus my faith to shew,
+I find his service my reward;
+Every work I do below,
+I do it to the Lord.
+[3]93
+Thou, O Lord, in tender love
+Dost all my burthens bear,
+Lift my heart to things above,
+And fix it ever there:
+Calm on tumult’s wheel I sit,
+’Midst busy multitudes alone,
+Sweetly waiting at thy feet,
+’Till all thy will be done.
+
+To the desert or the cell,
+Let others blindly fly,
+In this evil world I dwell,
+Unhurt, unspotted, I:
+Here I find an house of prayer,
+To which I inwardly retire,
+Walking unconcern’d in care,
+And unconsum’d in fire.
+
+Thou, O Lord, my portion art,
+Before I hence remove,
+Now my treasure and my heart
+Is all laid up above:
+Far above these earthly things
+(While yet my hands are here employ’d)
+Sees my soul the King of kings,
+And freely talks with God.
+93Ori., “5”; a misprint.
+
+[Page] 68
+
+O that all the art might know,
+Of living thus to thee!
+Find their heaven begun below,
+And here thy goodness see:
+Walk in all the works prepar’d
+By thee to exercise their grace,
+’Till they gain the full reward,
+And see thy glorious face.
+Hymn LXVII.94
+
+Love divine, all loves excelling,
+Joy of heaven to earth come down,
+Fix in us thy humble dwelling,
+All thy faithful mercies crown:
+Jesu, thou art all compassion,
+Pure unbounded love thou art,
+Visit us with thy salvation,
+Enter every trembling heart.
+
+Come, Almighty to deliver,
+Let us all thy life receive,
+Suddenly return, and never,
+Never more thy temples leave,
+Thee we would be always blessing,
+Serve thee as thy hosts above,
+Pray, and praise thee, without ceasing,
+Glory in thy perfect love.
+
+Finish then thy new creation,
+Pure and sinless let us be,
+Let us see thy great salvation,
+Perfectly restor’d in thee:
+Chang’d from glory into glory,
+’Till in heaven we take our place,
+’Till we cast our crowns before thee,
+Lost in wonder, love, and praise!
+94First appeared in Redemption Hymns (1747), 11–12; stanzas 1, 3–4.
+
+[Page] 69
+      Hymn LXVIII.95
+
+God of love, that hear’st the prayer,
+Kindly for thy people care,
+Who on thee alone depend,
+Save us, save us to the end!
+Save us in the prosperous hour
+From the flatt’ring tempter’s power,
+From his unsuspected wiles,
+From the world’s pernicious smiles.
+
+Cut off our dependance vain
+On the help of feeble man,
+Every arm of flesh remove,
+Stay us on thy only love.
+Let us still afflicted be,
+Shelter’d in thy poverty,
+Cover’d with thy sacred shame,
+Kept by thine almighty name.
+
+Men of worldly low design,
+Let not these thy people join,
+Dare thy hallow’d ark sustain,
+Touch it with their hands prophane.
+Saviour, compass us about,
+Keep the rich and noble out,
+’Till their all in heart they sell,
+’Till the worms their baseness feel.
+
+Men of dignity and power,
+Let not them thy flock devour,
+Poison our simplicity,
+Drag us from our trust in thee.
+Save us from the great and wise,
+’Till they sink in their own eyes,
+’Till they to thy yoke submit,
+Lay their honour at thy feet.
+95First appeared in Redemption Hymns (1747), 19–21.
+
+[Page] 70
+
+Never let the world break in,
+Fix a mighty gulph between,
+Keep us humble and unknown,
+Priz’d and lov’d by God alone.
+Let us still to thee look up,
+Thee thy Israel’s strength and hope,
+Nothing know or seek beside
+Jesus, and him crucified.
+
+Dignified with worth divine
+Let us in thine image shine,
+High in heavenly places sit,
+See the moon beneath our feet.
+Far above created things,
+Look we down on earthly kings,
+Taste our glorious liberty,
+Find our happy all in thee.
+Hymn LXIX.96
+
+Ye heavens rejoice in Jesus’s97 grace,
+Let earth make a noise and echo his praise!
+Our all-loving Saviour hath pacified God,
+And paid for his favour the price of his blood.
+
+Ye mountains and vales in praises abound,
+Ye hills and ye dales continue the sound,
+Break forth into singing ye trees of the wood,
+For Jesus is bringing lost sinners to God.
+
+Atonement he made for every one,
+The debt he hath paid, the work he hath done,
+Shout all the creation below and above,
+Ascribing salvation to Jesus’s love.
+
+His mercy hath brought salvation to all,
+Who take it unbought! He frees them from thrall,
+Throughout the believer his glory displays,
+And perfects for ever the vessels of grace.
+96First appeared in Redemption Hymns (1747), 29–30.
+97Ori., “Jesu’s”; which throws off the metre. Restored to Redemption Hymns (1747) reading in All in All
+(1765).
+
+[Page] 71
+  Hymn LXX.98
+
+Rejoice evermore99 with angels above,
+In Jesus’s power, in Jesus’s love,
+With glad exultation your triumph proclaim,
+Ascribing salvation to God and the Lamb.
+
+Thou, Lord, our relief in trouble hast been,
+Hast sav’d us from grief, hast sav’d us from sin,
+The power of thy Spirit hath set our hearts free,
+And now we inherit all fulness in thee.
+
+All fulness of peace, all fulness of joy,
+And spiritual bliss that never shall cloy;
+To us it is given in Jesus to know
+A kingdom of heaven, an heaven below.
+
+No longer we join, while sinners invite,
+Or envy the swine their brutish delight:
+Their joy is all sadness, their mirth is all vain,
+Their laughter is madness, their pleasure is pain.
+
+O might they at last with sorrow return,
+The pleasures to taste for which they were born,
+Our Jesus receiving, our happiness prove,
+The joy of believing, the heaven of love.
+  Hymn LXXI.100
+
+Thou God of harmony and love,
+Whose name transports the saints above,
+And lulls the ravish’d spheres,
+On thee in feeble strains I call,
+And mix my humble voice with all
+The heavenly choristers.
+98First appeared in Redemption Hymns (1747), 31–32.
+99Ori., “overmore”; a misprint. Restored to Redemption Hymns (1747) reading in All in All (1765).
+100First appeared in Redemption Hymns (1747), 34–36.
+
+[Page] 72
+
+If well I know the tuneful art
+To captivate an human heart,
+The glory, Lord, be thine:
+A servant of thy blessed will,
+I here devote my utmost skill
+To sound the praise divine.
+
+With Tubal’s wretched sons no more
+I prostitute my sacred power
+To please the fiends beneath,
+Or modulate the wanton lay,
+Or smooth with musick’s hand the way
+To everlasting death.
+
+Suffice for this the season past:
+I come, great God, to learn at last
+The lesson of thy grace:
+Teach me the new the gospel song,
+And let my hand, my heart, my tongue
+Move only to thy praise.
+
+Thine own musician, Lord, inspire,
+And let my consecrated lyre
+Repeat the psalmist’s part;
+His Son and thine reveal in me,
+And fill with sacred melody
+The fibres of my heart.
+
+So shall I charm the list’ning throng,
+And draw the living stones along,
+By Jesu’s tuneful name:
+The living stones shall dance, shall rise,
+And form a city in the skies,
+The New Jerusalem!
+
+O might I with thy saints aspire,
+The meanest of that dazzling choir
+Who chaunt thy praise above,
+Mix’d with the bright musician-band,
+May I an heavenly harper stand,
+And sing the song of love.
+
+[Page] 73
+
+What extacy of bliss is there
+While all th’ angelic concert share,
+And drink the floating joys!
+What more than extacy, when all
+Struck to the golden pavement fall
+At Jesu’s glorious voice!
+
+Jesus! The heaven of heaven he is,
+The soul of harmony and bliss;
+And while on him we gaze,
+And while his glorious voice we hear,
+Our spirits are all eye, all ear,
+And silence speaks his praise.
+
+O might I die that awe to prove,
+That prostrate awe which dares not move
+Before the great Three-One,
+To shout by turns the bursting joy,
+And all eternity employ
+In songs around the throne.
+Hymn LXXII.101
+
+All praise to our redeeming Lord,
+Who joins us by his grace,
+And bids us, each to each restor’d,
+Together seek his face.
+He bids us build each other up,
+And gather’d into one,
+To our high calling’s glorious hope
+We hand in hand go on.
+
+The gift, which he on one bestows,
+We all delight to prove,
+The grace thro’ every vessel flows
+In purest streams of love.
+Ev’n now we think, and speak the same,
+And cordially agree,
+101First appeared in Redemption Hymns (1747), 43.
+
+[Page] 74
+Concenter’d all thro’ Jesu’s name
+In perfect harmony.
+
+We all partake the joy of one,
+The common peace we feel,
+A peace to sensual minds unknown,
+A joy unspeakable.
+And if our fellowship below,
+In Jesus be so sweet,
+What height of rapture shall we know
+When round his throne we meet!
+     Hymn LXXIII.102
+
+Praise the Lord, ye blessed ones,
+Your glorious Lord, and ours,
+Principalities and thrones,
+And all the heavenly powers;
+Angels that in strength excel,
+Here your utmost strength employ,
+Let your103 ravish’d spirits swell
+With endless praise and joy.
+
+Worms of earth on gods we call,
+And challenge you to sing,
+Sing the sovereign cause of all,
+The universal King;
+While eternal ages last,
+The transporting theme repeat,
+Shout, and gaze, and fall, and cast
+Your crowns before his seat.
+
+There with you we trust to lie,
+With you to rise again,
+Nearest him that rules the sky,
+And foremost of his train;
+We shall lead the heavenly choir,
+We shall give the key to you,
+Singing to our golden lyre,
+The song for ever new.
+102First appeared in Redemption Hymns (1747), 43–44.
+103Ori., “you”; a misprint. Restored to Redemption Hymns (1747) reading in All in All (1765).
+
+[Page] 75
+      Hymn LXXIV.104
+
+Father, in whom we live,
+In whom we are, and move,
+The glory, power, and praise receive
+Of thy creating love:
+Let all the angel-throng
+Give thanks to God on high,
+While earth repeats the joyful song,
+And echoes to the sky.
+
+Incarnate deity,
+Let all the ransom’d race
+Render in thanks their lives to thee
+For thy redeeming grace:
+The grace to sinners shew’d,
+Ye heavenly choirs proclaim,
+And cry Salvation to our God,
+Salvation to the Lamb!
+
+Spirit of holiness,
+Let all thy saints adore
+Thy sacred energy and bless
+Thine heart-renewing power:
+Nor angel-tongues can tell
+Thy love’s extatic height,
+The glorious joy unspeakable,
+The beatific sight!
+
+Eternal Tri-une Lord,
+Let all the hosts above,
+Let all the sons of men record,
+And dwell upon thy love:
+When heaven and earth are fled
+Before thy glorious face,
+Sing all the saints thy love hath made,
+Thine everlasting praise!
+104First appeared in Redemption Hymns (1747), 44–45.
+
+[Page] 76
+      Hymn LXXV.105
+
+O wond’rous power of faithful prayer,
+What tongue can tell th’ almighty grace,
+God’s hands or bound or open are,
+As Moses or Elias prays:
+Let Moses in the Spirit groan,
+And God cries out, “Let me alone!
+
+“Let me alone—that all my wrath
+May rise, the wicked to consume:
+While justice hears thy praying faith
+It cannot seal the rebel’s doom,
+My Son is in my servant’s prayer,
+—And Jesus forces me to spare.”
+
+O blessed word of gospel-grace,
+Which now we for our Israel plead;
+A faithless and backsliding race,
+Whom thou hast out of Egypt freed:
+O do not then in wrath chastise,
+—Nor let thy whole displeasure rise.
+
+Father, we ask in Jesu’s name,
+In Jesu’s power and Spirit pray,
+Divert thy vengeful thunder’s aim,
+O turn thy threat’ning wrath away,
+Our guilt and punishment remove,
+And magnify thy pard’ning love.
+
+Father, regard thy pleading Son,
+Accept his all-availing prayer,
+And send the peaceful answer down
+In honour of our spokesman there,
+Whose blood proclaims our sins forgiven,
+And speaks thy rebels up to heaven.
+105First appeared in Redemption Hymns (1747), 49–51; stanzas 1–4, 8.
+
+[Page] 77
+     Hymn LXXVI.106
+
+Leader of faithful souls, and guide
+Of all that travel to the sky,
+Come, and with us, ev’n us abide,
+Who would on thee alone rely,
+On thee alone our spirit stay,
+While held in life’s uneven way.
+
+Strangers and pilgrims here below,
+This earth we know, is not our place;
+And hasten thro’ the vale of woe,
+And restless to behold thy face,
+Swift to our heavenly country move,
+Our everlasting home above.
+
+We have no ’biding city here,
+But seek a city out of sight:
+Thither our steady course we steer,
+Aspiring to the plains of light,
+Jerusalem, the saints’ abode,
+Whose founder is the living God.
+
+Patient th’ appointed race to run,
+This weary world we cast behind,
+From strength to strength we travel on,
+The New Jerusalem to find;
+Our labour this, our only aim,
+To find the New Jerusalem.
+
+Thither in all our thoughts we tend,
+And still with longing eyes look up,
+Our hearts and prayers before us send,
+Our ready scouts of faith and hope,
+Who bring us news of Sion near,
+We soon shall see the towers appear.
+106First appeared in Redemption Hymns (1747), 51–52.
+
+[Page] 78
+
+Thro’ thee, who all our sins hast borne,
+Freely and graciously forgiven,
+With songs to Sion we return,
+Contending for our native heaven,
+That palace of our glorious King,
+We find it nearer while we sing.
+
+Ev’n now we taste the pleasures there,
+A cloud of spicy odours comes,
+Soft wafted by the balmy air,
+Sweeter than Araby’s perfumes;
+From Sion’s top the breezes blow,
+And chear us in the vale below.
+
+Rais’d by the breath of love divine,
+We urge our way with strength renew’d,
+The church of the first-born to join,
+We travel to the mount of God,
+With joy upon our heads arise,
+And meet our Captain in the skies.
+    Hymn LXXVII.107
+
+Jesus, accept the praise,
+That to thy name belongs,
+Matter of all our lays,
+Subject of all our songs,
+Thro’ thee we now together came,
+And part exulting in thy name.
+
+In flesh we part awhile
+(But still in spirit join’d)
+T’ embrace the happy toil,
+Thou hast for each assign’d:
+And while we do thy blessed will,
+We bear our heaven about us still.
+
+O let us thus go on
+In all thy pleasant ways,
+107First appeared in Redemption Hymns (1747), 60–61.
+
+[Page] 79
+And arm’d with patience run
+With joy th’ appointed race;
+Keep us, and every seeking soul,
+’Till all attain the heavenly goal.
+
+There we shall meet again,
+When all our toils are o’er,
+And death, and grief, and pain,
+And parting is no more:
+We shall with all our brethren rise,
+And grasp thee in the flaming skies.
+
+O happy, happy day,
+That calls thy exiles home!
+The heavens shall pass away,
+The earth receive its doom,
+Earth we shall view, and heaven destroy’d,
+And shout above the fiery void.
+
+These eyes shall see them fall,
+Mountains, and stars, and skies,
+These eyes shall see them all
+Out of their ashes rise;
+These lips his praises shall rehearse,
+Whose nod restores the universe.
+
+According to his word,
+His oath to sinners given,
+We look to see restor’d
+The ruin’d earth and heaven,
+In a new world his truth to prove,
+A world of righteousness and love.
+
+Then let us wait the sound
+That shall our souls release,
+And labour to be found
+Of him in spotless peace,
+In perfect holiness renew’d,
+Adorn’d with Christ, and meet for God.
+
+[Page] 80
+    Hymn LXXVIII.108
+
+How happy is the pilgrim’s lot,
+How free from every anxious thought,
+From worldly hope and fear:
+Confin’d to neither court nor cell,
+His soul disdains on earth to dwell,
+He only sojourns here.
+
+His happiness in part is mine,
+Already sav’d from self-design,
+From every creature-love!
+Blest with the scorn of finite good,
+My soul is lighten’d of its load,
+And seeks the things above.
+
+The things eternal I pursue,
+An happiness beyond the view
+Of those, that basely pant
+For things by nature felt and seen:
+Their honours, wealth, and pleasures mean,
+I neither have nor want.
+
+I have no sharer of my heart,
+To rob my Saviour of a part,
+And desecrate the whole:
+Only betroth’d to Christ am I,
+And wait his coming from the sky,
+To wed my happy soul.
+
+I have no babes to hold me here,
+But children more securely dear
+For mine I humbly claim:
+Better than daughters, or than sons,
+Temples divine of living stones,
+Inscrib’d with Jesu’s name.
+
+No foot of land do I possess,
+No cottage in this wilderness;
+108First appeared in Redemption Hymns (1747), 66–68.
+
+[Page] 81
+A poor way-faring man,
+I lodge a while in tents below,
+Or gladly wander to and fro,
+’Till I my Canaan gain.
+
+Nothing on earth I call my own,
+A stranger to the world unknown,
+I all their goods despise,
+I trample on their whole delight,
+And seek a country out of sight,
+A country in the skies.
+
+There is my house and portion fair,
+My treasure and my heart is there,
+And my abiding home:
+For me my elder brethren stay,
+And angels beckon me away,
+And Jesus bids me come.
+
+I come, thy servant, Lord, replies,
+I come to meet thee in the skies,
+And claim my heavenly rest:
+Now let the pilgrim’s journey end,
+Now, O my Saviour, brother, friend,
+Receive me to thy breast.
+     Hymn LXXIX.109
+
+God of all consolation, take
+The glory of thy grace,
+Thy gifts to thee we render back
+In ceaseless songs of praise.
+Not unto us, but thee! O Lord,
+Glory to thee be given,
+For every gracious thought and word,
+That brought us nearer heaven.
+
+Further’d in faith, or hope, or love,
+The praise to thee we give,
+109First appeared in Redemption Hymns (1747), 68–70.
+
+[Page] 82
+Thy gifts descending from above
+We only can receive:
+The gift, the grace, the work is thine,
+If ours the ministry,
+We bow, and bless the hand divine,
+All, all descends from thee.
+
+Thro’ thee we now together came,
+In singleness of heart,
+We met, O Jesus, in thy name,
+And in thy name we part:
+We part in body, not in mind,
+Our minds continue one,
+And each to each in Jesus join’d,
+We hand in hand go on.
+
+Subsists as in us all one soul,
+No power can make us twain,
+And mountains rise, and oceans roll,
+To sever us in vain.
+Present we still in spirit are,
+And intimately nigh,
+While on the wings of faith and prayer,
+We each to other fly.
+
+With Jesus Christ together we
+In heavenly places sit,
+Cloth’d with the sun, we smile to see
+The moon beneath our feet.
+Our life is hid with Christ in God,
+Our life shall soon appear,
+And spread his glory all abroad
+In all his members here.
+
+The heavenly treasure now we have
+In a mean house of clay,
+Which he shall to the utmost save,
+And guard against that day.
+
+[Page] 83
+Our souls are in his mighty hand,
+And he will keep them still,
+And you and I shall surely stand
+With him on Sion’s hill.
+
+Him eye to eye we there shall see,
+Our face like his shall shine:
+O what a glorious company,
+When saints and angels join!
+O what a joyful meeting there!
+In robes of white array’d,
+Palms in our hands we all shall bear,
+And crowns upon our head.
+
+Then let us lawfully contend,
+And fight our passage thro’,
+Bear in our faithful mind the end,
+And keep the prize in view:
+Then let us hasten to the day
+When all shall be brought home:
+Come, O Redeemer, come away!
+O Jesus, quickly come!
+
+[Page] 84
+     *Hymn LXXX.110
+
+Arm of the Lord, awake, awake!
+Thine own immortal strength put on,
+With terror cloath’d the nations shake,
+And cast thy foes in fury down.
+
+As in the antient days appear,
+The sacred annals speak thy fame,
+Be now omnipotently near,
+Thro’ endless ages still the same.
+
+Thy tenfold vengeance knew to quell,
+And humble haughty Rahab’s pride,
+Groan’d her pale sons thy stroke to feel,
+The first-born victims groan’d, and died.
+
+The wounded dragon rag’d in vain,
+While bold thine utmost plague to brave,
+Madly he dar’d the parted main,
+And sunk beneath th’ o’erwhelming wave.
+
+He sunk; while Israel’s chosen race
+Triumphant urge their wond’rous way;
+Divinely led, the fav’rites pass
+Th’ unwatry deep, and emptied sea.
+
+At distance heap’d on either hand,
+Yielding a strange unbeaten road,
+In chrystal walls the waters stand,
+And own the arm of Israel’s God.
+
+That arm which is not shorten’d now,
+Which wants not now the power to save;
+Still present with thy people thou
+Bear’st them thro’ life’s disparted wave.
+* C. W. Vol. 1.111
+110First appeared in HSP (1739), 222–23. Appears here via HSP (1749), 1:20–21.
+111I.e., Charles Wesley, Hymns and Sacred Poems (1749), 2nd edn. (Bristol: Farley, 1755), Vol. 1.
+
+[Page] 85
+
+By earth and hell pursued in vain,
+To thee the ransom’d seed shall come,
+Shouting their heavenly Sion gain,
+And pass thro’ death triumphant home.
+
+The pain of life shall there be o’er,
+The anguish, and distracting care,
+There sighing grief shall weep no more,
+And sin shall never enter there.
+
+Where pure essential joy is found,
+The Lord’s redeem’d their heads shall raise,
+With everlasting gladness crown’d,
+And fill’d with love, and lost in praise.
+      Hymn LXXXI.112
+
+One only way the erring mind
+Of man, short-sighted man could find
+From inbred sin to fly;
+Stronger than love (I fondly thought)
+Death, only death, must cut the knot,
+Which love could not untie.
+
+But thou, my Lord, art nigh in grace,
+Thy love can find a thousand ways,
+To foolish man unknown,
+My soul upon thy love I cast,
+I rest me, ’till the storm is past,
+Upon thy love alone.
+
+Thy faithful, wise, and mighty love
+Shall ev’ry obstacle remove,
+And make an open way;
+Thy love shall burst the shades of death,
+And bear me from the gulph beneath
+To everlasting day.
+
+Lord, I believe thee true and good,
+My only trust is in thy blood!
+112This is an extract from HSP (1749), 1:186–87; stanzas 5–8.
+
+[Page] 86
+I hear it speak for me;
+And if my soul is in thy hands,
+And if thy word for ever stands,
+I shall not fall from thee.
+     Hymn LXXXII.113
+
+What am I, O thou glorious God!
+Or what my father’s house to thee
+That thou such blessings hast bestow’d
+On me, the vilest reptile me!
+I take the blessings from above,
+And wonder at thy causeless love.
+
+Me in my blood thy love pass’d by,
+And stopp’d, my ruin to retrieve,
+Wept o’er my soul thy pitying eye,
+Thy bowels yearn’d, and sounded, Live!
+Dying, I heard the welcome sound,
+And pardon in thy mercy found.
+
+Honour, and might, and thanks, and praise
+I render to my pard’ning God,
+Extol the riches of thy grace,
+And spread thy saving name abroad,
+That only name to sinners given,
+Which lifts poor, dying worms to heaven.
+
+Jesu, I bless thy gracious power,
+And all within me shouts thy name!
+Thy name let every soul adore,
+Thy power let every tongue proclaim!
+Thy grace let every sinner know,
+And find with me their heaven below.
+113First appeared in HSP (1749), 1:197–98.
+
+[Page] 87
+    Hymn LXXXIII.114
+
+Behold the servant of the Lord!
+I wait thy guiding eye to feel;
+To hear, and keep thine every word,
+To prove, and do thy perfect will,
+Joyful from all my works to cease,
+Glad to fulfil all righteousness.
+
+Me if thy grace vouchsafe to use,
+Meanest of all thy creatures me,
+The deed, the time, the manner chuse!
+Let all my fruit be found of thee,
+Let all my works in thee be wrought,
+By thee to full perfection brought.
+
+My every weak, (though good,) design
+O’er-rule, or change as seems thee meet:
+Jesus, let all the work be thine:
+Thy work, O Lord, is all-compleat,
+And pleasing in thy Father’s sight:
+Thou only hast done all things right.
+
+Here then to thee thine own I leave,
+Mould as thou wilt the passive clay,
+But let me all thy stamp receive,
+But let me all thy words obey,
+Serve with a single heart and eye,
+And to thy glory live, and die.
+    Hymn LXXXIV.115
+
+Are there not in the labourer’s day
+Twelve hours, wherein he safely may
+His calling’s works pursue?
+114First appeared in Act of Devotion (1745), 105. Appears here via HSP (1749), 1:206–7.
+115First appeared in HSP (1749), 1:212–13.
+
+[Page] 88
+Though sin, and Satan still are near,
+Nor sin, nor Satan can I fear
+With Jesus in my view.
+
+Not all the powers of hell can fright
+A soul, that walks with Christ in light;
+He walks, and cannot fall;
+Clearly he sees, and wins his way,
+Shining unto the perfect day,
+And more than conquers all.
+
+Light of the world, thy beams I bless;
+On thee, bright Sun of righteousness,
+My faith hath fixt its eye;
+Guided by thee, thro’ all I go,
+Nor fear the ruin spread below,
+For thou art always nigh.
+
+Ten thousand snares my path beset,
+Yet will I, Lord, the work compleat,
+Which thou to me hast given;
+Superior to the pains I feel,
+Close by the gates of death, and hell,
+I urge my way to heaven.
+
+Still will I strive, and labour still,
+With humble zeal to do thy will,
+And trust in thy defence;
+My soul into thy hands I give,
+And, if he can obtain thy leave,
+Let Satan pluck me thence.
+     Hymn LXXXV.116
+
+Gentle Jesu, lovely Lamb,
+Thine, and only thine I am;
+Take my body, spirit, soul,
+Only thou possess the whole.
+116First appeared in HSP (1749), 1:216–17.
+
+[Page] 89
+
+Thou my one thing needful be,
+Let me ever cleave to thee:
+Let me chuse the better part,
+Let me give thee all my heart.
+
+Fairer than the sons of men,
+Do not let me turn again,
+Leave the fountain head of bliss,
+Stoop to creature happiness.
+
+Whom have I on earth below?
+Thee, and only thee I know:
+Whom have I in heaven but thee?
+Thou art all in all to me.
+
+All my treasure is above,
+All my riches is thy love:
+Who the worth of love can tell,
+Infinite, unsearchable!
+
+Thou, O love, my portion art,
+Lord, thou know’st my simple heart:
+Other comforts I despise,
+Love be all my paradise.
+
+Nothing else can I require,
+Love fills up my whole desire:
+All thy other gifts remove;
+Still thou giv’st me all in love.
+    Hymn LXXXVI.117
+
+Jesu, my truth, my way,
+My sure, unerring light,
+On thee my feeble soul I stay,
+Which thou wilt lead aright!
+My wisdom and my guide,
+My Counseller thou art,
+O never let me leave thy side,
+Or from thy paths depart.
+117First appeared in HSP (1749), 1:217–18; stanzas 1–2, 5.
+
+[Page] 90
+
+I lift mine eye to thee,
+My lovely, bleeding Lamb,
+That I may still enlighten’d be,
+And never put to shame:
+I never will remove
+Out of thy hands my cause,
+But rest in thy redeeming love,
+And hang upon thy cross.
+
+Teach me the happy art
+In all things to depend
+On thee, who never will depart,
+But love me to the end.
+Still stir me up to strive
+With thee in strength divine,
+And every moment, Lord, revive
+This fainting soul of mine.
+   Hymn LXXXVII.118
+
+My God, I am thine,
+What a comfort divine,
+What a blessing to know that my Jesus is mine!
+
+In the heavenly Lamb
+Thrice happy I am!
+My heart it doth dance to the sound of thy name.
+
+True pleasures abound
+In the rapt’rous sound;
+And whoever hath found it hath paradise found.
+
+My Jesus to know,
+And feel his blood flow,
+’Tis life everlasting, ’tis heaven below.
+
+Yet onward I haste
+To the heavenly feast;
+That, that is the fulness: but this is the taste.
+118First appeared in HSP (1749), 1:219–20.
+
+[Page] 91
+
+And this I shall prove,
+Till with joy I remove
+To the heaven of heavens of Jesus’s love.
+   Hymn LXXXVIII.119
+
+O Jesus my rest,
+How unspeakably blest
+Is the sinner, that comes to be hid in thy breast!
+
+I come at thy call,
+At thy feet do I fall,
+And believe, and confess thee my God, and my all.
+
+Thou art Mary’s good part,
+The thing needful thou art,
+The desire of my eyes, and the joy of my heart.
+
+My comfort and stay,
+My life, and my way,
+My crown of rejoicing in that happy day.
+
+Health, pardon and peace
+In thee I possess;
+I can have nothing more, I will have nothing less.
+
+I stand in thy might,
+I walk in thy light,
+And all heaven I claim in thy God-giving right.
+    Hymn LXXXIX.120
+
+Jesus the Conqueror reigns
+In glorious strength array’d,
+His kingdom over all maintains,
+And bids the earth be glad:
+119First appeared in HSP (1749), 1:220.
+120First appeared in HSP (1749), 1:232–33; stanzas 1–6.
+
+[Page] 92
+Ye sons of men rejoice
+In Jesu’s mighty love,
+Lift up your heart, lift up your voice
+To him who rules above.
+
+Extol his kingly power,
+Kiss the exalted Son,
+(Who died, and lives to die no more,
+High on his Father’s throne!
+Our Advocate with God,
+He undertakes our cause,)
+And spread thro’ all the earth abroad
+The victory of his cross.
+
+That bloody banner see,
+And in your Captain’s sight
+Fight the good fight of faith with me,
+My fellow-soldiers fight,
+In mighty phalanx join’d
+Undaunted all proceed,
+Arm’d with th’ unconquerable mind,
+That was in Christ your head.
+
+Urge on your rapid course,
+Ye blood-besprinkled bands,
+The heavenly kingdom suffers force,
+’Tis seiz’d by violent hands;
+See there the starry crown,
+That glitters thro’ the skies,
+Satan, the world, and sin tread down,
+And take the glorious prize.
+
+Thro’ much distress, and pain,
+Thro’ many a conflict here,
+Thro’ blood ye must the entrance gain;
+Yet O! Disdain to fear.
+Courage, your Captain cries,
+Who all your toil fore-knew,
+Toil ye shall have, yet all despise,
+I have o’ercome for you.
+
+[Page] 93
+
+The world cannot withstand
+Its antient Conqueror,
+The world must sink beneath that hand,
+Which arms us for the war:
+This is the victory,
+Before our faith they fall;
+Jesus hath died for you, and me!
+Believe, and conquer all.
+   Hymn XC.121
+
+Father, to thee I lift mine eyes,
+My longing eyes and restless heart,
+Before the morning watch I rise,
+And wait to taste how good thou art,
+T’ obtain the grace I humbly claim,
+The saving power of Jesu’s name.
+
+The slumber from my soul I shake,
+Warn’d by thy Spirit’s inward call,
+And up to righteousness awake,
+And pray that I no more may fall,
+Or give to sin and Satan place,
+But walk in all thy righteous ways.
+
+O would’st thou, Lord, thy servant guard
+’Gainst every known or secret foe,
+A mind for all assaults prepar’d,
+A sober, vigilant mind bestow,
+Ever appriz’d of danger nigh,
+And when to fight, and when to fly.
+
+O never suffer me to sleep
+Secure within the verge of hell,
+But still my watchful spirit keep
+In lowly awe, and loving zeal,
+And bless me with that godly fear,
+And plant that guardian angel here.
+121First appeared in HSP (1749), 1:244–45.
+
+[Page] 94
+
+Attended by the sacred dread,
+And wise from evil to depart,
+Let me from strength to strength proceed,
+And rise to purity of heart,
+Thro’ all the paths of duty move
+From humble faith to perfect love.
+   Hymn XCI.122
+
+Thou hidden source of calm repose,
+Thou all-sufficient love divine,
+My help, and refuge from my foes,
+Secure I am, if thou art mine,
+And lo! From sin, and grief, and shame,
+I hide me, Jesus, in thy name.
+
+Thy mighty name salvation is,
+And keeps my happy soul above,
+Comfort it brings, and power, and peace,
+And joy, and everlasting love:
+To me with thy dear name are given
+Pardon, and holiness, and heaven.
+
+Jesu, my all in all thou art,
+My rest in toil, my ease in pain,
+The med’cine of my broken heart,
+In war my peace, in loss my gain,
+My smile beneath the tyrant’s frown,
+In shame my glory, and my crown.
+
+In want my plentiful supply,
+In weakness my almighty power,
+In bonds my perfect liberty,
+My light in Satan’s darkest hour,
+In grief my joy unspeakable,
+My life in death, my heaven in hell.
+122First appeared in HSP (1749), 1:245–46.
+
+[Page] 95
+  Hymn XCII.123
+
+Jesu, Lord, we look to thee,
+Let us in thy name agree,
+Each to each unite, endear,
+Come and spread thy banner here.
+
+Make us of one heart and mind,
+Courteous, pitiful, and kind,
+Lowly, meek in thought and word,
+Altogether like our Lord.
+
+Let us each for other care,
+Each his brother’s burden bear,
+To thy church the pattern give,
+Shew how true believers live.
+
+Free from anger, and from pride,
+Let us thus in God abide,
+All the depth of love express,
+All the height of holiness.
+
+Let us then with joy remove
+To thy family above,
+On the wings of angels fly,
+Shew how true believers die.
+ Hymn XCIII.124
+
+Infinite, unexhausted love!
+Jesus and love are one:
+If still to me thy bowels move,
+They are restrain’d to none.
+
+If me, ev’n me, thou yet canst spare,
+Fury is not in thee;
+For all thy tender mercies are,
+If mercy is for me.
+123First appeared in HSP (1749), 1:248; stanzas 1a, 2b, 3–6.
+124This is an extract from HSP (1749), 1:163–64; stanzas 9–18.
+
+[Page] 96
+
+What shall I do my God to love,
+My loving God to praise!
+The length, and breadth, and height to prove,
+And depth of sovereign grace!
+
+Thy sovereign grace to all extends,
+Immense and unconfin’d,
+From age to age it never ends,
+It reaches all mankind.
+
+Throughout the world its breadth is known,
+Wide as infinity,
+So wide, it never pass’d by one,
+Or it had pass’d by me.
+
+My trespass is grown up to heaven,
+But far above the skies,
+In Christ abundantly forgiven
+I see thy mercies rise.
+
+The depth of all-redeeming love
+What angel-tongue can tell!
+O may I to the utmost prove
+The gift unspeakable!
+
+Deeper than hell, it pluck’d me thence,
+Deeper than inbred sin,
+Jesus his love my heart shall cleanse,
+When Jesus enters in.
+
+Come quickly then, my Lord, and take
+Possession of thine own,
+My longing heart vouchsafe to make
+Thine everlasting throne.
+
+Assert thy claim, receive thy right,
+Come quickly from above,
+And sink me to perfection’s height,
+The depth of humble love.
+
+[Page] 97
+ Hymn XCIV.125
+
+Forth in thy name, O Lord, I go,
+My daily labour to pursue,
+Thee, only thee resolv’d to know
+In all I think, or speak, or do.
+
+The task thy wisdom hath assign’d
+O let me chearfully fulfil,
+In all my works thy presence find,
+And prove thine acceptable will.
+
+Thee may I set at my right-hand,
+Whose eyes mine inmost substance see,
+And labour on at thy command,
+And offer all my works to thee.
+
+Give me to bear thy easy yoke,
+And every moment watch and pray,
+And still to things eternal look,
+And hasten to thy glorious day.
+
+For thee delightfully employ
+Whate’er thy bounteous grace hath given,
+And run my course with even joy,
+And closely walk with thee to heaven.
+ Hymn XCV.126
+
+God of almighty love,
+By whose sufficient grace
+I lift my heart to things above,
+And humbly seek thy face;
+Thro’ Jesus Christ the just
+My faint desires receive,
+And let me in thy goodness trust,
+And to thy glory live.
+125First appeared in HSP (1749), 1:246–47; stanzas 1–2, 4–6.
+126First appeared in HSP (1749), 1:251–52.
+
+[Page] 98
+
+Whate’er I speak, or do,
+Thy glory be my aim:
+My offerings all are offer’d thro’
+The ever-blessed name:
+Jesus, my single eye
+Is fixt on thee alone,
+Thy name be prais’d on earth, on high,
+Thy will by all be done.
+
+Spirit of grace, inspire
+My consecrated heart,
+Fill me with pure, celestial fire,
+With all thou hast, or art:
+My feeble mind transform,
+And perfectly renew’d
+Into a saint exalt a worm,
+A worm into a God!
+Hymn XCVI.127
+
+To thee, great God of love, I bow,
+And prostrate in thy sight adore:
+By faith I see thee passing now:
+I have; but still I ask for more:
+A glimpse of love cannot suffice,
+My soul for all thy presence cries.
+
+I cannot see thy face, and live!
+Then let me see thy face, and die:
+Now, Lord, my gasping spirit receive;
+Give me, on eagle’s wings to fly,
+With eagle’s eyes on thee to gaze,
+And plunge into the glorious blaze.
+
+The fulness of my great reward
+A blest eternity shall be.
+But hast thou not on earth prepar’d
+Some better thing than this for me?
+127First appeared in HSP (1749), 1:289–90.
+
+[Page] 99
+What, but one drop! One transient sight!
+I want a sun, a sea of light.
+
+Moses thy backward parts might view,
+But not a perfect sight obtain:
+The gospel doth thy fulness shew,
+To us by the commandment slain;
+The dead to sin shall find the grace;
+The pure in heart shall see thy face.
+
+More favour’d than the saints of old,
+Who now thro’ faith approach to thee,
+Shall all with open face behold
+In Christ the glorious deity,
+Shall see, and put the Godhead on,
+The nature of thy sinless Son.
+
+This, this is our high calling’s prize:
+Thine image in thy Son I claim,
+And still to higher glories rise,
+’Till all-transform’d I know thy name,
+And glide to all my heaven above,
+My highest heaven of Jesu’s love.
+      Hymn XCVII.128
+
+Give me the faith which can remove,
+And sink the mountain to a plain,
+Give me the child-like praying love,
+That longs to build thine house again;
+The love which once my heart o’erpower’d,
+And all my simple soul devour’d.
+
+I want an even strong desire,
+I want a calmly fervent zeal,
+To save poor souls out of the fire,
+To snatch them from the verge of hell,
+And turn them to the pard’ning God,
+And quench the brands in Jesu’s blood.
+128This is an extract from HSP (1749), 1:300–301; stanzas 3–8.
+
+[Page] 100
+
+I would the precious time redeem,
+And longer live for this alone
+To spend, and to be spent for them
+Who have not yet my Saviour known,
+Fully on these my mission prove,
+And only breathe, to breathe thy love.
+
+My talents, gifts, and graces, Lord,
+Into thy blessed hands receive,
+And let me live to preach thy word,
+And let me for thy glory live,
+My every sacred moment spend
+In publishing the sinner’s friend.
+
+Inlarge, inflame, and fill my heart
+With boundless charity divine,
+So shall I all my strength exert,
+And love them with a zeal like thine,
+And lead them to thine open side,
+The sheep, for whom their shepherd died.
+
+Or if to serve thy church and thee
+Myself be offer’d up at last,
+My soul brought thro’ the purple sea
+With those beneath the altar cast,
+Shall claim the palm to martyrs given,
+And mount the highest throne in heaven.
+    Hymn XCVIII.129
+
+See how great a flame aspires,
+Kindled by a spark of grace!
+Jesu’s love the nations fires
+Sets the kingdoms on a blaze.
+To bring fire on earth he came;
+Kindled in some hearts it is;
+O that all might catch the flame
+All partake the glorious bliss!
+129First appeared in HSP (1749), 1:315–16.
+
+[Page] 101
+
+When he first the work begun,
+Small and feeble was his day,
+Now the word doth swiftly run,
+Now it wins its widening way, 
+More and more it130 spreads, and grows,
+Ever mighty to prevail,
+Sin’s strong-holds it now o’erthrows,
+Shakes the trembling gates of hell.
+
+Sons of God your Saviour praise
+He the door hath open’d wide,
+He hath giv’n the word of grace,
+Jesu’s word is glorify’d:
+Jesus mighty to redeem,
+He alone the work hath wrought,
+Worthy is the work of him,
+Him who spake a world from nought.
+
+Saw ye not the cloud arise
+Little as an human hand?
+Now it spreads along the skies,
+Hangs o’er all the thirsty131 land!
+Lo! The promise of a shower
+Drops already from above!
+But the Lord shall shortly pour
+All the Spirit of his love.
+Hymn XCIX.132
+
+Come, divine Immanuel, come,
+Take possession of thy home,
+Now thy mercy’s wings expand,
+Stretch throughout the happy land.
+
+Carry on thy victory,
+Spread thy rule from sea to sea,
+Reconvert the ransom’d race,
+Save us, save us, Lord, by grace.
+130Ori., “its”; a misprint.
+131Ori., “all thirsty”; a misprint. Restored to HSP (1749) reading in All in All (1765).
+132First appeared in HSP (1749), 1:329.
+
+[Page] 102
+
+Take the purchase of thy blood,
+Bring us to a pard’ning God!
+Give us eyes to see our day,
+Hearts the glorious truth t’ obey!
+
+Ears to hear the gospel-sound
+Grace doth more than sin abound.
+God appeas’d, and man forgiven,
+Peace on earth, and joy in heaven.
+
+O that every soul might be
+Suddenly subdu’d to thee!
+O that all in thee might know,
+Everlasting life below.
+
+Now thy mercy’s wings expand,
+Stretch throughout the happy land;
+Take possession of thy home,
+Come, divine Immanuel, come!
+    Hymn C.133
+
+Thy power and saving grace to shew,
+A warfare at thy charge I go,
+Strong in the Lord, and thy great might,
+Gladly take up the hallow’d cross,
+And suffering all things for thy cause,
+Beneath that bloody banner fight.
+A spectacle to fiends and men,
+To all their fierce or cool disdain
+With calmest pity I submit,
+Determin’d nought to know beside
+My Jesus, and him crucified,
+I tread the world beneath my feet.
+
+Superior to their smile, or frown,
+On all their goods my soul looks down,
+Their pleasures, wealth, and pomp, and state:
+133This is an extract from HSP (1749), 1:331–32; stanzas 5–9.
+
+[Page] 103
+The man that dares their god despise,
+The Christian, he alone is wise!
+The Christian, he alone is great!
+O God, let all my life declare
+How happy all thy servants are,
+How far above these earthly things,
+How pure when washed in Jesu’s blood,
+How intimately one with God,
+An heaven-born race of priests and kings.
+
+For this alone I live below,
+The power of godliness to shew,
+The wonders wrought by Jesu’s name.
+O that I may but faithful prove,
+Witness to all thy pard’ning love,
+And point them to th’ atoning Lamb!
+Let me to every creature cry,
+The poor, and rich, the low and high,
+“Believe, and feel thy sins forgiven!
+Damn’d, ’till by Jesus sav’d, thou art,
+’Till Jesu’s blood hath wash’d thy heart,
+Thou canst not find the gate of heaven.”
+
+Thou Jesu, thou my breast inspire,
+And touch my lips with hallow’d fire,
+And loose a stammering infant’s tongue,
+Prepare the vessel of thy grace,
+Adorn me with the robes of praise,
+And mercy shall be all my song.
+Mercy for those that know not God,
+Mercy for all, in Jesu’s blood,
+Mercy that earth and heaven transcends!
+Love, that o’erwhelms the saints in light,
+The length, and breadth, and depth, and height,
+Of love divine, which never ends.
+
+A faithful witness of thy grace,
+Long may I fill th’ allotted space,
+And answer all thy great design,
+
+[Page] 104
+Walk in the works by thee prepar’d,
+And find annext the vast reward,
+The crown of righteousness divine.
+When I have liv’d to thee alone,
+Pronounce the welcome word, Well done,
+And let me take my place above,
+Enter into my Master’s joy,
+And all eternity employ
+In praise, and extasy, and love.
+  *Hymn CI.134
+
+Saviour of all, what hast thou done,
+What hast thou suffered on the tree?
+Why didst thou groan thy mortal groan,
+Obedient unto death for me?
+The mystery of thy passion shew,
+The end of all thy griefs below.
+
+Thy soul for sin an offering made
+Hath cleared this guilty soul of mine,
+Thou hast for me a ransom paid,
+To change my human to divine,
+To cleanse from all iniquity,
+And make the sinner all like thee.
+
+Pardon, and grace, and heaven to buy,
+My bleeding sacrifice expir’d:
+But didst thou not my pattern die,
+That by thy glorious Spirit fir’d,
+Faithful I might to death endure,
+And make the crown by suffering sure?
+
+Thou didst the meek example leave,
+That I might in thy footsteps tread,
+Might like the Man of Sorrows grieve,
+And groan, and bow with thee my head,
+* C. W. V. 2.135
+134First appeared in HSP (1749), 2:10–11.
+135I.e., Charles Wesley, Hymns and Sacred Poems (1749), 2nd edn. (Bristol: Farley, 1756), Vol. 2.
+
+[Page] 105
+Thy dying in my body bear,
+And all thy state of passion share.
+
+Thy every perfect servant, Lord,
+Shall as his patient master be,
+To all thine inward life restor’d,
+And outwardly conform’d to thee,
+Out of thy grave the saint shall rise,
+And grasp thro’ death the glorious prize.
+
+This is the streight, and royal way,
+That leads us to the courts above;
+Here let me ever, ever stay,
+Till on the wings of perfect love,
+I take my last triumphant flight,
+From Calvary’s136 to Sion’s height.
+  Hymn CII.137
+
+Master, I own thy lawful claim,
+Thine, wholly thine I long to be,
+Thou seest at last I willing am,
+Where’er thou go’est to follow thee,
+Myself in all things to deny;
+Thine wholly, thine to live and die.
+
+Whate’er my sinful flesh requires,
+For thee I chearfully forego,
+My covetous and vain desires,
+My hopes of happiness below,
+My senses, and my passion’s food,
+And all my lust of creature-good.
+
+Pleasure, and wealth, and praise no more
+Shall lead my captive soul astray,
+My fond pursuits I all give o’er,
+Thee, only thee resolv’d t’ obey,
+My own, in all things to resign,
+And know no other will than thine.
+136Ori., “Calvery’s”; a misprint. Corrected in All in All (1765).
+137First appeared in HSP (1749), 2:19–21; stanzas 1–4, 10–11.
+
+[Page] 106
+
+Reason, blind leader of the blind,
+No more my sinking soul shall stay,
+The wisdom of the carnal mind
+That broken reed I cast away,
+And stand by trusting in thy might,
+And follow thy unerring light.
+
+All power is thine in earth and heaven,
+All fulness dwells in thee alone;
+Whate’er I had was freely given,
+Nothing but sin I call my own,
+Other propriety disclaim,
+Thou only art the great I AM.
+
+Wherefore to thee I all resign,
+Being thou art, and good, and power,
+Thy only will be done, not mine;
+Thee, Lord, let earth and heaven adore,
+Flow back the rivers to their sea,
+And let our all be lost in thee.
+  Hymn CIII.138
+
+Thee, Jesus, full of truth and grace,
+Our Saviour we adore,
+Thee in affliction’s furnace praise,
+And magnify thy power.
+Thy power in human weakness shewn,
+Shall make us all entire:
+We now thy guardian presence own,
+And walk unburnt in fire.
+
+Thee, Son of man, by faith we see,
+And glory in our guide,
+Surrounded, and upheld by thee,
+The fiery test abide.
+138First appeared in HSP (1749), 2:26.
+
+[Page] 107
+The fire our graces shall refine,
+’Till moulded from above
+We bear the character divine,
+The stamp of perfect love.
+  Hymn CIV.139
+
+Come on, my partners in distress,
+My comrades thro’ the wilderness,
+Who still your bodies feel,
+A while forget your griefs and fears,
+And look beyond this vale of tears
+To that celestial hill.
+
+Beyond the bounds of time and space,
+Look forward to that happy place,
+The saints’ secure abode,
+On faith’s strong eagle pinions rise,
+And force your passage to the skies,
+And scale the mount of God.
+
+See, where the Lamb in glory stands,
+Incircled with his radiant bands,
+And join th’ angelic powers,
+For all that height of glorious bliss
+Our, everlasting portion is,
+And all that heaven is ours.
+
+Who suffer for our Master here,
+We shall before his face appear,
+And by his side sit down:
+To patient faith the prize is sure,
+And all, that to the end endure
+The cross, shall wear the crown.
+
+Thrice blessed bliss, inspiring hope!
+It lifts the fainting spirits up,
+It brings to life the dead:
+139First appeared in HSP (1749), 2:29–31.
+
+[Page] 108
+Our conflicts here shall soon be past,
+And you and I ascend at last
+Triumphant with our head.
+
+That great mysterious deity
+We soon with open face shall see:
+The beatific sight
+Shall fill the heavenly courts with praise,
+And wide diffuse the golden blaze
+Of everlasting light.
+
+The Father shining on his throne,
+The glorious co-eternal Son,
+The Spirit one and seven,
+Conspire our rapture to compleat,
+And lo! We fall before his feet,
+And silence heightens heaven.
+
+In hope of that extatic pause,
+Jesus, we now sustain thy cross,
+And at thy footstool fall,
+’Till thou our hidden life reveal,
+’Till thou our ravish’d spirits fill,
+And God is all in all.
+  Hymn CV.140
+
+Head of thy church, whose Spirit fills,
+And flows thro’ every faithful soul,
+Unites in mystic love, and seals
+Them one, and simplifies the whole.
+
+Less than the least of saints, I join
+My littleness of faith to theirs,
+O King of all, thine ear incline,
+Accept our much availing prayers.
+
+Come, Lord, the glorious Spirit cries,
+And souls beneath the altar groan,
+140First appeared in HSP (1749), 2:87–88.
+
+[Page] 109
+Come, Lord, the bride on earth replies,
+And perfect all our souls in one.
+
+Pour out the promis’d gift on all,
+Answer the universal Come,
+The fulness of the Gentiles call,
+And take thine antient people home.
+
+To thee let all the nations flow,
+Let all obey the gospel-word,
+Let all their bleeding Saviour know,
+Fill’d with the glory of the Lord.
+
+O for thy truth and mercy sake,
+The purchase of thy passion claim,
+Thine heritage the Gentiles take,
+And cause the world to know thy name.
+
+Thee, Lord, let every tongue confess,
+Let every knee to Jesus bow:
+O! All-redeeming Prince of Peace,
+We long to see thy kingdom now.
+
+Hasten that kingdom of thy grace,
+And take us to our heavenly home,
+And let us now behold thy face:
+Come, glorious God, to judgment come!
+  Hymn CVI.141
+
+O thou our husband, brother, friend,
+Behold a cloud of incense rise,
+The prayers of saints to heaven ascend,
+Grateful, unceasing sacrifice.
+
+Regard our prayers for Sion’s peace,
+Shed in our hearts thy love abroad;
+Thy gifts abundantly increase,
+Enlarge, and fill us all with God.
+141First appeared in HSP (1749), 2:88–89.
+
+[Page] 110
+
+Before thy sheep, great shepherd, go,
+And guide into thy perfect will;
+Cause us thy hallow’d name to know,
+The work of faith with power fulfil.
+
+Help us to make our calling sure,
+O! Let us all be saints indeed,
+And pure as God himself is pure,
+Conform’d in all things to our head.
+
+Take the dear purchase of thy blood;
+Thy blood shall wash us white as snow,
+Present us sanctified to God,
+And perfected in love below.
+
+That blood which cleanses from all sin,
+That efficacious blood apply,
+And wash, and make us throughly clean,
+And change, and wholly sanctify.
+
+From all iniquity redeem,
+Cleanse by the water, and the word,
+And free from every touch of blame,
+And make the servants as their Lord.
+
+Wash out the deep, orig’nal stain,
+And make us glorious all within,
+No wrinkle on our souls remain,
+No smallest spot of inbred sin.
+
+Then, when the perfect life of love
+The bride and all her children live,
+Come down, and take us from above,
+And to thy heaven of heavens receive.
+
+[Page] 111
+ Hymn CVII.142
+
+Author of faith, we seek thy face,
+For all who feel thy work begun;
+Confirm, and stablish them in grace,
+And bring thy feeblest children on.
+
+Thou seest their wants, thou knowst their names,
+Be mindful of thy youngest care;
+Be tender of thy new-born lambs,
+And gently in thy bosom bear.
+
+The lyon roaring for his prey,
+With ravening wolves on every side:
+Watch over them to tear, and slay,
+If found one moment from their guide.
+
+Satan his thousand arts essays,
+His agents all their powers employ,
+To blast the blooming work of grace,
+The heavenly offspring to destroy.
+
+Baffle the crooked serpent’s skill,
+And turn his sharpest dart aside:
+Hide from their eyes the devilish ill,
+O save them from the plague of pride.
+
+In safety lead thy little flock,
+From hell, the world, and sin secure;
+And set their feet upon the Rock,
+And make in thee their goings sure.
+142First appeared in HSP (1749), 2:92; stanzas 1–5, 7.
+
+[Page] 112
+Hymn CVIII.143
+
+Shepherd of Israel, hear
+Our supplicating cry,
+And gather in the souls sincere,
+That from their brethren fly;
+Scatter’d thro’ devious ways,
+Collect thy feeble flock,
+And join by thine atoning grace,
+And hide them in the Rock.
+
+Thou every simple heart
+With pity dost behold:
+Ah! Bring again whom Satan’s art
+Hath sever’d from the fold;
+The souls far off remov’d,
+Whose burthen still we bear,
+Ah! Give them back so dearly lov’d,
+To faith’s almighty prayer.
+
+O wouldst thou end the storm,
+That keeps us still apart;
+The thing impossible perform,
+And make us of one heart;
+One spirit, and one mind,
+The same that was in thee,
+O might we all again be join’d
+In perfect charity.
+
+Jesu, at thy command,
+We know it shall be done:
+Take the two sticks into thy hand,
+The two shall then be one;
+One body, and one fold,
+We then shall sweetly prove,
+And live in thee, like those of old,
+The life of spotless love.
+143First appeared in HSP (1749), 2:93–94; stanzas 1–2, 4–7.
+
+[Page] 113
+
+God of all power, and grace,
+Set up thy bloody sign,
+And gather those, that seek thy face,
+And by thy Spirit join:
+Thy few remaining sheep
+In Britain’s pastures bred,
+United to each other keep,
+United to their head.
+
+The soul-transforming word
+In us, ev’n us fulfil:
+Join to thyself, our common Lord,
+And all thy servants seal;
+Confer the grace unknown,
+The mystic charity:
+As thou art with thy Father one,
+Unite us all in thee.
+  Hymn CIX.144
+
+Hark, how the watchmen cry!
+Attend the trumpet’s sound,
+Stand to your arms; the foe is nigh,
+The powers of hell surround:
+Who bow to Christ’s command
+Your arms and hearts prepare;
+The day of battle is at hand,
+Go forth to glorious war.
+
+Ye now have took the field,
+And fearlesly march on,
+Fight the good fight, hold fast your shield,
+’Till Satan is cast down,
+Cast down he soon shall be,
+He shall, he shall submit,
+Compell’d with all his host to flee,
+Or bruis’d beneath your feet.
+144First appeared in HSP (1749), 2:128–30; stanzas 1, 5–9.
+
+[Page] 114
+
+Only have faith in God,
+In faith your foes assail,
+Not wrestling against flesh and blood,
+But all the powers of hell:
+From thrones of glory driven
+By flaming vengeance hurl’d,
+They throng the air, and darken heaven,
+And rule the lower world.
+
+Angels your march oppose,
+Who still in strength excel,
+Your secret, sworn, eternal foes,
+Countless, invisible:
+With rage that never ends,
+Their hellish arts they try,
+Legions of dire malicious fiends,
+And spirits enthron’d on high.
+
+On earth th’ usurpers145 reign,
+Exert their baleful power,
+O’er the poor fallen sons of men
+They tyrannize their hour.
+But shall believers fear?
+But shall believers fly?
+Or see the bloody cross appear,
+And all their powers defy!
+
+Jesu’s tremendous name,
+Puts all our foes to flight:
+Jesus the meek, the angry Lamb,
+A lion is in fight,
+By all hell’s host withstood,
+We all hell’s host o’erthrow,
+And conquering them thro’ Jesu’s blood,
+We still to conquer go.
+145Ori., “usurper”; a misprint. Corrected to HSP (1749) reading in All in All (1765).
+
+[Page] 115
+  Hymn CX.146
+
+How happy, gracious Lord, are we
+Divinely drawn to follow thee,
+Whose hours divided are
+Betwixt the mount and multitude;
+Our day is spent in doing good,
+Our night in praise and prayer.
+
+With us no melancholy void,
+No moment lingers unemploy’d,
+Or unimprov’d below;
+Our weariness of life is gone,
+Who live to serve our God alone,
+And only thee to know.
+
+The winter’s night, and summer’s day
+Glides imperceptibly away,
+Too short to sing thy praise,
+Too few we find the happy hours,
+And haste to join those heavenly powers
+In everlasting lays.
+
+With all who chaunt thy name on high,
+And holy, holy, holy cry,
+A bright harmonious throng,
+We long thy praises to repeat,
+And restless sing around thy seat
+The new eternal song.
+  Hymn CXI.147
+
+Meet and right it is to sing,
+At every time and place,
+Glory to our heavenly King,
+The God of truth and grace:
+146First appeared in HSP (1749), 2:136.
+147First appeared in HSP (1749), 2:136–37.
+
+[Page] 116
+Join we then with sweet accord,
+All in one thanksgiving join,
+Holy, holy, holy, Lord,
+Eternal praise be thine!
+
+Thee the first-born sons of light
+In choral symphonies
+Praise by day, day without night,
+And never, never cease:
+Angels, and archangels all
+Sing the mystic Three in One,
+Sing, and stop, and gaze and fall
+O’erwhelm’d before thy throne.
+
+Vying with that happy choire
+Who chaunt thy praise above,
+We on eagles’ wings aspire,
+The wings of faith and love:
+Thee they sing with glory crown’d,
+We extol the slaughter’d Lamb,
+Lower if our voices sound,
+Our subject is the same.
+
+Father, God, thy love we praise,
+Which gave thy Son to die,
+Jesus full of truth and grace,
+Alike we glorify,
+Spirit, Comforter divine,
+Praise by all to thee be given,
+’Till we in full chorus join,
+And earth is turn’d to heaven.
+ Hymn CXII.148
+
+Surrounded by an host of foes,
+Storm’d by an host of foes within,
+Nor swift to fly, nor strong t’ oppose,
+Single against hell, earth, and sin,
+148First appeared in HSP (1749), 2:160–61.
+
+[Page] 117
+Single, yet undismay’d I am:
+I dare believe in Jesu’s name.
+
+What though a thousand host engage,
+A thousand worlds, my soul to shake,
+I have a shield shall quell their rage,
+Shall drive the alien armies back,
+Pourtray’d it bears a bleeding Lamb:
+I dare believe in Jesu’s name.
+
+Me to retrieve from Satan’s hands,
+Me from this evil world to free,
+To purge my sins, and loose my bands,
+And save from all iniquity,
+My Lord and God, from heaven he came:
+I dare believe in Jesu’s name.
+
+Salvation in his name there is,
+Salvation from sin, death, and hell,
+Salvation into glorious bliss,
+How great salvation who can tell!
+But all he hath for mine I claim:
+I dare believe in Jesu’s149 name.
+Hymn CXIII.150
+
+Light of life, seraphic fire,
+Love divine, thyself impart,
+Every fainting soul inspire,
+Shine in every drooping heart,
+Every mournful sinner chear,
+Scatter all our guilty gloom;
+Son of God appear, appear,
+To thine human temples come.
+
+Come in this accepted hour,
+Bring thy heavenly kingdom in;
+Fill us with the glorious power
+Rooting out the seeds of sin:
+149Ori., “Jesus’s”; throughs off metre. Restored to HSP (1749) reading in All in All (1765).
+150First appeared in HSP (1749), 2:168.
+
+[Page] 118
+Nothing more can we require,
+We will covet nothing less:
+Thou art all our heart’s desire,
+All our joy, and all our peace.
+
+Whom but thee have we in heaven,
+Whom have we on earth but thee?
+Only thou to us be given,
+All besides is vanity:
+Grant us love, we ask no more,
+Every other gift remove;
+Pleasure, fame, and wealth, and power,
+Still we all enjoy in love.
+Hymn CXIV.151
+
+Omnipotent, omniscient Lord,
+Present in heaven, and earth, and hell,
+Spirit, and soul-dividing Word,
+Searcher of hearts unsearchable,
+Behold us with thine eyes of flame,
+And tell me what by grace I am.
+
+We would not our own souls deceive,
+Or fondly rest in grace begun:
+Thy wise discerning unction give,
+And make us know, as we are known,
+Search, and try out our hearts, and reins,
+And shew if sin in us remains.
+
+Thy thoughts and ways are not as ours,
+Thou only know’st what is in man;
+Ev’n now we taste the heavenly powers;
+But tell us, are we born again?
+Are we redeem’d from inbred sin?
+What saith the oracle within?
+
+Shine on the work thyself hast wrought,
+If thou hast wrought the work in me:
+151First appeared in HSP (1749), 2:172–73.
+
+[Page] 119
+Or shew us, if we know thee not:
+Am I, my God, stopt short of thee?
+The powerful, quick conviction dart,
+And shine in every naked heart.
+
+Thou wouldst not have thy children stray,
+Thou never canst mislead the blind;
+If brought into thy perfect way,
+O let us now the witness find,
+And shout to hear thy speaking blood,
+And echo to the voice of God.
+
+Touching this thing we all agree,
+Father, to ask in Jesu’s name,
+That each his true estate may see:
+In faith we now the promise claim;
+Now, now for Jesu’s sake reveal
+Our inward heaven, or inward hell.
+
+Send forth thy pure, unerring light,
+Jesus, the truth, the life, the way,
+And guide our helpless spirits right,
+That all may see thy perfect day,
+May all thy glorious fullness prove,
+Thy depth of everlasting love.
+ Hymn CXV.152
+
+Come, thou omniscient Son of man,
+Display thy sifting power;
+Come with the winnowing Spirit’s fan,
+And throughly purge the floor.
+
+The chaff of sin, th’ accursed thing
+Far from our souls be driven;
+The wheat into thy garner bring,
+And lay us up for heaven.
+152First appeared in HSP (1749), 2:173–74.
+
+[Page] 120
+
+Now let us by thy word be tried,
+Search out our reins and heart,
+Spirit, and soul, O Lord, divide,
+And joints and marrow part.
+
+Look thro’ us with thine eyes of flame,
+The clouds and darkness chase;
+And shew me what by sin I am,
+And what I am by grace.
+
+We would not of ourselves conceive
+Above what thou hast done:
+But still to thee the matter leave,
+’Till thou shalt make it known.
+
+We would not, Lord, ourselves conceal,
+But walk in open day;
+We pray thee, all our sin reveal,
+And purge it all away.
+
+Whate’er offends thy glorious eyes,
+Far from our hearts remove,
+As dust before the whirlwind flies,
+Disperse it by thy love.
+
+Then let us all thy fulness know,
+From every sin set free:
+Sav’d to the utmost, sav’d below,
+And perfectly like thee.
+Hymn CXVI.153
+
+How can a sinner know
+His sins on earth forgiven?
+How can my Saviour shew
+My name inscrib’d in heaven?
+What we ourselves have felt and seen,
+With confidence we tell
+And publish to the sons of men
+The signs infallible.
+153First appeared in HSP (1749), 2:220–22.
+
+[Page] 121
+
+We, who in Christ believe
+That he for us hath died,
+His unknown peace receive,
+And feel his blood applied:
+Exults for joy our rising soul,
+Disburthen’d of her load,
+And swells, unutterably full
+Of glory, and of God.
+
+His love, surpassing far
+The love of all beneath,
+We find within, and dare
+The pointless darts of death.
+Stronger than death, or sin, or hell
+The mystic power we prove,
+And conquerors of the world we dwell
+In heaven, who dwell in love.
+
+The pledge of future bliss
+He now to us imparts,
+His gracious Spirit is
+The earnest in our hearts:
+We antedate the joys above,
+We taste th’ eternal powers,
+And know that all those heights of love
+And all those heavens are ours.
+
+’Till he our life reveal,
+We rest in Christ secure:
+His Spirit is the seal,
+Which made our pardon sure:
+Our sins his blood hath blotted out,
+And154 sign’d our soul’s release:
+And can we of his favour doubt,
+Whose blood declares us his?
+
+We by his Spirit prove,
+And know the things of God,
+The things which of his love
+He hath on us bestow’d:
+154Ori., “An”; a misprint. Restored to HSP (1749) reading in All in All (1765).
+
+[Page] 122
+Our God to us his Spirit gave,
+And dwells in us, we know,
+The witness in ourselves we have,
+And all his fruits we shew.
+
+The meek and lowly heart,
+Which in our Saviour was,
+He doth to us impart,
+And signs us with his cross:
+Our nature’s course is turn’d, our mind
+Transform’d in all its powers,
+And both the witnesses are join’d,
+The Spirit of God with ours.
+
+Whate’er our pard’ning Lord
+Commands, we gladly do,
+And guided by his word,
+We all his steps pursue:
+His glory is our sole design,
+We live our God to please,
+And rise with filial fear divine
+To perfect holiness.
+      Hymn CXVII.155
+
+Come all, whoe’er have set
+Your faces Sion-ward,
+In Jesus let us meet,
+And praise our common Lord:
+In Jesus let us still walk on,
+’Till all appear before his throne.
+
+Nearer and nearer still
+We to our country come,
+To that celestial hill,
+The weary pilgrim’s home:
+The New Jerusalem above,
+The seat of everlasting love.
+155First appeared in HSP (1749), 2:242–43.
+
+[Page] 123
+
+The ransom’d sons of God,
+All earthly things we scorn,
+And to our high abode
+With songs of praise return;
+From strength to strength we still proceed,
+With crowns of joy upon our head.
+
+The peace and joy of faith
+We every moment feel,
+Redeem’d from sin, and wrath,
+And death, and earth, and hell;
+We to our Father’s house repair,
+To meet our elder brother there.
+
+Our brother, Saviour, head,
+Our all in all is he;
+And in his steps who tread,
+We soon his face shall see;
+Shall see him with our glorious friends,
+And then in heaven our journey ends.
+     Hymn CXVIII.156
+
+Come, let us anew
+Our journey pursue,
+With vigour arise,
+And press to our permanent place in the skies.
+
+Of heavenly birth,
+Tho’ wand’ring on earth,
+This is not our place,
+But strangers and pilgrims ourselves we confess.
+
+At Jesus’s157 call
+We gave up our all;
+And still we forego,
+For Jesus’s sake, our enjoyments below.
+156First appeared in HSP (1749), 2:243–44.
+157Ori., “Jesu’s”; throughs off metre. Restored to HSP (1749) reading in All in All (1765).
+
+[Page] 124
+
+No longing we find
+For the country behind,
+But onward we move,
+And still we are seeking a country above.
+
+A country of joy
+Without any alloy,
+We thither repair,
+Our heart, and our treasure, already are there.
+
+We march hand in hand
+To Immanuel’s land;
+No matter what chear
+We meet with on earth; for eternity’s near.
+
+The rougher our way,
+The shorter our stay,
+The troubles that come
+Shall come to our rescue, and hasten us home.
+
+The fiercer the blast,
+The sooner ’tis past,
+The tempests that rise
+Shall gloriously hurry our souls to the skies.
+Hymn CXIX.158
+
+My brethren belov’d,
+Your calling ye see:
+In Jesus approv’d,
+No goodness have we:
+No riches or merit,
+No wisdom or might,
+But all things inherit
+Thro’ Jesus’s right.
+
+Our God would not have,
+One reprobate die:
+158First appeared in HSP (1749), 2:247–48.
+
+[Page] 125
+Who all men would save
+Hath no man pass’d by:
+His boundless compassion
+On sinners doth call:
+He offers salvation
+Thro’ mercy to all.
+
+Yet not many wise
+His summons obey;
+And great ones despise
+So vulgar a way;
+And strong ones will never
+Their helplessness own,
+Or stoop to find favour
+Thro’ mercy alone.
+
+And therefore our God
+The outcasts hath chose,
+His righteousness shew’d
+To heathen like us:
+When wise ones rejected
+His offers of grace,
+His goodness elected
+The foolish and base.
+
+To baffle the wise,
+And noble, and strong,
+He bad us arise,
+An impotent throng:
+Poor ignorant wretches
+We gladly embrace
+A prophet that teaches
+Salvation by grace.
+
+The things that were not
+His mercy bids live;
+His mercy unbought
+We freely receive;
+
+[Page] 126
+His gracious compassion
+We thankfully prove,
+And all our salvation
+Ascribe to his love.
+ Hymn CXX.159
+
+Thee Jesus alone
+The fountain I own
+Of my life and felicity here,
+And chearfully sing
+My Redeemer and King,
+’Till his sign in the heavens appear.
+
+With thanks I rejoice
+In thy fatherly choice
+Of my state and condition below;
+If of parents I came,
+Who honour’d thy name,
+’Twas thy wisdom appointed it so.
+
+I sing of thy grace
+From my earliest days,
+Ever near to allure, and defend:
+Hitherto thou hast been
+My preserver from sin,
+And I know thou wilt save to the end.
+
+Oh! The infinite cares,
+And temptations, and snares,
+Thy hand hath conducted me thro’!
+Oh! The blessings bestow’d
+By a bountiful God,
+And the mercies eternally new!
+
+What a mercy is this,
+What an heaven of bliss!
+How unspeakably happy am I,
+159This is an extract from HSP (1749), 2:257–59; stanzas 3–7, 12, 14.
+
+[Page] 127
+Gather’d into the fold,
+With thy people inroll’d,
+With thy people to live, and to die!
+
+All honour and praise
+To the Father of grace,
+To the Spirit, and Son, I return,
+The business pursue
+He hath made me to do,
+And rejoice, that I ever was born.
+
+My remnant of days
+I spend in his praise
+Who died the whole world to redeem;
+Be they many, or few,
+My days are his due,
+And they all are devoted to him.
+Hymn CXXI.160
+
+Father at thy footstool see
+We who now are one in thee,
+Draw us by thy grace alone,
+Give, O give us to thy Son.
+
+Jesus, friend of human kind,
+Let us in thy name be join’d,
+Each to each unite and bless,
+Keep us still in perfect peace.
+
+Heavenly, all-alluring Dove,
+Shed thine over-shadowing love,
+Love, the sealing grace impart,
+Dwell within our single heart.
+
+Father, Son, and Holy Ghost,
+Be to us what Adam lost,
+Let us in thy image rise,
+Give us back our paradise.
+160First appeared in HSP (1749), 2:263–64; stanzas 1–4.
+
+[Page] 128
+      Hymn CXXII.161
+
+Author of friendship’s sacred tie,
+Regard us with a gracious eye,
+Our souls whom thou hast join’d in one,
+Join’d by the unction from above
+In bonds of pure seraphic love,
+United in thy love alone.
+Searcher of hearts unsearchable,
+To thee, great God, we dare appeal,
+To thee we dare our cause commend;
+Thou know’st our simpleness of heart,
+And as thou didst the grace impart,
+O keep us, keep us to the end.
+
+Our friendship sanctify, and guide,
+Unmixt with selfishness, and pride,
+Thy glory be our single aim:
+In all our intercourse below
+Still let us in thy footsteps go,
+And never meet but in thy name.
+Fix on thyself our single eye;
+Oh! May we on thyself rely
+For all the help which each conveys,
+The help as from thy hands receive,
+And still to thee all glory give,
+All thanks, all might, all love, all praise.
+
+Witnesses of th’ all-cleansing blood,
+Long may we work the works of God,
+And do thy will like those above
+Together spread the gospel-sound,
+And scatter peace, on all around,
+And joy, and happiness, and love.
+True yoke-fellows, by love compell’d
+To labour in the gospel-field,
+Our all let us delight to spend
+161First appeared in HSP (1749), 2:264–66; stanzas 1–2, 4.
+
+[Page] 129
+In gathering in thy lambs and sheep,
+Assur’d that thou our souls will keep,
+Will keep us faithful to the end.
+    Hymn CXXIII.162
+
+Center of our hopes thou art,
+End of our enlarg’d desires:
+Stamp thine image on our heart,
+Fill us now with holy fires,
+Cemented by love divine,
+Seal our souls for ever thine.
+
+All our works in thee be wrought,
+Levell’d at one common aim,
+Every word, and every thought
+Purge in the refining flame,
+Lead us thro’ the paths of peace
+On to perfect holiness.
+
+Let us all together rise,
+To thy glorious life restor’d
+Here regain our paradise,
+Here prepare to meet our Lord,
+Here enjoy the earnest given,
+Travel hand in hand to heaven.
+     Hymn CXXIV.163
+
+Come, let us ascend,
+My companion and friend,
+To a taste of the banquet above:
+If thy heart be as mine,
+If for Jesus it pine
+Come up into the chariot of love.
+162This is an extract from HSP (1749), 2:283; stanzas 2–4.
+163First appeared in HSP (1749), 2:313–14.
+
+[Page] 130
+
+Who in Jesus confide,
+We are bold to out-ride
+The storm of affliction beneath,
+With the prophet we soar
+To that heavenly shore,
+And out-fly all the arrows of death.
+
+By faith we are come
+To our permanent home,
+By hope we the rapture improve,
+By love we still rise
+And look down on the skies:
+For the heaven of heavens is love.
+
+Who on earth can conceive,
+How happy we live
+In the city of God the great King!
+What a concert of praise
+When our Jesus’s grace
+The whole heavenly company sing!
+
+What a rapturous song,
+When the glorify’d throng
+In the spirit of harmony join!
+Join all the glad quires
+Hearts, voices, and lyres,
+And the burthen is mercy divine!
+
+Hallelujah they cry
+To the King of the sky,
+To the great everlasting I AM,
+To the Lamb that was slain,
+And liveth again,
+Hallelujah to God and the Lamb.
+
+The Lamb on the throne
+Lo! He dwells with his own,
+And to rivers of pleasure he leads,
+With his mercy’s full blaze,
+With the sight of his face,
+Our beatified spirits he feeds.
+
+[Page] 131
+
+Our foreheads proclaim
+His ineffable name,
+Our bodies his glory display,
+A day without night
+We feast in his sight,
+And eternity seems as a day!
+      Hymn CXXV.164
+
+O Father receive
+Our heartiest praise,
+For bidding us live
+To witness thy grace,
+For bringing us hither
+Thy goodness to prove,
+And triumph together
+In Jesus’s love.
+
+Our confident trust
+In him we declare,
+Thro’ Jesus the just
+Accepted we are.
+Redeem’d by his passion,
+We joyfully join
+T’ ascribe our salvation
+To mercy divine.
+
+Thee, Lord, we adore,
+And dwell on thy praise,
+Preserv’d by the power
+Of Jesus’s grace;
+Thee, Jesus, the giver
+Of all we proclaim,
+And publish for ever
+Thy wonderful name.
+
+Thy name is release
+From sorrow, and sin,
+’Tis pardon, and peace,
+And goodness brought in;
+164First appeared in HSP (1749), 2:320.
+
+[Page] 132
+It speaks us forgiven,
+Sinks into the soul,
+And spreads the pure leaven,
+And hallows the whole.
+     Hymn CXXVI.165
+
+Jesu, soft harmonious name,
+Every faithful heart’s desire,
+See thy followers, O Lamb,
+All at once to thee aspire;
+Drawn by thy uniting grace,
+After thee we swiftly run,
+Hand in hand we seek thy face,
+Come, and perfect us in one.
+
+Mollify our harsher will,
+Each to each our tempers suit
+By thy modulating skill,
+Heart to heart, as lute to lute:
+Sweetly on our spirits move,
+Gently touch the trembling strings,
+Make the harmony of love,
+Music for the King of kings.
+
+See the souls that hang on thee,
+Sever’d tho’ in flesh we are,
+Join’d in spirit, all agree,
+All thy only love declare;
+Spread thy love to all around:
+Hark, we now our voices raise,
+Joyful consentanious sound,
+Sweetest symphony of praise!
+
+Jesu’s praise is all our song;
+While we Jesu’s praise repeat,
+Glide our happy days along,
+Glide with down upon their feet:
+165First appeared in HSP (1749), 2:329–30.
+
+[Page] 133
+Far from sorrow, sin, and fear,
+’Till we take our seats above,
+Live we all as angels here,
+Only sing, and praise, and love.
+    Hymn CXXVII.166
+
+Jesus, from whom all blessings flow,
+Great builder of thy church below,
+If now thy Spirit moves my breast,
+Hear, and fulfil thine own request.
+
+The few that truly call thee Lord,
+And wait thy sanctifying word,
+And thee their utmost Saviour own,
+Unite, and perfect them in one.
+
+O let them all thy mind express,
+Stand forth thy chosen witnesses!
+Thy power unto salvation shew,
+And perfect holiness below:
+
+The fulness of thy167 grace receive;
+And simply to thy glory live:
+Strongly reflect the light divine,
+And in a land of darkness shine.
+
+In them let all mankind behold
+How Christians liv’d in days of old;
+(Mighty their envious foes to move,
+A proverb of reproach—and love.)
+
+O make them of one soul and heart,
+The all-conforming mind impart;
+Spirit of peace, and unity,
+The sinless mind that was in thee.
+166First appeared in HSP (1749), 2:334–36; stanzas 1–2, 6–13, 15–16.
+167“Thy” changed to “the” in All in All (1765).
+
+[Page] 134
+
+Call them into thy wond’rous light,
+Worthy to walk with thee in white;
+Make up thy jewels, Lord, and shew
+The glorious spotless church below.
+
+From every sinful wrinkle free,
+Redeem’d from all iniquity;
+The fellowship of saints make known;
+And Oh! My God, might I be one!
+
+O might my lot be cast with these,
+The least of Jesu’s witnesses;
+O that my Lord would count me meet
+To wash his dear disciples’ feet!
+
+This only thing do I require,
+Thou know’st ’tis all my heart’s desire,
+Freely what I receive to give,
+The servant of thy church to live.
+
+Lord, if I now thy drawings feel,
+And ask according to thy will,
+Confirm the prayer, the seal impart,
+And speak the answer to my heart.
+
+Tell me, or thou shalt never go,
+“Thy prayer is heard, it shall be so.”
+The word hath pass’d thy lips, and I
+Shall with thy people live, and die.
+
+[Page] 135
+   *Hymn CXXVIII.168
+
+O the length, and breadth, and height,
+And depth of dying love!
+Love that turns our faith to sight,
+And wafts to heaven above:
+Pledge of our possession, this,
+This which nature faints to bear;
+Who shall then support the bliss,
+The joy, the rapture there!
+
+Flesh and blood shall not receive
+The vast inheritance;
+God we cannot see, and live
+The life of feeble sense;
+In our weakest nonage, here,
+Up into our head we grow,
+Saints before our Lord appear,
+And ripe for heaven below.
+
+We his image shall regain,
+And to his stature rise,
+Rise into169 a perfect man,
+And then ascend the skies,
+Find our happy mansions there,
+Strong to bear the joys above,
+All the glorious weight to bear
+Of everlasting love.
+* Sacrament.170
+168First appeared in HLS (1745), 88.
+169Note that Charles Wesley has changed “unto” in HLS (1745) to “into” here.
+170I.e., John and Charles Wesley, Hymns on the Lord’s Supper (Bristol: Farley, 1745).
+
+[Page] 136
+     Hymn CXXIX.171
+
+Lift your172 eyes of faith and see
+Saints and angels join’d in one,
+What a countless company
+Stands before yon daz’ling throne!
+Each before his Saviour stands,
+All in milk-white robes array’d,
+Palms they carry in their hands,
+Crowns of glory on their head.
+
+Saints begin the endless song,
+Cry aloud in heavenly lays,
+Glory doth to God belong,
+God, the glorious Saviour praise,
+All salvation from him came,173
+Him who reigns enthron’d on high,
+Glory to the bleeding Lamb
+Let the morning stars reply.
+
+Angel-powers the throne surround,
+Next the saints in glory they
+Lull’d with the transporting sound,
+They their silent homage pay,
+Prostrate on their face before
+God, and his Messiah fall,
+Then in hymns of praise adore,
+Shout the Lamb, that died for all.
+
+Be it so they all reply,
+Him let all our orders praise,
+Him that did for sinners die,
+Saviour of the favour’d race:
+Render we our God his right,
+Glory, wisdom, thanks, and power,
+Honour, majesty, and might,
+Praise him, praise him evermore!
+171First appeared in HLS (1745), 89–90.
+172Ori., “you”; a misprint. Charles is correcting the metre of the HLS (1745) wording, which read “Lift up
+your ....”
+173Note that Charles has changed the HLS (1745) order, which read: “All from him salvation came.”
+
+[Page] 137
+Hymn CXXX.174
+
+What are these array’d in white,
+Brighter than the noon-day sun,
+Foremost of the sons of light
+Nearest the eternal throne?
+These are they that bore the cross,
+Nobly for their Master stood,
+Sufferers in his righteous cause,
+Followers of the dying God.
+
+Out of great distress they came,
+Wash’d their robes, by faith below,
+In the blood of yonder Lamb,
+Blood that washes white as snow,
+Therefore are they next the throne,
+Serve their Maker day and night,
+God resides among his own,
+God doth in his saints delight.
+
+More than conquerors at last,
+Here they find their trials o’er,
+They have all their sufferings past,
+Hunger now and thirst no more;
+No excessive heat they feel
+From the sun’s directer ray,
+In a milder clime they dwell,
+Region of eternal day.
+
+He that on the throne doth reign,
+Them the Lamb shall always feed,
+With the tree of life sustain,
+To the living fountains lead,
+He shall all their sorrows chace,
+All their wants at once remove,
+Wipe the tears, from every face,
+Fill up every soul with love.
+174First appeared in HLS (1745), 90–91.
+
+[Page] 138
+    *Hymn CXXXI.175
+
+Who is as the Christian great,
+Bought, and wash’d with sacred blood,
+Crowns he sees beneath his feet,
+Soars aloft, and walks with God.
+
+Who is as the Christian wise!
+He his nought for all hath given,
+Bought the pearl of greatest price,
+Nobly barter’d earth for heaven.
+
+Who is as the Christian blest.
+He hath found the long-sought stone,
+He is join’d to Christ his rest,
+He and happiness are one.
+
+Earth and heaven together meet,
+Gifts in him and graces join,
+Make the character compleat,
+All immortal, all divine.
+
+Lo! His cloathing is the Sun,
+The bright Sun of righteousness,
+He hath put salvation on,
+Jesus is his beauteous dress.
+
+Lo! He feeds on living bread,
+Drinks the fountain from above,
+Leans on Jesu’s breast his head;
+Feasts for ever on his love.
+
+Angels here his servants are,
+Spread for him their golden wings,
+To his throne of glory bear,
+Seat him by the King of kings.
+* M. & S. P. Vol. 3.176
+175First appeared in MSP (1744), 3:270–71.
+176I.e., John Wesley, Collection of Moral and Sacred Poems (Bristol: Farley, 1744), vol. 3.
+
+[Page] 139
+
+Who shall gain that heavenly height,
+Who his Saviour’s face shall see?
+I, who claim it in his right,
+Christ hath bought it all for me.
+    Hymn CXXXII.177
+
+Happy the soul, whom God delights
+To honour with his sealing grace,
+On whom his hidden name he writes,
+And decks him with the robes of praise,
+And bids him calmly wait to prove
+The utmost powers of perfect love.
+
+I cannot, dare not now deny
+The things my God hath freely given,
+That happy favour’d soul am I,
+Who find in Christ a constant heaven,
+He makes me all his sweetness know,
+He makes my cup of joy o’erflow.
+
+His grace to me salvation brings,
+His grace hath set me up on high,
+He bears me still on eagle’s wings,
+He makes me ride upon the sky,
+With him in heavenly places sit,
+And see the moon beneath my feet.
+
+An hidden life in Christ I live,
+And exercis’d in things divine,
+My senses all his love receive:
+I see the King in beauty shine,
+Fairer than all the sons of men,
+Thrice happy in his love I reign.
+
+His love is manna to my taste,
+His love is musick to my ear,
+177First appeared in MSP (1744), 3:271–73.
+
+[Page] 140
+I feel his love, and hold him fast,
+In extacies too strong to bear,
+I smell the odour of his name,
+And all wrapt up in love I am.
+
+O that the world might taste, and see
+How good the Lord my Saviour is!
+Take, Jesu, take thy love from me
+So they may share the glorious bliss;
+Thy love, (if we a while should part)
+Would soon flow back into my heart.
+
+O might I feel the utmost power
+Of love, and into nothing fall!
+Infinite love, bring near the hour,
+Infinite God be all in all,
+Cover the earth thou boundless sea,
+And swallow up our souls in thee!
+    Hymn CXXXIII.178
+
+O how happy am I here,
+How beyond expression blest,
+When I feel my Jesus near,
+When in Jesu’s love I rest,
+Peace, and joy, and heaven I prove
+Heaven on earth in Jesu’s love!
+
+Nothing else but love I know,
+Worldly joys and sorrows end,
+Men may rage, my feeble foe,
+Thou, O Jesus, art my friend:
+Man may smile; I trust in thee
+Thou art all in all to me.
+
+Thou my faithful friend and true
+Reachest out thy gracious hand:
+What can men or devils do
+While by faith in thee I stand!
+178Source: Wolfgang Christoph Dessler. First appeared in MSP (1744), 3:273–75.
+
+[Page] 141
+Stand immoveably secure,
+Love hath made my footsteps sure.
+
+Satan stirs a tempest up,
+Calm I wait till all is past;
+See the anchor of my hope
+On the Rock of Ages cast!
+Never can that anchor fail,
+Entred now within the veil.
+
+Shouldst thou o’er the desert lead,
+Will me farther griefs to know,
+After thee with steady tread,
+Leaning on thy love I’d go,
+Drink the fountain from above,
+Eat the manna of thy love.
+
+O how wonderful thy ways!
+All in love begin and end:
+Whom thy mercy means to raise
+First thy justice bids descend,
+Sink into themselves, and rise
+Glorious all above the skies.
+
+There I shall my lot receive,
+Soon as from the flesh I fly,
+Happy in thy love I live,
+Happier in thy love I die:
+Lo! The prospect opens fair!
+I shall soon be harbour’d there!
+
+Light of life, to thee I haste,
+Glad to quit this dark abode,
+On thy truth and mercy cast,
+Longing to be lost in God,
+Ready at thy call to say,
+Lo! I come, I come away!
+
+Ministerial spirits come,
+Spread your golden wings for me,
+
+[Page] 142
+Waft me to my heavenly home,
+Land me in eternity;
+Bear, me to my glorious rest,
+Take me to my Saviour’s breast.
+   Hymn CXXXIV.179
+
+Melt happy soul, in Jesu’s blood,
+Sink down into the wounds of God,
+And there for ever dwell:
+I now have found my rest again,
+The spring of life, the balm of pain
+In Jesu’s wounds I feel.
+
+Thirsty so long, and weak, and faint,
+I here enjoy whate’er I want,
+The sweet refreshing tide
+Brings life and peace to dying souls;
+And still the gushing comfort rolls
+From Jesu’s wounded side.
+
+Swift as the panting hart I fly,
+I find the fountain always nigh,
+And heavenly sweetness prove,
+Pardon, and power, and joy, and peace,
+And pure delight and perfect bliss,
+And everlasting love.
+
+The world can no refreshment give:
+Shall I its deadly draughts receive,
+Scoup’d from the hellish lake?
+Nay, but I turn to the pure flood
+Which issues from the throne of God,
+And living water take.
+
+Soon as I taste the liquid life,
+Sorrow expires, and pain, and strife,
+And suffering is no more:
+179Source: Christian Friedrich Richter. First appeared in MSP (1744), 3:275–78.
+
+[Page] 143
+My inmost soul refresh’d I feel,
+And fill’d with joy unspeakable
+The bleeding Lamb adore.
+
+I now the broken cisterns leave;
+My all of good from God receive,
+And drink the crystal stream:
+The crystal stream doth freely flow
+Thro’ hearts which only Jesus know,
+And ever pant for him.
+
+Jesus alone can I require,
+No mixture of impure desire
+Shall in my bosom move:
+I fix on him my single eye,
+His love shall all my wants supply,
+His all-sufficient love.
+
+How vast the happiness I feel,
+When Jesus doth himself reveal,
+And his pure love impart,
+Holy delight, and heavenly hope,
+And everlasting joy spring up,
+And overflows my heart.
+
+He pours his Spirit into my soul,
+The thirsty land becomes a pool,
+I taste the unknown peace,
+Such as the world will not believe;
+No carnal heart can e’er conceive
+Th’ unutterable bliss.
+
+Light in thy only light I see,
+Thee, and myself, I know thro’ thee,
+Myself a sinful clod,
+A worthless worm without a name,
+A burning brand pluck’d from the flame,
+And quench’d in Jesu’s blood.
+
+[Page] 144
+
+The light of thy redeeming love,
+Like sun-beams darted from above
+Doth all my sins display,
+Countless as dancing motes, and small;
+But O! The love that shews them all,
+Shall chase them all away.
+
+The Son of righteousness shall rise,
+Thy glory streaming from the skies
+Shall in my soul appear,
+I know the cloudless day shall shine,
+And then my soul is all divine,
+And I am perfect here.

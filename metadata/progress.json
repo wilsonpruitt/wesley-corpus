@@ -1,7 +1,7 @@
 {
   "corpus": {
     "sermons": {
-      "have": 141,
+      "have": 155,
       "target": 141
     },
     "journal_volumes": {
@@ -17,11 +17,11 @@
       "target": 2000
     },
     "hymns": {
-      "have": 292,
+      "have": 405,
       "target": 5500
     },
     "treatises": {
-      "have": 138,
+      "have": 140,
       "target": 80
     }
   },
@@ -32,6 +32,6 @@
     "ui_live": false,
     "calibrated": false
   },
-  "total_passages": 21557,
-  "last_updated": "2026-01-30"
+  "total_passages": 24454,
+  "last_updated": "2026-02-27"
 }
