@@ -123,9 +123,9 @@ class PatreonAuthMiddleware(BaseHTTPMiddleware):
 app.add_middleware(PatreonAuthMiddleware)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_origins=["https://wesley-corpus.fly.dev"],
+    allow_methods=["GET", "POST"],
+    allow_headers=["Content-Type"],
 )
 _on_fly = bool(os.environ.get("FLY_APP_NAME"))
 app.add_middleware(
@@ -600,8 +600,45 @@ def random_page():
 
 @app.get("/sources", response_class=HTMLResponse)
 def sources_page(request: Request):
+    # Build sources dynamically from passages data
+    source_map = {}
+    for p in PASSAGES:
+        sid = p.get("source_id", "")
+        if sid not in source_map:
+            source_map[sid] = {
+                "source_id": sid,
+                "title": p.get("source_title", sid),
+                "author": p.get("author", ""),
+                "source_type": p.get("source_type", ""),
+                "year": p.get("year"),
+                "passages": 0,
+            }
+        source_map[sid]["passages"] += 1
+
+    # Group by author, then by type
+    from collections import defaultdict
+    grouped = defaultdict(lambda: defaultdict(list))
+    for s in source_map.values():
+        grouped[s["author"]][s["source_type"]].append(s)
+
+    # Sort within each group
+    for author in grouped:
+        for stype in grouped[author]:
+            grouped[author][stype].sort(key=lambda x: (x.get("year") or 9999, x["title"]))
+
+    # Type display order
+    type_order = ["sermon", "treatise", "journal", "letter", "notes",
+                  "hymn", "hymn-collection", "hymn-stanza"]
+
+    total_passages = len(PASSAGES)
+    total_sources = len(source_map)
+
     return templates.TemplateResponse("sources.html", _ctx(
-        request, sources=SOURCES,
+        request,
+        grouped=dict(grouped),
+        type_order=type_order,
+        total_passages=total_passages,
+        total_sources=total_sources,
     ))
 
 

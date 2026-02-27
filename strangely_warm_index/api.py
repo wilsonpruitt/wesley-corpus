@@ -62,12 +62,35 @@ def api_score(req: ScoreRequest):
 @router.get("/score")
 def api_score_url(url: str = Query(..., description="URL to fetch and score")):
     """Fetch a URL and score its text content."""
+    import ipaddress
+    import socket
     import urllib.request
     import re
+    from urllib.parse import urlparse
+
+    # Validate scheme
+    parsed = urlparse(url)
+    if parsed.scheme not in ("http", "https"):
+        raise HTTPException(400, "Only http and https URLs are allowed")
+
+    # Resolve hostname and block private/reserved IPs
+    hostname = parsed.hostname or ""
+    if not hostname:
+        raise HTTPException(400, "Invalid URL")
+    try:
+        resolved = socket.getaddrinfo(hostname, None)
+        for _, _, _, _, addr in resolved:
+            ip = ipaddress.ip_address(addr[0])
+            if ip.is_private or ip.is_loopback or ip.is_link_local or ip.is_reserved:
+                raise HTTPException(400, "Access to private/internal addresses is not allowed")
+    except socket.gaierror:
+        raise HTTPException(400, f"Could not resolve hostname: {hostname}")
 
     try:
         with urllib.request.urlopen(url, timeout=10) as resp:
             html = resp.read().decode("utf-8", errors="replace")
+    except HTTPException:
+        raise
     except Exception as e:
         raise HTTPException(400, f"Failed to fetch URL: {e}")
 
@@ -132,9 +155,9 @@ def create_standalone_app():
     app = FastAPI(title="StrangelyWarmIndex", description="How Wesleyan is your text?")
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"],
-        allow_methods=["*"],
-        allow_headers=["*"],
+        allow_origins=["https://wesley-corpus.fly.dev"],
+        allow_methods=["GET", "POST"],
+        allow_headers=["Content-Type"],
     )
     app.include_router(router)
     return app
