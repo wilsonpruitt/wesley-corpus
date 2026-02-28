@@ -62,37 +62,9 @@ def api_score(req: ScoreRequest):
 @router.get("/score")
 def api_score_url(url: str = Query(..., description="URL to fetch and score")):
     """Fetch a URL and score its text content."""
-    import ipaddress
-    import socket
-    import urllib.request
     import re
-    from urllib.parse import urlparse
 
-    # Validate scheme
-    parsed = urlparse(url)
-    if parsed.scheme not in ("http", "https"):
-        raise HTTPException(400, "Only http and https URLs are allowed")
-
-    # Resolve hostname and block private/reserved IPs
-    hostname = parsed.hostname or ""
-    if not hostname:
-        raise HTTPException(400, "Invalid URL")
-    try:
-        resolved = socket.getaddrinfo(hostname, None)
-        for _, _, _, _, addr in resolved:
-            ip = ipaddress.ip_address(addr[0])
-            if ip.is_private or ip.is_loopback or ip.is_link_local or ip.is_reserved:
-                raise HTTPException(400, "Access to private/internal addresses is not allowed")
-    except socket.gaierror:
-        raise HTTPException(400, f"Could not resolve hostname: {hostname}")
-
-    try:
-        with urllib.request.urlopen(url, timeout=10) as resp:
-            html = resp.read().decode("utf-8", errors="replace")
-    except HTTPException:
-        raise
-    except Exception as e:
-        raise HTTPException(400, f"Failed to fetch URL: {e}")
+    html = _fetch_url_safely(url)
 
     # Strip HTML tags (basic extraction)
     text = re.sub(r"<script[^>]*>.*?</script>", "", html, flags=re.DOTALL | re.IGNORECASE)
@@ -103,10 +75,85 @@ def api_score_url(url: str = Query(..., description="URL to fetch and score")):
     if not text:
         raise HTTPException(400, "No text content found at URL")
 
-    # Limit
     text = text[:50000]
-
     return score_text(text)
+
+
+def _fetch_url_safely(url: str) -> str:
+    """
+    Fetch URL with SSRF protection using DNS-pinned connections.
+
+    Prevents DNS rebinding by resolving DNS once, validating all IPs are
+    public, then connecting directly to the validated IP via a custom
+    httpcore network backend. The DNS is never re-resolved.
+    """
+    import ipaddress
+    import socket
+    from urllib.parse import urlparse
+
+    import httpcore
+    from httpcore._backends.sync import SyncBackend, SyncStream
+
+    parsed = urlparse(url)
+    if parsed.scheme != "https":
+        raise HTTPException(400, "Only HTTPS URLs are allowed")
+
+    hostname = parsed.hostname or ""
+    if not hostname:
+        raise HTTPException(400, "Invalid URL")
+
+    port = parsed.port or 443
+
+    # Resolve DNS once and validate ALL resolved IPs are public
+    try:
+        addrs = socket.getaddrinfo(hostname, port, type=socket.SOCK_STREAM)
+    except socket.gaierror:
+        raise HTTPException(400, "Could not resolve hostname")
+
+    target = None
+    for family, socktype, proto, _, addr in addrs:
+        ip = ipaddress.ip_address(addr[0])
+        if ip.is_private or ip.is_loopback or ip.is_link_local or ip.is_reserved:
+            raise HTTPException(400, "Access to private/internal addresses is not allowed")
+        if target is None:
+            target = (family, socktype, proto, addr)
+
+    if target is None:
+        raise HTTPException(400, "Could not resolve hostname")
+
+    # Connect directly to the validated IP — prevents DNS rebinding.
+    # TLS still verifies the certificate against the hostname via SNI.
+    fam, stype, sproto, saddr = target
+
+    class _PinnedBackend(SyncBackend):
+        """Network backend that connects to a pre-validated IP address."""
+        def connect_tcp(self, host, port, timeout=None, local_address=None, socket_options=None):
+            sock = socket.socket(fam, stype, sproto)
+            sock.settimeout(timeout)
+            if local_address:
+                sock.bind((local_address, 0))
+            for opt in socket_options or []:
+                sock.setsockopt(*opt)
+            sock.connect(saddr)
+            return SyncStream(sock)
+
+    try:
+        with httpcore.ConnectionPool(
+            network_backend=_PinnedBackend(),
+            max_connections=1,
+        ) as pool:
+            resp = pool.request(
+                "GET",
+                url,
+                headers=[(b"User-Agent", b"WesleyCorpusSWI/1.0")],
+            )
+            if resp.status < 200 or resp.status >= 300:
+                raise HTTPException(400, "URL did not return a successful response")
+            return resp.content.decode("utf-8", errors="replace")
+    except HTTPException:
+        raise
+    except Exception:
+        raise HTTPException(400, "Failed to fetch URL")
 
 
 @router.post("/compare")
