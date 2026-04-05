@@ -111,7 +111,7 @@ class PatreonAuthMiddleware(BaseHTTPMiddleware):
                     {"error": "Patron pledge of $%.2f/month required" % (MIN_PLEDGE_CENTS / 100)},
                     status_code=403,
                 )
-            return templates.TemplateResponse("upgrade.html", {
+            return templates.TemplateResponse(request, "upgrade.html", {
                 "request": request,
                 "user": user,
                 "min_pledge_dollars": MIN_PLEDGE_CENTS / 100,
@@ -445,7 +445,7 @@ def _patreon_oauth_url(request: Request) -> str:
 @app.get("/auth/login", response_class=HTMLResponse)
 def auth_login(request: Request, error: str = ""):
     oauth_url = _patreon_oauth_url(request)
-    return templates.TemplateResponse("login.html", {
+    return templates.TemplateResponse(request, "login.html", {
         "request": request,
         "user": None,
         "oauth_url": oauth_url,
@@ -546,7 +546,7 @@ def admin_unlock(request: Request, token: str = ""):
 def home(request: Request):
     stats = _corpus_stats()
     rp = random.choice(PASSAGES) if PASSAGES else None
-    return templates.TemplateResponse("index.html", _ctx(
+    return templates.TemplateResponse(request, "index.html", _ctx(
         request, stats=stats, themes=THEMES, random_passage=rp,
     ))
 
@@ -554,7 +554,7 @@ def home(request: Request):
 @app.get("/search", response_class=HTMLResponse)
 def search_page(request: Request, q: str = "", author: str = "", type: str = ""):
     results = _keyword_search(q, author=author or None, source_type=type or None) if q else []
-    return templates.TemplateResponse("search.html", _ctx(
+    return templates.TemplateResponse(request, "search.html", _ctx(
         request, q=q, author=author, type=type, results=results,
     ))
 
@@ -562,14 +562,14 @@ def search_page(request: Request, q: str = "", author: str = "", type: str = "")
 @app.get("/semantic", response_class=HTMLResponse)
 def semantic_page(request: Request, q: str = ""):
     results = _semantic_search(q) if q else []
-    return templates.TemplateResponse("search.html", _ctx(
+    return templates.TemplateResponse(request, "search.html", _ctx(
         request, q=q, author="", type="", results=results, semantic=True,
     ))
 
 
 @app.get("/themes", response_class=HTMLResponse)
 def themes_page(request: Request):
-    return templates.TemplateResponse("themes.html", _ctx(
+    return templates.TemplateResponse(request, "themes.html", _ctx(
         request, themes=sorted(THEMES, key=lambda t: -t["count"]),
     ))
 
@@ -578,7 +578,7 @@ def themes_page(request: Request):
 def theme_page(request: Request, theme_id: str):
     theme = THEMES_BY_ID.get(theme_id, {"theme_id": theme_id, "theme_name": theme_id})
     passages = [p for p in PASSAGES if theme_id in p.get("themes", [])]
-    return templates.TemplateResponse("theme.html", _ctx(
+    return templates.TemplateResponse(request, "theme.html", _ctx(
         request, theme=theme, passages=passages,
     ))
 
@@ -589,7 +589,7 @@ def passage_page(request: Request, passage_id: str, q: str = ""):
     if not p:
         return HTMLResponse("Passage not found", status_code=404)
     theme_details = [THEMES_BY_ID[t] for t in p.get("themes", []) if t in THEMES_BY_ID]
-    return templates.TemplateResponse("passage.html", _ctx(
+    return templates.TemplateResponse(request, "passage.html", _ctx(
         request, passage=p, theme_details=theme_details, q=q,
     ))
 
@@ -598,7 +598,7 @@ def passage_page(request: Request, passage_id: str, q: str = ""):
 def scripture_page(request: Request, q: str = ""):
     entries, label = _scripture_lookup(q) if q else ([], "")
     books, total_refs = _scripture_browse()
-    return templates.TemplateResponse("scripture.html", _ctx(
+    return templates.TemplateResponse(request, "scripture.html", _ctx(
         request, q=q, label=label, entries=entries,
         books=books, total_refs=total_refs,
     ))
@@ -647,7 +647,7 @@ def sources_page(request: Request):
     total_passages = len(PASSAGES)
     total_sources = len(source_map)
 
-    return templates.TemplateResponse("sources.html", _ctx(
+    return templates.TemplateResponse(request, "sources.html", _ctx(
         request,
         grouped=dict(grouped),
         type_order=type_order,
@@ -658,12 +658,12 @@ def sources_page(request: Request):
 
 @app.get("/strangely-warmed", response_class=HTMLResponse)
 def swi_page(request: Request):
-    return templates.TemplateResponse("swi.html", _ctx(request))
+    return templates.TemplateResponse(request, "swi.html", _ctx(request))
 
 
 @app.get("/swi", response_class=HTMLResponse)
 def swi_page_alt(request: Request):
-    return templates.TemplateResponse("swi.html", _ctx(request))
+    return templates.TemplateResponse(request, "swi.html", _ctx(request))
 
 
 # ---------------------------------------------------------------------------
