@@ -38,6 +38,7 @@ PATREON_CLIENT_SECRET = os.environ.get("PATREON_CLIENT_SECRET", "")
 SESSION_SECRET = os.environ.get("SESSION_SECRET", "dev-secret-change-me")
 MIN_PLEDGE_CENTS = int(os.environ.get("MIN_PLEDGE_CENTS", "500"))
 DEV_BYPASS_AUTH = os.environ.get("DEV_BYPASS_AUTH", "").lower() == "true"
+ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN", "")
 
 PATREON_AUTH_URL = "https://www.patreon.com/oauth2/authorize"
 PATREON_TOKEN_URL = "https://www.patreon.com/api/oauth2/token"
@@ -49,7 +50,7 @@ SESSION_MAX_AGE = 7 * 24 * 60 * 60  # 7 days in seconds
 PAYWALL_DATE = date(2026, 3, 15)
 
 # Public paths that skip auth
-PUBLIC_PATHS = frozenset({"/", "/auth/login", "/auth/callback", "/auth/logout"})
+PUBLIC_PATHS = frozenset({"/", "/auth/login", "/auth/callback", "/auth/logout", "/admin/unlock"})
 PUBLIC_PREFIXES = ("/static/",)
 
 # ---------------------------------------------------------------------------
@@ -70,6 +71,11 @@ class PatreonAuthMiddleware(BaseHTTPMiddleware):
 
         # Skip auth for public paths
         if path in PUBLIC_PATHS or any(path.startswith(p) for p in PUBLIC_PREFIXES):
+            return await call_next(request)
+
+        # Admin bypass — session flag set via /admin/unlock?token=...
+        if request.session.get("admin"):
+            request.state.user = {"name": "Admin", "pledge_cents": MIN_PLEDGE_CENTS}
             return await call_next(request)
 
         # Dev bypass — act as if logged in with a qualifying pledge
@@ -521,6 +527,14 @@ async def auth_callback(request: Request, code: str = "", error: str = ""):
 @app.get("/auth/logout")
 def auth_logout(request: Request):
     request.session.clear()
+    return RedirectResponse(url="/", status_code=302)
+
+
+@app.get("/admin/unlock")
+def admin_unlock(request: Request, token: str = ""):
+    if not ADMIN_TOKEN or token != ADMIN_TOKEN:
+        return JSONResponse({"error": "Invalid token"}, status_code=403)
+    request.session["admin"] = True
     return RedirectResponse(url="/", status_code=302)
 
 
