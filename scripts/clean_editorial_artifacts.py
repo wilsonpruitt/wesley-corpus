@@ -39,6 +39,95 @@ PATTERNS: list[tuple[str, re.Pattern, str]] = [
         re.compile(r"\s*See above,?\s*pp?\.\s*\d+(?:[\-–,]\s*\d+)*\.?", re.IGNORECASE),
         "",
     ),
+    # "See below, pp. 330, 331"
+    (
+        "see_below",
+        re.compile(r"\s*See below,?\s*pp?\.\s*\d+(?:[\-–,]\s*\d+)*\.?", re.IGNORECASE),
+        "",
+    ),
+    # "Cf. above, vol. iii. p. 368." — cross-references
+    (
+        "cf_ref",
+        re.compile(r"\s*Cf\.\s+(?:above|below)?,?\s*(?:vol\.\s*[ivxlcd]+\.?,?\s*)?pp?\.\s*\d+(?:[\-–,\s]+\d+)*\.?", re.IGNORECASE),
+        "",
+    ),
+    # Parenthetical editor citations: "(H. Moore's Life of Wesley, vol. ii. p. 186)"
+    # Matches the shortest parenthetical containing any post-Wesley editor name.
+    (
+        "editorial_parens",
+        re.compile(
+            r"\s*\([^()]{0,250}?"
+            r"(?:Tyerman|Whitehead|H\.\s*Moore|Moore'?s\s+Life|Curnock|Southey|"
+            r"Atmore|W\.?\s*H\.?\s*S\.?|Standard\s+ed|Arminian\s+Magazine|"
+            r"Methodist\s+Magazine|Meth\.\s*Mag\.|Wesley\s+Banner|Watson'?s\s+Reply)"
+            r"[^()]{0,250}?\)",
+            re.IGNORECASE,
+        ),
+        "",
+    ),
+    # "Tyerman's Life of Wesley, vol. ii. pp. 164-5" — inline, outside parens
+    (
+        "tyerman_inline",
+        re.compile(
+            r"\s*(?:See\s+)?(?:also\s+)?Tyerman'?s?(?:\s+Life\s+of\s+Wesley)?,?\s*"
+            r"vol\.\s*[ivxlcd]+[.,]?\s*pp?\.\s*\d+(?:[\-–]\s*\d+)?\.?",
+            re.IGNORECASE,
+        ),
+        "",
+    ),
+    # "See W.H.S. Proceedings, vol. iv. p. 79" — Wesley Historical Society refs.
+    # Eats an optional leading "See"/"also"/"See also" so nothing is orphaned.
+    (
+        "whs_proceedings",
+        re.compile(
+            r"\s*(?:See\s+)?(?:also\s+)?W\.?\s*H\.?\s*S\.?(?:\s+Proceedings)?,?\s*"
+            r"vol\.\s*[ivxlcd]+[.,]?\s*pp?\.\s*\d+(?:[\-–]\s*\d+)?\.?",
+            re.IGNORECASE,
+        ),
+        "",
+    ),
+    # "Arminian Magazine, 1779, 598-601" and variants
+    (
+        "arminian_mag",
+        re.compile(
+            r"\s*(?:See\s+)?(?:in\s+the\s+)?Arminian\s+Magazine,?\s*\d{4},?\s*"
+            r"(?:pp?\.\s*)?\d+(?:[\-–,\s]+\d+)*\.?",
+            re.IGNORECASE,
+        ),
+        "",
+    ),
+    # "Methodist Magazine, 1805, p 37" / "Meth. Mag. 1847, p. 869"
+    (
+        "methodist_mag",
+        re.compile(
+            r"\s*(?:See\s+)?(?:in\s+the\s+)?(?:Methodist|Meth\.)\s+(?:Magazine|Mag\.),?\s*\d{4},?\s*"
+            r"(?:pp?\.\s*)?\d+(?:[\-–,\s]+\d+)*\.?",
+            re.IGNORECASE,
+        ),
+        "",
+    ),
+    # "Standard edition of the Journal vol 4. p."
+    (
+        "standard_ed",
+        re.compile(
+            r"\s*(?:the\s+)?Standard\s+ed(?:ition)?\s+of\s+the\s+Journal\s+"
+            r"vol\.?\s*\d+\.?\s*p\.?\s*\d*\.?",
+            re.IGNORECASE,
+        ),
+        "",
+    ),
+    # "Watson's Reply to Southey, p. 197 n." outside parens
+    (
+        "watsons_reply",
+        re.compile(r"\s*Watson'?s\s+Reply\s+to\s+Southey,?\s*p\.\s*\d+(?:\s*n\.)?\.?", re.IGNORECASE),
+        "",
+    ),
+    # "Note: John Wesley's personal copy of …." — editorial annotations
+    (
+        "note_insertion",
+        re.compile(r"(?<=[.!?])\s+Note\s*[-—:]\s[^.]{0,150}\.", re.IGNORECASE),
+        "",
+    ),
     # "See Atmore's Memorial, p. 225."
     (
         "see_atmore",
@@ -74,6 +163,21 @@ PATTERNS: list[tuple[str, re.Pattern, str]] = [
         "collapse_ws",
         re.compile(r"\s{2,}"),
         " ",
+    ),
+    # Orphaned punctuation clusters left when a citation is removed mid-sentence:
+    # "p. 526;, and" → "p. 526, and"; ", :" → ":"; ",;" → ";"
+    (
+        "orphan_punct",
+        re.compile(r"([,;:])\s*([,;:])"),
+        r"\2",
+    ),
+    # ").; " orphan semicolon after a closing-paren-period, left when a follow-on
+    # citation was removed. Safe because ").;" is never grammatical. Scripture
+    # reference lists like "Luke xvii.; particularly" are not matched.
+    (
+        "orphan_paren_semi",
+        re.compile(r"(\)\.)\s*;+\s+"),
+        r"\1 ",
     ),
 ]
 
