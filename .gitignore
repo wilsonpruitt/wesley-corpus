@@ -10,6 +10,8 @@ build/
 chunked/embeddings.npz
 chunked/embeddings_metadata.json
 chunked/centroids.npz
+chunked/passages.jsonl
+chunked/cleaned_passages.jsonl
 
 # Backup files
 *.bak
