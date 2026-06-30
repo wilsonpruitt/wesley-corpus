@@ -157,7 +157,7 @@ def analyze_passage(text):
     return assigned_themes
 
 def main():
-    input_file = Path('/Users/wilsonpruitt/Documents/Personal/wesley-corpus/chunked/passages.jsonl')
+    input_file = Path(__file__).parent / 'chunked' / 'passages.jsonl'
 
     if not input_file.exists():
         print(f"Error: File not found: {input_file}")

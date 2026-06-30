@@ -11,6 +11,7 @@
 <!-- Input -->
 <div class="swi-input-section">
   <textarea id="swi-text" placeholder="Paste a sermon, essay, hymn, or any text here..." rows="8"></textarea>
+  <p style="margin:0.4rem 0 0.8rem; font-size:0.85rem; color:#666;">For best results, use at least 200 words. Full sermons and essays (500+ words) score most accurately. Short excerpts may undercount theological themes that appear later in the text.</p>
   <div class="swi-actions">
     <button id="swi-score-btn" class="btn" onclick="scoreText()">Score This Text</button>
     <button id="swi-compare-btn" class="btn btn-secondary" onclick="toggleCompare()">Compare Two Texts</button>
@@ -42,6 +43,11 @@
       <div class="swi-gauge-score" id="swi-gauge-score">0</div>
     </div>
     <div class="swi-gauge-label" id="swi-gauge-label">Scoring...</div>
+  </div>
+
+  <!-- Word count advisory -->
+  <div class="card" id="swi-advisory-card" style="display:none; background:#fff3cd; border-left:4px solid #856404; padding:1rem;">
+    <p id="swi-advisory" style="margin:0; color:#856404;"></p>
   </div>
 
   <!-- Summary -->

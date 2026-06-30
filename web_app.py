@@ -50,8 +50,8 @@ SESSION_MAX_AGE = 7 * 24 * 60 * 60  # 7 days in seconds
 PAYWALL_DATE = date(2026, 3, 15)
 
 # Public paths that skip auth
-PUBLIC_PATHS = frozenset({"/", "/auth/login", "/auth/callback", "/auth/logout", "/admin/unlock"})
-PUBLIC_PREFIXES = ("/static/",)
+PUBLIC_PATHS = frozenset({"/", "/auth/login", "/auth/callback", "/auth/logout", "/admin/unlock", "/random"})
+PUBLIC_PREFIXES = ("/static/", "/passage/")
 
 # ---------------------------------------------------------------------------
 # App
@@ -426,9 +426,17 @@ def _ctx(request: Request, **kwargs) -> dict:
     return {"request": request, "user": user, "paywall_active": paywall_active, **kwargs}
 
 
+def _build_redirect_uri(request: Request) -> str:
+    """Build the OAuth redirect URI, forcing https on production."""
+    base = str(request.base_url)
+    if _on_fly:
+        base = base.replace("http://", "https://")
+    return base + "auth/callback"
+
+
 def _patreon_oauth_url(request: Request) -> str:
     """Build the Patreon OAuth authorization URL."""
-    redirect_uri = str(request.base_url) + "auth/callback"
+    redirect_uri = _build_redirect_uri(request)
     params = {
         "response_type": "code",
         "client_id": PATREON_CLIENT_ID,
@@ -461,7 +469,7 @@ async def auth_callback(request: Request, code: str = "", error: str = ""):
             status_code=302,
         )
 
-    redirect_uri = str(request.base_url) + "auth/callback"
+    redirect_uri = _build_redirect_uri(request)
 
     # Exchange code for access token
     async with httpx.AsyncClient() as client:

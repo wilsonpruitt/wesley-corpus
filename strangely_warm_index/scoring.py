@@ -142,20 +142,15 @@ def score_text(text: str, include_semantic: bool = True) -> dict:
     if include_semantic and semantic.get("available"):
         sem_score = semantic["overall_similarity"]
 
-    # Blend: 50% theology, 20% scripture, 15% language, 15% semantic
+    # Blend: 60% theology, 20% scripture, 20% language
+    # (Semantic embeddings intentionally dropped — skewed results too much)
     blended = int(
-        theology_score * 0.50
+        theology_score * 0.60
         + scripture_avg * 0.20
-        + language_avg * 0.15
-        + sem_score * 0.15
+        + language_avg * 0.20
     )
 
-    # Semantic floor: if text semantically resembles Wesley (embedding match),
-    # set a minimum score — many Wesley passages discuss topics (sin, judgment,
-    # worldliness) that don't trigger specific theology keywords.
-    # Floor = 40% of semantic score (e.g. sem=76 -> floor=30)
-    sem_floor = int(sem_score * 0.40) if sem_score > 0 else 0
-    overall = max(blended, sem_floor)
+    overall = blended
 
     # Calvinist penalty: distinctly Reformed/Calvinist theology is anti-Wesleyan.
     # Wesley explicitly argued against predestination, limited atonement, etc.
@@ -190,7 +185,18 @@ def score_text(text: str, include_semantic: bool = True) -> dict:
 
     summary = _generate_summary(overall, dimensions, semantic, calvinist)
 
-    return {
+    # Short text advisory
+    min_words = 200
+    word_count_advisory = None
+    if word_count < min_words:
+        word_count_advisory = (
+            f"This text is only {word_count} words. "
+            f"For accurate scoring, we recommend at least {min_words} words. "
+            "Short excerpts often lack enough theological vocabulary to score well, "
+            "even when the content is deeply Wesleyan."
+        )
+
+    result = {
         "overall_score": overall,
         "label": _get_label(overall),
         "dimensions": dimensions,
@@ -200,6 +206,9 @@ def score_text(text: str, include_semantic: bool = True) -> dict:
         "summary": summary,
         "word_count": word_count,
     }
+    if word_count_advisory:
+        result["word_count_advisory"] = word_count_advisory
+    return result
 
 
 def compare_texts(texts: list[dict]) -> dict:

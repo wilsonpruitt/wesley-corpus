@@ -255,9 +255,11 @@ def print_stats(references: List[Dict]):
 
 def main():
     # Paths
-    corpus_path = "/Users/wilsonpruitt/Documents/Personal/wesley-corpus/chunked/passages.jsonl"
-    output_csv = "/Users/wilsonpruitt/Documents/Personal/wesley-corpus/metadata/scripture-references.csv"
-    output_json = "/Users/wilsonpruitt/Documents/Personal/wesley-corpus/metadata/scripture-index.json"
+    from pathlib import Path
+    base = Path(__file__).parent
+    corpus_path = str(base / "chunked" / "cleaned_passages.jsonl")
+    output_csv = str(base / "metadata" / "scripture-references.csv")
+    output_json = str(base / "metadata" / "scripture-index.json")
 
     print("Starting scripture reference extraction...")
     print(f"Reading from: {corpus_path}")

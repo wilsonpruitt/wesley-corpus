@@ -92,6 +92,16 @@ function renderResults(data) {
   scoreEl.textContent = score;
   labelEl.textContent = data.label;
 
+  // Word count advisory
+  var advisoryCard = document.getElementById('swi-advisory-card');
+  var advisoryEl = document.getElementById('swi-advisory');
+  if (data.word_count_advisory) {
+    advisoryEl.textContent = data.word_count_advisory;
+    advisoryCard.style.display = 'block';
+  } else {
+    advisoryCard.style.display = 'none';
+  }
+
   // Summary
   document.getElementById('swi-summary').textContent = data.summary;
 

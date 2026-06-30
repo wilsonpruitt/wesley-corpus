@@ -15,9 +15,11 @@ NOISE_LINE_RE = re.compile(
     r'^[\s\-\*\.\,\;\:\|\#\@\&\$\%\{\}\[\]\<\>\d\!\?\"\'\^\~\=\+\\_\/\(\)]+$'
 )
 
-# Metadata header lines that appear at the start of some passages
+# Metadata header lines that appear at the start of some passages.
+# Note: do NOT include "Dear <Name>," patterns here — those are real
+# letter salutations in Wesley's correspondence and conference addresses.
 METADATA_LINE_RE = re.compile(
-    r'^\s*(?:Source:\s|Author:\s|Printed by\s|DEAR\s[A-Z]+,)',
+    r'^\s*(?:Source:\s|Author:\s|Printed by\s)',
     re.I
 )
 

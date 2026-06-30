@@ -53,6 +53,9 @@
     <div class="meta">{{ random_passage.author | replace("-", " ") | title }} &middot; {{ random_passage.year }} &middot; {{ random_passage.source_type }}</div>
     <div class="text">{{ random_passage.text }}</div>
   </div>
+  <div style="text-align:center; margin-top:1rem;">
+    <a href="/random" style="display:inline-block; padding:0.5rem 1.2rem; background:#2c3e50; color:#fff; text-decoration:none; border-radius:4px;">Another Passage &rarr;</a>
+  </div>
 </div>
 {% endif %}
 {% endblock %}
