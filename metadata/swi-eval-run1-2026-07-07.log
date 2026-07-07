@@ -1,0 +1,85 @@
+Running judge over 36 golden-set entries (rubric swi-v2.0-2026-07-07)...
+
+[FAIL] gs-wesley-justification            bucket=wesley-core          score=  82 expect=[85,100]
+        - score 82 outside expected [85, 100]
+        rationale: Justification by faith of the ungodly — grace to sinners 'of every kind, of every degree'.
+[FAIL] gs-wesley-new-birth                bucket=wesley-core          score=  73 expect=[82,100]
+        - score 73 outside expected [82, 100]
+        rationale: The New Birth grounded in the image of God — experiential + scriptural.
+[FAIL] gs-wesley-scripture-way            bucket=wesley-core          score= ERR expect=[85,100]
+        - judge call failed: 'str' object has no attribute 'keys'
+        rationale: Scripture Way of Salvation — faith receiving Christ as sanctification, the full ordo.
+[FAIL] gs-wesley-perfection               bucket=wesley-core          score=  82 expect=[85,100]
+        - score 82 outside expected [85, 100]
+        rationale: Plain Account of Christian Perfection — the Wesleyan distinctive at its source.
+[FAIL] gs-wesley-character-methodist      bucket=wesley-core          score=  72 expect=[82,100]
+        - score 72 outside expected [82, 100]
+        rationale: Character of a Methodist — religion is not in outward duties but love of God and neighbour.
+[FAIL] gs-wesley-marks-new-birth          bucket=wesley-core          score=  72 expect=[80,100]
+        - score 72 outside expected [80, 100]
+        rationale: Marks of the New Birth — the born-of-God do not continue in sin (against antinomianism).
+[FAIL] gs-wesley-catholic-spirit          bucket=wesley-core          score=  82 expect=[85,100]
+        - score 82 outside expected [85, 100]
+        rationale: Catholic Spirit — love across differing opinions and modes of worship; the dimension's namesake.
+[PASS] gs-wesley-general-rules            bucket=wesley-core          score=  78 expect=[78,100]
+[FAIL] gs-wesley-means-of-grace           bucket=wesley-core          score=  72 expect=[78,100]
+        - score 72 outside expected [78, 100]
+        rationale: The Means of Grace — refutes the stillness/quietist rejection of the ordinances.
+[PASS] gs-freegrace-thesis                bucket=refuting-calvinism   score=  85 expect=[85,100]
+[FAIL] gs-freegrace-horrible-decree       bucket=refuting-calvinism   score=  76 expect=[85,100]
+        - score 76 outside expected [85, 100]
+        rationale: 'The horrible decree' — the acid test v1 needed a special penalty-cap for.
+[FAIL] gs-predestination-calmly           bucket=refuting-calvinism   score=  72 expect=[82,100]
+        - score 72 outside expected [82, 100]
+        rationale: Predestination Calmly Considered — election implies reprobation; dense Calvinist vocab, Wesleyan intent.
+[PASS] gs-charles-universal-redemption    bucket=refuting-calvinism   score=  82 expect=[82,100]
+[PASS] gs-charles-and-can-it-be           bucket=wesleyan-tradition   score=  78 expect=[78,100]
+[PASS] gs-charles-love-divine             bucket=wesleyan-tradition   score=  92 expect=[78,100]
+[FAIL] gs-articles-of-religion            bucket=wesleyan-tradition   score=  38 expect=[62,85]
+        - score 38 outside expected [62, 85]
+        rationale: Standard Methodist doctrine on justification — orthodox, grace-based, but a bare confessional statement.
+[PASS] gs-fletcher-antinomianism          bucket=wesleyan-tradition   score=  78 expect=[72,95]
+[PASS] gs-modern-wesleyan-sermon          bucket=wesleyan-tradition   score=  81 expect=[65,92]
+[PASS] gs-modern-social-holiness          bucket=wesleyan-tradition   score=  72 expect=[60,88]
+[FAIL] gs-westminster-election            bucket=grace-dense-reformed score=   5 expect=[8,30]
+        - score 5 outside expected [8, 30]
+        rationale: Double predestination stated confessionally — the Reformed frame Wesley rejected.
+[PASS] gs-calvin-predestination           bucket=grace-dense-reformed score=   8 expect=[8,30]
+[PASS] gs-spurgeon-sovereign-grace        bucket=grace-dense-reformed score=  18 expect=[12,38]
+[FAIL] gs-whitefield-reply                bucket=grace-dense-reformed score=   8 expect=[12,38]
+        - score 8 outside expected [12, 38]
+        rationale: Whitefield — warm evangelical, revival preacher — defending the election Wesley attacked. Advocacy, not refutation.
+[PASS] gs-canons-dort                     bucket=grace-dense-reformed score=   8 expect=[8,30]
+[FAIL] gs-aquinas-grace                   bucket=adjacent-christian   score=  28 expect=[35,60]
+        - score 28 outside expected [35, 60]
+        rationale: Rich on grace, but scholastic and infused-habit framed — orthodox, not Wesleyan-distinctive.
+[PASS] gs-bcp-collect-purity              bucket=adjacent-christian   score=  42 expect=[40,65]
+[FAIL] gs-kempis-imitation                bucket=adjacent-christian   score=  28 expect=[40,62]
+        - score 28 outside expected [40, 62]
+        rationale: Deeply devotional/experiential — Wesley abridged it — but monastic, world-renouncing, no social holiness.
+[FAIL] gs-luther-freedom                  bucket=adjacent-christian   score=  28 expect=[42,65]
+        - score 28 outside expected [42, 65]
+        rationale: Justification by faith, experiential liberty — Aldersgate's own root — but no perfection, and law undervalued.
+[FAIL] gs-athanasius-theosis              bucket=adjacent-christian   score= ERR expect=[45,68]
+        - judge call failed: Judge result missing keys: {'counter_indicators'}
+        rationale: Deification/theosis — the Eastern perfection tradition Wesley loved; the nearest adjacent boundary, high side.
+[PASS] gs-antinomian-advocacy             bucket=counter-advocacy     score=   8 expect=[8,28]
+[PASS] gs-works-righteousness-advocacy    bucket=counter-advocacy     score=   8 expect=[8,30]
+[PASS] gs-quietist-stillness              bucket=counter-advocacy     score=   8 expect=[8,30]
+[PASS] gs-control-news                    bucket=control              score=   0 expect=[0,12]
+[PASS] gs-control-selfhelp                bucket=control              score=   8 expect=[2,18]
+[PASS] gs-control-technical               bucket=control              score=   0 expect=[0,8]
+[PASS] gs-control-marcus-aurelius         bucket=control              score=   5 expect=[5,22]
+
+=== By bucket ===
+  adjacent-christian       1/5 passed
+  control                  4/4 passed
+  counter-advocacy         3/3 passed
+  grace-dense-reformed     3/5 passed
+  refuting-calvinism       2/4 passed
+  wesley-core              1/9 passed
+  wesleyan-tradition       5/6 passed
+
+19/36 PASS
+FAILED: ['gs-wesley-justification', 'gs-wesley-new-birth', 'gs-wesley-scripture-way', 'gs-wesley-perfection', 'gs-wesley-character-methodist', 'gs-wesley-marks-new-birth', 'gs-wesley-catholic-spirit', 'gs-wesley-means-of-grace', 'gs-freegrace-horrible-decree', 'gs-predestination-calmly', 'gs-articles-of-religion', 'gs-westminster-election', 'gs-whitefield-reply', 'gs-aquinas-grace', 'gs-kempis-imitation', 'gs-luther-freedom', 'gs-athanasius-theosis']
+exit code: 1
