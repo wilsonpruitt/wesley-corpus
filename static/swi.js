@@ -92,6 +92,9 @@ function renderResults(data) {
   scoreEl.textContent = score;
   labelEl.textContent = data.label;
 
+  // Engine badge
+  renderEngineBadge(data.engine);
+
   // Word count advisory
   var advisoryCard = document.getElementById('swi-advisory-card');
   var advisoryEl = document.getElementById('swi-advisory');
@@ -114,9 +117,55 @@ function renderResults(data) {
   // Markers
   renderMarkers(data.top_markers);
 
+  // Counter-indicators (AI judge only — v1 lexicon fallback has no equivalent)
+  renderCounterIndicators(data.counter_indicators);
+
   // Theme proximity
   if (data.semantic && data.semantic.available && data.semantic.closest_themes) {
     renderThemes(data.semantic.closest_themes);
+  }
+}
+
+function renderEngineBadge(engine) {
+  const badge = document.getElementById('swi-engine-badge');
+  if (!engine) { badge.style.display = 'none'; return; }
+  if (engine === 'judge') {
+    badge.textContent = 'AI Judge';
+    badge.className = 'swi-engine-badge engine-judge';
+  } else {
+    badge.textContent = 'Classic Lexicon';
+    badge.className = 'swi-engine-badge engine-lexicon-fallback';
+  }
+  badge.style.display = 'inline-block';
+}
+
+function renderCounterIndicators(counters) {
+  const card = document.getElementById('swi-counters-card');
+  const container = document.getElementById('swi-counters');
+  if (!counters || Object.keys(counters).length === 0) {
+    card.style.display = 'none';
+    return;
+  }
+  card.style.display = 'block';
+  container.innerHTML = '';
+  for (const c of Object.values(counters)) {
+    const row = document.createElement('div');
+    row.className = 'swi-counter-row';
+
+    const name = document.createElement('div');
+    name.className = 'swi-counter-name';
+    name.textContent = c.name;
+
+    const stance = document.createElement('div');
+    stance.className = 'swi-counter-stance stance-' + c.stance;
+    stance.textContent = c.stance;
+
+    const note = document.createElement('div');
+    note.className = 'swi-counter-note';
+    note.textContent = c.note || '';
+
+    row.append(name, stance, note);
+    container.appendChild(row);
   }
 }
 
@@ -134,14 +183,27 @@ function renderDimensions(dims) {
   for (const d of entries) {
     const row = document.createElement('div');
     row.className = 'swi-dim-row';
-    row.innerHTML = `
-      <div class="swi-dim-name">${d.name}</div>
-      <div class="swi-dim-bar-bg">
-        <div class="swi-dim-bar" style="width:${d.score}%"></div>
-      </div>
-      <div class="swi-dim-score">${d.score}</div>
-      <div class="swi-dim-explain">${d.explanation}</div>
-    `;
+
+    const name = document.createElement('div');
+    name.className = 'swi-dim-name';
+    name.textContent = d.name;
+
+    const barBg = document.createElement('div');
+    barBg.className = 'swi-dim-bar-bg';
+    const bar = document.createElement('div');
+    bar.className = 'swi-dim-bar';
+    bar.style.width = d.score + '%';
+    barBg.appendChild(bar);
+
+    const score = document.createElement('div');
+    score.className = 'swi-dim-score';
+    score.textContent = d.score;
+
+    const explain = document.createElement('div');
+    explain.className = 'swi-dim-explain';
+    explain.textContent = d.explanation;
+
+    row.append(name, barBg, score, explain);
     container.appendChild(row);
   }
 }
@@ -267,15 +329,29 @@ function renderCompare(data) {
   for (const r of data.results) {
     const col = document.createElement('div');
     col.className = 'swi-compare-col';
-    col.innerHTML = `
-      <h3>${r.label_name}</h3>
-      <div class="swi-gauge">
-        <div class="swi-gauge-fill ${gaugeClass(r.overall_score)}" style="width:${r.overall_score}%"></div>
-        <div class="swi-gauge-score">${r.overall_score}</div>
-      </div>
-      <div class="swi-gauge-label">${r.label}</div>
-      <p class="swi-compare-summary">${r.summary}</p>
-    `;
+
+    const h3 = document.createElement('h3');
+    h3.textContent = r.label_name;
+
+    const gauge = document.createElement('div');
+    gauge.className = 'swi-gauge';
+    const fill = document.createElement('div');
+    fill.className = 'swi-gauge-fill ' + gaugeClass(r.overall_score);
+    fill.style.width = r.overall_score + '%';
+    const scoreEl = document.createElement('div');
+    scoreEl.className = 'swi-gauge-score';
+    scoreEl.textContent = r.overall_score;
+    gauge.append(fill, scoreEl);
+
+    const gaugeLabel = document.createElement('div');
+    gaugeLabel.className = 'swi-gauge-label';
+    gaugeLabel.textContent = r.label;
+
+    const summary = document.createElement('p');
+    summary.className = 'swi-compare-summary';
+    summary.textContent = r.summary;
+
+    col.append(h3, gauge, gaugeLabel, summary);
     container.appendChild(col);
   }
 }

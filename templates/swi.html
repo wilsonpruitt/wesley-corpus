@@ -43,6 +43,7 @@
       <div class="swi-gauge-score" id="swi-gauge-score">0</div>
     </div>
     <div class="swi-gauge-label" id="swi-gauge-label">Scoring...</div>
+    <div class="swi-engine-badge" id="swi-engine-badge" style="display:none;"></div>
   </div>
 
   <!-- Word count advisory -->
@@ -72,6 +73,13 @@
   <div class="card">
     <h3>What Makes It Wesleyan</h3>
     <div id="swi-markers" class="swi-markers"></div>
+  </div>
+
+  <!-- Counter-Indicators (AI judge only) -->
+  <div class="card" id="swi-counters-card" style="display:none;">
+    <h3>Doctrinal Counter-Signals</h3>
+    <p style="margin:0 0 0.75rem; font-size:0.85rem; color:#666;">Does the text advocate for a competing framework, or refute one? Wesley refuting Calvinism should score as Wesleyan — not penalized for the vocabulary.</p>
+    <div id="swi-counters"></div>
   </div>
 
   <!-- Theme Proximity -->
@@ -120,7 +128,7 @@
 <!-- Loading -->
 <div id="swi-loading" style="display:none;">
   <div class="swi-spinner"></div>
-  <p>Scoring your text...</p>
+  <p>Scoring your text&hellip; this can take up to 20 seconds when the AI judge is reading closely.</p>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>

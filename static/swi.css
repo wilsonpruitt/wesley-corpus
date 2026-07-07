@@ -118,6 +118,67 @@
   color: var(--color-forest);
 }
 
+/* Engine badge */
+.swi-engine-badge {
+  display: inline-block;
+  margin-top: 0.6rem;
+  padding: 0.2rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+.swi-engine-badge.engine-judge {
+  background: rgba(45, 90, 61, 0.12);
+  color: var(--color-forest);
+  border: 1px solid var(--color-forest);
+}
+.swi-engine-badge.engine-lexicon-fallback {
+  background: var(--color-light-gray);
+  color: var(--color-slate);
+  border: 1px solid var(--color-mid-gray);
+}
+
+/* Counter-indicators */
+.swi-counter-row {
+  display: grid;
+  grid-template-columns: 160px 110px 1fr;
+  gap: 0.75rem;
+  align-items: start;
+  margin-bottom: 0.75rem;
+}
+.swi-counter-name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+.swi-counter-stance {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  align-self: start;
+}
+.swi-counter-stance.stance-advocacy {
+  background: rgba(180, 60, 40, 0.12);
+  color: #b43c28;
+}
+.swi-counter-stance.stance-refutation {
+  background: rgba(45, 90, 61, 0.12);
+  color: var(--color-forest);
+}
+.swi-counter-stance.stance-absent {
+  background: var(--color-light-gray);
+  color: var(--color-slate);
+}
+.swi-counter-note {
+  font-size: 0.85rem;
+  color: var(--color-slate);
+}
+
 /* Dimension rows */
 .swi-dim-row {
   display: grid;
