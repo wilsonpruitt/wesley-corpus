@@ -17,7 +17,14 @@ import anthropic
 from . import rubric
 
 MODEL = "claude-haiku-4-5-20251001"
-MAX_TOKENS = 2000
+# 2000 was too tight: the schema asks for evidence quotes + a note across 7
+# dimensions + 4 counter-indicators + a summary, and Haiku would truncate
+# mid-JSON under that budget -- surfacing as "missing keys" or a field
+# coming back as a bare partial string instead of the expected object.
+# Found 2026-07-07 via scripts/swi_eval.py: 2/36 golden-set calls failed
+# this way. One retry at a larger budget below covers the rest.
+MAX_TOKENS = 4096
+RETRY_MAX_TOKENS = 6144
 TOOL_NAME = "submit_swi_assessment"
 
 
@@ -36,19 +43,18 @@ def _client() -> anthropic.Anthropic:
     return anthropic.Anthropic(api_key=api_key)
 
 
-def score_with_judge(text: str) -> dict:
-    """Score `text` with the LLM judge. Returns the validated schema dict
-    augmented with engine/rubric_version/word_count. Raises RuntimeError /
-    anthropic.APIError on failure — callers must catch and fall back."""
-    client = _client()
+def _call_judge(client: anthropic.Anthropic, text: str, max_tokens: int):
     response = client.messages.create(
         model=MODEL,
-        max_tokens=MAX_TOKENS,
+        max_tokens=max_tokens,
         system=rubric.SYSTEM_PROMPT,
         tools=[_tool_definition()],
         tool_choice={"type": "tool", "name": TOOL_NAME},
         messages=[{"role": "user", "content": rubric.build_user_prompt(text)}],
     )
+
+    if response.stop_reason == "max_tokens":
+        raise RuntimeError(f"Judge response truncated at max_tokens={max_tokens}")
 
     tool_use = next((b for b in response.content if b.type == "tool_use"), None)
     if tool_use is None:
@@ -56,6 +62,23 @@ def score_with_judge(text: str) -> dict:
 
     result = dict(tool_use.input)
     _validate(result)
+    return result
+
+
+def score_with_judge(text: str) -> dict:
+    """Score `text` with the LLM judge. Returns the validated schema dict
+    augmented with engine/rubric_version/word_count. Raises RuntimeError /
+    anthropic.APIError on failure — callers must catch and fall back.
+
+    One retry at a larger token budget on truncation/malformed output --
+    covers the rare case where even MAX_TOKENS wasn't enough (e.g. an
+    unusually evidence-rich text), without silently doubling every call's
+    cost by defaulting to the larger budget everywhere."""
+    client = _client()
+    try:
+        result = _call_judge(client, text, MAX_TOKENS)
+    except Exception:
+        result = _call_judge(client, text, RETRY_MAX_TOKENS)
 
     result["engine"] = "judge"
     result["rubric_version"] = rubric.RUBRIC_VERSION
