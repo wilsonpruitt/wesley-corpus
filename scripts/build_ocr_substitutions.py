@@ -58,7 +58,32 @@ CONFUSION_PAIRS = [
 # repair). The f->s rule's candidate is technically dictionary-valid but
 # wrong in context -- caught by reading every row, not by a mechanical
 # filter. Excluded rather than shipped for Wilson to also have to catch.
-KNOWN_FALSE_POSITIVES = {"fol", "suf", "dif", "fortable", "fer", "fac", "Fal", "IFT", "fea"}
+#
+# Second pass 2026-07-07 (systematic, not spot-check): for every remaining
+# candidate, checked whether the word immediately before it in its sample
+# context concatenates into a real dictionary word -- catches the same
+# fragment failure mode at a prefix length the first pass's context read
+# missed. Found 5 more, and verified EVERY occurrence of each across the
+# whole corpus (not just the sample), not just one: "fect"/"fection" are
+# always "per-fect(ion)" (perfect/perfection), never "sect"/"section" (10
+# and 14 occurrences respectively, zero counterexamples); "fession" is
+# always "con-/pro-fession" (confession/profession), never "session" (3/3);
+# "fane"/"faneness" are always "pro-fane(ness)" (profane/profaneness),
+# never "sane"/"saneness" (3/3 and 3/3).
+KNOWN_FALSE_POSITIVES = {
+    "fol", "suf", "dif", "fortable", "fer", "fac", "Fal", "IFT", "fea",
+    "fect", "fection", "fession", "fane", "faneness",
+    # Third pass: checked EVERY occurrence corpus-wide (not just the
+    # sample) for tokens with any Latin-quotation signal nearby. "fuit" is
+    # genuine Latin ("was/has been") in 10 of 11 occurrences -- sermons and
+    # journal entries quoting Latin tags ("vir magnus...fuit", "Nam fuit
+    # ante Helenam", "seges est ubi Troja fuit"). Only 1/11 is the true
+    # English garble ("To fuit the quality...food" = "suit", Primitive
+    # Physick). A blanket fix would correct 1 and corrupt 10 Latin
+    # quotations -- excluded (the one true positive is an acceptable loss
+    # for a table meant to ship unattended).
+    "fuit",
+}
 
 
 def generate_candidates(token_lower):
