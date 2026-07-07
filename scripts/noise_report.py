@@ -12,7 +12,7 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
-from morphology import is_regular_inflection
+from morphology import is_regular_inflection, is_period_elision
 
 ROOT = Path(__file__).resolve().parent.parent
 PASSAGES = ROOT / "chunked" / "cleaned_passages.jsonl"
@@ -36,6 +36,12 @@ PERIOD_SUPPLEMENT = {
     # 2026-07-07: identical counts before/after Phase 1 journal cleanup
     # proved these were always false positives, e.g. "began" x557).
     "began", "bidden", "forgave", "forgiven", "woken",
+    # British/period spelling variants (not OCR damage) found while scoping
+    # Phase 3 -- concentrated in the Minutes and Charles Wesley's hymns.
+    "favourite", "controul", "controuled", "confest", "offence", "offences",
+    "lovefeast", "lovefeasts", "preachinghouses", "viz", "wilful", "wilfully",
+    # Irregular verbs missed by the morphology suffix-stripper.
+    "overtook", "overtaken",
 }
 
 HEADER_RE = re.compile(r"REV\.?\s*J\.?\s*WES[LI][EL]Y.*JOURNAL.*\d+", re.IGNORECASE)
@@ -99,6 +105,8 @@ def main():
                 if low in dictionary or low in proper_nouns:
                     continue
                 if is_regular_inflection(low, dictionary):
+                    continue
+                if is_period_elision(low, dictionary):
                     continue
                 # single-letter tokens (I, A, initials) are not noise
                 if len(low) <= 1:

@@ -75,3 +75,23 @@ def strip_inflection(word):
 
 def is_regular_inflection(word, dictionary):
     return any(c in dictionary for c in strip_inflection(word))
+
+
+def is_period_elision(word, dictionary):
+    """Catch deliberate 18th-c. poetic elision (a dropped unstressed vowel
+    marked with an apostrophe, to preserve a hymn's metrical scansion):
+    heav'n->heaven, pow'r->power, promis'd->promised, know'st->knowest,
+    op'ning->opening. This is original-text style, not OCR damage -- found
+    2026-07-07 while scoping Phase 3, where most of the corpus's remaining
+    "noise" turned out to be exactly this, concentrated in Charles Wesley's
+    hymn collections. Must NOT be "fixed" -- the elision is the poem."""
+    if word.count("'") != 1:
+        return False
+    i = word.index("'")
+    if i == 0 or i == len(word) - 1:
+        return False
+    for vowel in ("", "a", "e", "i", "o", "u"):
+        candidate = word[:i] + vowel + word[i + 1:]
+        if candidate in dictionary or is_regular_inflection(candidate, dictionary):
+            return True
+    return False
