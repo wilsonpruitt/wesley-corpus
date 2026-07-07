@@ -19,12 +19,31 @@ Exit code 0 iff every entry passes both checks.
 """
 import argparse
 import json
+import os
 import sys
 from collections import defaultdict
 from pathlib import Path
 
 BASE = Path(__file__).parent.parent
 sys.path.insert(0, str(BASE))
+
+
+def _load_dotenv(path: Path) -> None:
+    """Minimal .env loader (dev convenience only) — no new dependency for
+    a trivial KEY=VALUE format. Does not override already-set env vars."""
+    if not path.exists():
+        return
+    for line in path.read_text().splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, _, value = line.partition("=")
+        key, value = key.strip(), value.strip()
+        if key and key not in os.environ:
+            os.environ[key] = value
+
+
+_load_dotenv(BASE / ".env")
 
 from strangely_warm_index import judge as swi_judge
 
