@@ -12,6 +12,8 @@ import re
 from collections import Counter, defaultdict
 from pathlib import Path
 
+from morphology import is_regular_inflection
+
 ROOT = Path(__file__).resolve().parent.parent
 PASSAGES = ROOT / "chunked" / "cleaned_passages.jsonl"
 DICT_PATH = Path("/usr/share/dict/words")
@@ -30,6 +32,10 @@ PERIOD_SUPPLEMENT = {
     "'tis", "'twas", "'twill", "o'er", "e'er", "ne'er", "methinks",
     "howbeit", "peradventure", "whensoever", "whosoever", "whatsoever",
     "wheresoever", "howsoever", "notwithstanding",
+    # Irregular verb forms missing from /usr/share/dict/words (found
+    # 2026-07-07: identical counts before/after Phase 1 journal cleanup
+    # proved these were always false positives, e.g. "began" x557).
+    "began", "bidden", "forgave", "forgiven", "woken",
 }
 
 HEADER_RE = re.compile(r"REV\.?\s*J\.?\s*WES[LI][EL]Y.*JOURNAL.*\d+", re.IGNORECASE)
@@ -91,6 +97,8 @@ def main():
                 if not low:
                     continue
                 if low in dictionary or low in proper_nouns:
+                    continue
+                if is_regular_inflection(low, dictionary):
                     continue
                 # single-letter tokens (I, A, initials) are not noise
                 if len(low) <= 1:
