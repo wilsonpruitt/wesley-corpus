@@ -11,7 +11,8 @@ RUN pip install --no-cache-dir \
     numpy>=1.24.0 \
     scipy>=1.10.0 \
     httpx>=0.27.0 \
-    itsdangerous>=2.1.0
+    itsdangerous>=2.1.0 \
+    anthropic>=0.90.0
 
 # Copy application code
 COPY web_app.py .

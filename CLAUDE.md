@@ -19,6 +19,12 @@ fly deploy -a wesley-corpus
 Uses `Dockerfile.lite`. Two machines in `iad`, auto-stop/start enabled,
 min-running 0.
 
+**SWI v2 (LLM judge) needs a secret set once before its first deploy:**
+`fly secrets set ANTHROPIC_API_KEY=... -a wesley-corpus`. Without it, SWI
+silently runs the v1 lexicon fallback (`"engine": "lexicon-fallback"` in the
+response) — no error, just degraded scoring. See
+`strangely_warm_index/V2-HANDOFF.md` for the full design.
+
 ## Data pipeline
 
 `raw/` → `process_corpus.py clean` → `cleaned/` → `process_corpus.py chunk`

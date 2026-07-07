@@ -1,9 +1,17 @@
 """
-SWI Composite Scoring Engine (Phase 2D)
-=========================================
+SWI Composite Scoring Engine
 
-Combines 8 dimension scores + semantic score into an overall 0-100 score
-with narrative summary and collected markers.
+v2 (Phase 2b, plans/2026-07-07-swi-v2-ocr-cleanup-verification.md): score_text
+is now a dispatcher. If ANTHROPIC_API_KEY is set and the daily judge-call cap
+isn't exhausted, it scores via the LLM judge (judge.py), cached on
+sha256(text+rubric_version) so repeat requests are free. Otherwise -- no key,
+API error, or cap hit -- it falls back to the original v1 lexicon scorer
+below, flagged "engine": "lexicon-fallback" so the UI can say so.
+
+The v1 lexicon engine (Phase 2D) combines 7 dimension scores + semantic score
+into an overall 0-100 score with narrative summary and collected markers.
+Kept as the fallback path, not deleted -- see plan's open decision on
+lexicon-as-fallback-only.
 """
 
 import csv
@@ -11,6 +19,9 @@ from pathlib import Path
 
 from .dimensions import score_all_dimensions, detect_calvinist_markers
 from .classifier import score_semantic
+from . import cache as swi_cache
+from . import judge as swi_judge
+from . import rubric as swi_rubric
 
 CORPUS_ROOT = Path(__file__).resolve().parent.parent
 THEMES_CSV = CORPUS_ROOT / "metadata" / "themes.csv"
@@ -89,8 +100,32 @@ def _generate_summary(overall: int, dimensions: dict, semantic: dict,
 
 
 def score_text(text: str, include_semantic: bool = True) -> dict:
+    """Score `text` for Wesleyan affinity. Tries the LLM judge first (cached,
+    capped); falls back to the v1 lexicon engine on any failure or when the
+    judge path is unavailable. `include_semantic` only affects the lexicon
+    fallback -- the judge doesn't use the embedding-similarity signal."""
+    import os
+
+    cached = swi_cache.get_cached(text, swi_rubric.RUBRIC_VERSION)
+    if cached is not None:
+        return cached
+
+    if os.environ.get("ANTHROPIC_API_KEY") and swi_cache.under_daily_cap():
+        try:
+            swi_cache.record_judge_call()
+            raw = swi_judge.score_with_judge(text)
+            result = swi_judge.to_v1_shape(raw, text)
+            swi_cache.set_cached(text, swi_rubric.RUBRIC_VERSION, result)
+            return result
+        except Exception:
+            pass  # fall through to lexicon fallback below
+
+    return _score_text_lexicon(text, include_semantic=include_semantic)
+
+
+def _score_text_lexicon(text: str, include_semantic: bool = True) -> dict:
     """
-    Full SWI scoring of a text.
+    v1 lexicon-based SWI scoring (fallback engine).
 
     Returns:
         {
@@ -205,6 +240,7 @@ def score_text(text: str, include_semantic: bool = True) -> dict:
         "top_markers": top_markers,
         "summary": summary,
         "word_count": word_count,
+        "engine": "lexicon-fallback",
     }
     if word_count_advisory:
         result["word_count_advisory"] = word_count_advisory
