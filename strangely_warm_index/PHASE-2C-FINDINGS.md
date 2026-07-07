@@ -93,3 +93,68 @@ wants a doctrinal-standard entry in that bucket at all.
 5. Any rubric.py prose change → bump RUBRIC_VERSION → re-run full eval.
 6. Only once the eval is clean (or Wilson accepts the remaining gaps):
    Phase 2d (UI) → Phase 2e (deploy, hard stop).
+
+## Resolution (2026-07-07, later same day) — 36/36 PASS
+
+Re-run 1 (`metadata/swi-eval-run2-2026-07-07.log`, post token-budget fix)
+came back **18/36**, sharper than run 1: 7/9 wesley-core failed, 4/4
+refuting-calvinism failed, and now 5/5 adjacent-christian failed (Luther
+18 vs floor 42 — a 24-point miss, not just a near-miss).
+
+**Root-cause investigation.** Pulled full per-dimension judge output for
+4 failing entries directly (bypassing the eval harness). Two things
+turned up:
+
+1. `overall_score` is not a mechanical average of the 7 dimensions — the
+   judge produces it holistically in the same response, per the rubric's
+   own instruction ("Then give overall_score..."). Inspecting Luther and
+   Athanasius showed the low composite scores were *correct*, dimension
+   by dimension: Luther genuinely scores `holiness_perfection: 5`,
+   `social_holiness: 10`, `wesleyan_voice: 15` because the text really is
+   sola-fide-without-sanctification. Not a bug — the judge was scoring
+   accurately; the golden set's expected floors were calibrated too high,
+   assuming a text should get full credit for being strong on 1-2
+   dimensions even while silent on the rest. Confirms finding #1's
+   hypothesis and extends it to adjacent-christian and
+   refuting-calvinism.
+2. `judge.py` never set `temperature`, defaulting to Anthropic's API
+   default of 1.0. Direct re-queries of the same text swung ~10 points
+   run to run (Free Grace: 78 in the full eval, 88 on immediate
+   re-query). This explained both the golden-set noise AND the
+   intermittent truncation crash reappearing despite the earlier
+   `MAX_TOKENS` fix. **Fixed: `temperature=0` added to `_call_judge`'s
+   `messages.create` call** — this is a config fix serving the rubric's
+   existing intent (reproducible scoring), not a design fork.
+
+**Recalibration.** With Wilson's go-ahead to pursue "loosen the floors"
+(not "change the rubric's aggregation logic"), rewrote `expected_min`/
+`expected_max` for the 18 failing entries in `swi-golden-set.jsonl`,
+setting floors ~10-15 points below observed scores to buffer the
+remaining judge variance. Backup at
+`metadata/swi-golden-set.jsonl.bak-pre-recalibration-2026-07-07`.
+
+Iterated three more times as `temperature=0` progressively tightened the
+noise floor:
+- Run 3 (post-recalibration, still temp=1 default): 32/36 — 4 residual
+  near-misses (2-8 points), consistent with variance, not new issues.
+- Run 4 (before the temp fix landed): 30/36 — *more* variance than run 3,
+  including a fresh truncation crash on `gs-modern-wesleyan-sermon`. This
+  was the signal that led to finding the missing `temperature` param.
+- Run 5 (first run with `temperature=0`): 35/36 — only
+  `gs-whitefield-reply` missed (8 vs floor 12), and this time
+  reproducibly, not noise: the judge stably scores Whitefield's warm
+  evangelical advocacy for election identically to dry creedal Calvinism
+  (Westminster/Canons of Dort also score 8). A real, small, defensible
+  judge behavior — Whitefield's floor lowered to 8 to match its bucket
+  peers rather than treated as a rubric defect worth chasing further.
+- Run 6 final (`metadata/swi-eval-run6-final-2026-07-07.log`): **36/36
+  PASS.**
+
+**Not touched:** rubric.py's prose/aggregation instructions — no
+RUBRIC_VERSION bump needed, since only the golden-set's expectations
+changed, not the judge's behavior-defining instructions.
+
+**Next:** Phase 2d (UI) → Phase 2e (deploy, hard stop — needs Wilson's
+explicit per-action OK, and the `ANTHROPIC_API_KEY` Fly secret per
+`CLAUDE.md` must be set before that deploy or SWI silently degrades to
+the lexicon fallback).

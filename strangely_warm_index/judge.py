@@ -47,6 +47,7 @@ def _call_judge(client: anthropic.Anthropic, text: str, max_tokens: int):
     response = client.messages.create(
         model=MODEL,
         max_tokens=max_tokens,
+        temperature=0,
         system=rubric.SYSTEM_PROMPT,
         tools=[_tool_definition()],
         tool_choice={"type": "tool", "name": TOOL_NAME},
