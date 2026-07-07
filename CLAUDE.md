@@ -43,9 +43,28 @@ serving file stays in sync.
   iCloud Documents location (`tag_passages.py`, `extract_scripture_references.py`
   already patched; others may not be).
 
-## TODO: clean up JW Journal OCR (`raw/john-wesley/journal-vol1-3.txt`)
+## Journal OCR cleanup — DONE 2026-07-07 (Phase 1, see plans/2026-07-07-swi-v2-ocr-cleanup-verification.md)
 
-The journal volume(s) under `raw/john-wesley/journal-vol*.txt` are heavily
+`scripts/journal_ocr_fixes.py` applies running-header strip + the garble
+table below to the 4 raw single-file journal sources (`journal-vol1-3`,
+`journal-vol4-7`, `journal-1760-to-1773`, `journal-1773-to-1776`) as a step
+after `process_corpus.py`'s generic `clean_text()` — deliberately NOT wired
+into that shared function, so it can't touch any other source. Running
+headers: 584 → 0 header-containing passages corpus-wide. Verified via the
+Phase 3c sentinel suite (`scripts/check_sentinels.py`): no regressions,
+and the two directly-affected sentinels improved (Aldersgate wording
+0.66→0.98, "who shall convert me" 0.66→0.92). Skipped per the plan: bare
+`ot`→`of` (too ambiguous without a dictionary gate) and `'7`-style bleed
+was instead handled by a general "strip apostrophe before a digit" rule
+(safe — no legitimate use of apostrophe-then-digit in this corpus).
+
+Known noise_report.py gap found along the way: its dictionary lacks some
+irregular verb forms (e.g. "began"), so they appear as false-positive
+"non-word" offenders — not real corpus damage, just a measurement blind
+spot in the Phase 0 tool. Worth extending `PERIOD_SUPPLEMENT` in
+`scripts/noise_report.py` if the noise metric needs to be exact later.
+
+The journal volume(s) under `raw/john-wesley/journal-vol*.txt` were heavily
 OCR-damaged in systematic, mechanically reversible ways. Discovered
 2026-05-27 while extracting the Georgia journal (lines 644–3660) for the
 `wroot-press/wesley-journals` adaptation.
