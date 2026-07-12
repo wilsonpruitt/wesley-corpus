@@ -1,0 +1,52 @@
+Running judge over 36 golden-set entries (rubric swi-v2.0-2026-07-07)...
+
+[PASS] gs-wesley-justification            bucket=wesley-core          score=  76 expect=[60,100]
+[PASS] gs-wesley-new-birth                bucket=wesley-core          score=  72 expect=[60,100]
+[PASS] gs-wesley-scripture-way            bucket=wesley-core          score=  76 expect=[65,100]
+[PASS] gs-wesley-perfection               bucket=wesley-core          score=  82 expect=[72,100]
+[PASS] gs-wesley-character-methodist      bucket=wesley-core          score=  72 expect=[60,100]
+[PASS] gs-wesley-marks-new-birth          bucket=wesley-core          score=  72 expect=[60,100]
+[PASS] gs-wesley-catholic-spirit          bucket=wesley-core          score=  78 expect=[78,100]
+[PASS] gs-wesley-general-rules            bucket=wesley-core          score=  72 expect=[70,100]
+[PASS] gs-wesley-means-of-grace           bucket=wesley-core          score=  72 expect=[60,100]
+[PASS] gs-freegrace-thesis                bucket=refuting-calvinism   score=  78 expect=[65,100]
+[PASS] gs-freegrace-horrible-decree       bucket=refuting-calvinism   score=  78 expect=[70,100]
+[PASS] gs-predestination-calmly           bucket=refuting-calvinism   score=  72 expect=[60,100]
+[PASS] gs-charles-universal-redemption    bucket=refuting-calvinism   score=  82 expect=[65,100]
+[PASS] gs-charles-and-can-it-be           bucket=wesleyan-tradition   score=  82 expect=[78,100]
+[PASS] gs-charles-love-divine             bucket=wesleyan-tradition   score=  92 expect=[78,100]
+[PASS] gs-articles-of-religion            bucket=wesleyan-tradition   score=  48 expect=[40,70]
+[PASS] gs-fletcher-antinomianism          bucket=wesleyan-tradition   score=  82 expect=[72,95]
+[PASS] gs-modern-wesleyan-sermon          bucket=wesleyan-tradition   score=  76 expect=[65,92]
+[PASS] gs-modern-social-holiness          bucket=wesleyan-tradition   score=  72 expect=[60,88]
+[PASS] gs-westminster-election            bucket=grace-dense-reformed score=   8 expect=[8,30]
+[PASS] gs-calvin-predestination           bucket=grace-dense-reformed score=   8 expect=[0,25]
+[PASS] gs-spurgeon-sovereign-grace        bucket=grace-dense-reformed score=  18 expect=[12,38]
+[FAIL] gs-whitefield-reply                bucket=grace-dense-reformed score=   8 expect=[12,38]
+        - score 8 outside expected [12, 38]
+        rationale: Whitefield — warm evangelical, revival preacher — defending the election Wesley attacked. Advocacy, not refutation.
+[PASS] gs-canons-dort                     bucket=grace-dense-reformed score=   8 expect=[8,30]
+[PASS] gs-aquinas-grace                   bucket=adjacent-christian   score=  28 expect=[18,45]
+[PASS] gs-bcp-collect-purity              bucket=adjacent-christian   score=  32 expect=[25,58]
+[PASS] gs-kempis-imitation                bucket=adjacent-christian   score=  32 expect=[20,48]
+[PASS] gs-luther-freedom                  bucket=adjacent-christian   score=  28 expect=[8,35]
+[PASS] gs-athanasius-theosis              bucket=adjacent-christian   score=  18 expect=[15,40]
+[PASS] gs-antinomian-advocacy             bucket=counter-advocacy     score=   8 expect=[8,28]
+[PASS] gs-works-righteousness-advocacy    bucket=counter-advocacy     score=   8 expect=[8,30]
+[PASS] gs-quietist-stillness              bucket=counter-advocacy     score=   8 expect=[8,30]
+[PASS] gs-control-news                    bucket=control              score=   0 expect=[0,12]
+[PASS] gs-control-selfhelp                bucket=control              score=   8 expect=[2,18]
+[PASS] gs-control-technical               bucket=control              score=   0 expect=[0,8]
+[PASS] gs-control-marcus-aurelius         bucket=control              score=   8 expect=[0,22]
+
+=== By bucket ===
+  adjacent-christian       5/5 passed
+  control                  4/4 passed
+  counter-advocacy         3/3 passed
+  grace-dense-reformed     4/5 passed
+  refuting-calvinism       4/4 passed
+  wesley-core              9/9 passed
+  wesleyan-tradition       6/6 passed
+
+35/36 PASS
+FAILED: ['gs-whitefield-reply']

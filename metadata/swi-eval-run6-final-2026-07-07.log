@@ -1,0 +1,13 @@
+Running judge over 36 golden-set entries (rubric swi-v2.0-2026-07-07)...
+
+
+=== By bucket ===
+  adjacent-christian       5/5 passed
+  control                  4/4 passed
+  counter-advocacy         3/3 passed
+  grace-dense-reformed     5/5 passed
+  refuting-calvinism       4/4 passed
+  wesley-core              9/9 passed
+  wesleyan-tradition       6/6 passed
+
+36/36 PASS

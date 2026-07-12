@@ -1,0 +1,58 @@
+Running judge over 36 golden-set entries (rubric swi-v2.0-2026-07-07)...
+
+[PASS] gs-wesley-justification            bucket=wesley-core          score=  72 expect=[60,100]
+[PASS] gs-wesley-new-birth                bucket=wesley-core          score=  72 expect=[60,100]
+[PASS] gs-wesley-scripture-way            bucket=wesley-core          score=  82 expect=[65,100]
+[PASS] gs-wesley-perfection               bucket=wesley-core          score=  76 expect=[72,100]
+[PASS] gs-wesley-character-methodist      bucket=wesley-core          score=  72 expect=[60,100]
+[PASS] gs-wesley-marks-new-birth          bucket=wesley-core          score=  72 expect=[60,100]
+[FAIL] gs-wesley-catholic-spirit          bucket=wesley-core          score=  78 expect=[85,100]
+        - score 78 outside expected [85, 100]
+        rationale: Catholic Spirit — love across differing opinions and modes of worship; the dimension's namesake.
+[FAIL] gs-wesley-general-rules            bucket=wesley-core          score=  72 expect=[78,100]
+        - score 72 outside expected [78, 100]
+        rationale: General Rules — do no harm / do good / attend the ordinances; social holiness codified.
+[PASS] gs-wesley-means-of-grace           bucket=wesley-core          score=  78 expect=[60,100]
+[PASS] gs-freegrace-thesis                bucket=refuting-calvinism   score=  82 expect=[65,100]
+[PASS] gs-freegrace-horrible-decree       bucket=refuting-calvinism   score=  82 expect=[70,100]
+[PASS] gs-predestination-calmly           bucket=refuting-calvinism   score=  72 expect=[60,100]
+[PASS] gs-charles-universal-redemption    bucket=refuting-calvinism   score=  82 expect=[65,100]
+[PASS] gs-charles-and-can-it-be           bucket=wesleyan-tradition   score=  82 expect=[78,100]
+[PASS] gs-charles-love-divine             bucket=wesleyan-tradition   score=  88 expect=[78,100]
+[PASS] gs-articles-of-religion            bucket=wesleyan-tradition   score=  48 expect=[40,70]
+[PASS] gs-fletcher-antinomianism          bucket=wesleyan-tradition   score=  82 expect=[72,95]
+[PASS] gs-modern-wesleyan-sermon          bucket=wesleyan-tradition   score=  78 expect=[65,92]
+[PASS] gs-modern-social-holiness          bucket=wesleyan-tradition   score=  74 expect=[60,88]
+[PASS] gs-westminster-election            bucket=grace-dense-reformed score=   8 expect=[8,30]
+[PASS] gs-calvin-predestination           bucket=grace-dense-reformed score=   5 expect=[0,25]
+[PASS] gs-spurgeon-sovereign-grace        bucket=grace-dense-reformed score=  18 expect=[12,38]
+[PASS] gs-whitefield-reply                bucket=grace-dense-reformed score=  18 expect=[12,38]
+[PASS] gs-canons-dort                     bucket=grace-dense-reformed score=   8 expect=[8,30]
+[PASS] gs-aquinas-grace                   bucket=adjacent-christian   score=  28 expect=[18,45]
+[FAIL] gs-bcp-collect-purity              bucket=adjacent-christian   score=  52 expect=[25,50]
+        - score 52 outside expected [25, 50]
+        rationale: A prayer Wesley himself used weekly; devotional, aims at perfect love — but liturgical, not distinctively Wesleyan.
+[PASS] gs-kempis-imitation                bucket=adjacent-christian   score=  42 expect=[20,48]
+[PASS] gs-luther-freedom                  bucket=adjacent-christian   score=  32 expect=[8,35]
+[PASS] gs-athanasius-theosis              bucket=adjacent-christian   score=  23 expect=[15,40]
+[PASS] gs-antinomian-advocacy             bucket=counter-advocacy     score=   8 expect=[8,28]
+[PASS] gs-works-righteousness-advocacy    bucket=counter-advocacy     score=   8 expect=[8,30]
+[PASS] gs-quietist-stillness              bucket=counter-advocacy     score=   8 expect=[8,30]
+[PASS] gs-control-news                    bucket=control              score=   0 expect=[0,12]
+[PASS] gs-control-selfhelp                bucket=control              score=   8 expect=[2,18]
+[PASS] gs-control-technical               bucket=control              score=   0 expect=[0,8]
+[FAIL] gs-control-marcus-aurelius         bucket=control              score=   2 expect=[5,22]
+        - score 2 outside expected [5, 22]
+        rationale: Morally serious, even devout-sounding, but pagan Stoic — Wesley himself cited 'Poor Antoninus!'; a non-Christian control.
+
+=== By bucket ===
+  adjacent-christian       4/5 passed
+  control                  3/4 passed
+  counter-advocacy         3/3 passed
+  grace-dense-reformed     5/5 passed
+  refuting-calvinism       4/4 passed
+  wesley-core              7/9 passed
+  wesleyan-tradition       6/6 passed
+
+32/36 PASS
+FAILED: ['gs-wesley-catholic-spirit', 'gs-wesley-general-rules', 'gs-bcp-collect-purity', 'gs-control-marcus-aurelius']

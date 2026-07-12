@@ -1,0 +1,62 @@
+Running judge over 36 golden-set entries (rubric swi-v2.0-2026-07-07)...
+
+[PASS] gs-wesley-justification            bucket=wesley-core          score=  79 expect=[60,100]
+[PASS] gs-wesley-new-birth                bucket=wesley-core          score=  82 expect=[60,100]
+[PASS] gs-wesley-scripture-way            bucket=wesley-core          score=  82 expect=[65,100]
+[PASS] gs-wesley-perfection               bucket=wesley-core          score=  82 expect=[72,100]
+[PASS] gs-wesley-character-methodist      bucket=wesley-core          score=  68 expect=[60,100]
+[PASS] gs-wesley-marks-new-birth          bucket=wesley-core          score=  72 expect=[60,100]
+[FAIL] gs-wesley-catholic-spirit          bucket=wesley-core          score=  72 expect=[78,100]
+        - score 72 outside expected [78, 100]
+        rationale: Catholic Spirit — love across differing opinions and modes of worship; the dimension's namesake.
+[PASS] gs-wesley-general-rules            bucket=wesley-core          score=  72 expect=[70,100]
+[PASS] gs-wesley-means-of-grace           bucket=wesley-core          score=  78 expect=[60,100]
+[PASS] gs-freegrace-thesis                bucket=refuting-calvinism   score=  78 expect=[65,100]
+[PASS] gs-freegrace-horrible-decree       bucket=refuting-calvinism   score=  72 expect=[70,100]
+[PASS] gs-predestination-calmly           bucket=refuting-calvinism   score=  72 expect=[60,100]
+[PASS] gs-charles-universal-redemption    bucket=refuting-calvinism   score=  82 expect=[65,100]
+[PASS] gs-charles-and-can-it-be           bucket=wesleyan-tradition   score=  82 expect=[78,100]
+[PASS] gs-charles-love-divine             bucket=wesleyan-tradition   score=  88 expect=[78,100]
+[FAIL] gs-articles-of-religion            bucket=wesleyan-tradition   score=  32 expect=[40,70]
+        - score 32 outside expected [40, 70]
+        rationale: Standard Methodist doctrine on justification — orthodox, grace-based, but a bare confessional statement.
+[PASS] gs-fletcher-antinomianism          bucket=wesleyan-tradition   score=  78 expect=[72,95]
+[FAIL] gs-modern-wesleyan-sermon          bucket=wesleyan-tradition   score= ERR expect=[65,92]
+        - judge call failed: Judge result missing keys: {'counter_indicators', 'overall_score', 'summary', 'label'}
+        rationale: Genuinely Wesleyan theology in wholly contemporary English; MUST score high despite zero archaic diction.
+[PASS] gs-modern-social-holiness          bucket=wesleyan-tradition   score=  72 expect=[60,88]
+[PASS] gs-westminster-election            bucket=grace-dense-reformed score=   8 expect=[8,30]
+[PASS] gs-calvin-predestination           bucket=grace-dense-reformed score=   5 expect=[0,25]
+[PASS] gs-spurgeon-sovereign-grace        bucket=grace-dense-reformed score=  12 expect=[12,38]
+[FAIL] gs-whitefield-reply                bucket=grace-dense-reformed score=   8 expect=[12,38]
+        - score 8 outside expected [12, 38]
+        rationale: Whitefield — warm evangelical, revival preacher — defending the election Wesley attacked. Advocacy, not refutation.
+[PASS] gs-canons-dort                     bucket=grace-dense-reformed score=  12 expect=[8,30]
+[PASS] gs-aquinas-grace                   bucket=adjacent-christian   score=  28 expect=[18,45]
+[PASS] gs-bcp-collect-purity              bucket=adjacent-christian   score=  38 expect=[25,58]
+[PASS] gs-kempis-imitation                bucket=adjacent-christian   score=  28 expect=[20,48]
+[PASS] gs-luther-freedom                  bucket=adjacent-christian   score=  18 expect=[8,35]
+[FAIL] gs-athanasius-theosis              bucket=adjacent-christian   score=  12 expect=[15,40]
+        - score 12 outside expected [15, 40]
+        rationale: Deification/theosis — the Eastern perfection tradition Wesley loved; the nearest adjacent boundary, high side.
+[PASS] gs-antinomian-advocacy             bucket=counter-advocacy     score=   8 expect=[8,28]
+[PASS] gs-works-righteousness-advocacy    bucket=counter-advocacy     score=   8 expect=[8,30]
+[FAIL] gs-quietist-stillness              bucket=counter-advocacy     score=   5 expect=[8,30]
+        - score 5 outside expected [8, 30]
+        rationale: Cease from the ordinances and wait passively — the exact doctrine Wesley broke with Molther over.
+[PASS] gs-control-news                    bucket=control              score=   0 expect=[0,12]
+[PASS] gs-control-selfhelp                bucket=control              score=   5 expect=[2,18]
+[PASS] gs-control-technical               bucket=control              score=   0 expect=[0,8]
+[PASS] gs-control-marcus-aurelius         bucket=control              score=   8 expect=[0,22]
+
+=== By bucket ===
+  adjacent-christian       4/5 passed
+  control                  4/4 passed
+  counter-advocacy         2/3 passed
+  grace-dense-reformed     4/5 passed
+  refuting-calvinism       4/4 passed
+  wesley-core              8/9 passed
+  wesleyan-tradition       4/6 passed
+
+30/36 PASS
+FAILED: ['gs-wesley-catholic-spirit', 'gs-articles-of-religion', 'gs-modern-wesleyan-sermon', 'gs-whitefield-reply', 'gs-athanasius-theosis', 'gs-quietist-stillness']
