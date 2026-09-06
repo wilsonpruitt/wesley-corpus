@@ -109,3 +109,12 @@ When tackling:
 3. `fly deploy -a wesley-corpus` (under `gryngamour@gmail.com`).
 4. Spot-check by searching `corpus.historyofmethodism.com` for
    "Tuesday" and confirming Georgia-period entries surface.
+
+## Open Reading Layer — PLANNED 2026-09-06
+
+Plan: `plans/2026-09-06-open-reading-layer.md` (sketch it implements:
+`plans/source/open-layer-sketch.md`). Works become canonical public pages
+(`/jw/sermons/043`, `/jw/journal/1738`, …), `/passage/*` becomes 301s, the
+instrument (search, auto-themes, scripture UI, SWI) stays behind Patreon.
+Read the plan's "sketch vs. disk" table before touching it: Journal, Notes,
+and the 1780 *Collection* need re-segmentation; sermons/treatises/letters do not.
