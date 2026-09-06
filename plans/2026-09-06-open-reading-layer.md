@@ -36,21 +36,22 @@ Two things the sketch gets wrong for *this* site and which the plan overrides:
 
 ---
 
-## Decisions Wilson has to make before Phase 1 (answer in one line each)
+## Decisions — RESOLVED 2026-09-06
 
-1. **Quality gate threshold.** Proposal: a work is *open* (in sitemap, in export, full
-   page) only if `non_word_rate ≤ 0.03` (from `metadata/noise-report.csv`) **or** it has
-   been swapped to clean text (the 134 ResourceUMC sermons). Works above the threshold
-   still get a page but with a "damaged transcription — not yet collated" banner,
-   `noindex`, and exclusion from the JSONL export. Approve threshold or name another.
-2. **License for transcriptions.** Sketch says CC0 on transcription corrections, CC BY
-   4.0 on apparatus. That is the recommendation. Confirm — this is a rights statement
-   and goes on every page.
-3. **Hugging Face mirror.** Publishing there is an outward-facing send (hard stop #5).
-   Decide now whether Phase 6 includes it or stops at `/export` on our own domain.
-4. **Curated themes (Phase 7).** This is *your* reading time, not build time
-   (20–40 passages × ~25 themes, each with a one-sentence note). Decide whether it
-   is in scope for this cycle or deferred; it does not block anything else.
+1. **Quality gate threshold: 5%** (the value `build_works.py` already used provisionally
+   — no change needed). 45 sources stay closed (damage banner, `noindex`, excluded from
+   the JSONL export) under this threshold.
+2. **License: CC0 on transcriptions/corrections, CC BY 4.0 on apparatus** (the sketch's
+   recommendation), attribution "History of Methodism / Wesley Corpus." Goes on every
+   page footer, `/license`, and `llms.txt`.
+3. **Hugging Face mirror: YES, in scope for Phase 6.** Still an outward-facing send
+   (hard stop #5) — the actual publish action gets its own explicit per-action OK when
+   Phase 6 is built and ready to ship, same as any other outward send. This decision
+   only settles that the dataset card is worth building, not that it may be pushed
+   without asking.
+4. **Curated themes: IN SCOPE this cycle.** Wilson does the reading (20–40 passages ×
+   ~25 themes, one-sentence note each); a Sonnet session scaffolds ~60 ranked candidates
+   per theme from `themes_auto` for him to pare down, per the plan's working method.
 
 ---
 
