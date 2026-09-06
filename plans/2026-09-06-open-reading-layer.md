@@ -306,17 +306,46 @@ zero chapters with empty text; verse anchors monotonic in all 969 chapters after
 
 ---
 
-## Phase 4 — 1780 *Collection* split into hymns (Sonnet)
+## Phase 4 — 1780 *Collection* split into hymns (Sonnet) — DONE 2026-09-06
 
-**Goal:** `cw/hymns/1780/{NNN}` for all 525 hymns, line breaks preserved.
+**Goal:** `cw/hymns/1780/{NNN}`, line breaks preserved.
 
-`cw-hymns-1780` is one 453-chunk source from CCEL. Hymn heads are numbered in the
-source. Split on hymn number; keep stanza/line structure (**a hymn flattened to prose is a
-different text** — verify the raw file still has line breaks; if `process_corpus.py
-clean` collapsed them, re-derive from `raw/`). The 56 Duke collections stay whole works
-this cycle; the 253 individual `cw-NNN-*` hymns are already works.
+`scripts/segment_hymns.py` reads `raw/charles-wesley/collection-of-hymns-1780.txt`
+(confirmed to be the exact page `cw-hymns-1780`'s `source_url` points to, by matching
+opening text) and writes `chunked/hymns_1780_by_number.jsonl` — **728 hymns**, each with
+stanza/line structure intact (a light clean collapsing only multi-space OCR runs, never
+touching line breaks — the opposite of `ocr_cleaning.clean_text()`, which would flatten
+stanzas into prose and was deliberately not used here).
 
-Gate: 525 hymns numbered 1–525 with no gaps; stanza count per hymn matches the source.
+**The plan's "all 525 hymns" assumption does not match this source.** The CCEL page is a
+transcription of a later 19th-century Wesleyan Conference Office reprint (title page:
+"PUBLISHED BY JOHN MASON... J. ROCHE, PRINTER"), which had by then folded supplementary
+hymns into the main sequence well past the 1780 original's 525 — printed numbering here
+runs to 769.
+
+- **Numbering is by reading-order POSITION, not the OCR-read digit.** A hymnal has no
+  legitimate reason to skip a number, so any anomaly is OCR damage, not a real gap.
+  Found: two OCR numbers each printed on two distinct hymns with clearly different text
+  (16, 46 — the second "46" is almost certainly a misread 47), and 43 numbers between 1
+  and 769 with no recoverable "HYMN N." header at all. All disclosed in
+  `metadata/hymns-1780-findings.csv`; positional numbering in the output file is what's
+  authoritative, with the OCR-read number kept alongside for cross-reference.
+- **A bug this same build caught and fixed**: the final hymn's own title happens to be
+  "A Song of Praise to the Blessed Trinity" (it's a doxology) — a first pass mistook that
+  title line for a section boundary and truncated Hymn 769 to three words before this was
+  checked and fixed.
+- **This scan's OCR damage is markedly worse than anywhere else tackled this session** —
+  metre codes are badly mangled, decorative drop-caps produce garbage ("1 /^OME" for
+  "1 COME"). Segmented as printed and disclosed rather than hand-repaired; a dedicated
+  OCR-cleanup pass (the precedent already exists in this repo for the Journal — see
+  CLAUDE.md) is a separate, larger piece of future work.
+
+The 56 Duke collections stay whole works this cycle; the 253 individual `cw-NNN-*` hymns
+are already works.
+
+Gate: **728 hymns, zero with empty text, all with stanza/line structure preserved**
+(spot-checked: minimum word count 39, a genuinely short hymn, not a truncation artifact
+— the truncation bug above was caught by this exact check).
 
 ---
 
