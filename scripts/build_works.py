@@ -21,11 +21,29 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 PASSAGES_PATH = ROOT / "chunked" / "cleaned_passages.jsonl"
+JOURNAL_ENTRIES_PATH = ROOT / "chunked" / "journal_by_entry.jsonl"  # Phase 2
+NOTES_CHAPTERS_PATH = ROOT / "chunked" / "notes_by_chapter.jsonl"  # Phase 3
+HYMNS_1780_PATH = ROOT / "chunked" / "hymns_1780_by_number.jsonl"  # Phase 4
 NOISE_PATH = ROOT / "metadata" / "noise-report.csv"
 SERMON_NUMBERING_PATH = ROOT / "metadata" / "sermon-numbering.csv"  # Phase 1, build_sermon_numbering.py
 SERMON_MISATTRIBUTED_PATH = ROOT / "metadata" / "sermon-misattributed.csv"  # Phase 1
 WORKS_OUT = ROOT / "metadata" / "works.jsonl"
 TITLES_OUT = ROOT / "metadata" / "work-titles.csv"
+
+# Old whole-source placeholders these Phase 2-4 outputs replace outright —
+# skipped in the main per-source_id loop below so they don't also get a
+# (much coarser) placeholder work built from cleaned_passages.jsonl.
+JOURNAL_SOURCE_IDS_REPLACED = {
+    "jw-journal-vol1-3", "jw-journal-vol4-7", "jw-journal-1760-to-1773",
+    "jw-journal-1773-to-1776", "jw-journal-vol4-part09-section01",
+    "jw-journal-vol4-part09-section02", "jw-journal-vol4-part10-section01",
+    "jw-journal-vol4-part10-section02", "jw-journal-vol4-part11-section01",
+    "jw-journal-vol4-part11-section02", "jw-journal-vol4-part12-section01",
+    "jw-journal-vol4-part12-section02", "jw-journal-vol4-part12-section03",
+    "jw-journal-vol4-part12-section04", "jw-journal-vol4-part13",
+}
+NOTES_SOURCE_IDS_REPLACED = {"jw-notes-nt", "jw-notes-on-old-testament"}
+HYMNS_1780_SOURCE_ID_REPLACED = "cw-hymns-1780"
 
 QUALITY_THRESHOLD = 0.05  # provisional; plan decision #1 sets the real gate
 
@@ -91,6 +109,181 @@ def load_sermon_misattributed():
                 continue  # already correctly filed as a cw-sermons work
             by_source_id[row["source_id"]] = row["real_author"]
     return by_source_id
+
+
+def load_journal_works():
+    """Group chunked/journal_by_entry.jsonl (Phase 2) by its own "work" field
+    (jw/journal/{YYYY}) into work records. Each year is one work with its
+    dated entries as ordered passages."""
+    if not JOURNAL_ENTRIES_PATH.exists():
+        return []
+    by_work = defaultdict(list)
+    for line in JOURNAL_ENTRIES_PATH.open(encoding="utf-8"):
+        line = line.strip()
+        if not line:
+            continue
+        p = json.loads(line)
+        by_work[p["work"]].append(p)
+    works = []
+    for slug in sorted(by_work, key=lambda s: int(s.rsplit("/", 1)[1])):
+        passages = sorted(by_work[slug], key=lambda p: p["chunk_index"])
+        first = passages[0]
+        year = first["year"]
+        # Any passage flagged date_precision="range" (Phase 2: unresolved
+        # entries silently absorbed into a neighbor) makes the whole year's
+        # coverage imprecise in spots — surfaced per-work so a reader isn't
+        # told every entry on this page is a single day's writing.
+        ranged = [p["anchor"] for p in passages if p.get("date_precision") == "range"]
+        works.append({
+            "id": slug,
+            "corpus": "jw-journal",
+            "type": "journal-year",
+            "author": "john-wesley",
+            "title": f"Journal, {year}",
+            "title_alt": [],
+            "text_basis": None,
+            "date_composed": str(year),
+            "date_precision": "year",
+            "date_note": (
+                f"{len(ranged)} entr{'y' if len(ranged)==1 else 'ies'} this year could not be "
+                f"fully dated to a single day and may run past its stated date "
+                f"(see content_extends_to on the affected passage): {', '.join(ranged)}"
+                if ranged else None
+            ),
+            "numbering": {"bicentennial": None, "jackson_running": None, "sugden": None},
+            "source_edition": {
+                "editor": None, "title": None, "edition": None, "place": None,
+                "publisher": None, "year": None, "volume": None, "pages": None,
+                "scan_url": None, "scan_page_ids": None,
+            },
+            "transcription": {
+                "derived_from": None, "corrected_against_scan": False,
+                "corrector": None, "corrected_on": None,
+            },
+            "modernization": "none",
+            "license_text": "Public Domain Mark 1.0",
+            "license_apparatus": "CC BY 4.0",
+            "wikidata": None,
+            "prev": None,
+            "next": None,
+            "part_of": "jw-journal",
+            "editorial_note": None,
+            "source_id": f"jw-journal-{year}",
+            "passage_ids": [p["id"] for p in passages],
+            "word_count": sum(p.get("word_count") or 0 for p in passages),
+            "themes_auto": [],
+            "open": True,
+            "closed_reason": None,
+            "legacy_ids": [],
+        })
+    return works
+
+
+def load_notes_works():
+    """Group chunked/notes_by_chapter.jsonl (Phase 3) — one chapter is one
+    work with a single passage."""
+    if not NOTES_CHAPTERS_PATH.exists():
+        return []
+    works = []
+    for line in NOTES_CHAPTERS_PATH.open(encoding="utf-8"):
+        line = line.strip()
+        if not line:
+            continue
+        p = json.loads(line)
+        testament = "New" if p["source_id"] == "jw-notes-nt" else "Old"
+        works.append({
+            "id": p["work"],
+            "corpus": p["source_id"],
+            "type": "notes-chapter",
+            "author": "john-wesley",
+            "title": f"{p['book_name']} {p['chapter']}",
+            "title_alt": [],
+            "text_basis": f"{p['book_name']} {p['chapter']}",
+            "date_composed": str(p["year"]),
+            "date_precision": "year",
+            "date_note": None,
+            "numbering": {"bicentennial": None, "jackson_running": None, "sugden": None},
+            "source_edition": {
+                "editor": None, "title": None, "edition": None, "place": None,
+                "publisher": None, "year": None, "volume": None, "pages": None,
+                "scan_url": None, "scan_page_ids": None,
+            },
+            "transcription": {
+                "derived_from": None, "corrected_against_scan": False,
+                "corrector": None, "corrected_on": None,
+            },
+            "modernization": "none",
+            "license_text": "Public Domain Mark 1.0",
+            "license_apparatus": "CC BY 4.0",
+            "wikidata": None,
+            "prev": None,
+            "next": None,
+            "part_of": p["source_id"],
+            "editorial_note": None,
+            "source_id": p["source_id"],
+            "passage_ids": [p["id"]],
+            "word_count": p.get("word_count") or 0,
+            "themes_auto": [],
+            "open": True,
+            "closed_reason": None,
+            "legacy_ids": [],
+        })
+    return works
+
+
+def load_hymns_1780_works():
+    """Group chunked/hymns_1780_by_number.jsonl (Phase 4) — one hymn is one
+    work with a single passage."""
+    if not HYMNS_1780_PATH.exists():
+        return []
+    works = []
+    for line in HYMNS_1780_PATH.open(encoding="utf-8"):
+        line = line.strip()
+        if not line:
+            continue
+        p = json.loads(line)
+        works.append({
+            "id": p["work"],
+            "corpus": "cw-hymns-1780",
+            "type": "hymn",
+            "author": "charles-wesley",
+            "title": f"Hymn {p['number']}",
+            "title_alt": [f"Hymn {p['ocr_number']}"] if p.get("ocr_number") and p["ocr_number"] != p["number"] else [],
+            "text_basis": None,
+            "date_composed": "1780",
+            "date_precision": "year",
+            "date_note": (
+                "Numbered by position in the printed collection, not the scanned "
+                "number, which OCR misread here — see metadata/hymns-1780-findings.csv."
+                if p.get("ocr_number") != p["number"] else None
+            ),
+            "numbering": {"bicentennial": None, "jackson_running": None, "sugden": None},
+            "source_edition": {
+                "editor": None, "title": None, "edition": None, "place": None,
+                "publisher": None, "year": None, "volume": None, "pages": None,
+                "scan_url": p.get("source_url"), "scan_page_ids": None,
+            },
+            "transcription": {
+                "derived_from": None, "corrected_against_scan": False,
+                "corrector": None, "corrected_on": None,
+            },
+            "modernization": "none",
+            "license_text": "Public Domain Mark 1.0",
+            "license_apparatus": "CC BY 4.0",
+            "wikidata": None,
+            "prev": None,
+            "next": None,
+            "part_of": "cw-hymns-1780",
+            "editorial_note": None,
+            "source_id": "cw-hymns-1780",
+            "passage_ids": [p["id"]],
+            "word_count": p.get("word_count") or 0,
+            "themes_auto": [],
+            "open": True,
+            "closed_reason": None,
+            "legacy_ids": [],
+        })
+    return works
 
 
 def strip_prefix(source_id: str, prefixes) -> str:
@@ -175,13 +368,24 @@ def build(check_only: bool):
     sermon_numbering = load_sermon_numbering()
     sermon_misattributed = load_sermon_misattributed()
 
+    replaced_source_ids = (
+        JOURNAL_SOURCE_IDS_REPLACED | NOTES_SOURCE_IDS_REPLACED | {HYMNS_1780_SOURCE_ID_REPLACED}
+    )
+
     works = []
     seen_slugs = {}
     seen_passage_ids = set()
     dupe_slugs = []
     dupe_passages = []
+    skipped_old_passages = 0
 
     for source_id in source_order:
+        if source_id in replaced_source_ids:
+            # Superseded by the Phase 2-4 re-segmentation loaded below — the
+            # whole-source placeholder from cleaned_passages.jsonl is dropped
+            # entirely rather than also creating a coarser duplicate work.
+            skipped_old_passages += len(passages_by_source[source_id])
+            continue
         passages = passages_by_source[source_id]
         corpus, slug, kind = classify(source_id, passages, sermon_numbering, sermon_misattributed)
 
@@ -250,7 +454,26 @@ def build(check_only: bool):
         }
         works.append(work)
 
-    total_passages = sum(len(v) for v in passages_by_source.values())
+    # Fold in the Phase 2-4 re-segmentation, replacing the placeholder
+    # source_ids skipped above.
+    segmented_works = load_journal_works() + load_notes_works() + load_hymns_1780_works()
+    segmented_passages = 0
+    for w in segmented_works:
+        if w["id"] in seen_slugs:
+            dupe_slugs.append((w["id"], seen_slugs[w["id"]], w["source_id"]))
+        seen_slugs[w["id"]] = w["source_id"]
+        for pid in w["passage_ids"]:
+            if pid in seen_passage_ids:
+                dupe_passages.append(pid)
+            seen_passage_ids.add(pid)
+            segmented_passages += 1
+        works.append(w)
+
+    total_passages = (
+        sum(len(v) for v in passages_by_source.values())
+        - skipped_old_passages
+        + segmented_passages
+    )
     ok = True
     if dupe_slugs:
         ok = False

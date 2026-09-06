@@ -2,17 +2,6 @@ source_id,slug,title,corpus,open
 jw-genuine-christianity,jw/works/genuine-christianity,A Plain Account Of Genuine Christianity,jw-works,True
 jw-character,jw/works/character,The Character of a Methodist,jw-works,True
 jw-general-rules,jw/works/general-rules,The General Rules of the Methodist Societies,jw-works,True
-jw-journal-vol4-part09-section01,jw/journal/vol/vol4-part09-section01,"Journal Vol 4, Part IX Section 1 (1751-1754)",jw-journal-placeholder,True
-jw-journal-vol4-part09-section02,jw/journal/vol/vol4-part09-section02,"Journal Vol 4, Part IX Section 2 (1753-1754)",jw-journal-placeholder,True
-jw-journal-vol4-part10-section01,jw/journal/vol/vol4-part10-section01,"Journal Vol 4, Part X Section 1 (1755-1758)",jw-journal-placeholder,True
-jw-journal-vol4-part10-section02,jw/journal/vol/vol4-part10-section02,"Journal Vol 4, Part X Section 2 (1757-1758)",jw-journal-placeholder,True
-jw-journal-vol4-part11-section01,jw/journal/vol/vol4-part11-section01,"Journal Vol 4, Part XI Section 1 (1758-1760)",jw-journal-placeholder,True
-jw-journal-vol4-part11-section02,jw/journal/vol/vol4-part11-section02,"Journal Vol 4, Part XI Section 2 (1760)",jw-journal-placeholder,True
-jw-journal-vol4-part12-section01,jw/journal/vol/vol4-part12-section01,"Journal Vol 4, Part XII Section 1 (1760-1762)",jw-journal-placeholder,True
-jw-journal-vol4-part12-section02,jw/journal/vol/vol4-part12-section02,"Journal Vol 4, Part XII Section 2 (1761)",jw-journal-placeholder,True
-jw-journal-vol4-part12-section03,jw/journal/vol/vol4-part12-section03,"Journal Vol 4, Part XII Section 3 (1762)",jw-journal-placeholder,True
-jw-journal-vol4-part12-section04,jw/journal/vol/vol4-part12-section04,"Journal Vol 4, Part XII Section 4 (1762)",jw-journal-placeholder,True
-jw-journal-vol4-part13,jw/journal/vol/vol4-part13,"Journal Vol 4, Part XIII (1762-1765)",jw-journal-placeholder,True
 jw-letter-roman-catholic,jw/works/letter-roman-catholic,A Letter to a Roman Catholic,jw-works,True
 jw-means-of-grace,jw/sermons/016,The Means of Grace,jw-sermons,True
 jw-catholic-spirit,jw/sermons/039,Catholic Spirit,jw-sermons,True
@@ -24,7 +13,6 @@ cw-charge-to-keep,cw/works/charge-to-keep,A Charge to Keep I Have,cw-works,True
 cw-arise-my-soul,cw/works/arise-my-soul,"Arise, My Soul, Arise",cw-works,True
 cw-christ-risen,cw/works/christ-risen,Christ the Lord Is Risen Today,cw-works,True
 cw-christ-whose-glory,cw/works/christ-whose-glory,"Christ, Whose Glory Fills the Skies",cw-works,True
-cw-hymns-1780,cw/hymns/hymns-1780,A Collection of Hymns (1780),cw-hymns-collection-placeholder,True
 cw-come-thou-long-expected-jesus,cw/works/come-thou-long-expected-jesus,"Come, Thou Long-Expected Jesus",cw-works,True
 cw-depth-of-mercy,cw/works/depth-of-mercy,Depth of Mercy,cw-works,True
 cw-forth-in-thy-name,cw/works/forth-in-thy-name,"Forth in Thy Name, O Lord, I Go",cw-works,True
@@ -2846,7 +2834,6 @@ jw-letter-1791-27-to-susanna-knapp,jw/letters/1791/27-to-susanna-knapp,27 To Sus
 jw-letter-1791-28-to-john-ogilvie,jw/letters/1791/28-to-john-ogilvie,28 To John Ogilvie,jw-letters,True
 jw-letter-1791-29-to-walter-churchey,jw/letters/1791/29-to-walter-churchey,29 To Walter Churchey,jw-letters,True
 jw-letter-1791-30-to-william-wilberforce,jw/letters/1791/30-to-william-wilberforce,30 To William Wilberforce,jw-letters,True
-jw-notes-on-old-testament,jw/notes-ot,Notes On Old Testament,jw-notes-ot-placeholder,True
 jw-treatise-earnest-appeal-to-men-of-reason-and-religion,jw/works/earnest-appeal-to-men-of-reason-and-religion,Treatise Earnest Appeal To Men Of Reason And Religion,jw-works,True
 jw-treatise-farther-appeal-part-1,jw/works/farther-appeal-part-1,Treatise Farther Appeal Part 1,jw-works,True
 jw-treatise-farther-appeal-part-2,jw/works/farther-appeal-part-2,Treatise Farther Appeal Part 2,jw-works,True
@@ -3193,11 +3180,6 @@ cw-duke-watchnight-hymns-1750,cw/hymns/watchnight-hymns-1750,Watchnight Hymns (1
 cw-duke-answer-to-gill-1754,cw/hymns/answer-to-gill-1754,Answer to Gill (1754),cw-hymns-collection-placeholder,True
 cw-duke-all-in-all-1761,cw/hymns/all-in-all-1761,All in All (1761),cw-hymns-collection-placeholder,True
 jw-minutes-conferences-1744-1798,jw/works/minutes-conferences-1744-1798,Minutes of the Methodist Conferences (1744-1798),jw-works,True
-jw-notes-nt,jw/notes-nt,Explanatory Notes Upon the New Testament,jw-notes-nt-placeholder,True
-jw-journal-vol1-3,jw/journal/vol/vol1-3,Journal Vol1 3,jw-journal-placeholder,True
-jw-journal-vol4-7,jw/journal/vol/vol4-7,Journal Vol4 7,jw-journal-placeholder,True
-jw-journal-1760-to-1773,jw/journal/vol/1760-to-1773,To 1773,jw-journal-placeholder,True
-jw-journal-1773-to-1776,jw/journal/vol/1773-to-1776,To 1776,jw-journal-placeholder,True
 jw-sermon-001,jw/sermons/001,Salvation by Faith,jw-sermons,True
 jw-sermon-002,jw/sermons/002,The Almost Christian,jw-sermons,True
 jw-sermon-003,jw/sermons/003,Awake Thou That Sleepest,jw-sermons,True
@@ -3332,3 +3314,1756 @@ jw-sermon-138,jw/misattributed/sermon-138,Sermon 138,jw-sermons-misattributed,Fa
 jw-sermon-139,jw/sermons/149,Sermon 139,jw-sermons,True
 jw-sermon-140,jw/sermons/143,Sermon 140,jw-sermons,True
 jw-sermon-141,jw/misattributed/sermon-141,Sermon 141,jw-sermons-misattributed,False
+jw-journal-1735,jw/journal/1735,"Journal, 1735",jw-journal,True
+jw-journal-1736,jw/journal/1736,"Journal, 1736",jw-journal,True
+jw-journal-1737,jw/journal/1737,"Journal, 1737",jw-journal,True
+jw-journal-1738,jw/journal/1738,"Journal, 1738",jw-journal,True
+jw-journal-1739,jw/journal/1739,"Journal, 1739",jw-journal,True
+jw-journal-1740,jw/journal/1740,"Journal, 1740",jw-journal,True
+jw-journal-1741,jw/journal/1741,"Journal, 1741",jw-journal,True
+jw-journal-1742,jw/journal/1742,"Journal, 1742",jw-journal,True
+jw-journal-1743,jw/journal/1743,"Journal, 1743",jw-journal,True
+jw-journal-1744,jw/journal/1744,"Journal, 1744",jw-journal,True
+jw-journal-1745,jw/journal/1745,"Journal, 1745",jw-journal,True
+jw-journal-1746,jw/journal/1746,"Journal, 1746",jw-journal,True
+jw-journal-1747,jw/journal/1747,"Journal, 1747",jw-journal,True
+jw-journal-1748,jw/journal/1748,"Journal, 1748",jw-journal,True
+jw-journal-1749,jw/journal/1749,"Journal, 1749",jw-journal,True
+jw-journal-1750,jw/journal/1750,"Journal, 1750",jw-journal,True
+jw-journal-1751,jw/journal/1751,"Journal, 1751",jw-journal,True
+jw-journal-1752,jw/journal/1752,"Journal, 1752",jw-journal,True
+jw-journal-1753,jw/journal/1753,"Journal, 1753",jw-journal,True
+jw-journal-1754,jw/journal/1754,"Journal, 1754",jw-journal,True
+jw-journal-1755,jw/journal/1755,"Journal, 1755",jw-journal,True
+jw-journal-1756,jw/journal/1756,"Journal, 1756",jw-journal,True
+jw-journal-1757,jw/journal/1757,"Journal, 1757",jw-journal,True
+jw-journal-1758,jw/journal/1758,"Journal, 1758",jw-journal,True
+jw-journal-1759,jw/journal/1759,"Journal, 1759",jw-journal,True
+jw-journal-1760,jw/journal/1760,"Journal, 1760",jw-journal,True
+jw-journal-1761,jw/journal/1761,"Journal, 1761",jw-journal,True
+jw-journal-1762,jw/journal/1762,"Journal, 1762",jw-journal,True
+jw-journal-1763,jw/journal/1763,"Journal, 1763",jw-journal,True
+jw-journal-1764,jw/journal/1764,"Journal, 1764",jw-journal,True
+jw-journal-1765,jw/journal/1765,"Journal, 1765",jw-journal,True
+jw-journal-1766,jw/journal/1766,"Journal, 1766",jw-journal,True
+jw-journal-1767,jw/journal/1767,"Journal, 1767",jw-journal,True
+jw-journal-1768,jw/journal/1768,"Journal, 1768",jw-journal,True
+jw-journal-1769,jw/journal/1769,"Journal, 1769",jw-journal,True
+jw-journal-1770,jw/journal/1770,"Journal, 1770",jw-journal,True
+jw-journal-1771,jw/journal/1771,"Journal, 1771",jw-journal,True
+jw-journal-1772,jw/journal/1772,"Journal, 1772",jw-journal,True
+jw-journal-1773,jw/journal/1773,"Journal, 1773",jw-journal,True
+jw-journal-1774,jw/journal/1774,"Journal, 1774",jw-journal,True
+jw-journal-1775,jw/journal/1775,"Journal, 1775",jw-journal,True
+jw-journal-1776,jw/journal/1776,"Journal, 1776",jw-journal,True
+jw-journal-1777,jw/journal/1777,"Journal, 1777",jw-journal,True
+jw-journal-1778,jw/journal/1778,"Journal, 1778",jw-journal,True
+jw-journal-1779,jw/journal/1779,"Journal, 1779",jw-journal,True
+jw-journal-1780,jw/journal/1780,"Journal, 1780",jw-journal,True
+jw-journal-1781,jw/journal/1781,"Journal, 1781",jw-journal,True
+jw-journal-1782,jw/journal/1782,"Journal, 1782",jw-journal,True
+jw-journal-1783,jw/journal/1783,"Journal, 1783",jw-journal,True
+jw-journal-1784,jw/journal/1784,"Journal, 1784",jw-journal,True
+jw-journal-1785,jw/journal/1785,"Journal, 1785",jw-journal,True
+jw-journal-1786,jw/journal/1786,"Journal, 1786",jw-journal,True
+jw-journal-1787,jw/journal/1787,"Journal, 1787",jw-journal,True
+jw-journal-1788,jw/journal/1788,"Journal, 1788",jw-journal,True
+jw-journal-1789,jw/journal/1789,"Journal, 1789",jw-journal,True
+jw-journal-1790,jw/journal/1790,"Journal, 1790",jw-journal,True
+jw-notes-nt,jw/notes-nt/matt/1,Matthew 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/2,Matthew 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/3,Matthew 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/4,Matthew 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/5,Matthew 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/6,Matthew 6,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/7,Matthew 7,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/8,Matthew 8,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/9,Matthew 9,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/10,Matthew 10,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/11,Matthew 11,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/12,Matthew 12,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/13,Matthew 13,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/14,Matthew 14,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/15,Matthew 15,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/16,Matthew 16,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/17,Matthew 17,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/18,Matthew 18,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/19,Matthew 19,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/20,Matthew 20,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/21,Matthew 21,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/22,Matthew 22,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/23,Matthew 23,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/24,Matthew 24,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/25,Matthew 25,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/26,Matthew 26,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/27,Matthew 27,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/matt/28,Matthew 28,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/1,Mark 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/2,Mark 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/3,Mark 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/4,Mark 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/5,Mark 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/6,Mark 6,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/7,Mark 7,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/8,Mark 8,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/9,Mark 9,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/10,Mark 10,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/11,Mark 11,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/12,Mark 12,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/13,Mark 13,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/14,Mark 14,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/15,Mark 15,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/mark/16,Mark 16,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/1,Luke 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/2,Luke 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/3,Luke 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/4,Luke 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/5,Luke 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/6,Luke 6,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/7,Luke 7,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/8,Luke 8,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/9,Luke 9,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/10,Luke 10,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/11,Luke 11,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/12,Luke 12,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/13,Luke 13,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/14,Luke 14,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/15,Luke 15,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/16,Luke 16,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/17,Luke 17,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/18,Luke 18,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/19,Luke 19,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/20,Luke 20,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/21,Luke 21,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/22,Luke 22,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/23,Luke 23,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/luke/24,Luke 24,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/1,John 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/2,John 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/3,John 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/4,John 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/5,John 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/6,John 6,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/7,John 7,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/8,John 8,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/9,John 9,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/10,John 10,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/11,John 11,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/12,John 12,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/13,John 13,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/14,John 14,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/15,John 15,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/16,John 16,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/17,John 17,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/18,John 18,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/19,John 19,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/20,John 20,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/john/21,John 21,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/1,Acts 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/2,Acts 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/3,Acts 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/4,Acts 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/5,Acts 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/6,Acts 6,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/7,Acts 7,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/8,Acts 8,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/9,Acts 9,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/10,Acts 10,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/11,Acts 11,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/12,Acts 12,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/13,Acts 13,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/14,Acts 14,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/15,Acts 15,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/16,Acts 16,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/17,Acts 17,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/18,Acts 18,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/19,Acts 19,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/20,Acts 20,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/21,Acts 21,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/22,Acts 22,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/23,Acts 23,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/24,Acts 24,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/25,Acts 25,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/26,Acts 26,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/27,Acts 27,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/acts/28,Acts 28,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/1,Romans 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/2,Romans 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/3,Romans 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/4,Romans 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/5,Romans 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/6,Romans 6,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/7,Romans 7,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/8,Romans 8,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/9,Romans 9,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/10,Romans 10,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/11,Romans 11,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/12,Romans 12,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/13,Romans 13,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/14,Romans 14,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/15,Romans 15,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rom/16,Romans 16,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/1,1 Corinthians 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/2,1 Corinthians 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/3,1 Corinthians 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/4,1 Corinthians 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/5,1 Corinthians 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/6,1 Corinthians 6,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/7,1 Corinthians 7,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/8,1 Corinthians 8,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/9,1 Corinthians 9,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/10,1 Corinthians 10,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/11,1 Corinthians 11,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/12,1 Corinthians 12,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/13,1 Corinthians 13,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/14,1 Corinthians 14,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/15,1 Corinthians 15,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1cor/16,1 Corinthians 16,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2cor/1,2 Corinthians 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2cor/2,2 Corinthians 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2cor/3,2 Corinthians 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2cor/4,2 Corinthians 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2cor/5,2 Corinthians 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2cor/6,2 Corinthians 6,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2cor/7,2 Corinthians 7,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2cor/8,2 Corinthians 8,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2cor/9,2 Corinthians 9,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2cor/10,2 Corinthians 10,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2cor/11,2 Corinthians 11,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2cor/12,2 Corinthians 12,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2cor/13,2 Corinthians 13,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/gal/1,Galatians 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/gal/2,Galatians 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/gal/3,Galatians 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/gal/4,Galatians 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/gal/5,Galatians 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/gal/6,Galatians 6,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/eph/1,Ephesians 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/eph/2,Ephesians 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/eph/3,Ephesians 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/eph/4,Ephesians 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/eph/5,Ephesians 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/eph/6,Ephesians 6,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/phil/1,Philippians 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/phil/2,Philippians 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/phil/3,Philippians 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/phil/4,Philippians 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/col/1,Colossians 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/col/2,Colossians 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/col/3,Colossians 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/col/4,Colossians 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1thess/1,1 Thessalonians 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1thess/2,1 Thessalonians 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1thess/3,1 Thessalonians 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1thess/4,1 Thessalonians 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1thess/5,1 Thessalonians 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2thess/1,2 Thessalonians 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2thess/2,2 Thessalonians 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2thess/3,2 Thessalonians 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1tim/1,1 Timothy 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1tim/2,1 Timothy 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1tim/3,1 Timothy 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1tim/4,1 Timothy 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1tim/5,1 Timothy 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1tim/6,1 Timothy 6,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2tim/1,2 Timothy 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2tim/2,2 Timothy 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2tim/3,2 Timothy 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2tim/4,2 Timothy 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/titus/1,Titus 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/titus/2,Titus 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/titus/3,Titus 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/phlm/1,Philemon 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/heb/1,Hebrews 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/heb/2,Hebrews 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/heb/3,Hebrews 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/heb/4,Hebrews 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/heb/5,Hebrews 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/heb/6,Hebrews 6,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/heb/7,Hebrews 7,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/heb/8,Hebrews 8,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/heb/9,Hebrews 9,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/heb/10,Hebrews 10,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/heb/11,Hebrews 11,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/heb/12,Hebrews 12,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/heb/13,Hebrews 13,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/jas/1,James 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/jas/2,James 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/jas/3,James 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/jas/4,James 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/jas/5,James 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1pet/1,1 Peter 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1pet/2,1 Peter 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1pet/3,1 Peter 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1pet/4,1 Peter 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1pet/5,1 Peter 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2pet/1,2 Peter 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2pet/2,2 Peter 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2pet/3,2 Peter 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1john/1,1 John 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1john/2,1 John 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1john/3,1 John 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1john/4,1 John 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/1john/5,1 John 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/2john/1,2 John 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/3john/1,3 John 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/jude/1,Jude 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/1,Revelation 1,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/2,Revelation 2,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/3,Revelation 3,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/4,Revelation 4,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/5,Revelation 5,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/6,Revelation 6,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/7,Revelation 7,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/8,Revelation 8,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/9,Revelation 9,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/10,Revelation 10,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/11,Revelation 11,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/12,Revelation 12,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/13,Revelation 13,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/14,Revelation 14,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/15,Revelation 15,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/16,Revelation 16,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/17,Revelation 17,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/18,Revelation 18,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/19,Revelation 19,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/20,Revelation 20,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/21,Revelation 21,jw-notes-nt,True
+jw-notes-nt,jw/notes-nt/rev/22,Revelation 22,jw-notes-nt,True
+jw-notes-ot,jw/notes-ot/gen/1,Genesis 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/2,Genesis 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/3,Genesis 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/4,Genesis 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/5,Genesis 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/6,Genesis 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/7,Genesis 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/8,Genesis 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/9,Genesis 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/10,Genesis 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/11,Genesis 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/12,Genesis 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/13,Genesis 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/14,Genesis 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/15,Genesis 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/16,Genesis 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/17,Genesis 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/18,Genesis 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/19,Genesis 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/20,Genesis 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/21,Genesis 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/22,Genesis 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/23,Genesis 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/24,Genesis 24,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/25,Genesis 25,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/26,Genesis 26,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/27,Genesis 27,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/28,Genesis 28,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/29,Genesis 29,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/30,Genesis 30,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/31,Genesis 31,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/32,Genesis 32,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/33,Genesis 33,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/34,Genesis 34,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/35,Genesis 35,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/36,Genesis 36,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/37,Genesis 37,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/38,Genesis 38,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/39,Genesis 39,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/40,Genesis 40,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/41,Genesis 41,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/42,Genesis 42,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/43,Genesis 43,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/44,Genesis 44,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/45,Genesis 45,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/46,Genesis 46,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/47,Genesis 47,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/48,Genesis 48,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/49,Genesis 49,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/gen/50,Genesis 50,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/1,Exodus 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/2,Exodus 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/3,Exodus 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/4,Exodus 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/5,Exodus 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/6,Exodus 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/7,Exodus 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/8,Exodus 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/9,Exodus 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/10,Exodus 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/11,Exodus 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/12,Exodus 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/13,Exodus 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/14,Exodus 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/15,Exodus 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/16,Exodus 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/17,Exodus 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/18,Exodus 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/19,Exodus 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/20,Exodus 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/21,Exodus 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/22,Exodus 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/23,Exodus 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/24,Exodus 24,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/25,Exodus 25,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/26,Exodus 26,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/27,Exodus 27,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/28,Exodus 28,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/29,Exodus 29,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/30,Exodus 30,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/31,Exodus 31,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/32,Exodus 32,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/33,Exodus 33,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/34,Exodus 34,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/35,Exodus 35,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/36,Exodus 36,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/37,Exodus 37,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/38,Exodus 38,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/39,Exodus 39,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/exod/40,Exodus 40,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/1,Leviticus 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/2,Leviticus 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/3,Leviticus 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/4,Leviticus 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/5,Leviticus 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/6,Leviticus 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/7,Leviticus 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/8,Leviticus 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/9,Leviticus 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/10,Leviticus 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/11,Leviticus 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/12,Leviticus 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/13,Leviticus 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/14,Leviticus 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/15,Leviticus 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/16,Leviticus 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/17,Leviticus 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/18,Leviticus 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/19,Leviticus 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/20,Leviticus 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/21,Leviticus 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/22,Leviticus 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/23,Leviticus 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/24,Leviticus 24,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/25,Leviticus 25,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/26,Leviticus 26,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lev/27,Leviticus 27,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/1,Numbers 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/2,Numbers 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/3,Numbers 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/4,Numbers 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/5,Numbers 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/6,Numbers 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/7,Numbers 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/8,Numbers 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/9,Numbers 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/10,Numbers 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/11,Numbers 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/12,Numbers 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/13,Numbers 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/14,Numbers 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/15,Numbers 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/16,Numbers 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/17,Numbers 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/18,Numbers 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/19,Numbers 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/20,Numbers 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/21,Numbers 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/22,Numbers 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/23,Numbers 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/24,Numbers 24,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/25,Numbers 25,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/26,Numbers 26,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/27,Numbers 27,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/28,Numbers 28,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/29,Numbers 29,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/30,Numbers 30,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/31,Numbers 31,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/32,Numbers 32,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/33,Numbers 33,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/34,Numbers 34,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/35,Numbers 35,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/num/36,Numbers 36,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/1,Deuteronomy 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/2,Deuteronomy 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/3,Deuteronomy 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/4,Deuteronomy 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/5,Deuteronomy 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/6,Deuteronomy 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/7,Deuteronomy 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/8,Deuteronomy 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/9,Deuteronomy 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/10,Deuteronomy 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/11,Deuteronomy 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/12,Deuteronomy 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/13,Deuteronomy 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/14,Deuteronomy 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/15,Deuteronomy 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/16,Deuteronomy 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/17,Deuteronomy 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/18,Deuteronomy 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/19,Deuteronomy 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/20,Deuteronomy 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/21,Deuteronomy 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/22,Deuteronomy 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/23,Deuteronomy 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/24,Deuteronomy 24,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/25,Deuteronomy 25,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/26,Deuteronomy 26,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/27,Deuteronomy 27,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/28,Deuteronomy 28,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/29,Deuteronomy 29,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/30,Deuteronomy 30,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/31,Deuteronomy 31,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/32,Deuteronomy 32,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/33,Deuteronomy 33,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/deut/34,Deuteronomy 34,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/1,Joshua 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/2,Joshua 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/3,Joshua 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/4,Joshua 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/5,Joshua 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/6,Joshua 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/7,Joshua 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/8,Joshua 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/9,Joshua 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/10,Joshua 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/11,Joshua 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/12,Joshua 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/13,Joshua 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/14,Joshua 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/15,Joshua 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/16,Joshua 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/17,Joshua 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/18,Joshua 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/19,Joshua 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/20,Joshua 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/21,Joshua 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/22,Joshua 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/23,Joshua 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/josh/24,Joshua 24,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/1,Judges 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/2,Judges 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/3,Judges 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/4,Judges 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/5,Judges 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/6,Judges 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/7,Judges 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/8,Judges 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/9,Judges 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/10,Judges 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/11,Judges 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/12,Judges 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/13,Judges 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/14,Judges 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/15,Judges 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/16,Judges 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/17,Judges 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/18,Judges 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/19,Judges 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/20,Judges 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/judg/21,Judges 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ruth/1,Ruth 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ruth/2,Ruth 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ruth/3,Ruth 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ruth/4,Ruth 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/1,1 Samuel 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/2,1 Samuel 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/3,1 Samuel 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/4,1 Samuel 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/5,1 Samuel 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/6,1 Samuel 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/7,1 Samuel 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/8,1 Samuel 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/9,1 Samuel 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/10,1 Samuel 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/11,1 Samuel 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/12,1 Samuel 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/13,1 Samuel 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/14,1 Samuel 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/15,1 Samuel 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/16,1 Samuel 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/17,1 Samuel 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/18,1 Samuel 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/19,1 Samuel 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/20,1 Samuel 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/21,1 Samuel 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/22,1 Samuel 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/23,1 Samuel 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/24,1 Samuel 24,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/25,1 Samuel 25,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/26,1 Samuel 26,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/27,1 Samuel 27,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/28,1 Samuel 28,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/29,1 Samuel 29,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/30,1 Samuel 30,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1sam/31,1 Samuel 31,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/1,2 Samuel 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/2,2 Samuel 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/3,2 Samuel 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/4,2 Samuel 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/5,2 Samuel 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/6,2 Samuel 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/7,2 Samuel 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/8,2 Samuel 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/9,2 Samuel 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/10,2 Samuel 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/11,2 Samuel 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/12,2 Samuel 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/13,2 Samuel 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/14,2 Samuel 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/15,2 Samuel 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/16,2 Samuel 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/17,2 Samuel 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/18,2 Samuel 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/19,2 Samuel 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/20,2 Samuel 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/21,2 Samuel 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/22,2 Samuel 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2sam/23,2 Samuel 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/1,1 Kings 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/2,1 Kings 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/3,1 Kings 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/4,1 Kings 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/5,1 Kings 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/6,1 Kings 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/7,1 Kings 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/8,1 Kings 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/9,1 Kings 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/10,1 Kings 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/11,1 Kings 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/12,1 Kings 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/13,1 Kings 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/14,1 Kings 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/15,1 Kings 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/16,1 Kings 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/17,1 Kings 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/18,1 Kings 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/19,1 Kings 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/20,1 Kings 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/21,1 Kings 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1kgs/22,1 Kings 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/1,2 Kings 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/2,2 Kings 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/3,2 Kings 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/4,2 Kings 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/5,2 Kings 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/6,2 Kings 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/7,2 Kings 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/8,2 Kings 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/9,2 Kings 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/10,2 Kings 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/11,2 Kings 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/12,2 Kings 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/13,2 Kings 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/14,2 Kings 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/15,2 Kings 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/16,2 Kings 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/17,2 Kings 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/18,2 Kings 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/19,2 Kings 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/20,2 Kings 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/21,2 Kings 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/22,2 Kings 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/23,2 Kings 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/24,2 Kings 24,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2kgs/25,2 Kings 25,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/1,1 Chronicles 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/2,1 Chronicles 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/3,1 Chronicles 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/4,1 Chronicles 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/5,1 Chronicles 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/6,1 Chronicles 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/7,1 Chronicles 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/8,1 Chronicles 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/9,1 Chronicles 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/10,1 Chronicles 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/11,1 Chronicles 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/12,1 Chronicles 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/13,1 Chronicles 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/14,1 Chronicles 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/15,1 Chronicles 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/16,1 Chronicles 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/17,1 Chronicles 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/18,1 Chronicles 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/19,1 Chronicles 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/20,1 Chronicles 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/21,1 Chronicles 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/22,1 Chronicles 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/23,1 Chronicles 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/24,1 Chronicles 24,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/25,1 Chronicles 25,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/26,1 Chronicles 26,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/27,1 Chronicles 27,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/28,1 Chronicles 28,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/1chr/29,1 Chronicles 29,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/1,2 Chronicles 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/2,2 Chronicles 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/3,2 Chronicles 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/4,2 Chronicles 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/5,2 Chronicles 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/6,2 Chronicles 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/7,2 Chronicles 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/8,2 Chronicles 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/9,2 Chronicles 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/10,2 Chronicles 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/11,2 Chronicles 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/12,2 Chronicles 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/13,2 Chronicles 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/14,2 Chronicles 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/15,2 Chronicles 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/16,2 Chronicles 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/17,2 Chronicles 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/18,2 Chronicles 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/19,2 Chronicles 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/20,2 Chronicles 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/21,2 Chronicles 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/22,2 Chronicles 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/23,2 Chronicles 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/24,2 Chronicles 24,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/25,2 Chronicles 25,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/26,2 Chronicles 26,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/27,2 Chronicles 27,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/28,2 Chronicles 28,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/29,2 Chronicles 29,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/30,2 Chronicles 30,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/31,2 Chronicles 31,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/32,2 Chronicles 32,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/33,2 Chronicles 33,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/34,2 Chronicles 34,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/35,2 Chronicles 35,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/2chr/36,2 Chronicles 36,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezra/1,Ezra 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezra/2,Ezra 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezra/3,Ezra 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezra/4,Ezra 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezra/5,Ezra 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezra/6,Ezra 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezra/7,Ezra 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezra/8,Ezra 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezra/9,Ezra 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezra/10,Ezra 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/neh/1,Nehemiah 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/neh/2,Nehemiah 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/neh/3,Nehemiah 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/neh/4,Nehemiah 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/neh/5,Nehemiah 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/neh/6,Nehemiah 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/neh/7,Nehemiah 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/neh/8,Nehemiah 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/neh/9,Nehemiah 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/neh/10,Nehemiah 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/neh/11,Nehemiah 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/neh/12,Nehemiah 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/neh/13,Nehemiah 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/esth/1,Esther 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/esth/2,Esther 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/esth/3,Esther 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/esth/4,Esther 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/esth/5,Esther 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/esth/6,Esther 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/esth/7,Esther 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/esth/8,Esther 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/esth/9,Esther 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/esth/10,Esther 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/1,Job 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/2,Job 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/3,Job 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/4,Job 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/5,Job 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/6,Job 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/7,Job 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/8,Job 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/9,Job 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/10,Job 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/11,Job 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/12,Job 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/13,Job 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/14,Job 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/15,Job 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/16,Job 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/17,Job 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/18,Job 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/19,Job 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/20,Job 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/21,Job 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/22,Job 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/23,Job 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/24,Job 24,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/25,Job 25,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/26,Job 26,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/27,Job 27,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/28,Job 28,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/29,Job 29,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/30,Job 30,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/31,Job 31,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/32,Job 32,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/33,Job 33,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/34,Job 34,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/35,Job 35,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/36,Job 36,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/37,Job 37,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/38,Job 38,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/39,Job 39,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/40,Job 40,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/41,Job 41,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/job/42,Job 42,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/1,Proverbs 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/2,Proverbs 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/3,Proverbs 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/4,Proverbs 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/5,Proverbs 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/6,Proverbs 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/7,Proverbs 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/8,Proverbs 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/9,Proverbs 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/10,Proverbs 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/11,Proverbs 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/12,Proverbs 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/13,Proverbs 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/14,Proverbs 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/15,Proverbs 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/16,Proverbs 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/17,Proverbs 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/18,Proverbs 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/19,Proverbs 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/20,Proverbs 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/21,Proverbs 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/22,Proverbs 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/23,Proverbs 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/24,Proverbs 24,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/25,Proverbs 25,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/26,Proverbs 26,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/27,Proverbs 27,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/28,Proverbs 28,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/29,Proverbs 29,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/30,Proverbs 30,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/prov/31,Proverbs 31,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/eccl/1,Ecclesiastes 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/eccl/2,Ecclesiastes 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/eccl/3,Ecclesiastes 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/eccl/4,Ecclesiastes 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/eccl/5,Ecclesiastes 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/eccl/6,Ecclesiastes 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/eccl/7,Ecclesiastes 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/eccl/8,Ecclesiastes 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/eccl/9,Ecclesiastes 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/eccl/10,Ecclesiastes 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/eccl/11,Ecclesiastes 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/eccl/12,Ecclesiastes 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/song/1,Song of Solomon 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/song/2,Song of Solomon 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/song/3,Song of Solomon 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/song/4,Song of Solomon 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/song/5,Song of Solomon 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/song/6,Song of Solomon 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/song/7,Song of Solomon 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/song/8,Song of Solomon 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/1,Jeremiah 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/2,Jeremiah 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/3,Jeremiah 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/4,Jeremiah 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/5,Jeremiah 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/6,Jeremiah 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/7,Jeremiah 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/8,Jeremiah 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/9,Jeremiah 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/10,Jeremiah 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/11,Jeremiah 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/12,Jeremiah 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/13,Jeremiah 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/14,Jeremiah 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/15,Jeremiah 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/16,Jeremiah 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/17,Jeremiah 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/18,Jeremiah 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/19,Jeremiah 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/20,Jeremiah 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/21,Jeremiah 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/22,Jeremiah 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/23,Jeremiah 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/24,Jeremiah 24,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/25,Jeremiah 25,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/26,Jeremiah 26,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/27,Jeremiah 27,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/28,Jeremiah 28,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/29,Jeremiah 29,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/30,Jeremiah 30,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/31,Jeremiah 31,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/32,Jeremiah 32,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/33,Jeremiah 33,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/34,Jeremiah 34,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/35,Jeremiah 35,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/36,Jeremiah 36,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/37,Jeremiah 37,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/38,Jeremiah 38,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/39,Jeremiah 39,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/40,Jeremiah 40,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/41,Jeremiah 41,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/42,Jeremiah 42,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/43,Jeremiah 43,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/44,Jeremiah 44,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/45,Jeremiah 45,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/46,Jeremiah 46,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/47,Jeremiah 47,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/48,Jeremiah 48,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/49,Jeremiah 49,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/50,Jeremiah 50,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/51,Jeremiah 51,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jer/52,Jeremiah 52,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lam/1,Lamentations 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lam/2,Lamentations 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lam/3,Lamentations 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lam/4,Lamentations 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/lam/5,Lamentations 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/1,Ezekiel 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/2,Ezekiel 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/3,Ezekiel 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/4,Ezekiel 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/5,Ezekiel 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/6,Ezekiel 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/7,Ezekiel 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/8,Ezekiel 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/9,Ezekiel 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/10,Ezekiel 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/11,Ezekiel 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/12,Ezekiel 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/13,Ezekiel 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/14,Ezekiel 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/15,Ezekiel 15,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/16,Ezekiel 16,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/17,Ezekiel 17,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/18,Ezekiel 18,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/19,Ezekiel 19,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/20,Ezekiel 20,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/21,Ezekiel 21,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/22,Ezekiel 22,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/23,Ezekiel 23,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/24,Ezekiel 24,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/25,Ezekiel 25,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/26,Ezekiel 26,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/27,Ezekiel 27,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/28,Ezekiel 28,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/29,Ezekiel 29,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/30,Ezekiel 30,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/31,Ezekiel 31,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/32,Ezekiel 32,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/33,Ezekiel 33,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/34,Ezekiel 34,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/35,Ezekiel 35,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/36,Ezekiel 36,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/37,Ezekiel 37,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/38,Ezekiel 38,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/39,Ezekiel 39,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/40,Ezekiel 40,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/41,Ezekiel 41,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/42,Ezekiel 42,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/43,Ezekiel 43,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/44,Ezekiel 44,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/45,Ezekiel 45,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/46,Ezekiel 46,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/47,Ezekiel 47,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/ezek/48,Ezekiel 48,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/dan/1,Daniel 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/dan/2,Daniel 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/dan/3,Daniel 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/dan/4,Daniel 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/dan/5,Daniel 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/dan/6,Daniel 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/dan/7,Daniel 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/dan/8,Daniel 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/dan/9,Daniel 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/dan/10,Daniel 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/dan/11,Daniel 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/dan/12,Daniel 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hos/1,Hosea 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hos/2,Hosea 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hos/3,Hosea 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hos/4,Hosea 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hos/5,Hosea 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hos/6,Hosea 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hos/7,Hosea 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hos/8,Hosea 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hos/9,Hosea 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hos/10,Hosea 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hos/11,Hosea 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hos/12,Hosea 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hos/13,Hosea 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hos/14,Hosea 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/joel/1,Joel 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/joel/2,Joel 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/joel/3,Joel 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/amos/1,Amos 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/amos/2,Amos 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/amos/3,Amos 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/amos/4,Amos 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/amos/5,Amos 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/amos/6,Amos 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/amos/7,Amos 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/amos/8,Amos 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/amos/9,Amos 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/obad/1,Obadiah 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jonah/1,Jonah 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jonah/2,Jonah 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jonah/3,Jonah 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/jonah/4,Jonah 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/mic/1,Micah 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/mic/2,Micah 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/mic/3,Micah 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/mic/4,Micah 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/mic/5,Micah 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/mic/6,Micah 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/mic/7,Micah 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/nah/1,Nahum 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/nah/2,Nahum 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/nah/3,Nahum 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hab/1,Habakkuk 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hab/2,Habakkuk 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hab/3,Habakkuk 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hag/1,Haggai 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/hag/2,Haggai 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/zech/1,Zechariah 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/zech/2,Zechariah 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/zech/3,Zechariah 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/zech/4,Zechariah 4,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/zech/5,Zechariah 5,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/zech/6,Zechariah 6,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/zech/7,Zechariah 7,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/zech/8,Zechariah 8,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/zech/9,Zechariah 9,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/zech/10,Zechariah 10,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/zech/11,Zechariah 11,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/zech/12,Zechariah 12,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/zech/13,Zechariah 13,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/zech/14,Zechariah 14,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/mal/1,Malachi 1,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/mal/2,Malachi 2,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/mal/3,Malachi 3,jw-notes-ot,True
+jw-notes-ot,jw/notes-ot/mal/4,Malachi 4,jw-notes-ot,True
+cw-hymns-1780,cw/hymns/1780/1,Hymn 1,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/2,Hymn 2,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/3,Hymn 3,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/4,Hymn 4,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/5,Hymn 5,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/6,Hymn 6,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/7,Hymn 7,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/8,Hymn 8,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/9,Hymn 9,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/10,Hymn 10,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/11,Hymn 11,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/12,Hymn 12,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/13,Hymn 13,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/14,Hymn 14,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/15,Hymn 15,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/16,Hymn 16,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/17,Hymn 17,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/18,Hymn 18,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/19,Hymn 19,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/20,Hymn 20,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/21,Hymn 21,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/22,Hymn 22,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/23,Hymn 23,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/24,Hymn 24,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/25,Hymn 25,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/26,Hymn 26,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/27,Hymn 27,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/28,Hymn 28,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/29,Hymn 29,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/30,Hymn 30,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/31,Hymn 31,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/32,Hymn 32,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/33,Hymn 33,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/34,Hymn 34,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/35,Hymn 35,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/36,Hymn 36,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/37,Hymn 37,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/38,Hymn 38,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/39,Hymn 39,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/40,Hymn 40,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/41,Hymn 41,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/42,Hymn 42,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/43,Hymn 43,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/44,Hymn 44,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/45,Hymn 45,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/46,Hymn 46,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/47,Hymn 47,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/48,Hymn 48,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/49,Hymn 49,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/50,Hymn 50,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/51,Hymn 51,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/52,Hymn 52,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/53,Hymn 53,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/54,Hymn 54,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/55,Hymn 55,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/56,Hymn 56,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/57,Hymn 57,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/58,Hymn 58,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/59,Hymn 59,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/60,Hymn 60,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/61,Hymn 61,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/62,Hymn 62,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/63,Hymn 63,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/64,Hymn 64,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/65,Hymn 65,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/66,Hymn 66,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/67,Hymn 67,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/68,Hymn 68,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/69,Hymn 69,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/70,Hymn 70,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/71,Hymn 71,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/72,Hymn 72,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/73,Hymn 73,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/74,Hymn 74,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/75,Hymn 75,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/76,Hymn 76,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/77,Hymn 77,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/78,Hymn 78,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/79,Hymn 79,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/80,Hymn 80,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/81,Hymn 81,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/82,Hymn 82,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/83,Hymn 83,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/84,Hymn 84,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/85,Hymn 85,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/86,Hymn 86,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/87,Hymn 87,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/88,Hymn 88,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/89,Hymn 89,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/90,Hymn 90,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/91,Hymn 91,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/92,Hymn 92,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/93,Hymn 93,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/94,Hymn 94,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/95,Hymn 95,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/96,Hymn 96,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/97,Hymn 97,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/98,Hymn 98,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/99,Hymn 99,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/100,Hymn 100,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/101,Hymn 101,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/102,Hymn 102,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/103,Hymn 103,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/104,Hymn 104,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/105,Hymn 105,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/106,Hymn 106,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/107,Hymn 107,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/108,Hymn 108,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/109,Hymn 109,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/110,Hymn 110,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/111,Hymn 111,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/112,Hymn 112,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/113,Hymn 113,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/114,Hymn 114,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/115,Hymn 115,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/116,Hymn 116,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/117,Hymn 117,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/118,Hymn 118,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/119,Hymn 119,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/120,Hymn 120,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/121,Hymn 121,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/122,Hymn 122,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/123,Hymn 123,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/124,Hymn 124,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/125,Hymn 125,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/126,Hymn 126,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/127,Hymn 127,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/128,Hymn 128,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/129,Hymn 129,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/130,Hymn 130,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/131,Hymn 131,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/132,Hymn 132,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/133,Hymn 133,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/134,Hymn 134,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/135,Hymn 135,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/136,Hymn 136,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/137,Hymn 137,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/138,Hymn 138,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/139,Hymn 139,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/140,Hymn 140,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/141,Hymn 141,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/142,Hymn 142,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/143,Hymn 143,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/144,Hymn 144,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/145,Hymn 145,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/146,Hymn 146,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/147,Hymn 147,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/148,Hymn 148,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/149,Hymn 149,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/150,Hymn 150,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/151,Hymn 151,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/152,Hymn 152,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/153,Hymn 153,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/154,Hymn 154,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/155,Hymn 155,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/156,Hymn 156,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/157,Hymn 157,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/158,Hymn 158,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/159,Hymn 159,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/160,Hymn 160,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/161,Hymn 161,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/162,Hymn 162,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/163,Hymn 163,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/164,Hymn 164,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/165,Hymn 165,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/166,Hymn 166,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/167,Hymn 167,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/168,Hymn 168,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/169,Hymn 169,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/170,Hymn 170,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/171,Hymn 171,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/172,Hymn 172,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/173,Hymn 173,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/174,Hymn 174,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/175,Hymn 175,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/176,Hymn 176,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/177,Hymn 177,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/178,Hymn 178,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/179,Hymn 179,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/180,Hymn 180,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/181,Hymn 181,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/182,Hymn 182,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/183,Hymn 183,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/184,Hymn 184,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/185,Hymn 185,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/186,Hymn 186,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/187,Hymn 187,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/188,Hymn 188,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/189,Hymn 189,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/190,Hymn 190,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/191,Hymn 191,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/192,Hymn 192,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/193,Hymn 193,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/194,Hymn 194,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/195,Hymn 195,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/196,Hymn 196,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/197,Hymn 197,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/198,Hymn 198,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/199,Hymn 199,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/200,Hymn 200,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/201,Hymn 201,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/202,Hymn 202,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/203,Hymn 203,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/204,Hymn 204,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/205,Hymn 205,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/206,Hymn 206,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/207,Hymn 207,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/208,Hymn 208,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/209,Hymn 209,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/210,Hymn 210,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/211,Hymn 211,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/212,Hymn 212,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/213,Hymn 213,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/214,Hymn 214,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/215,Hymn 215,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/216,Hymn 216,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/217,Hymn 217,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/218,Hymn 218,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/219,Hymn 219,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/220,Hymn 220,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/221,Hymn 221,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/222,Hymn 222,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/223,Hymn 223,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/224,Hymn 224,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/225,Hymn 225,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/226,Hymn 226,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/227,Hymn 227,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/228,Hymn 228,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/229,Hymn 229,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/230,Hymn 230,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/231,Hymn 231,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/232,Hymn 232,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/233,Hymn 233,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/234,Hymn 234,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/235,Hymn 235,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/236,Hymn 236,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/237,Hymn 237,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/238,Hymn 238,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/239,Hymn 239,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/240,Hymn 240,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/241,Hymn 241,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/242,Hymn 242,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/243,Hymn 243,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/244,Hymn 244,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/245,Hymn 245,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/246,Hymn 246,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/247,Hymn 247,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/248,Hymn 248,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/249,Hymn 249,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/250,Hymn 250,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/251,Hymn 251,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/252,Hymn 252,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/253,Hymn 253,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/254,Hymn 254,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/255,Hymn 255,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/256,Hymn 256,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/257,Hymn 257,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/258,Hymn 258,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/259,Hymn 259,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/260,Hymn 260,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/261,Hymn 261,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/262,Hymn 262,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/263,Hymn 263,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/264,Hymn 264,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/265,Hymn 265,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/266,Hymn 266,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/267,Hymn 267,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/268,Hymn 268,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/269,Hymn 269,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/270,Hymn 270,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/271,Hymn 271,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/272,Hymn 272,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/273,Hymn 273,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/274,Hymn 274,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/275,Hymn 275,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/276,Hymn 276,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/277,Hymn 277,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/278,Hymn 278,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/279,Hymn 279,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/280,Hymn 280,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/281,Hymn 281,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/282,Hymn 282,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/283,Hymn 283,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/284,Hymn 284,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/285,Hymn 285,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/286,Hymn 286,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/287,Hymn 287,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/288,Hymn 288,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/289,Hymn 289,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/290,Hymn 290,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/291,Hymn 291,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/292,Hymn 292,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/293,Hymn 293,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/294,Hymn 294,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/295,Hymn 295,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/296,Hymn 296,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/297,Hymn 297,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/298,Hymn 298,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/299,Hymn 299,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/300,Hymn 300,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/301,Hymn 301,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/302,Hymn 302,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/303,Hymn 303,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/304,Hymn 304,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/305,Hymn 305,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/306,Hymn 306,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/307,Hymn 307,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/308,Hymn 308,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/309,Hymn 309,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/310,Hymn 310,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/311,Hymn 311,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/312,Hymn 312,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/313,Hymn 313,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/314,Hymn 314,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/315,Hymn 315,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/316,Hymn 316,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/317,Hymn 317,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/318,Hymn 318,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/319,Hymn 319,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/320,Hymn 320,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/321,Hymn 321,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/322,Hymn 322,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/323,Hymn 323,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/324,Hymn 324,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/325,Hymn 325,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/326,Hymn 326,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/327,Hymn 327,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/328,Hymn 328,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/329,Hymn 329,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/330,Hymn 330,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/331,Hymn 331,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/332,Hymn 332,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/333,Hymn 333,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/334,Hymn 334,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/335,Hymn 335,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/336,Hymn 336,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/337,Hymn 337,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/338,Hymn 338,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/339,Hymn 339,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/340,Hymn 340,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/341,Hymn 341,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/342,Hymn 342,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/343,Hymn 343,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/344,Hymn 344,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/345,Hymn 345,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/346,Hymn 346,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/347,Hymn 347,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/348,Hymn 348,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/349,Hymn 349,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/350,Hymn 350,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/351,Hymn 351,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/352,Hymn 352,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/353,Hymn 353,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/354,Hymn 354,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/355,Hymn 355,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/356,Hymn 356,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/357,Hymn 357,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/358,Hymn 358,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/359,Hymn 359,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/360,Hymn 360,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/361,Hymn 361,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/362,Hymn 362,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/363,Hymn 363,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/364,Hymn 364,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/365,Hymn 365,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/366,Hymn 366,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/367,Hymn 367,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/368,Hymn 368,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/369,Hymn 369,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/370,Hymn 370,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/371,Hymn 371,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/372,Hymn 372,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/373,Hymn 373,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/374,Hymn 374,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/375,Hymn 375,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/376,Hymn 376,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/377,Hymn 377,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/378,Hymn 378,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/379,Hymn 379,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/380,Hymn 380,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/381,Hymn 381,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/382,Hymn 382,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/383,Hymn 383,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/384,Hymn 384,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/385,Hymn 385,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/386,Hymn 386,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/387,Hymn 387,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/388,Hymn 388,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/389,Hymn 389,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/390,Hymn 390,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/391,Hymn 391,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/392,Hymn 392,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/393,Hymn 393,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/394,Hymn 394,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/395,Hymn 395,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/396,Hymn 396,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/397,Hymn 397,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/398,Hymn 398,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/399,Hymn 399,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/400,Hymn 400,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/401,Hymn 401,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/402,Hymn 402,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/403,Hymn 403,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/404,Hymn 404,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/405,Hymn 405,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/406,Hymn 406,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/407,Hymn 407,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/408,Hymn 408,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/409,Hymn 409,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/410,Hymn 410,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/411,Hymn 411,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/412,Hymn 412,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/413,Hymn 413,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/414,Hymn 414,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/415,Hymn 415,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/416,Hymn 416,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/417,Hymn 417,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/418,Hymn 418,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/419,Hymn 419,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/420,Hymn 420,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/421,Hymn 421,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/422,Hymn 422,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/423,Hymn 423,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/424,Hymn 424,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/425,Hymn 425,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/426,Hymn 426,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/427,Hymn 427,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/428,Hymn 428,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/429,Hymn 429,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/430,Hymn 430,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/431,Hymn 431,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/432,Hymn 432,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/433,Hymn 433,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/434,Hymn 434,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/435,Hymn 435,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/436,Hymn 436,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/437,Hymn 437,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/438,Hymn 438,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/439,Hymn 439,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/440,Hymn 440,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/441,Hymn 441,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/442,Hymn 442,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/443,Hymn 443,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/444,Hymn 444,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/445,Hymn 445,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/446,Hymn 446,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/447,Hymn 447,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/448,Hymn 448,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/449,Hymn 449,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/450,Hymn 450,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/451,Hymn 451,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/452,Hymn 452,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/453,Hymn 453,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/454,Hymn 454,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/455,Hymn 455,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/456,Hymn 456,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/457,Hymn 457,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/458,Hymn 458,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/459,Hymn 459,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/460,Hymn 460,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/461,Hymn 461,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/462,Hymn 462,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/463,Hymn 463,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/464,Hymn 464,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/465,Hymn 465,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/466,Hymn 466,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/467,Hymn 467,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/468,Hymn 468,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/469,Hymn 469,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/470,Hymn 470,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/471,Hymn 471,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/472,Hymn 472,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/473,Hymn 473,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/474,Hymn 474,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/475,Hymn 475,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/476,Hymn 476,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/477,Hymn 477,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/478,Hymn 478,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/479,Hymn 479,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/480,Hymn 480,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/481,Hymn 481,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/482,Hymn 482,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/483,Hymn 483,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/484,Hymn 484,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/485,Hymn 485,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/486,Hymn 486,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/487,Hymn 487,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/488,Hymn 488,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/489,Hymn 489,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/490,Hymn 490,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/491,Hymn 491,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/492,Hymn 492,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/493,Hymn 493,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/494,Hymn 494,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/495,Hymn 495,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/496,Hymn 496,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/497,Hymn 497,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/498,Hymn 498,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/499,Hymn 499,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/500,Hymn 500,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/501,Hymn 501,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/502,Hymn 502,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/503,Hymn 503,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/504,Hymn 504,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/505,Hymn 505,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/506,Hymn 506,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/507,Hymn 507,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/508,Hymn 508,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/509,Hymn 509,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/510,Hymn 510,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/511,Hymn 511,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/512,Hymn 512,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/513,Hymn 513,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/514,Hymn 514,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/515,Hymn 515,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/516,Hymn 516,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/517,Hymn 517,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/518,Hymn 518,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/519,Hymn 519,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/520,Hymn 520,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/521,Hymn 521,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/522,Hymn 522,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/523,Hymn 523,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/524,Hymn 524,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/525,Hymn 525,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/526,Hymn 526,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/527,Hymn 527,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/528,Hymn 528,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/529,Hymn 529,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/530,Hymn 530,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/531,Hymn 531,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/532,Hymn 532,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/533,Hymn 533,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/534,Hymn 534,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/535,Hymn 535,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/536,Hymn 536,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/537,Hymn 537,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/538,Hymn 538,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/539,Hymn 539,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/540,Hymn 540,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/541,Hymn 541,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/542,Hymn 542,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/543,Hymn 543,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/544,Hymn 544,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/545,Hymn 545,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/546,Hymn 546,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/547,Hymn 547,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/548,Hymn 548,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/549,Hymn 549,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/550,Hymn 550,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/551,Hymn 551,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/552,Hymn 552,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/553,Hymn 553,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/554,Hymn 554,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/555,Hymn 555,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/556,Hymn 556,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/557,Hymn 557,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/558,Hymn 558,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/559,Hymn 559,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/560,Hymn 560,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/561,Hymn 561,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/562,Hymn 562,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/563,Hymn 563,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/564,Hymn 564,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/565,Hymn 565,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/566,Hymn 566,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/567,Hymn 567,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/568,Hymn 568,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/569,Hymn 569,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/570,Hymn 570,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/571,Hymn 571,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/572,Hymn 572,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/573,Hymn 573,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/574,Hymn 574,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/575,Hymn 575,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/576,Hymn 576,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/577,Hymn 577,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/578,Hymn 578,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/579,Hymn 579,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/580,Hymn 580,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/581,Hymn 581,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/582,Hymn 582,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/583,Hymn 583,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/584,Hymn 584,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/585,Hymn 585,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/586,Hymn 586,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/587,Hymn 587,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/588,Hymn 588,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/589,Hymn 589,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/590,Hymn 590,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/591,Hymn 591,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/592,Hymn 592,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/593,Hymn 593,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/594,Hymn 594,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/595,Hymn 595,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/596,Hymn 596,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/597,Hymn 597,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/598,Hymn 598,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/599,Hymn 599,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/600,Hymn 600,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/601,Hymn 601,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/602,Hymn 602,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/603,Hymn 603,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/604,Hymn 604,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/605,Hymn 605,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/606,Hymn 606,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/607,Hymn 607,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/608,Hymn 608,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/609,Hymn 609,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/610,Hymn 610,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/611,Hymn 611,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/612,Hymn 612,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/613,Hymn 613,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/614,Hymn 614,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/615,Hymn 615,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/616,Hymn 616,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/617,Hymn 617,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/618,Hymn 618,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/619,Hymn 619,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/620,Hymn 620,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/621,Hymn 621,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/622,Hymn 622,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/623,Hymn 623,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/624,Hymn 624,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/625,Hymn 625,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/626,Hymn 626,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/627,Hymn 627,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/628,Hymn 628,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/629,Hymn 629,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/630,Hymn 630,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/631,Hymn 631,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/632,Hymn 632,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/633,Hymn 633,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/634,Hymn 634,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/635,Hymn 635,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/636,Hymn 636,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/637,Hymn 637,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/638,Hymn 638,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/639,Hymn 639,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/640,Hymn 640,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/641,Hymn 641,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/642,Hymn 642,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/643,Hymn 643,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/644,Hymn 644,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/645,Hymn 645,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/646,Hymn 646,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/647,Hymn 647,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/648,Hymn 648,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/649,Hymn 649,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/650,Hymn 650,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/651,Hymn 651,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/652,Hymn 652,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/653,Hymn 653,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/654,Hymn 654,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/655,Hymn 655,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/656,Hymn 656,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/657,Hymn 657,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/658,Hymn 658,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/659,Hymn 659,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/660,Hymn 660,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/661,Hymn 661,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/662,Hymn 662,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/663,Hymn 663,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/664,Hymn 664,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/665,Hymn 665,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/666,Hymn 666,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/667,Hymn 667,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/668,Hymn 668,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/669,Hymn 669,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/670,Hymn 670,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/671,Hymn 671,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/672,Hymn 672,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/673,Hymn 673,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/674,Hymn 674,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/675,Hymn 675,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/676,Hymn 676,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/677,Hymn 677,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/678,Hymn 678,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/679,Hymn 679,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/680,Hymn 680,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/681,Hymn 681,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/682,Hymn 682,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/683,Hymn 683,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/684,Hymn 684,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/685,Hymn 685,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/686,Hymn 686,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/687,Hymn 687,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/688,Hymn 688,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/689,Hymn 689,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/690,Hymn 690,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/691,Hymn 691,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/692,Hymn 692,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/693,Hymn 693,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/694,Hymn 694,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/695,Hymn 695,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/696,Hymn 696,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/697,Hymn 697,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/698,Hymn 698,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/699,Hymn 699,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/700,Hymn 700,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/701,Hymn 701,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/702,Hymn 702,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/703,Hymn 703,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/704,Hymn 704,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/705,Hymn 705,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/706,Hymn 706,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/707,Hymn 707,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/708,Hymn 708,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/709,Hymn 709,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/710,Hymn 710,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/711,Hymn 711,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/712,Hymn 712,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/713,Hymn 713,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/714,Hymn 714,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/715,Hymn 715,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/716,Hymn 716,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/717,Hymn 717,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/718,Hymn 718,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/719,Hymn 719,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/720,Hymn 720,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/721,Hymn 721,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/722,Hymn 722,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/723,Hymn 723,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/724,Hymn 724,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/725,Hymn 725,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/726,Hymn 726,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/727,Hymn 727,cw-hymns-1780,True
+cw-hymns-1780,cw/hymns/1780/728,Hymn 728,cw-hymns-1780,True
