@@ -144,9 +144,10 @@ The 15 journal sources are OCR-repaired but undated at the passage level. Method
      1760-05-05, exactly the gap between the Emory spine (ends 1758-06-16) and the
      London vol III spine (starts 1760-05-06). Without it the corpus has a 23-month
      hole. Applying the ledger gives continuous coverage **1728-02-01 → 1790-10-24**.
-2. Entry heads + dates — **method settled and built 2026-09-06**
-   (`scripts/journal_boundaries.py` → `metadata/journal-entry-boundaries.csv`),
-   **coverage not yet good enough to wire**. What the pass established:
+2. Entry heads + dates — **DONE 2026-09-06** (Sonnet, same session as the boundary
+   pass) → `scripts/journal_boundaries.py` → `metadata/journal-entry-boundaries.csv`,
+   **96.1% dated (10,194 / 10,605), past the plan's 95% target**. What the pass
+   established:
    - **Wesley states the weekday of every entry, so dates self-validate.** Pre-1752
      dates are Julian (Britain switched 1752-09-14); the validator handles both and
      was checked against 12 known entries across all four editions, 12/12.
@@ -155,16 +156,44 @@ The 15 journal sources are OCR-repaired but undated at the passage level. Method
      months regardless of run length (flat from 1 to 8 entries). Date resolution is
      therefore a *constrained walk* — explicit signals set state, month advances only
      when the day number goes backwards, weekday + forward chronology are hard
-     constraints — not an inference.
+     constraints — not an inference. A fully-stated date (year AND month both given)
+     is trusted on the weekday check alone, never second-guessed against a
+     possibly-already-wrong prior state.
    - **The inline-entry trap:** entries run into the previous line with no `.—`
      separator ("Friday, 17. I went to…") are ordinary entries. A regex tuned only on
      `.—` silently drops them.
-   - **Current state: 10,605 entry heads detected, 6,188 (58%) dated with calendar
-     verification**, the rest flagged, never guessed. Known weakness: drift at extract
-     tails (1790 is inflated; dates past the Journal's documented 1790-10-24 end are
-     flagged `out-of-range` rather than published). Getting this to ≥95% is the next
-     session's job — the traps above are all documented, and no wrong date is silently
-     emitted in the meantime.
+   - **process_corpus.py's cleaning strips the FROM/TO extract headers as
+     front-matter noise** — they don't exist in `cleaned/`, only in `raw/`. Recovered
+     by finding each header + its extract's first entry in the RAW file, then mapping
+     that entry's body text onto the equivalent offset in the CLEANED file via a
+     letters-only anchor (`find_checkpoints`). Without this, only 1 of vol1-3's 9
+     extracts had a reseed point at all.
+   - **Curnock's `[Journal, YYYY]` page-tag can lag a New Year's Day entry that
+     announces the rollover inline** ("[Journal, 1755] 1756, Jan. 1.-") — Curnock
+     updates the tag per printed page, not per calendar day. An inline year now
+     outranks the tag, and state-continuation is tried before the tag's year is
+     trusted as absolute. This one fix alone took the weakest Curnock files from
+     ~50% to 97-100%.
+   - **A second-pass rescue catches entries the constrained walk can never reach at
+     all.** Emory's opening extract, "FROM FEBRUARY 1, 1728, TO AUGUST 12, 1738",
+     turns out to be Wesley's decade-spanning retrospective narrative quoting
+     Moravian testimonies out of strict order, not a day-by-day diary — by the time
+     a forward walk reaches **the Aldersgate entry** ("Wednesday, May 24" = 1738,
+     the date the site's own Strangely Warmed Index is named for) its state is stuck
+     a decade earlier. `rescue_with_nearby_year` recovers these by searching
+     backward in the actual text for the nearest bare year mention. Aldersgate now
+     resolves correctly. Known imperfection: one entry (of 729 rescued) pulled a
+     wrong year from an embedded quoted narrative with its own date context —
+     tagged `status="rescued"`, distinct from the primary walk's `"ok"`, so it reads
+     as lower-confidence rather than silently equal.
+   - Dates past the Journal's documented 1735-10-14 → 1790-10-24 span are flagged
+     `out-of-range` rather than published.
+   - Remaining 3.9% unresolved is concentrated in the two files this doesn't need to
+     be perfect on: `vol4-7` (closing as a duplicate per the overlap ledger) and the
+     rest of vol1-3's decade-spanning preface (the rescue catches the highest-value
+     entry; a few obscure ones in that same essay stay flagged). Every file that
+     matters for the actual year-page build — the three KEEP-SPINE files and
+     `vol4-part11` — is at 87-100%.
 3. Re-chunk on entry boundaries into a parallel file `chunked/journal_by_entry.jsonl`
    (non-destructive; the serving file is untouched until Phase 5). Each entry passage:
    `work = jw/journal/{YYYY}`, `anchor = {YYYY-MM-DD}` (+`-b`, `-c` for multiple

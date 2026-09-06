@@ -18,11 +18,32 @@ that would silently misfile entries onto the wrong year page.
 
 So the date is resolved by a constrained walk rather than by inference alone:
   - explicit signals set the state (Curnock's "[Journal, 1758]" tag, an explicit
-    "1752. MARCH 15, Sun.-", or a month named in the entry head);
+    "1752. MARCH 15, Sun.-", or a month named in the entry head) — but a
+    fully-stated date (year AND month both given) is trusted on the weekday
+    check alone, never second-guessed against a possibly-already-wrong prior
+    state, and a ctx_year tag is treated as advisory, not absolute: it can lag
+    a New Year's Day entry that announces the rollover inline (Curnock updates
+    it per printed page, not per calendar day), so state-continuation steps
+    are tried with their own computed year before falling back to a year-wide
+    search under the tag's year, then under tag-year+1;
   - otherwise the month advances only when the day number goes backwards;
   - every resulting date must satisfy the stated weekday, and chronology must
     not run backwards. Where the default step fails the weekday test, nearby
     months are tried and the earliest chronologically-consistent fit wins;
+  - the FROM/TO extract headers process_corpus.py's cleaning strips as
+    front-matter noise are recovered from the RAW file and mapped back onto
+    the cleaned file's offsets (find_checkpoints, via a letters-only anchor
+    phrase), so each printed extract still gets a fresh reseed;
+  - a second-pass rescue (rescue_with_nearby_year) catches entries the walk
+    can never reach at all — Emory's opening extract turns out to be Wesley's
+    decade-spanning retrospective narrative (1728-1738), not a day-by-day
+    diary, so entries like the Aldersgate date ("Wednesday, May 24" = 1738,
+    no year of its own) are recovered by searching backward in the actual
+    text for the nearest bare year mention. This rescue is best-effort and
+    knowingly imperfect: tracing it found one entry (of 729 rescued) pulled
+    in a wrong nearby year from an embedded quoted narrative with its own
+    date context. Rescued rows are tagged status="rescued", distinct from
+    the primary walk's "ok", so a consumer can weight them differently;
   - anything still unresolved is written out flagged, never guessed.
 
 Pre-1752 dates are Julian (Britain switched 1752-09-14; weekdays ran unbroken
@@ -40,6 +61,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 CLEAN_DIR = ROOT / "cleaned" / "john-wesley"
+RAW_DIR = ROOT / "raw" / "john-wesley"
 OUT = ROOT / "metadata" / "journal-entry-boundaries.csv"
 
 DOW = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
@@ -70,8 +92,14 @@ MON_RE = "|".join(sorted(MONTHS, key=len, reverse=True))
 # tuned only on ".--" silently drops them, and they are ordinary entries.
 ENTRY_RE = re.compile(
     rf"(?:\[Journal,\s*(?P<ctx_year>1[67]\d\d)\]\s*)?"
-    rf"(?:(?P<lead_year>1[67]\d\d)\.\s*)?"
-    rf"(?:(?P<lead_month>{MON_RE})\b\.?,?\s*(?P<lead_dnum>\d{{1,2}}),?\s*(?P<lead_day>{DAY_RE})\b"
+    rf"(?:"
+    # lead_year binds ONLY to the month-first branch ("1752. MARCH 15, Sun.-")
+    # and only across a short gap — it must NOT be free to attach to the
+    # day-name-first branch below, where a bare year is far more likely to be
+    # leftover text from the end of the PREVIOUS sentence ("...since Oct. 14,
+    # 1735.\n\nSun. 18.--") than a genuine date declaration for this entry.
+    rf"(?:(?P<lead_year>1[67]\d\d)\.[ \t]*\n?[ \t]*)?"
+    rf"(?P<lead_month>{MON_RE})\b\.?,?\s*(?P<lead_dnum>\d{{1,2}}),?\s*(?P<lead_day>{DAY_RE})\b"
     rf"|\b(?P<day>{DAY_RE})\b\.?,?\s*(?:(?P<month>{MON_RE})\b\.?,?\s*)?(?P<dnum>\d{{1,2}})"
     rf"(?:st|nd|rd|th)?\s*(?:,\s*(?P<year>1[67]\d\d))?)"
     rf"\s*(?P<sep>\.\s*-{{1,2}}|\.\s|,\s*-{{1,2}}|-)",
@@ -82,6 +110,18 @@ RANGE_RE = re.compile(
     rf"TO\s+(?P<m2>{MON_RE})\w*\.?\s*(?P<d2>\d{{1,2}}),?\s*(?P<y2>1[67]\d\d)",
     re.IGNORECASE,
 )
+
+# Word-level day-name garbles specific to the raw scans (journal_ocr_fixes.py
+# repairs these before the text reaches cleaned/ — see CLAUDE.md's OCR-gotchas
+# section — so they only matter here, where checkpoints are located in the
+# RAW file before being mapped onto the cleaned file's offsets).
+RAW_DAY_GARBLES = {
+    "tvrspay": "Tuesday", "wepnespay": "Wednesday", "saturpay": "Saturday",
+    "frwway": "Friday", "toespay": "Tuesday", "monpay": "Monday",
+    "sunpay": "Sunday", "thurspay": "Thursday", "tvesday": "Tuesday",
+    "wednespay": "Wednesday",
+}
+RAW_DAY_GARBLE_RE = re.compile(r"\b(" + "|".join(RAW_DAY_GARBLES) + r")\b", re.IGNORECASE)
 
 
 def jdn_julian(y, m, d):
@@ -134,7 +174,12 @@ def parse_entries(text):
             month = MONTHS[g["month"].lower()] if g["month"] else None
         if not 1 <= dnum <= 31:
             continue
-        year = g["ctx_year"] or g["lead_year"] or g["year"]
+        # An inline year stated IN the entry ("1756, Jan. 1.-") outranks
+        # Curnock's page-level "[Journal, 1755]" tag: the bracketed tag can
+        # legitimately lag a page or two behind a New Year's Day entry that
+        # announces the rollover inline. Found by tracing a real mismatch —
+        # ctx_year said 1755 for an entry that opens "1756, Jan. 1.-".
+        year = g["lead_year"] or g["year"] or g["ctx_year"]
         yield {
             "offset": mt.start(), "dow": day_name, "dnum": dnum,
             "month": month, "year": int(year) if year else None,
@@ -154,11 +199,30 @@ def resolve(entries, seed_y, seed_m, year_bounds):
     out = []
     for e in entries:
         ey, em, d, dow = e["year"], e["month"], e["dnum"], e["dow"]
-        cands = []
+        explicit = bool(ey and em)  # fully-stated date: trust weekday alone,
+        cands = []                 # never second-guess it against prior drift
         if ey and em:
             cands = [(ey, em)]
         elif ey:
-            cands = [(ey, mm) for mm in range(1, 13)]
+            # ctx_year (e.g. Curnock's "[Journal, 1755]" tag) confirms the
+            # year but says nothing about month. Prefer continuing from the
+            # running month state, then step forward, before falling back to
+            # a year-wide search — a blind 1..12 search usually lands on a
+            # false match, since ~2 months in any year share a weekday for
+            # a given day-of-month (measured in scripts/journal_boundaries.py
+            # development; see the module docstring).
+            # Discovered by tracing real failures: the tag can lag past a New
+            # Year's Day entry by several lines (Curnock updates it per
+            # printed page, not per calendar day), so state-continuation
+            # steps are tried with their OWN computed year — not forced to
+            # ey — before falling back to a year-wide search under ey, then
+            # under ey+1 for a stale tag.
+            if m is not None:
+                cands = [step_month(y if y is not None else ey, m, k) for k in (0, 1, 2, 3)]
+            else:
+                cands = []
+            cands += [(ey, mm) for mm in range(1, 13)]
+            cands += [(ey + 1, mm) for mm in range(1, 13)]
         elif em:
             base_y = y if y is not None else seed_y
             if base_y is not None:
@@ -179,7 +243,7 @@ def resolve(entries, seed_y, seed_m, year_bounds):
             if not valid(cy, cm, d, dow):
                 continue
             j = jdn(cy, cm, d)
-            if prev_jdn is not None and not (0 <= j - prev_jdn <= 400):
+            if not explicit and prev_jdn is not None and not (0 <= j - prev_jdn <= 400):
                 continue
             fit = (cy, cm)
             break
@@ -200,39 +264,140 @@ def resolve(entries, seed_y, seed_m, year_bounds):
     return out
 
 
+def norm_letters(text):
+    """Lowercase-letters-only projection of text, with an index back to each
+    kept character's original offset — the alignment device that lets a
+    phrase found in RAW text be located in the differently-whitespaced
+    CLEANED text without caring about dashes, quotes, or line breaks."""
+    out, idx = [], []
+    for i, ch in enumerate(text):
+        lc = ch.lower()
+        if "a" <= lc <= "z":
+            out.append(lc)
+            idx.append(i)
+        elif out and out[-1] != " ":
+            out.append(" ")
+            idx.append(i)
+    return "".join(out), idx
+
+
+def find_checkpoints(raw_path, cleaned_text, window=12000):
+    """Locate each extract's "FROM <date> TO <date>" header in the RAW file
+    (process_corpus.py's cleaning strips these as front-matter noise — see
+    Phase 2 commit notes — so they no longer exist in cleaned/), then find
+    that extract's first entry in the RAW text and use its body text as an
+    anchor to recover the equivalent offset in the CLEANED file. Returns a
+    list of (cleaned_offset, year, month), in file order, one per extract that
+    could be located; extracts whose first entry can't be found (very long
+    prefaces, in a couple of cases) are silently skipped rather than guessed —
+    the constrained walk still covers that ground from the *previous*
+    checkpoint, just without a fresh reseed at that specific boundary."""
+    if not raw_path.exists():
+        return []
+    raw = raw_path.read_text(encoding="utf-8", errors="replace")
+    raw = raw.replace("—", "--").replace("–", "-")  # em/en dash -> ascii
+    raw = RAW_DAY_GARBLE_RE.sub(lambda m: RAW_DAY_GARBLES[m.group(1).lower()], raw)
+
+    cn, cn_idx = norm_letters(cleaned_text)
+    checkpoints = []
+    seen = set()
+    search_from = 0
+    for h in RANGE_RE.finditer(raw):
+        key = h.group(0).lower()
+        if key in seen:
+            continue
+        before = raw[max(0, h.start() - 30):h.start()]
+        if "\n" not in before:
+            continue  # a date range quoted in running prose, not a real header
+        seen.add(key)
+        y1, m1 = int(h.group("y1")), MONTHS[h.group("m1").lower()]
+        after = raw[h.end():h.end() + window]
+        em = ENTRY_RE.search(after)
+        if not em:
+            continue
+        body = after[em.end():em.end() + 40]
+        anchor, _ = norm_letters(body)
+        anchor = anchor.strip()[:30]
+        if not anchor:
+            continue
+        pos = cn.find(anchor, search_from)
+        if pos < 0:
+            continue
+        search_from = pos
+        checkpoints.append((cn_idx[pos], y1, m1))
+    return checkpoints
+
+
+NEARBY_YEAR_RE = re.compile(r"\b(1[67]\d\d)\b")
+
+
+def rescue_with_nearby_year(rows, text, lookback=4000):
+    """Second-pass rescue for entries the forward walk cannot reach.
+
+    Found while tracing the Aldersgate entry ("Wednesday, May 24" — 1738-05-24,
+    the date the site's own Strangely Warmed Index is named for): Emory's
+    opening "FROM FEBRUARY 1, 1728, TO AUGUST 12, 1738" extract is not a
+    day-by-day diary at all — it is Wesley's decade-spanning retrospective
+    narrative, quoting Moravian testimonies and his own letters out of strict
+    calendar order, with only ~14 bare year mentions in 158K characters of
+    prose to anchor it. The forward-walk model (state carries the running
+    month, advances only when the day number drops) assumes a continuous
+    diary and cannot follow this structure — by the time the walk reaches
+    Aldersgate its state is still stuck a decade earlier.
+
+    So for any entry the walk left unresolved, with no year of its own, look
+    backward in the actual source text for the nearest bare year mention and
+    retry validity against it directly (no forward-chronology requirement —
+    this is explicitly for entries the chronological walk cannot reach)."""
+    rescued = 0
+    for r in rows:
+        if r["status"] != "unresolved" or r.get("year"):
+            continue
+        before = text[max(0, r["offset"] - lookback):r["offset"]]
+        matches = NEARBY_YEAR_RE.findall(before)
+        if not matches:
+            continue
+        y = int(matches[-1])  # nearest (last) year mention before this entry
+        d, dow = r["dnum"], r["dow"]
+        months = [r["month"]] if r["month"] else range(1, 13)
+        for mm in months:
+            if valid(y, mm, d, dow):
+                r["date"] = f"{y:04d}-{mm:02d}-{d:02d}"
+                r["resolved_y"], r["resolved_m"] = y, mm
+                r["status"] = "rescued"
+                rescued += 1
+                break
+    return rescued
+
+
 def scan_file(path):
-    """Each file holds several printed extracts, and each carries its own
+    """Each file holds several printed extracts, each starting from its own
     explicit "FROM <date> TO <date>" header. Those headers are re-seed points:
     resolving each extract independently stops drift in one extract from
-    propagating through the rest of the volume, and bounds the year range."""
+    propagating through the rest of the volume."""
     text = path.read_text(encoding="utf-8", errors="replace")
-    heads = [(m.start(), int(m.group("y1")), MONTHS[m.group("m1").lower()],
-              int(m.group("y2"))) for m in RANGE_RE.finditer(text)]
-    # de-duplicate repeated headers (they recur as running heads) keeping order
-    seeds, seen = [], set()
-    for off, y1, m1, y2 in heads:
-        if (y1, m1, y2) in seen:
-            continue
-        seen.add((y1, m1, y2))
-        seeds.append((off, y1, m1, y2))
-
     entries = list(parse_entries(text))
+    seeds = find_checkpoints(RAW_DIR / path.name, text)
+
     if not seeds:
         seed_y = seed_m = None
         for e in entries:                      # fall back to the first stated year
             if e["year"]:
                 seed_y, seed_m = e["year"], e["month"]
                 break
-        return resolve(entries, seed_y, seed_m, None)
+        out = resolve(entries, seed_y, seed_m, None)
+        rescue_with_nearby_year(out, text)
+        return out
 
     out = []
-    for i, (off, y1, m1, y2) in enumerate(seeds):
+    for i, (off, y1, m1) in enumerate(seeds):
         end = seeds[i + 1][0] if i + 1 < len(seeds) else len(text)
         block = [e for e in entries if off <= e["offset"] < end]
         out.extend(resolve(block, y1, m1, None))
-    # entries before the first header (front matter, prefaces)
+    # entries before the first checkpoint (front matter, prefaces)
     head0 = seeds[0][0]
     out = resolve([e for e in entries if e["offset"] < head0], None, None, None) + out
+    rescue_with_nearby_year(out, text)
     return out
 
 
@@ -247,14 +412,14 @@ def main():
         rows = scan_file(path)
         for r in rows:
             r["source_file"] = path.stem
-        ok = [r for r in rows if r["status"] == "ok"]
+        ok = [r for r in rows if r["status"] in ("ok", "rescued")]
         yrs = sorted({r["resolved_y"] for r in ok})
         span = f"{yrs[0]}-{yrs[-1]}" if yrs else "-"
         rate = len(ok) / len(rows) if rows else 0
         print(f"{path.stem:46s} {len(rows):8d} {len(ok):7d} {len(rows)-len(ok):7d} {rate:6.1%}  {span}")
         all_rows.extend(rows)
 
-    ok = [r for r in all_rows if r["status"] == "ok"]
+    ok = [r for r in all_rows if r["status"] in ("ok", "rescued")]
     print(f"\nTOTAL entry heads detected: {len(all_rows)}")
     print(f"  dated (weekday-verified): {len(ok)} ({len(ok)/max(1,len(all_rows)):.1%})")
     print(f"  unresolved (flagged):     {len(all_rows)-len(ok)}")
