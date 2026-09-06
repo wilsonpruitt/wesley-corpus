@@ -99,12 +99,19 @@ one work; every work has ≥1 passage; slugs are unique; `python3 scripts/build_
    Sonnet session drafts it from the Bicentennial contents (Wilson owns vols 9, 13, 32 —
    the sermon vols 1–4 are not on the shelf; use the published tables of contents).
    **Wilson spot-checks 10 rows before it is committed.**
-2. Jackson 1872 page ranges: `scripts/locate_in_scan.py` — for each sermon, find the
-   heading string in the archive.org `_djvu.txt` of Jackson vols 5–7, record
-   `volume, page_start, page_end, scan_url, scan_page_ids`. Fuzzy match on heading +
-   scripture text; anything below a confidence threshold writes `null` and a row to
-   `metadata/scan-locate-misses.csv`. **Do not** insert page-break markers into text yet
-   (that is Phase 8).
+2. ~~Jackson 1872 page ranges via archive.org `_djvu.txt`~~ — **DEFERRED to a future
+   version (Wilson, 2026-09-06).** Checked ~18 archive.org copies of the 14-vol 1872
+   reprint; every one is controlled-digital-lending (`access-restricted-item:true`), no
+   free OCR text. HathiTrust blocks both WebFetch and a browser-UA `curl` (403); Chrome
+   automation doesn't work on this machine (CLAUDE.md). The only freely accessible PD
+   scan found is the *different* 1856 Emory 3rd American edition
+   (`worksofrevjohnwe05/06/07wesluoft` on archive.org), whose pagination does not match
+   the Jackson volume:page citations already in `sermon-numbering.csv` — linking to it
+   would cite one edition's page number against a different edition's scan. Plain-text
+   `jackson_ref` volume:page citations (no scan link) are unaffected and already in the
+   numbering table; `source_edition.scan_url`/`scan_page_ids` stay `null` per the "partial
+   backfill" allowance below. Revisit when a free, correctly-paginated source turns up
+   (a personal Internet Archive lending account, a library scan, or similar).
 3. `build_works.py` merges both files into `works.jsonl`.
 
 Gate: 141 JW sermons have `numbering.jackson`; ≥120 have `source_edition.pages`;
@@ -245,6 +252,11 @@ human; JSON-LD validates; an old `/passage/…` URL 301s to the right anchor.
 ---
 
 ## Phase 8 — Provenance against page scans (Haiku/Sonnet per unit; Telford in 2027)
+
+**Whole phase deferred to a future version (Wilson, 2026-09-06)** pending a free,
+correctly-paginated source for Jackson's 1872 edition — see the Phase 1 note above.
+Sermons hit this first since they were the first work type slugged; the same blocker
+applies to every other work type below, not just sermons.
 
 Priority order from the sketch: Sermons → *Plain Account* + the *Appeals* → Journal
 (Curnock) → Notes NT → 1780 hymns → Notes OT → Letters (Telford enters US PD
