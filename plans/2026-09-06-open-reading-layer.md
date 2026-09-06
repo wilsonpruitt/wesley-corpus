@@ -126,13 +126,45 @@ number, not the volume — check the running head.
 
 The 15 journal sources are OCR-repaired but undated at the passage level. Method:
 
-1. `scripts/segment_journal.py` walks each raw journal file in canonical order
-   (vol1-3 → vol4-7 → vol4-part09…13 → 1760-to-1773 → 1773-to-1776; **check for
-   overlap** between `vol4-7` and the `vol4-part*` files first — the provenance audit
-   flags the part files as undocumented, and they may duplicate vol4-7).
-2. Detect entry heads (`Mon. 24.—`, `Wednesday, May 24`, year heads) with a regex pass;
-   emit `(offset, date, precision)`. Where the regex is uncertain, hand a window to a
-   model and ask **only for boundary positions and the date** — never for text.
+1. ~~Overlap check~~ **DONE 2026-09-06 (Opus boundary pass)** → `metadata/journal-overlap.csv`.
+   The overlap is bigger and differently shaped than this plan assumed. Three edition
+   families are mixed in the 15 journal sources, not one:
+   - **`jw-journal-vol4-7` is a full duplicate of `jw-journal-1773-to-1776`** — same
+     London 3rd ed. vol IV, two scans. Both open "NUMBER XVII / VOL. IV" at 1773-09-13
+     with identical wording and both close with the identical Brigstock deed. `vol4-7`
+     has markedly worse word-joining OCR ("Iwas muchworse,mypalate" vs "I was much
+     worse, my palate"; non-word rate 0.029 vs 0.010). **Close `vol4-7`** (546
+     passages / 213K words of duplication). ⚠ `1773-to-1776`'s filename is misleading:
+     it runs to **1790**, not 1776.
+   - **The `vol4-part09…13` files are Curnock's Standard Edition (1909–16)**, not the
+     same edition at all, with Curnock's editorial notes inline and unmarked. Parts 09,
+     10, 12, 13 duplicate spans the other spines already carry (their FROM/TO headers
+     match the other files' extract headers exactly).
+   - **`vol4-part11` is the one indispensable part file**: it covers 1758-06-17 →
+     1760-05-05, exactly the gap between the Emory spine (ends 1758-06-16) and the
+     London vol III spine (starts 1760-05-06). Without it the corpus has a 23-month
+     hole. Applying the ledger gives continuous coverage **1728-02-01 → 1790-10-24**.
+2. Entry heads + dates — **method settled and built 2026-09-06**
+   (`scripts/journal_boundaries.py` → `metadata/journal-entry-boundaries.csv`),
+   **coverage not yet good enough to wire**. What the pass established:
+   - **Wesley states the weekday of every entry, so dates self-validate.** Pre-1752
+     dates are Julian (Britain switched 1752-09-14); the validator handles both and
+     was checked against 12 known entries across all four editions, 12/12.
+   - **The weekday check cannot pick a month, only reject one.** Measured: within a
+     year ~2 months share a starting weekday, so a run of entries fits ~2 candidate
+     months regardless of run length (flat from 1 to 8 entries). Date resolution is
+     therefore a *constrained walk* — explicit signals set state, month advances only
+     when the day number goes backwards, weekday + forward chronology are hard
+     constraints — not an inference.
+   - **The inline-entry trap:** entries run into the previous line with no `.—`
+     separator ("Friday, 17. I went to…") are ordinary entries. A regex tuned only on
+     `.—` silently drops them.
+   - **Current state: 10,605 entry heads detected, 6,188 (58%) dated with calendar
+     verification**, the rest flagged, never guessed. Known weakness: drift at extract
+     tails (1790 is inflated; dates past the Journal's documented 1790-10-24 end are
+     flagged `out-of-range` rather than published). Getting this to ≥95% is the next
+     session's job — the traps above are all documented, and no wrong date is silently
+     emitted in the meantime.
 3. Re-chunk on entry boundaries into a parallel file `chunked/journal_by_entry.jsonl`
    (non-destructive; the serving file is untouched until Phase 5). Each entry passage:
    `work = jw/journal/{YYYY}`, `anchor = {YYYY-MM-DD}` (+`-b`, `-c` for multiple
