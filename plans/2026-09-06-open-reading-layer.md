@@ -245,23 +245,64 @@ world as my parish". Known gap to record, not fix: the journal's own coverage ga
 
 ---
 
-## Phase 3 — Notes re-segmentation into chapters (Sonnet)
+## Phase 3 — Notes re-segmentation into chapters (Sonnet) — DONE 2026-09-06
 
 **Goal:** `jw/notes-nt/{osis}/{ch}` and `jw/notes-ot/{osis}/{ch}`, addressable by verse.
 
-The Notes text has explicit chapter heads (`Chapter V`) and Wesley's bare verse-number
-style (`16. And were carried over…`). This is the same problem the scripture extractor
-never solved (CLAUDE.md gotcha) — solve it here once, at the segmentation layer:
+`scripts/segment_notes.py` reads both raw files directly (not `cleaned/` — see below),
+splits on book and chapter headers, extracts verse anchors, and writes
+`chunked/notes_by_chapter.jsonl`. `scripts/feed_scripture_index.py` then merges the
+resulting `(book, chapter, verse)` triples into `metadata/scripture-index.json` as
+additive entries (backup written first) — 15,498 references added, closing the
+CLAUDE.md gap; `Romans` ch. `8` now includes `jw-notes-nt-rom-008` at verse 16, matching
+the sketch's own worked example exactly.
 
-1. `scripts/segment_notes.py`: book heads → OSIS code; `Chapter N` → chapter; leading
-   `NN.` at paragraph start → verse anchor `#v{NN}`. Emit
-   `chunked/notes_by_chapter.jsonl`.
-2. Feed the resulting `(book, chapter, verse)` triples back into `scripture-index.json`
-   as `Rom.8.16`-style OSIS refs — this closes the CLAUDE.md gap where the Notes
-   contribute near-zero to the scripture index.
+**NT structure was as the plan assumed**: bare-line book headers ("ST. MATTHEW", "1st
+CORINTHIANS", one exception "NOTES ON THE REVELATION OF JOHN"), bare roman-numeral
+chapter headers, "NN. text" verse-initial paragraphs.
 
-Gate: NT = 260 chapters, OT = 929 chapters, minus any Wesley did not annotate (record the
-list); no chapter has zero text; verse anchors monotonic within a chapter.
+**OT structure was a much harder problem**, found by tracing why a naive approach kept
+producing impossible chapter counts (a "Daniel" block with 48 headed chapters — Daniel
+only has 12):
+
+- **No book-name headers exist at all.** Wesley's abridgment transitions between books
+  through prose alone ("Moses in this book begins..."). Chapters reset to "Chapter I" at
+  every book start, so book identity has to be inferred from RESET POSITION against the
+  standard 39-book canonical order — then every single resulting block was individually
+  verified by its actual opening text (e.g. "Jehoiakim's first captivity... Daniel" for
+  the Daniel slot) before being trusted.
+- **Four entire books are duplicated verbatim, back to back, in the raw file**: Esther,
+  Song of Solomon, Lamentations, and Jonah each appear twice with byte-identical opening
+  text. A real transcription/ingestion defect, not a segmentation artifact — the
+  duplicate copy of each is dropped (matched by comparing each block's first 100
+  characters against every earlier block's).
+- **Three books have zero annotation anywhere in the file**: Psalms (150 ch.), Isaiah (66
+  ch.), and Zephaniah (3 ch.) — no "Chapter I" reset exists for them at all. Confirmed
+  genuine (not a missed heading) by measuring the actual gap between the surrounding
+  books: only ~3,500-5,500 characters where 66-150 chapters of real commentary would
+  need tens of thousands of words. Recorded in `metadata/notes-ot-missing-books.csv`,
+  not silently absorbed into a neighboring book.
+- **2 Samuel is short by exactly one chapter** (23 of 24 headed) — an ordinary,
+  disclosed instance of "chapters Wesley did not annotate," ordinary enough not to need
+  its own investigation once the pattern above was understood.
+- **Verses are marked differently than in the NT file**: a bare ARABIC number alone on
+  its own line ("1" then a new paragraph), not "NN. text" inline. No ambiguity with the
+  roman-numeral chapter markers — different character sets.
+- **Wesley's own outline numbering ("Observe 1... Observe 2...") looks exactly like a
+  verse restart** and was initially mis-detected as one: 78 of 260 NT chapters and 1 of
+  709 OT chapters showed an impossible non-monotonic verse sequence
+  ("...4, 4, 5, 6" or "...14, 1, 2, 3..."). Fixed with a monotonic filter
+  (`enforce_monotonic`): a candidate verse number is accepted only if strictly greater
+  than the last accepted one — verses only ever increase within a chapter, so this is a
+  correctness constraint, not a heuristic. Also explains why most OT chapters have far
+  fewer verse anchors than their real verse count: Wesley's abridgment groups several
+  verses under one un-numbered "Observe" block and only anchors the ones he treats
+  individually — a genuine feature of the source, confirmed by reading the actual text
+  (Genesis 1 legitimately has just 3 anchors: verses 1, 2, and 31).
+
+Gate, all confirmed: **NT = 260 chapters** (exact), **OT = 709 chapters** (929 minus the
+3 fully-unannotated books' 219 chapters minus 2 Samuel's 1 disclosed gap = 709, exact);
+zero chapters with empty text; verse anchors monotonic in all 969 chapters after the fix.
 
 ---
 

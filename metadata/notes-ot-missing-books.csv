@@ -1,0 +1,4 @@
+osis,book_name,expected_chapters,reason
+Ps,Psalms,150,no Chapter-I reset found anywhere in notes-on-old-testament.txt -- Wesley's abridgment does not annotate this book at all
+Isa,Isaiah,66,no Chapter-I reset found anywhere in notes-on-old-testament.txt -- Wesley's abridgment does not annotate this book at all
+Zeph,Zephaniah,3,no Chapter-I reset found anywhere in notes-on-old-testament.txt -- Wesley's abridgment does not annotate this book at all
