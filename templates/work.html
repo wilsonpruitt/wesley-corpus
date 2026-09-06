@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+{% block title %}{{ work.title }} — {{ author_name }} — Wesley Corpus{% endblock %}
+{% block head_extra %}
+{% set canonical = request.url_for('work_page', author=work.id.split('/')[0], corpus=work.id.split('/')[1], rest=work.id.split('/', 2)[2]) %}
+<link rel="canonical" href="{{ canonical }}">
+{% if prev_work %}<link rel="prev" href="/{{ prev_work.id }}">{% endif %}
+{% if next_work %}<link rel="next" href="/{{ next_work.id }}">{% endif %}
+<link rel="alternate" type="text/plain" href="{{ canonical }}.txt">
+<link rel="alternate" type="application/json" href="{{ canonical }}.json">
+<link rel="license" href="https://creativecommons.org/publicdomain/mark/1.0/">
+{% if not work.open %}<meta name="robots" content="noindex">{% endif %}
+<meta name="description" content="{{ author_name }}, &quot;{{ work.title }}&quot;{% if work.date_composed %} ({{ work.date_composed }}){% endif %}. Wesley Corpus.">
+<meta name="DC.title" content="{{ work.title }}">
+<meta name="DC.creator" content="{{ author_name }}">
+{% if work.date_composed %}<meta name="DC.date" content="{{ work.date_composed }}">{% endif %}
+<meta name="DC.rights" content="Text: public domain. Apparatus: {{ work.license_apparatus }}, History of Methodism.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "@id": "{{ canonical }}",
+  "name": {{ work.title | tojson }},
+  "author": {"@type": "Person", "name": {{ author_name | tojson }}},
+  {% if work.date_composed %}"dateCreated": {{ work.date_composed | tojson }},{% endif %}
+  "inLanguage": "en",
+  "license": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "isPartOf": {"@type": "Collection", "@id": "{{ request.url_for('corpus_index', author=work.id.split('/')[0], corpus=work.id.split('/')[1]) }}"},
+  "publisher": {"@type": "Organization", "name": "History of Methodism"}
+}
+</script>
+{% endblock %}
+{% block content %}
+<article class="work">
+  <nav aria-label="breadcrumb" class="meta">
+    <a href="/">Wesley Corpus</a> &rsaquo;
+    <a href="/{{ work.id.split('/')[0] }}">{{ author_name }}</a> &rsaquo;
+    <a href="/{{ work.id.split('/')[0] }}/{{ work.id.split('/')[1] }}">{{ corpus_name if corpus_name else work.corpus }}</a> &rsaquo;
+    {{ work.title }}
+  </nav>
+
+  <h1>{{ work.title }}</h1>
+  <p class="meta">
+    <span>{{ author_name }}</span>
+    {% if work.date_composed %}&middot; <time datetime="{{ work.date_composed }}">{{ work.date_composed }}</time>{% endif %}
+    {% if work.numbering and work.numbering.bicentennial %}&middot; Sermon {{ work.numbering.bicentennial }}{% endif %}
+  </p>
+
+  {% if not work.open %}
+  <div class="notice notice-warn">
+    <strong>Damaged transcription — not yet collated against a scan.</strong>
+    {% if work.closed_reason %}<span class="meta">({{ work.closed_reason }})</span>{% endif %}
+    The text below is presented as-is; treat wording as provisional until corrected.
+  </div>
+  {% endif %}
+
+  <details class="provenance" open>
+    <summary>Source and provenance</summary>
+    <dl>
+      <dt>Transcription</dt>
+      <dd>
+        {% if work.transcription and work.transcription.corrected_against_scan %}
+          Collated against a page scan.
+        {% else %}
+          Derived from a public-domain source text; <strong>not yet collated against a page scan</strong>.
+        {% endif %}
+      </dd>
+      {% if work.editorial_note %}
+      <dt>Editorial note</dt>
+      <dd>{{ work.editorial_note }}</dd>
+      {% endif %}
+      {% if work.date_note %}
+      <dt>Dating note</dt>
+      <dd>{{ work.date_note }}</dd>
+      {% endif %}
+      <dt>Cite as</dt>
+      <dd>{{ author_name }}, &ldquo;{{ work.title }}&rdquo;{% if work.date_composed %} ({{ work.date_composed }}){% endif %}. Wesley Corpus, {{ canonical }}</dd>
+      <dt>License</dt>
+      <dd>Text: public domain (<a href="/license">Public Domain Mark 1.0</a>). Editorial apparatus: {{ work.license_apparatus }}.</dd>
+      <dt>Formats</dt>
+      <dd><a href="{{ canonical }}.txt">Plain text</a> &middot; <a href="{{ canonical }}.json">JSON</a></dd>
+    </dl>
+  </details>
+
+  {% if work.title_alt %}
+  <p class="meta">Also known as: {{ work.title_alt | join(', ') }}</p>
+  {% endif %}
+
+  <div class="work-text">
+    {% if is_hymn %}
+      {% set ns = namespace(n=0) %}
+      {% for p in passages %}
+        {% for stanza in stanzas_by_passage.get(p.id, []) %}
+        {% set ns.n = ns.n + 1 %}
+        <div class="stanza" id="s{{ ns.n }}">
+          <p>{{ stanza | nl2br }}</p>
+        </div>
+        {% endfor %}
+      {% endfor %}
+    {% else %}
+      {% for p in passages %}
+      <p id="p{{ loop.index0 }}" class="work-para">{{ p.text | nl2br }}</p>
+      {% endfor %}
+    {% endif %}
+  </div>
+
+  <nav class="pager">
+    {% if prev_work %}<a rel="prev" href="/{{ prev_work.id }}">&larr; {{ prev_work.title }}</a>{% endif %}
+    {% if next_work %}<a rel="next" href="/{{ next_work.id }}">{{ next_work.title }} &rarr;</a>{% endif %}
+  </nav>
+
+  <aside class="patron">
+    <p>Search across the corpus, browse by theme and scripture, and use the Strangely Warmed Index &mdash; <a href="/auth/login">patron access</a>.</p>
+  </aside>
+</article>
+{% endblock %}

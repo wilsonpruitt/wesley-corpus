@@ -776,3 +776,121 @@ footer .container {
         padding-top: 5rem;
     }
 }
+
+/* ===================================
+   Open reading layer (work pages)
+   =================================== */
+
+.work h1 {
+    margin-top: 0.5rem;
+}
+
+.notice {
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.95rem;
+}
+
+.notice-warn {
+    background: #fef3c7;
+    border: 1px solid #f59e0b;
+    color: #78350f;
+}
+
+details.provenance {
+    background: var(--color-off-white);
+    border: 1px solid var(--color-light-gray);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 1.5rem 0;
+}
+
+details.provenance summary {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: var(--font-display);
+}
+
+details.provenance dl {
+    margin-top: 0.75rem;
+}
+
+details.provenance dt {
+    font-weight: 700;
+    color: var(--color-slate);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-top: 0.75rem;
+}
+
+details.provenance dd {
+    margin: 0.15rem 0 0;
+}
+
+.work-text {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 2rem 0;
+}
+
+.work-para {
+    margin-bottom: 1.4rem;
+}
+
+.stanza {
+    margin-bottom: 1.6rem;
+}
+
+.stanza p {
+    white-space: normal;
+}
+
+.pager {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-light-gray);
+    flex-wrap: wrap;
+}
+
+aside.patron {
+    background: var(--color-forest-pale);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    margin: 2rem 0 1rem;
+    font-size: 0.95rem;
+}
+
+.index-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+ul.plain-index {
+    list-style: none;
+    margin-top: 1.5rem;
+}
+
+ul.plain-index li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-light-gray);
+    display: flex;
+    align-items: baseline;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.badge-closed {
+    font-size: 0.75rem;
+    color: var(--color-mid-gray);
+    border: 1px solid var(--color-mid-gray);
+    border-radius: 4px;
+    padding: 0.1rem 0.4rem;
+}

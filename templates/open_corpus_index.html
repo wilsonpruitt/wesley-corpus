@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block title %}{{ corpus_name }} — {{ author_name }} — Wesley Corpus{% endblock %}
+{% block head_extra %}
+<link rel="canonical" href="{{ request.url_for('corpus_index', author=author, corpus=corpus) }}">
+{% endblock %}
+{% block content %}
+<nav aria-label="breadcrumb" class="meta">
+  <a href="/">Wesley Corpus</a> &rsaquo;
+  <a href="/{{ author }}">{{ author_name }}</a> &rsaquo;
+  {{ corpus_name }}
+</nav>
+<h1>{{ corpus_name }}</h1>
+<p class="meta">{{ author_name }} &middot; {{ "{:,}".format(works | length) }} work{{ 's' if works | length != 1 else '' }}</p>
+
+<ul class="plain-index">
+  {% for w in works %}
+  <li>
+    <a href="/{{ w.id }}">{{ w.title }}</a>
+    {% if w.date_composed %}<span class="meta">({{ w.date_composed }})</span>{% endif %}
+    {% if not w.open %}<span class="badge-closed" title="{{ w.closed_reason }}">not indexed</span>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% endblock %}

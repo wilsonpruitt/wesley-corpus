@@ -109,7 +109,13 @@ def main():
         hymn_text = light_clean(body[off:end].strip())
         position = i + 1  # canonical number: reading-order position, not the OCR digit
         passages.append({
-            "id": f"cw-hymns-1780-{position:03d}",
+            # NOT "cw-hymns-1780-NNN" -- that exact id format collides with
+            # 452 old whole-collection chunk ids already in
+            # cleaned_passages.jsonl (source_id cw-hymns-1780 predates this
+            # re-segmentation and uses the identical NNN-padded scheme).
+            # Found by the Phase 5 template render test resolving the wrong,
+            # coarser-chunked text for most hymns silently.
+            "id": f"cw-hymns1780-{position:03d}",
             "author": "charles-wesley",
             "source_id": "cw-hymns-1780",
             "source_title": "A Collection of Hymns (1780, with Supplement)",

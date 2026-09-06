@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %}{{ author_name }} — Wesley Corpus{% endblock %}
+{% block head_extra %}
+<link rel="canonical" href="{{ request.url_for('author_index', author=author) }}">
+{% endblock %}
+{% block content %}
+<nav aria-label="breadcrumb" class="meta"><a href="/">Wesley Corpus</a> &rsaquo; {{ author_name }}</nav>
+<h1>{{ author_name }}</h1>
+<p class="meta">Browse by collection.</p>
+
+<div class="index-grid">
+  {% for c in corpora %}
+  <a class="card" href="/{{ author }}/{{ c.slug }}">
+    <h3>{{ c.name }}</h3>
+    <p class="meta">{{ "{:,}".format(c.count) }} work{{ 's' if c.count != 1 else '' }}</p>
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

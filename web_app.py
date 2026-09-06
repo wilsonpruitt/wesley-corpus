@@ -50,8 +50,17 @@ SESSION_MAX_AGE = 7 * 24 * 60 * 60  # 7 days in seconds
 PAYWALL_DATE = date(2026, 3, 15)
 
 # Public paths that skip auth
-PUBLIC_PATHS = frozenset({"/", "/auth/login", "/auth/callback", "/auth/logout", "/admin/unlock", "/random"})
-PUBLIC_PREFIXES = ("/static/", "/passage/")
+PUBLIC_PATHS = frozenset({
+    "/", "/auth/login", "/auth/callback", "/auth/logout", "/admin/unlock", "/random",
+    "/jw", "/cw",  # bare author collection index (no trailing segment)
+    "/robots.txt", "/llms.txt", "/sitemap.xml", "/license",
+})
+# Open reading layer (plans/2026-09-06-open-reading-layer.md): work pages,
+# author/corpus collection indexes, and .txt/.json siblings all live under
+# /jw/ and /cw/. Everything the plan keeps paid (search, auto-themes,
+# scripture UI, SWI, /sources) is NOT under those prefixes, so this stays a
+# narrow addition rather than inverting the allowlist into a denylist.
+PUBLIC_PREFIXES = ("/static/", "/passage/", "/jw/", "/cw/", "/sitemaps/", "/export/")
 
 # ---------------------------------------------------------------------------
 # App
@@ -161,6 +170,20 @@ def highlight_terms(text: str, query: str) -> str:
 
 templates.env.filters["highlight"] = highlight_terms
 
+
+def nl2br(text: str):
+    """Escape then convert internal newlines to <br> — for prose/hymn text
+    that carries meaningful line breaks (paragraph gaps within one passage,
+    or stanza lines) that CSS white-space alone won't render predictably
+    across browsers with the rest of the page's box model."""
+    import html
+    from markupsafe import Markup
+    escaped = html.escape(text or "")
+    return Markup(escaped.replace("\n", "<br>\n"))
+
+
+templates.env.filters["nl2br"] = nl2br
+
 # Mount SWI API router
 from strangely_warm_index.api import router as swi_router
 app.include_router(swi_router)
@@ -176,6 +199,21 @@ SCRIPTURE_INDEX: dict = {}
 SOURCES: list[dict] = []
 EMBEDDINGS: np.ndarray | None = None
 EMBED_IDS: list[str] = []
+
+# Open reading layer (plans/2026-09-06-open-reading-layer.md, Phase 5).
+# Kept deliberately separate from PASSAGES/PASSAGES_BY_ID above: those feed
+# patron search, SWI, and the scripture index, and must not silently change
+# just because the open layer re-chunks the journal/Notes/1780 hymns
+# differently. OPEN_PASSAGES_BY_ID is a superset used only to resolve a
+# work's passage_ids to full passage records for rendering.
+WORKS: list[dict] = []
+WORKS_BY_SLUG: dict[str, dict] = {}
+OPEN_PASSAGES_BY_ID: dict[str, dict] = {}
+# legacy passage id -> (work slug, anchor|None) for the /passage/{id} 301.
+# anchor is None where the old chunking has no clean 1:1 mapping onto the
+# new segmentation (journal/Notes/1780 hymns) — those redirect to the work's
+# collection index instead of a specific paragraph; see _load_open_layer().
+LEGACY_PASSAGE_REDIRECT: dict[str, tuple[str, str | None]] = {}
 
 
 def _load_passages():
@@ -227,6 +265,68 @@ def _load_embeddings():
         EMBEDDINGS = EMBEDDINGS / norms
 
 
+# source_id prefixes/values replaced by Phase 2-4 re-segmentation, and the
+# collection-index URL an old passage from one of them should 301 to when no
+# specific new anchor can be derived (see LEGACY_PASSAGE_REDIRECT above).
+_LEGACY_COLLECTION_REDIRECTS = {
+    "jw-notes-nt": "/jw/notes-nt",
+    "jw-notes-on-old-testament": "/jw/notes-ot",
+    "cw-hymns-1780": "/cw/hymns/1780",
+}
+
+
+def _load_open_layer():
+    global WORKS
+    works_path = META / "works.jsonl"
+    if works_path.exists():
+        with open(works_path) as f:
+            for line in f:
+                w = json.loads(line)
+                WORKS.append(w)
+                WORKS_BY_SLUG[w["id"]] = w
+
+    for extra_name in ("journal_by_entry.jsonl", "notes_by_chapter.jsonl",
+                       "hymns_1780_by_number.jsonl"):
+        path = CHUNKED / extra_name
+        if not path.exists():
+            continue
+        with open(path) as f:
+            for line in f:
+                p = json.loads(line)
+                OPEN_PASSAGES_BY_ID[p["id"]] = p
+
+    for w in WORKS:
+        # A known-duplicate work (e.g. jw/duplicates/sermon-cw1816-xiii)
+        # redirects straight to its canonical target rather than to its own
+        # closed/noindex stub — no reason to make a reader land on a page
+        # that just says "see the other one."
+        reason = w.get("closed_reason") or ""
+        target_slug = reason.split("duplicate-of:", 1)[1] if reason.startswith("duplicate-of:") else w["id"]
+        for i, pid in enumerate(w.get("legacy_ids") or []):
+            anchor = f"p{i}" if target_slug == w["id"] else None
+            LEGACY_PASSAGE_REDIRECT[pid] = (target_slug, anchor)
+
+    # Old passages under a replaced whole-source (journal/Notes/1780 hymns)
+    # have no legacy_ids entry above (build_works.py sets legacy_ids=[] for
+    # the new segmented works) — send them to the collection index instead
+    # of 404ing, since no 1:1 anchor exists across the re-segmentation.
+    for p in PASSAGES:
+        if p["id"] in LEGACY_PASSAGE_REDIRECT:
+            continue
+        sid = p.get("source_id", "")
+        target = _LEGACY_COLLECTION_REDIRECTS.get(sid)
+        if target is None and sid.startswith("jw-journal-"):
+            target = "/jw/journal"
+        if target:
+            LEGACY_PASSAGE_REDIRECT[p["id"]] = (target, None)
+
+
+def _resolve_passage(pid: str) -> dict | None:
+    """A work's passage_ids may point into PASSAGES_BY_ID (un-resegmented
+    works) or OPEN_PASSAGES_BY_ID (journal/Notes/1780 hymns)."""
+    return PASSAGES_BY_ID.get(pid) or OPEN_PASSAGES_BY_ID.get(pid)
+
+
 @app.on_event("startup")
 def startup():
     _load_passages()
@@ -234,6 +334,7 @@ def startup():
     _load_scripture()
     _load_sources()
     _load_embeddings()
+    _load_open_layer()
 
 
 # ---------------------------------------------------------------------------
@@ -593,6 +694,19 @@ def theme_page(request: Request, theme_id: str):
 
 @app.get("/passage/{passage_id}", response_class=HTMLResponse)
 def passage_page(request: Request, passage_id: str, q: str = ""):
+    # Open reading layer (Phase 5): every old passage id now has a home work
+    # page. Un-resegmented works (sermons/treatises/letters/...) redirect to
+    # a specific paragraph anchor; journal/Notes/1780-hymn ids — re-chunked
+    # onto different boundaries entirely — redirect to the work's collection
+    # index instead, since no 1:1 anchor survives the re-segmentation.
+    redirect = LEGACY_PASSAGE_REDIRECT.get(passage_id)
+    if redirect:
+        slug, anchor = redirect
+        url = slug if slug.startswith("/") else f"/{slug}"
+        if anchor:
+            url += f"#{anchor}"
+        return RedirectResponse(url=url, status_code=301)
+
     p = PASSAGES_BY_ID.get(passage_id)
     if not p:
         return HTMLResponse("Passage not found", status_code=404)
@@ -710,6 +824,203 @@ def api_scripture(q: str = ""):
 @app.get("/api/random")
 def api_random():
     return random.choice(PASSAGES) if PASSAGES else {}
+
+
+# ---------------------------------------------------------------------------
+# Open reading layer (plans/2026-09-06-open-reading-layer.md, Phase 5)
+# ---------------------------------------------------------------------------
+# corpus -> ordered list of work ids, and work id -> (prev_id, next_id),
+# built once at first use (not startup, since it only matters once a work
+# page is actually requested) and cached.
+_WORK_ORDER_BY_CORPUS: dict[str, list[str]] | None = None
+_WORK_PREV_NEXT: dict[str, tuple[str | None, str | None]] = {}
+
+_NATSORT_RE = re.compile(r"(\d+)")
+
+
+def _natural_sort_key(slug: str):
+    parts = _NATSORT_RE.split(slug)
+    return [int(p) if p.isdigit() else p for p in parts]
+
+
+def _build_work_order():
+    global _WORK_ORDER_BY_CORPUS
+    by_corpus: dict[str, list[str]] = {}
+    for w in WORKS:
+        by_corpus.setdefault(w["corpus"], []).append(w["id"])
+    for corpus, ids in by_corpus.items():
+        ids.sort(key=_natural_sort_key)
+        for i, wid in enumerate(ids):
+            prev_id = ids[i - 1] if i > 0 else None
+            next_id = ids[i + 1] if i + 1 < len(ids) else None
+            _WORK_PREV_NEXT[wid] = (prev_id, next_id)
+    _WORK_ORDER_BY_CORPUS = by_corpus
+
+
+def _work_prev_next(work_id: str):
+    if _WORK_ORDER_BY_CORPUS is None:
+        _build_work_order()
+    return _WORK_PREV_NEXT.get(work_id, (None, None))
+
+
+def _work_passages(work: dict) -> list[dict]:
+    out = []
+    for pid in work.get("passage_ids") or []:
+        p = _resolve_passage(pid)
+        if p:
+            out.append(p)
+    return out
+
+
+KNOWN_AUTHORS = {"jw": "John Wesley", "cw": "Charles Wesley"}
+
+
+def _corpus_display_name(author: str, corpus: str) -> str:
+    names = {
+        "jw-sermons": "Sermons", "jw-works": "Works", "jw-letters": "Letters",
+        "jw-journal": "Journal", "jw-notes-nt": "Notes on the New Testament",
+        "jw-notes-ot": "Notes on the Old Testament",
+        "cw-sermons": "Sermons", "cw-works": "Works",
+        "cw-hymns-1780": "A Collection of Hymns (1780)",
+        "cw-hymns-misc": "Hymns", "cw-hymns-collection-placeholder": "Hymn Collections",
+    }
+    return names.get(corpus, corpus.replace("-", " ").title())
+
+
+@app.get("/{author}", response_class=HTMLResponse)
+def author_index(request: Request, author: str):
+    if author not in KNOWN_AUTHORS:
+        return HTMLResponse("Not found", status_code=404)
+    corpora = sorted({w["corpus"] for w in WORKS if w["id"].startswith(f"{author}/")})
+    counts = {c: sum(1 for w in WORKS if w["corpus"] == c) for c in corpora}
+    return templates.TemplateResponse(request, "open_author_index.html", _ctx(
+        request,
+        author=author, author_name=KNOWN_AUTHORS[author],
+        corpora=[{"slug": c, "name": _corpus_display_name(author, c), "count": counts[c]}
+                 for c in corpora],
+    ))
+
+
+@app.get("/{author}/{corpus}", response_class=HTMLResponse)
+def corpus_index(request: Request, author: str, corpus: str):
+    if author not in KNOWN_AUTHORS:
+        return HTMLResponse("Not found", status_code=404)
+    prefix = f"{author}/{corpus}/"
+    items = [w for w in WORKS if w["id"].startswith(prefix)]
+    if not items:
+        return HTMLResponse("Not found", status_code=404)
+    items.sort(key=lambda w: _natural_sort_key(w["id"]))
+    return templates.TemplateResponse(request, "open_corpus_index.html", _ctx(
+        request,
+        author=author, author_name=KNOWN_AUTHORS[author],
+        corpus=corpus, corpus_name=_corpus_display_name(author, corpus),
+        works=items,
+    ))
+
+
+@app.get("/{author}/{corpus}/{rest:path}")
+def work_page(request: Request, author: str, corpus: str, rest: str):
+    if author not in KNOWN_AUTHORS:
+        return HTMLResponse("Not found", status_code=404)
+
+    fmt = "html"
+    if rest.endswith(".txt"):
+        fmt, rest = "txt", rest[:-4]
+    elif rest.endswith(".json"):
+        fmt, rest = "json", rest[:-5]
+
+    slug = f"{author}/{corpus}/{rest}"
+    work = WORKS_BY_SLUG.get(slug)
+    if not work:
+        return HTMLResponse("Not found", status_code=404)
+
+    passages = _work_passages(work)
+
+    if fmt == "json":
+        return JSONResponse({**work, "passages": passages})
+
+    if fmt == "txt":
+        header = (
+            f"{work['title']}\n"
+            f"{work.get('author', '').replace('-', ' ').title()}\n"
+            f"Source: {work.get('source_edition', {}).get('title') or 'see ' + request.url_for('work_page', author=author, corpus=corpus, rest=rest)}\n"
+            f"License: text public domain; apparatus {work.get('license_apparatus', 'CC BY 4.0')}, History of Methodism / Wesley Corpus.\n"
+            f"Cite as: {work['title']}, Wesley Corpus, {request.url_for('work_page', author=author, corpus=corpus, rest=rest)}\n"
+            f"{'-' * 40}\n\n"
+        )
+        body = "\n\n".join(p.get("text", "") for p in passages)
+        return Response(header + body, media_type="text/plain; charset=utf-8")
+
+    prev_id, next_id = _work_prev_next(work["id"])
+    prev_work = WORKS_BY_SLUG.get(prev_id) if prev_id else None
+    next_work = WORKS_BY_SLUG.get(next_id) if next_id else None
+    is_hymn = work["type"] == "hymn"
+
+    # A hymn flattened to prose is a different text (plan) — split each hymn
+    # passage into its stanzas so the template can wrap each one separately,
+    # preserving internal line breaks with <br>. Splitting on every blank
+    # line over-fragments badly on this source's heavy OCR damage (Phase 4):
+    # spurious blank lines inside a single real stanza are common, and a
+    # naive split produced 20+ "stanzas" for hymns that print 6-11. Splitting
+    # on the stanza's own leading number (present at every real stanza start,
+    # "1 FOR a thousand tongues...", "2 My gracious Master...") is the real
+    # structural marker and survives the internal OCR blank lines intact.
+    _HYMN_HEADER_RE = re.compile(r"^HYMN\s+\d+\.[^\n]*\n+")
+    _STANZA_SPLIT_RE = re.compile(r"\n\s*\n(?=\d{1,2}[ \t])")
+    stanzas_by_passage = {}
+    if is_hymn:
+        for p in passages:
+            body = _HYMN_HEADER_RE.sub("", p.get("text", ""), count=1)
+            blocks = [b.strip("\n") for b in _STANZA_SPLIT_RE.split(body.strip()) if b.strip()]
+            stanzas_by_passage[p["id"]] = blocks
+
+    return templates.TemplateResponse(request, "work.html", _ctx(
+        request,
+        work=work, passages=passages, is_hymn=is_hymn,
+        stanzas_by_passage=stanzas_by_passage,
+        prev_work=prev_work, next_work=next_work,
+        author_name=KNOWN_AUTHORS[author],
+    ))
+
+
+@app.get("/robots.txt")
+def robots_txt():
+    return Response((BASE / "static" / "robots.txt").read_text(), media_type="text/plain")
+
+
+@app.get("/llms.txt")
+def llms_txt():
+    return Response((BASE / "static" / "llms.txt").read_text(), media_type="text/plain")
+
+
+@app.get("/license", response_class=HTMLResponse)
+def license_page(request: Request):
+    return templates.TemplateResponse(request, "license.html", _ctx(request))
+
+
+_SITEMAP_NS = 'xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
+
+
+@app.get("/sitemap.xml")
+def sitemap_index(request: Request):
+    base = str(request.base_url).rstrip("/")
+    corpora = sorted({w["corpus"] for w in WORKS if w["open"]})
+    entries = "\n".join(
+        f"  <sitemap><loc>{base}/sitemaps/{c}.xml</loc></sitemap>" for c in corpora
+    )
+    xml = f'<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex {_SITEMAP_NS}>\n{entries}\n</sitemapindex>\n'
+    return Response(xml, media_type="application/xml")
+
+
+@app.get("/sitemaps/{corpus}.xml")
+def sitemap_child(request: Request, corpus: str):
+    base = str(request.base_url).rstrip("/")
+    items = [w for w in WORKS if w["corpus"] == corpus and w["open"]]
+    entries = "\n".join(
+        f"  <url><loc>{base}/{w['id']}</loc></url>" for w in items
+    )
+    xml = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset {_SITEMAP_NS}>\n{entries}\n</urlset>\n'
+    return Response(xml, media_type="application/xml")
 
 
 # ---------------------------------------------------------------------------

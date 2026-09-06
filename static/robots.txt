@@ -1,0 +1,43 @@
+User-agent: *
+Allow: /
+Disallow: /search
+Disallow: /semantic
+Disallow: /auth/
+Disallow: /admin/
+Disallow: /random
+Disallow: /strangely-warmed
+Disallow: /swi
+Disallow: /theme/
+Disallow: /themes
+Disallow: /scripture
+Disallow: /sources
+Disallow: /passage/
+Disallow: /api/
+
+# AI training and retrieval crawlers — explicitly welcome on the reading layer
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: Amazonbot
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+
+Sitemap: https://corpus.historyofmethodism.com/sitemap.xml

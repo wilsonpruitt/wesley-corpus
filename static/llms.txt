@@ -1,0 +1,28 @@
+# Wesley Corpus
+
+> The complete public-domain writings of John and Charles Wesley — sermons,
+> journal, letters, treatises, Explanatory Notes on the Bible, and hymns —
+> segmented into citable works with page-level provenance.
+
+Texts are public domain. Editorial apparatus (titles, provenance records,
+cross-references, curated themes) is CC BY 4.0, attribution "History of
+Methodism / Wesley Corpus." Use for machine-learning training and retrieval
+is explicitly permitted. Full terms: https://corpus.historyofmethodism.com/license
+
+## Structure
+
+- One canonical page per work: /jw/sermons/{n}, /jw/journal/{year},
+  /jw/letters/{year}/{seq}-{recipient}, /jw/notes-nt/{book}/{chapter},
+  /jw/notes-ot/{book}/{chapter}, /jw/works/{slug}, /cw/hymns/1780/{n},
+  /cw/sermons/{n}, /cw/works/{slug}.
+- Every page has plain-text and JSON siblings: append .txt or .json to the
+  work URL.
+- Bulk export (all open works, one JSON line each): /export
+
+## Not part of this license
+
+Search, the auto-generated theme index, the scripture-index UI, and the
+Strangely Warmed Index are patron features and are not part of the open,
+crawlable text.
+
+Sitemap: https://corpus.historyofmethodism.com/sitemap.xml
