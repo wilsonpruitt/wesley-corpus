@@ -22,8 +22,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 PASSAGES_PATH = ROOT / "chunked" / "cleaned_passages.jsonl"
 NOISE_PATH = ROOT / "metadata" / "noise-report.csv"
-SERMON_MANIFEST_PATH = ROOT / "metadata" / "sermon-reextraction-manifest.csv"
-SWAP_MAP_PATH = ROOT / "metadata" / "swap-source-id-map.csv"
+SERMON_NUMBERING_PATH = ROOT / "metadata" / "sermon-numbering.csv"  # Phase 1, build_sermon_numbering.py
+SERMON_MISATTRIBUTED_PATH = ROOT / "metadata" / "sermon-misattributed.csv"  # Phase 1
 WORKS_OUT = ROOT / "metadata" / "works.jsonl"
 TITLES_OUT = ROOT / "metadata" / "work-titles.csv"
 
@@ -34,19 +34,10 @@ LETTER_BULK_RE = re.compile(r"^jw-letters-(\d{4}[ab]?)$")
 CW_HYMN_INDIV_RE = re.compile(r"^cw-(\d{3})-(.+)$")
 CW_SERMON_RE = re.compile(r"^cw-sermon-(\w+)$")
 
-# Sermons whose Jackson number isn't recoverable from the standard
-# jw-sermon-NNN id pattern — resolved 2026-09-06 by reading the sermon's own
-# heading line ("Sermon 16: The Means of Grace", etc.) after the manifest/
-# swap-map merge left them unmatched. See plan Phase 0 notes.
-SERMON_TITLE_OVERRIDES = {
-    "jw-means-of-grace": "16",
-    "jw-catholic-spirit": "39",
-    "jw-free-grace": "128",
-}
-# Present in the corpus as a sermon but outside the 141-sermon Jackson set
-# (found bundled in the 1816 Charles Wesley memoir volume). No Jackson number
-# to hang a jw/sermons/ slug on; registered as a treatise-style work instead.
-SERMON_NO_NUMBER = {"jw-sermon-cw1816-xiii"}
+# jw-sermon-cw1816-xiii duplicates Bicentennial 109 (Jackson running 127,
+# "The Trouble and Rest of Good Men"), found bundled in the 1816 Charles
+# Wesley memoir volume under a different edition. See Phase 1 notes.
+KNOWN_SERMON_DUPLICATES = {"jw-sermon-cw1816-xiii": "jw/sermons/109"}
 
 
 def load_passages():
@@ -75,19 +66,30 @@ def load_noise():
 
 
 def load_sermon_numbering():
-    """source_id -> jackson number (as int), for the 141 JW sermons."""
-    merged = {}
-    if SERMON_MANIFEST_PATH.exists():
-        for row in csv.DictReader(SERMON_MANIFEST_PATH.open(encoding="utf-8")):
-            if row["jackson_num"] and row["source_id"]:
-                merged[row["jackson_num"]] = row["source_id"]
-    if SWAP_MAP_PATH.exists():
-        for row in csv.DictReader(SWAP_MAP_PATH.open(encoding="utf-8")):
-            if row["jackson_num"] and row["actual_source_id"]:
-                merged[row["jackson_num"]] = row["actual_source_id"]
-    by_source_id = {sid: int(num) for num, sid in merged.items() if num}
-    for sid, num in SERMON_TITLE_OVERRIDES.items():
-        by_source_id[sid] = int(num)
+    """source_id -> {bicentennial, jackson_running, sugden}, for the 137
+    corpus sermons that carry a real Bicentennial number (see
+    scripts/build_sermon_numbering.py, Phase 1)."""
+    by_source_id = {}
+    if SERMON_NUMBERING_PATH.exists():
+        for row in csv.DictReader(SERMON_NUMBERING_PATH.open(encoding="utf-8")):
+            by_source_id[row["source_id"]] = {
+                "bicentennial": int(row["bicentennial"]),
+                "jackson_running": int(row["jackson_running"]),
+                "sugden": int(row["sugden"]) if row["sugden"] else None,
+            }
+    return by_source_id
+
+
+def load_sermon_misattributed():
+    """source_id -> real author, for sermons Jackson's edition bundled under
+    John Wesley's name but which the Bicentennial editors attribute to
+    someone else (see scripts/build_sermon_numbering.py, Phase 1)."""
+    by_source_id = {}
+    if SERMON_MISATTRIBUTED_PATH.exists():
+        for row in csv.DictReader(SERMON_MISATTRIBUTED_PATH.open(encoding="utf-8")):
+            if row["real_author"] == "Charles Wesley":
+                continue  # already correctly filed as a cw-sermons work
+            by_source_id[row["source_id"]] = row["real_author"]
     return by_source_id
 
 
@@ -98,19 +100,22 @@ def strip_prefix(source_id: str, prefixes) -> str:
     return source_id
 
 
-def classify(source_id, passages, sermon_numbering):
+def classify(source_id, passages, sermon_numbering, sermon_misattributed):
     """Return (corpus, slug, kind) for a work. kind is a free-text tag used
     only for the CLAUDE.md-visible summary, not for routing."""
     author = passages[0]["author"]
     types = {p["source_type"] for p in passages}
 
     if author == "john-wesley":
+        if source_id in KNOWN_SERMON_DUPLICATES:
+            stub = strip_prefix(source_id, ("jw-sermon-", "jw-"))
+            return "jw-sermons-duplicate", f"jw/duplicates/sermon-{stub}", "sermon-duplicate"
+        if source_id in sermon_misattributed:
+            stub = strip_prefix(source_id, ("jw-sermon-", "jw-"))
+            return "jw-sermons-misattributed", f"jw/misattributed/sermon-{stub}", "sermon-misattributed"
         if source_id in sermon_numbering:
-            n = sermon_numbering[source_id]
+            n = sermon_numbering[source_id]["bicentennial"]
             return "jw-sermons", f"jw/sermons/{n:03d}", "sermon"
-        if source_id in SERMON_NO_NUMBER:
-            stub = strip_prefix(source_id, ("jw-",))
-            return "jw-works", f"jw/works/{stub}", "sermon-unnumbered"
         if "journal" in types:
             stub = strip_prefix(source_id, ("jw-journal-", "jw-"))
             return "jw-journal-placeholder", f"jw/journal/vol/{stub}", "journal-raw-file"
@@ -151,6 +156,11 @@ def quality_flag(source_id, noise_row, corpus):
     """Return (open: bool, reason: str|None)."""
     if corpus == "jw-letters-digest":
         return False, "abridged-digest-duplicates-individual-letters-same-year"
+    if corpus == "jw-sermons-duplicate":
+        target = KNOWN_SERMON_DUPLICATES[source_id]
+        return False, f"duplicate-of:{target}"
+    if corpus == "jw-sermons-misattributed":
+        return False, "not-composed-by-john-wesley-see-sermon-misattributed.csv"
     if noise_row is None:
         return True, None
     rate = float(noise_row["non_word_rate"] or 0.0)
@@ -163,6 +173,7 @@ def build(check_only: bool):
     passages_by_source, source_order = load_passages()
     noise = load_noise()
     sermon_numbering = load_sermon_numbering()
+    sermon_misattributed = load_sermon_misattributed()
 
     works = []
     seen_slugs = {}
@@ -172,7 +183,7 @@ def build(check_only: bool):
 
     for source_id in source_order:
         passages = passages_by_source[source_id]
-        corpus, slug, kind = classify(source_id, passages, sermon_numbering)
+        corpus, slug, kind = classify(source_id, passages, sermon_numbering, sermon_misattributed)
 
         if slug in seen_slugs:
             dupe_slugs.append((slug, seen_slugs[slug], source_id))
@@ -202,10 +213,8 @@ def build(check_only: bool):
             "date_composed": str(first["year"]) if first.get("year") else None,
             "date_precision": "year" if first.get("year") else "unknown",
             "date_note": None,
-            "numbering": {
-                "jackson": sermon_numbering.get(source_id),
-                "bicentennial": None,
-                "sugden": None,
+            "numbering": sermon_numbering.get(source_id) or {
+                "bicentennial": None, "jackson_running": None, "sugden": None,
             },
             "source_edition": {
                 "editor": None, "title": None, "edition": None, "place": None,
@@ -225,7 +234,12 @@ def build(check_only: bool):
             "prev": None,
             "next": None,
             "part_of": corpus,
-            "editorial_note": None,
+            "editorial_note": (
+                f"Bundled under John Wesley's name in Jackson's 1872 edition; "
+                f"the Bicentennial editors attribute this sermon to "
+                f"{sermon_misattributed.get(source_id)}."
+                if source_id in sermon_misattributed else None
+            ),
             "source_id": source_id,
             "passage_ids": passage_ids,
             "word_count": word_count,

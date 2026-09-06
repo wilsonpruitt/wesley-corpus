@@ -18,7 +18,7 @@ jw-means-of-grace,jw/sermons/016,The Means of Grace,jw-sermons,True
 jw-catholic-spirit,jw/sermons/039,Catholic Spirit,jw-sermons,True
 jw-sermon-053,jw/sermons/053,On the Death of the Rev. Mr. George Whitefield,jw-sermons,True
 jw-sermon-086,jw/sermons/086,A Call to Backsliders,jw-sermons,True
-jw-free-grace,jw/sermons/128,Free Grace,jw-sermons,True
+jw-free-grace,jw/sermons/110,Free Grace,jw-sermons,True
 jw-thoughts-slavery,jw/works/thoughts-slavery,Thoughts Upon Slavery,jw-works,True
 cw-charge-to-keep,cw/works/charge-to-keep,A Charge to Keep I Have,cw-works,True
 cw-arise-my-soul,cw/works/arise-my-soul,"Arise, My Soul, Arise",cw-works,True
@@ -36,7 +36,7 @@ cw-o-for-a-thousand-tongues,cw/works/o-for-a-thousand-tongues,O for a Thousand T
 cw-rejoice-the-lord-is-king,cw/works/rejoice-the-lord-is-king,"Rejoice, the Lord Is King",cw-works,True
 cw-soldiers-of-christ-arise,cw/works/soldiers-of-christ-arise,"Soldiers of Christ, Arise",cw-works,True
 cw-wrestling-jacob,cw/works/wrestling-jacob,Wrestling Jacob,cw-works,True
-jw-sermon-137,jw/sermons/137,Sermon 137,jw-sermons,True
+jw-sermon-137,jw/misattributed/sermon-137,Sermon 137,jw-sermons-misattributed,False
 jw-a-plain-account-of-kingswood-school,jw/works/a-plain-account-of-kingswood-school,A Plain Account Of Kingswood School,jw-works,True
 jw-letter-to-william-wilberforce,jw/works/letter-to-william-wilberforce,Letter To William Wilberforce,jw-works,True
 cw-001-solitude-from-the-latin,cw/hymns/misc/001-solitude-from-the-latin,001 Solitude From The Latin,cw-hymns-misc,True
@@ -3104,7 +3104,7 @@ cw-sermon-ix,cw/sermons/ix,CW Sermon IX: Mark 12:30,cw-sermons,True
 cw-sermon-x,cw/sermons/x,CW Sermon X: Exodus 20:8,cw-sermons,True
 cw-sermon-xi,cw/sermons/xi,CW Sermon XI: Philippians 3:13-14,cw-sermons,True
 cw-sermon-xii,cw/sermons/xii,CW Sermon XII: 1 Kings 18:21,cw-sermons,True
-jw-sermon-cw1816-xiii,jw/works/sermon-cw1816-xiii,JW Sermon (in CW 1816): Job 3:17,jw-works,True
+jw-sermon-cw1816-xiii,jw/duplicates/sermon-cw1816-xiii,JW Sermon (in CW 1816): Job 3:17,jw-sermons-duplicate,False
 cw-on-sight-of-corpse,cw/works/on-sight-of-corpse,On the Sight of a Corpse,cw-works,True
 cw-1816-memoir,cw/works/1816-memoir,Memoir of Charles Wesley (1816),cw-works,True
 jw-primitive-physick,jw/works/primitive-physick,"Primitive Physick (14th ed., 1770)",jw-works,False
@@ -3302,33 +3302,33 @@ jw-sermon-105,jw/sermons/105,Sermon 105,jw-sermons,True
 jw-sermon-106,jw/sermons/106,Sermon 106,jw-sermons,True
 jw-sermon-107,jw/sermons/107,Sermon 107,jw-sermons,True
 jw-sermon-108,jw/sermons/108,Sermon 108,jw-sermons,True
-jw-sermon-109,jw/sermons/109,Sermon 109,jw-sermons,True
-jw-sermon-110,jw/sermons/110,Sermon 110,jw-sermons,True
-jw-sermon-111,jw/sermons/111,Sermon 111,jw-sermons,True
-jw-sermon-112,jw/sermons/112,The Rich Man and Lazarus,jw-sermons,True
-jw-sermon-113,jw/sermons/113,Sermon 113,jw-sermons,True
-jw-sermon-114,jw/sermons/114,Sermon 114,jw-sermons,True
-jw-sermon-115,jw/sermons/115,Sermon 115,jw-sermons,True
-jw-sermon-116,jw/sermons/116,Sermon 116,jw-sermons,True
-jw-sermon-117,jw/sermons/117,Sermon 117,jw-sermons,True
-jw-sermon-118,jw/sermons/118,Sermon 118,jw-sermons,True
-jw-sermon-119,jw/sermons/119,Sermon 119,jw-sermons,True
-jw-sermon-120,jw/sermons/120,On the Wedding Garment,jw-sermons,True
-jw-sermon-121,jw/sermons/121,Sermon 121,jw-sermons,True
-jw-sermon-122,jw/sermons/122,Sermon 122,jw-sermons,True
-jw-sermon-123,jw/sermons/123,Sermon 123,jw-sermons,True
-jw-sermon-124,jw/sermons/124,Sermon 124,jw-sermons,True
-jw-sermon-125,jw/sermons/125,Sermon 125,jw-sermons,True
-jw-sermon-126,jw/sermons/126,Sermon 126,jw-sermons,True
-jw-sermon-127,jw/sermons/127,Sermon 127,jw-sermons,True
-jw-sermon-130,jw/sermons/130,Sermon 130,jw-sermons,True
-jw-sermon-131,jw/sermons/131,Sermon 131,jw-sermons,True
-jw-sermon-132,jw/sermons/132,Sermon 132,jw-sermons,True
-jw-sermon-133,jw/sermons/133,Sermon 133,jw-sermons,True
-jw-sermon-134,jw/sermons/134,Sermon 134,jw-sermons,True
-jw-sermon-135,jw/sermons/135,Sermon 135,jw-sermons,True
-jw-sermon-136,jw/sermons/136,Sermon 136,jw-sermons,True
-jw-sermon-138,jw/sermons/138,Sermon 138,jw-sermons,True
-jw-sermon-139,jw/sermons/139,Sermon 139,jw-sermons,True
-jw-sermon-140,jw/sermons/140,Sermon 140,jw-sermons,True
-jw-sermon-141,jw/sermons/141,Sermon 141,jw-sermons,True
+jw-sermon-109,jw/sermons/116,Sermon 109,jw-sermons,True
+jw-sermon-110,jw/sermons/117,Sermon 110,jw-sermons,True
+jw-sermon-111,jw/sermons/118,Sermon 111,jw-sermons,True
+jw-sermon-112,jw/sermons/115,The Rich Man and Lazarus,jw-sermons,True
+jw-sermon-113,jw/sermons/119,Sermon 113,jw-sermons,True
+jw-sermon-114,jw/sermons/120,Sermon 114,jw-sermons,True
+jw-sermon-115,jw/sermons/121,Sermon 115,jw-sermons,True
+jw-sermon-116,jw/sermons/122,Sermon 116,jw-sermons,True
+jw-sermon-117,jw/sermons/123,Sermon 117,jw-sermons,True
+jw-sermon-118,jw/sermons/125,Sermon 118,jw-sermons,True
+jw-sermon-119,jw/sermons/126,Sermon 119,jw-sermons,True
+jw-sermon-120,jw/sermons/127,On the Wedding Garment,jw-sermons,True
+jw-sermon-121,jw/sermons/124,Sermon 121,jw-sermons,True
+jw-sermon-122,jw/sermons/132,Sermon 122,jw-sermons,True
+jw-sermon-123,jw/sermons/128,Sermon 123,jw-sermons,True
+jw-sermon-124,jw/sermons/129,Sermon 124,jw-sermons,True
+jw-sermon-125,jw/sermons/130,Sermon 125,jw-sermons,True
+jw-sermon-126,jw/sermons/131,Sermon 126,jw-sermons,True
+jw-sermon-127,jw/sermons/109,Sermon 127,jw-sermons,True
+jw-sermon-130,jw/sermons/111,Sermon 130,jw-sermons,True
+jw-sermon-131,jw/sermons/113,Sermon 131,jw-sermons,True
+jw-sermon-132,jw/sermons/112,Sermon 132,jw-sermons,True
+jw-sermon-133,jw/sermons/114,Sermon 133,jw-sermons,True
+jw-sermon-134,jw/sermons/150,Sermon 134,jw-sermons,True
+jw-sermon-135,jw/sermons/136,Sermon 135,jw-sermons,True
+jw-sermon-136,jw/sermons/137,Sermon 136,jw-sermons,True
+jw-sermon-138,jw/misattributed/sermon-138,Sermon 138,jw-sermons-misattributed,False
+jw-sermon-139,jw/sermons/149,Sermon 139,jw-sermons,True
+jw-sermon-140,jw/sermons/143,Sermon 140,jw-sermons,True
+jw-sermon-141,jw/misattributed/sermon-141,Sermon 141,jw-sermons-misattributed,False
