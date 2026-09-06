@@ -350,44 +350,60 @@ Gate: **728 hymns, zero with empty text, all with stanza/line structure preserve
 
 ---
 
-## Phase 5 — Work pages, siblings, redirects, robots, sitemap (Sonnet; deploy = HARD STOP)
+## Phase 5 — Work pages, siblings, redirects, robots, sitemap (Sonnet; deploy = HARD STOP) — CODE DONE 2026-09-06, NOT DEPLOYED
 
 **Goal:** the public reading layer is live on the existing FastAPI app. No new infra.
 
-1. Loader: `web_app.py` loads `metadata/works.jsonl` at startup alongside passages;
-   builds `WORKS_BY_SLUG`, `WORK_BY_PASSAGE_ID`.
-2. Routes (all added to `PUBLIC_PREFIXES`):
-   - `GET /{author}/{corpus}/{...slug}` → `templates/work.html` (sketch §3: H1 = work
-     title; provenance `<details open>`; `<p id="p{n}">` per passage; hymns use
-     `<div class="stanza">`; `rel=prev/next`; JSON-LD; DC meta; `rel=alternate`
-     `.txt`/`.json`; one-line license footer). **No `_ctx` login gating**, readable with
-     JS off, no fonts required to read.
-   - `GET /{slug}.txt` → plain text, `text/plain; charset=utf-8`, a 6-line provenance
-     header then the text.
-   - `GET /{slug}.json` → the work record with `passages[]` inline.
-   - `GET /{author}` and `GET /{author}/{corpus}` → collection index pages (these are
-     what a crawler walks; keep them plain lists).
-   - `GET /passage/{id}` → **301** to `/{work}#p{n}`. Keep `/api/passage/{id}` as is
-     (patron API).
-   - Not-open works (quality gate) render with the damage banner and
-     `<meta name="robots" content="noindex">`.
-3. `static/robots.txt` served at `/robots.txt` — the sketch §4 list verbatim, plus
-   `Disallow: /passage/` (they are all redirects now) and `Disallow: /sources`.
-   `static/llms.txt` at `/llms.txt`.
-4. `/sitemap.xml` index + `/sitemaps/{corpus}.xml` children generated at startup from
-   `works.jsonl` (`lastmod` = work `updated_at`, only `open` works, work URLs only).
-5. `/license` page (sketch §6), in Wilson's voice — **Wilson writes or edits the
-   prose**; the build session drafts it.
-6. Nav: add "Browse" (→ `/jw`) to `base.html`; keep Random.
-7. Memory: 1 GB VM. `works.jsonl` with passage lists is small; the `.txt`/`.json`
-   siblings are generated per request, not cached. Check RSS after startup stays under
-   ~600 MB before deploy.
+All of steps 1-6 are built and committed. Step 7 (memory) is estimated, not measured —
+see below. **Nothing has been deployed; `fly deploy` is still the explicit hard stop.**
 
-**HARD STOP before `fly deploy`.** After deploy, run the sketch §11 checks and record
-them in `metadata/open-layer-launch-checks.md`:
+1. Loader: `web_app.py` loads `metadata/works.jsonl` into `WORKS`/`WORKS_BY_SLUG`, plus
+   the three Phase 2-4 segmented files into `OPEN_PASSAGES_BY_ID` — kept deliberately
+   separate from `PASSAGES`/`PASSAGES_BY_ID`, which still feed patron search/SWI/
+   scripture-index untouched. `LEGACY_PASSAGE_REDIRECT` built for all 22,218 old
+   passage ids (verified: 100% coverage).
+2. Routes built: `GET /{author}/{corpus}/{...slug}` → `templates/work.html`, with
+   `.txt`/`.json` siblings handled in the same handler (suffix-stripped, not separate
+   URL patterns — Starlette's path converter doesn't do suffix matching cleanly).
+   `GET /{author}` and `/{author}/{corpus}` → collection indexes. `GET /passage/{id}`
+   now 301s: a specific `#p{n}` anchor for un-resegmented works, the work's collection
+   index for journal/Notes/1780-hymn ids (no 1:1 anchor survives that re-segmentation).
+   A known-duplicate work (the misattributed-Aldersgate sermon) redirects straight to
+   its canonical target, not its own closed stub. `PUBLIC_PATHS`/`PUBLIC_PREFIXES`
+   gained a narrow additive set (`/jw/`, `/cw/`, plus the handful of bare paths) rather
+   than inverting the existing allowlist — lower blast radius on patron gating.
+3. `/robots.txt`, `/llms.txt` served from `static/`. 4. `/sitemap.xml` +
+   `/sitemaps/{corpus}.xml` built from `WORKS`, open works only. 5. `/license` drafted
+   (**flagged in the page itself as a draft — Wilson still needs to read and edit it**).
+   6. Nav "Browse" link added.
+
+**Two real bugs found and fixed, via a standalone Jinja render test** (this machine has
+no fastapi/jinja2/uvicorn — CLAUDE.md: not set up for local dev — so jinja2+markupsafe
+were installed separately, just enough to render every new template against real data
+without the full FastAPI stack):
+- `segment_hymns.py`'s id scheme (`cw-hymns-1780-NNN`) was byte-identical to 452 ids
+  the OLD whole-collection chunking already used in `cleaned_passages.jsonl`. Since
+  passage resolution checks the old file first, 452 hymns would have silently rendered
+  the wrong, coarser-chunked text. Renamed to `cw-hymns1780-NNN`; re-verified zero
+  collisions and 100% passage resolution across all 5,068 works.
+- Hymn stanza-splitting on blank lines over-fragmented badly (20+ "stanzas" for hymns
+  that print 6-11) because of this source's already-disclosed heavy OCR damage
+  (spurious blank lines inside real stanzas). Fixed by splitting on each stanza's own
+  leading number instead — the real structural marker. Swept all 728 hymns: median 5
+  stanzas, zero with none detected.
+
+7. **Memory: not measured, only estimated.** New data adds ~20MB of JSONL
+   (`works.jsonl` 6.4MB + the three segmented files ~14MB) on top of the existing 44MB
+   `cleaned_passages.jsonl`. Whether the 1GB VM's RSS stays under ~600MB after startup
+   can only be confirmed by actually running the app — not possible on this machine, and
+   not attempted here since it would mean deploying, which is the hard stop below.
+
+**HARD STOP before `fly deploy` — unchanged.** After deploy, run the sketch §11 checks
+and record them in `metadata/open-layer-launch-checks.md`:
 `curl -A GPTBot https://corpus.historyofmethodism.com/jw/sermons/043` returns full text
 with no login redirect; `/search` still redirects to login; `/random` still works for a
-human; JSON-LD validates; an old `/passage/…` URL 301s to the right anchor.
+human; JSON-LD validates; an old `/passage/…` URL 301s to the right anchor; **RSS after
+startup, to close out step 7 above.**
 
 ---
 
