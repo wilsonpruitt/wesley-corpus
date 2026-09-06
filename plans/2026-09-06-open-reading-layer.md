@@ -146,7 +146,7 @@ The 15 journal sources are OCR-repaired but undated at the passage level. Method
      hole. Applying the ledger gives continuous coverage **1728-02-01 → 1790-10-24**.
 2. Entry heads + dates — **DONE 2026-09-06** (Sonnet, same session as the boundary
    pass) → `scripts/journal_boundaries.py` → `metadata/journal-entry-boundaries.csv`,
-   **96.1% dated (10,194 / 10,605), past the plan's 95% target**. What the pass
+   **96.0% dated (10,182 / 10,605), past the plan's 95% target**. What the pass
    established:
    - **Wesley states the weekday of every entry, so dates self-validate.** Pre-1752
      dates are Julian (Britain switched 1752-09-14); the validator handles both and
@@ -186,14 +186,28 @@ The 15 journal sources are OCR-repaired but undated at the passage level. Method
      wrong year from an embedded quoted narrative with its own date context —
      tagged `status="rescued"`, distinct from the primary walk's `"ok"`, so it reads
      as lower-confidence rather than silently equal.
+   - **A bare "MONTH YEAR, In <place>" section head with no FROM/TO header at all**
+     (`journal-vol4-part11-section02`, which fills half of the indispensable
+     1758-60 gap) left its ctx_year-only first entries with no month to anchor on,
+     guessing an entire year wrong at the file's start. `MONTH_YEAR_HEAD_RE` catches
+     this specific convention as a fallback checkpoint type when no `FROM...TO`
+     header exists in a file — took that file from 68% to 90%.
+   - **A final consistency guard** (`demote_inconsistent_dates`) catches runs the
+     rescue mechanism gets wrong in files thick with quoted correspondence carrying
+     their own embedded dates — found a 14-entry run resolved to 1752 sitting inside
+     an otherwise-continuous 1757 stretch in a Curnock part file (self-reinforcing:
+     once state drifted, each next entry's weekday check "confirmed" the wrong year
+     in turn). Any date more than 3 years from the median of its surrounding 15
+     dated neighbors is demoted back to unresolved rather than published as if it
+     were as trustworthy as the rest.
    - Dates past the Journal's documented 1735-10-14 → 1790-10-24 span are flagged
      `out-of-range` rather than published.
-   - Remaining 3.9% unresolved is concentrated in the two files this doesn't need to
+   - Remaining 4.0% unresolved is concentrated in the two files this doesn't need to
      be perfect on: `vol4-7` (closing as a duplicate per the overlap ledger) and the
      rest of vol1-3's decade-spanning preface (the rescue catches the highest-value
      entry; a few obscure ones in that same essay stay flagged). Every file that
      matters for the actual year-page build — the three KEEP-SPINE files and
-     `vol4-part11` — is at 87-100%.
+     `vol4-part11` — is at 88-100%.
 3. Re-chunk on entry boundaries into a parallel file `chunked/journal_by_entry.jsonl`
    (non-destructive; the serving file is untouched until Phase 5). Each entry passage:
    `work = jw/journal/{YYYY}`, `anchor = {YYYY-MM-DD}` (+`-b`, `-c` for multiple

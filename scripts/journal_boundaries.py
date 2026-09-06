@@ -110,6 +110,16 @@ RANGE_RE = re.compile(
     rf"TO\s+(?P<m2>{MON_RE})\w*\.?\s*(?P<d2>\d{{1,2}}),?\s*(?P<y2>1[67]\d\d)",
     re.IGNORECASE,
 )
+# A handful of Curnock section files (journal-vol4-part11-section02, found by
+# tracing a bad date at its very start) open on a bare "MONTH YEAR, In <place>"
+# section head instead of a "FROM ... TO ..." extract header, and carry no
+# other reseed point at all — without one, the file's ctx_year-only first
+# entry has no month to anchor on and the blind year-wide search guesses
+# wrong. Matched only at start-of-line, since this is not a recurring running
+# head in the files that have it (checked: exactly one occurrence apiece).
+MONTH_YEAR_HEAD_RE = re.compile(
+    rf"^(?P<m1>{MON_RE})\.?\s+(?P<y1>1[67]\d\d),", re.IGNORECASE | re.MULTILINE,
+)
 
 # Word-level day-name garbles specific to the raw scans (journal_ocr_fixes.py
 # repairs these before the text reaches cleaned/ — see CLAUDE.md's OCR-gotchas
@@ -302,6 +312,25 @@ def find_checkpoints(raw_path, cleaned_text, window=12000):
     checkpoints = []
     seen = set()
     search_from = 0
+
+    def try_header(h_end, y1, m1):
+        nonlocal search_from
+        after = raw[h_end:h_end + window]
+        em = ENTRY_RE.search(after)
+        if not em:
+            return False
+        body = after[em.end():em.end() + 40]
+        anchor, _ = norm_letters(body)
+        anchor = anchor.strip()[:30]
+        if not anchor:
+            return False
+        pos = cn.find(anchor, search_from)
+        if pos < 0:
+            return False
+        search_from = pos
+        checkpoints.append((cn_idx[pos], y1, m1))
+        return True
+
     for h in RANGE_RE.finditer(raw):
         key = h.group(0).lower()
         if key in seen:
@@ -310,21 +339,14 @@ def find_checkpoints(raw_path, cleaned_text, window=12000):
         if "\n" not in before:
             continue  # a date range quoted in running prose, not a real header
         seen.add(key)
-        y1, m1 = int(h.group("y1")), MONTHS[h.group("m1").lower()]
-        after = raw[h.end():h.end() + window]
-        em = ENTRY_RE.search(after)
-        if not em:
-            continue
-        body = after[em.end():em.end() + 40]
-        anchor, _ = norm_letters(body)
-        anchor = anchor.strip()[:30]
-        if not anchor:
-            continue
-        pos = cn.find(anchor, search_from)
-        if pos < 0:
-            continue
-        search_from = pos
-        checkpoints.append((cn_idx[pos], y1, m1))
+        try_header(h.end(), int(h.group("y1")), MONTHS[h.group("m1").lower()])
+
+    if not checkpoints:
+        # Fallback for files with no "FROM ... TO ..." header at all (see
+        # MONTH_YEAR_HEAD_RE above).
+        for h in MONTH_YEAR_HEAD_RE.finditer(raw):
+            try_header(h.end(), int(h.group("y1")), MONTHS[h.group("m1").lower()])
+
     return checkpoints
 
 
@@ -370,6 +392,49 @@ def rescue_with_nearby_year(rows, text, lookback=4000):
     return rescued
 
 
+def demote_inconsistent_dates(rows, window=15, tolerance=3, passes=4):
+    """Final consistency guard, in document order (rows must already be
+    offset-sorted). Found necessary while checking vol4-part11-section02,
+    which quotes another correspondent's testimony at length, itself full of
+    footnotes citing dates from entirely different years (1755, 1758, 1763,
+    1764, 1780...) — the rescue's nearest-bare-year heuristic has much less
+    to work with there than in the isolated Aldersgate case, and produced
+    short runs of entries years away from their true neighbors (an 1769 run
+    and an 1761 run both sitting inside an otherwise-1759/1760 stretch).
+
+    A date more than `tolerance` years from the median of its surrounding
+    `window` dated neighbors (on both sides) is demoted back to unresolved
+    rather than published as if it were as trustworthy as the rest. Iterated
+    a few times so a short run of bad entries doesn't shield its own
+    interior members from the neighbors just outside the run."""
+    import statistics
+    demoted_total = 0
+    for _ in range(passes):
+        dated = [r for r in rows if r["status"] in ("ok", "rescued")]
+        demote_ids = set()
+        for i, r in enumerate(dated):
+            neighbor_years = [
+                dated[j]["resolved_y"]
+                for j in range(max(0, i - window), min(len(dated), i + window + 1))
+                if j != i
+            ]
+            if len(neighbor_years) < 3:
+                continue
+            med = statistics.median(neighbor_years)
+            if abs(r["resolved_y"] - med) > tolerance:
+                demote_ids.add(id(r))
+        if not demote_ids:
+            break
+        for r in rows:
+            if id(r) in demote_ids:
+                r["status"] = "unresolved"
+                r["date"] = None
+                r["resolved_y"] = None
+                r["resolved_m"] = None
+                demoted_total += 1
+    return demoted_total
+
+
 def scan_file(path):
     """Each file holds several printed extracts, each starting from its own
     explicit "FROM <date> TO <date>" header. Those headers are re-seed points:
@@ -412,6 +477,7 @@ def main():
         rows = scan_file(path)
         for r in rows:
             r["source_file"] = path.stem
+        demote_inconsistent_dates(rows)
         ok = [r for r in rows if r["status"] in ("ok", "rescued")]
         yrs = sorted({r["resolved_y"] for r in ok})
         span = f"{yrs[0]}-{yrs[-1]}" if yrs else "-"
