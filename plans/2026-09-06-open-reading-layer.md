@@ -120,7 +120,7 @@ number, not the volume — check the running head.
 
 ---
 
-## Phase 2 — Journal re-segmentation into years (Opus for the boundary pass; Sonnet to wire)
+## Phase 2 — Journal re-segmentation into years (Opus for the boundary pass; Sonnet to wire) — DONE 2026-09-06
 
 **Goal:** `jw/journal/{YYYY}` pages with dated entries as anchors.
 
@@ -208,17 +208,40 @@ The 15 journal sources are OCR-repaired but undated at the passage level. Method
      entry; a few obscure ones in that same essay stay flagged). Every file that
      matters for the actual year-page build — the three KEEP-SPINE files and
      `vol4-part11` — is at 88-100%.
-3. Re-chunk on entry boundaries into a parallel file `chunked/journal_by_entry.jsonl`
-   (non-destructive; the serving file is untouched until Phase 5). Each entry passage:
-   `work = jw/journal/{YYYY}`, `anchor = {YYYY-MM-DD}` (+`-b`, `-c` for multiple
-   entries per day), `date_precision`.
+3. Re-chunk on entry boundaries into a parallel file `chunked/journal_by_entry.jsonl` —
+   **DONE 2026-09-06** (`scripts/build_journal_entries.py`). 6,712 passages, 56 years
+   (1735-1790), zero gaps, `work = jw/journal/{YYYY}`, `anchor = {YYYY-MM-DD}` (+`-b`,
+   `-c` for genuine same-day multiple entries — 66 dates have one). Only KEEP-marked
+   sources from the overlap ledger are used; KEEP-UNIQUE sources are additionally
+   trimmed to their own stated gap-filling window (`covers_from`..`covers_to`), which
+   caught 16 stray entries from `vol4-part11-section02` dated months past its actual
+   1758-60 gap — all colliding with the spine file that already owns that ground.
+   Two real bugs caught by re-running the plan's own sentinel gate before trusting
+   this file:
+   - **Text needs `ocr_cleaning.clean_text()`, same as every other passage gets via
+     `clean_corpus.py`.** Entries are sliced straight from `cleaned/*.txt`, which is
+     only `process_corpus.py`'s first cleaning pass — line-wrap newlines inside
+     sentences are still there ("I felt my\nheart strangely warmed"). Skipping the
+     second pass meant a literal-substring sentinel search for the Aldersgate quote
+     found nothing, despite the words being right there split across a line break.
+   - **Unresolved entries between two successfully-dated ones get silently absorbed**
+     into the preceding entry's sliced text (nothing in between to cut it off at).
+     `jw-journal-1738-010` — Aldersgate itself — came out at 20,445 words because
+     everything unresolved between May 24 and the next resolved entry (August 12,
+     from vol1-3's messy decade-spanning preface) rode along inside it. Rather than
+     let that stand as if it were one day's writing, any entry over 1,500 words
+     (corpus mean 129 / median 69) is marked `date_precision: "range"` with a
+     `content_extends_to` field naming the next entry's date — 48 passages flagged.
 4. Overlap/duplication ledger: `metadata/journal-overlap.csv`.
 
 Gate: every day from 1735-10-14 (embarkation) to 1790-10-24 (last entry) that the
-raw text contains is assigned; year pages are contiguous; the 52 sentinel quotes in
-`metadata/sentinel-quotes.jsonl` still resolve (`scripts/check_sentinels.py` against the
-new file). Known gap to record, not fix: the journal's own coverage gaps (Wesley printed
-21 extracts; the corpus may not hold all of them).
+raw text contains is assigned — **confirmed, 56/56 years present, no gaps**; year
+pages are contiguous; the 3 journal-scoped sentinel quotes (of 52 total) resolve
+against `chunked/journal_by_entry.jsonl`, checked directly since
+`scripts/check_sentinels.py` is hardcoded to the old serving file — **all 3 pass**,
+including "I felt my heart strangely warmed" (Aldersgate) and "I look upon all the
+world as my parish". Known gap to record, not fix: the journal's own coverage gaps
+(Wesley printed 21 extracts; the corpus may not hold all of them).
 
 ---
 
