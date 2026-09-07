@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% block title %}Bulk export — Wesley Corpus{% endblock %}
+{% block head_extra %}
+<link rel="canonical" href="/export">
+{% endblock %}
+{% block content %}
+<h1>Bulk export</h1>
+
+{% if manifest %}
+<p>Generated {{ manifest.generated }}. {{ "{:,}".format(manifest.open_works) }} open
+works, {{ "{:,}".format(manifest.passages) }} passages,
+{{ "{:,}".format(manifest.words) }} words.
+{{ manifest.closed_works }} works are excluded — quality-gate failures, disclosed at
+<a href="/license">/license</a>.</p>
+
+<ul>
+{% for f in manifest.files %}
+  <li>
+    <a href="/export/{{ f.name }}">{{ f.name }}</a>
+    <span class="meta">({{ "%.1f"|format(f.size_bytes / 1048576) }} MB)</span>
+    — {{ f.description }}
+  </li>
+{% endfor %}
+</ul>
+{% else %}
+<p>The export listing is temporarily unavailable — try again shortly, or see
+<a href="/license">/license</a> for the license terms in the meantime.</p>
+{% endif %}
+
+<h2>License</h2>
+<p>Public domain text, CC BY 4.0 apparatus, machine use explicitly welcome. Full terms
+at <a href="/license">/license</a>.</p>
+
+<hr>
+<p class="meta">Files are hosted on Cloudflare R2 and linked here rather than served
+directly by this app.</p>
+{% endblock %}

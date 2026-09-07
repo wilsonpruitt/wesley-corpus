@@ -40,6 +40,15 @@ MIN_PLEDGE_CENTS = int(os.environ.get("MIN_PLEDGE_CENTS", "500"))
 DEV_BYPASS_AUTH = os.environ.get("DEV_BYPASS_AUTH", "").lower() == "true"
 ADMIN_TOKEN = os.environ.get("ADMIN_TOKEN", "")
 
+# Bulk export (Phase 6): files live in the wesley-corpus-export R2 bucket,
+# not on the app's own machines — see export/README.md "Hosting". The app
+# only proxies through a manifest.json fetch + 302s; no R2 credentials live
+# here since the bucket's dev URL is public-by-design (public-domain text +
+# CC-licensed apparatus).
+EXPORT_R2_BASE_URL = os.environ.get(
+    "EXPORT_R2_BASE_URL", "https://pub-1434f153267449a594139e6df3b9fabc.r2.dev"
+)
+
 PATREON_AUTH_URL = "https://www.patreon.com/oauth2/authorize"
 PATREON_TOKEN_URL = "https://www.patreon.com/api/oauth2/token"
 PATREON_IDENTITY_URL = "https://www.patreon.com/api/oauth2/v2/identity"
@@ -53,7 +62,7 @@ PAYWALL_DATE = date(2026, 3, 15)
 PUBLIC_PATHS = frozenset({
     "/", "/auth/login", "/auth/callback", "/auth/logout", "/admin/unlock", "/random",
     "/jw", "/cw",  # bare author collection index (no trailing segment)
-    "/robots.txt", "/llms.txt", "/sitemap.xml", "/license",
+    "/robots.txt", "/llms.txt", "/sitemap.xml", "/license", "/export",
 })
 # Open reading layer (plans/2026-09-06-open-reading-layer.md): work pages,
 # author/corpus collection indexes, and .txt/.json siblings all live under
@@ -900,6 +909,42 @@ def llms_txt():
 @app.get("/license", response_class=HTMLResponse)
 def license_page(request: Request):
     return templates.TemplateResponse(request, "license.html", _ctx(request))
+
+
+_EXPORT_MANIFEST_CACHE: dict = {"data": None, "fetched_at": 0.0}
+_EXPORT_MANIFEST_TTL = 300  # seconds
+
+
+async def _get_export_manifest() -> Optional[dict]:
+    now = time.time()
+    if _EXPORT_MANIFEST_CACHE["data"] is not None and \
+            now - _EXPORT_MANIFEST_CACHE["fetched_at"] < _EXPORT_MANIFEST_TTL:
+        return _EXPORT_MANIFEST_CACHE["data"]
+    try:
+        async with httpx.AsyncClient(timeout=5.0) as client:
+            resp = await client.get(f"{EXPORT_R2_BASE_URL}/manifest.json")
+            resp.raise_for_status()
+            data = resp.json()
+    except Exception:
+        return _EXPORT_MANIFEST_CACHE["data"]  # stale-if-error, None on first failure
+    _EXPORT_MANIFEST_CACHE["data"] = data
+    _EXPORT_MANIFEST_CACHE["fetched_at"] = now
+    return data
+
+
+@app.get("/export", response_class=HTMLResponse)
+async def export_page(request: Request):
+    manifest = await _get_export_manifest()
+    return templates.TemplateResponse(request, "export.html", _ctx(
+        request, manifest=manifest,
+    ))
+
+
+@app.get("/export/{filename}")
+def export_file(filename: str):
+    # No traversal risk: R2 has no concept of ../, and the underlying
+    # request is just a redirect to a flat bucket key.
+    return RedirectResponse(url=f"{EXPORT_R2_BASE_URL}/{filename}", status_code=302)
 
 
 _SITEMAP_NS = 'xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
