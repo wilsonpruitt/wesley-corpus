@@ -887,6 +887,46 @@ def _corpus_display_name(author: str, corpus: str) -> str:
     return names.get(corpus, corpus.replace("-", " ").title())
 
 
+@app.get("/robots.txt")
+def robots_txt():
+    return Response((BASE / "static" / "robots.txt").read_text(), media_type="text/plain")
+
+
+@app.get("/llms.txt")
+def llms_txt():
+    return Response((BASE / "static" / "llms.txt").read_text(), media_type="text/plain")
+
+
+@app.get("/license", response_class=HTMLResponse)
+def license_page(request: Request):
+    return templates.TemplateResponse(request, "license.html", _ctx(request))
+
+
+_SITEMAP_NS = 'xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
+
+
+@app.get("/sitemap.xml")
+def sitemap_index(request: Request):
+    base = str(request.base_url).rstrip("/")
+    corpora = sorted({w["corpus"] for w in WORKS if w["open"]})
+    entries = "\n".join(
+        f"  <sitemap><loc>{base}/sitemaps/{c}.xml</loc></sitemap>" for c in corpora
+    )
+    xml = f'<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex {_SITEMAP_NS}>\n{entries}\n</sitemapindex>\n'
+    return Response(xml, media_type="application/xml")
+
+
+@app.get("/sitemaps/{corpus}.xml")
+def sitemap_child(request: Request, corpus: str):
+    base = str(request.base_url).rstrip("/")
+    items = [w for w in WORKS if w["corpus"] == corpus and w["open"]]
+    entries = "\n".join(
+        f"  <url><loc>{base}/{w['id']}</loc></url>" for w in items
+    )
+    xml = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset {_SITEMAP_NS}>\n{entries}\n</urlset>\n'
+    return Response(xml, media_type="application/xml")
+
+
 @app.get("/{author}", response_class=HTMLResponse)
 def author_index(request: Request, author: str):
     if author not in KNOWN_AUTHORS:
@@ -983,44 +1023,6 @@ def work_page(request: Request, author: str, corpus: str, rest: str):
     ))
 
 
-@app.get("/robots.txt")
-def robots_txt():
-    return Response((BASE / "static" / "robots.txt").read_text(), media_type="text/plain")
-
-
-@app.get("/llms.txt")
-def llms_txt():
-    return Response((BASE / "static" / "llms.txt").read_text(), media_type="text/plain")
-
-
-@app.get("/license", response_class=HTMLResponse)
-def license_page(request: Request):
-    return templates.TemplateResponse(request, "license.html", _ctx(request))
-
-
-_SITEMAP_NS = 'xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'
-
-
-@app.get("/sitemap.xml")
-def sitemap_index(request: Request):
-    base = str(request.base_url).rstrip("/")
-    corpora = sorted({w["corpus"] for w in WORKS if w["open"]})
-    entries = "\n".join(
-        f"  <sitemap><loc>{base}/sitemaps/{c}.xml</loc></sitemap>" for c in corpora
-    )
-    xml = f'<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex {_SITEMAP_NS}>\n{entries}\n</sitemapindex>\n'
-    return Response(xml, media_type="application/xml")
-
-
-@app.get("/sitemaps/{corpus}.xml")
-def sitemap_child(request: Request, corpus: str):
-    base = str(request.base_url).rstrip("/")
-    items = [w for w in WORKS if w["corpus"] == corpus and w["open"]]
-    entries = "\n".join(
-        f"  <url><loc>{base}/{w['id']}</loc></url>" for w in items
-    )
-    xml = f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset {_SITEMAP_NS}>\n{entries}\n</urlset>\n'
-    return Response(xml, media_type="application/xml")
 
 
 # ---------------------------------------------------------------------------
