@@ -20,3 +20,5 @@ chunked/cleaned_passages.jsonl
 # on Cloudflare R2, not committed to the repo.
 export/
 .wrangler/
+.venv-themes/
+chunked/swi_cache.db
